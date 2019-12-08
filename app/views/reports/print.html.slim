@@ -1,0 +1,42 @@
+.w3-container
+  h5.strong 
+    |Program Reports&nbsp;
+    = "VFW Post #{8600}" 
+  - q = 0
+  - @results.each do |quarter|
+    -q += 1
+    - if params[:qtr].present?
+      -qtr= params[:qtr].to_i
+      - next if q !=qtr
+    - unless quarter[:details].empty?
+      h5.strong = "Summary Audit Report #{q} - (#{quarter[:range]})"
+      == render partial:'reports/summary',locals: {summary:quarter[:summary],totals:quarter[:totals],range:quarter[:range]}
+      .page-break
+      table.small-table.page-break
+        caption = "Audit Report #{q}"
+        tr
+          th Date
+          th Type
+          th Area
+          th Details
+          th #Vol
+          th Hours
+          th Miles
+          th Exp
+          th Cost
+          - reports = quarter[:details]
+          - reports.each do |report|
+            tr
+              td = report["date"]
+              td = report["type_report"]
+              td = report["area"]
+              td = report["details"]
+              td = report["volunteers"]
+              td.text-right = report["total_hours"]
+              td.text-right = report["total_miles"]
+              td.text-right = number_to_currency(report["expenses"])
+              td.text-right = number_to_currency(report["total_cost"])
+      .page-break
+  h5.strong= "VFW Post 8600 Year Program Summary - #{@range}"
+  = render partial:'reports/summary',locals: {summary:@summary,totals:@totals}
+

@@ -1,0 +1,309 @@
+---
+- member_id: 117
+  position: Commander
+  from_date: 2014-08-22
+  to_date: 2018-06-10
+  current: false
+  seq: 0
+  vfw_id: 99907
+- member_id: 131
+  position: Commander
+  from_date: 2013-06-01
+  to_date: 2014-08-22
+  current: false
+  seq: 0
+  vfw_id: 4987980
+- member_id: 104
+  position: Commander
+  from_date: 2012-06-01
+  to_date: 2013-06-01
+  current: false
+  seq: 0
+  vfw_id: 654838
+- member_id: 104
+  position: Quartermaster
+  from_date: 2013-06-01
+  to_date: 2014-06-01
+  current: false
+  seq: 3
+  vfw_id: 654838
+- member_id: 27
+  position: Quartermaster
+  from_date: 2014-06-01
+  to_date: 2018-06-10
+  current: false
+  seq: 3
+  vfw_id: 10190106
+- member_id: 104
+  position: Senior Vice-Commander
+  from_date: 2014-08-22
+  to_date: 2018-06-10
+  current: false
+  seq: 1
+  vfw_id: 654838
+- member_id: 104
+  position: Adjutant
+  from_date: 2014-06-01
+  to_date: 2015-07-14
+  current: false
+  seq: 4
+  vfw_id: 654838
+- member_id: 108
+  position: Service Officer
+  from_date: 2014-06-01
+  to_date: 2015-07-01
+  current: false
+  seq: 11
+  vfw_id: 813932
+- member_id: 23
+  position: Junior Vice-Commander
+  from_date: 2014-11-11
+  to_date: 2016-07-01
+  current: false
+  seq: 2
+  vfw_id: 10423830
+- member_id: 53
+  position: Junior Vice-Commander
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 2
+  vfw_id: 10581336
+- member_id: 77
+  position: Chaplain
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 5
+  vfw_id: 9388027
+- member_id: 148
+  position: Chaplain
+  from_date: 2016-07-01
+  to_date: 
+  current: true
+  seq: 5
+  vfw_id: 935842
+- member_id: 194
+  position: Trustee - 1 Year
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 8
+  vfw_id: 1062916
+- member_id: 42
+  position: Trustee - 1 Year
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 8
+  vfw_id: 6032992
+- member_id: 148
+  position: Trustee - 2 Year
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 9
+  vfw_id: 935842
+- member_id: 161
+  position: Trustee - 2 Year
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 9
+  vfw_id: 10504592
+- member_id: 84
+  position: Trustee - 3 Year
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 10
+  vfw_id: 1318436
+- member_id: 151
+  position: Trustee - 3 Year
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 10
+  vfw_id: 10597147
+- member_id: 131
+  position: Service Officer
+  from_date: 2015-07-01
+  to_date: 2016-07-01
+  current: false
+  seq: 11
+  vfw_id: 4987980
+- member_id: 148
+  position: Service Officer
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 11
+  vfw_id: 935842
+- member_id: 133
+  position: Surgeon
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 7
+  vfw_id: 315159
+- member_id: 103
+  position: Surgeon
+  from_date: 2016-07-01
+  to_date: 2018-06-10
+  current: false
+  seq: 7
+  vfw_id: 578090
+- member_id: 103
+  position: Judge Advocate
+  from_date: 2014-06-01
+  to_date: 2016-07-01
+  current: false
+  seq: 6
+  vfw_id: 578090
+- member_id: 180
+  position: Judge Advocate
+  from_date: 2016-07-01
+  to_date: 2016-12-13
+  current: false
+  seq: 6
+  vfw_id: 10310817
+- member_id: 27
+  position: Adjutant
+  from_date: 2015-07-14
+  to_date: 2019-06-01
+  current: false
+  seq: 4
+  vfw_id: 10190106
+- member_id: 53
+  position: Judge Advocate
+  from_date: 2016-12-13
+  to_date: 2018-06-10
+  current: false
+  seq: 6
+  vfw_id: 10581336
+- member_id: 151
+  position: Commander
+  from_date: 2018-06-10
+  to_date: 
+  current: true
+  seq: 0
+  vfw_id: 10597147
+- member_id: 117
+  position: Senior Vice-Commander
+  from_date: 2018-06-10
+  to_date: 2018-12-27
+  current: false
+  seq: 1
+  vfw_id: 99907
+- member_id: 230
+  position: Junior Vice-Commander
+  from_date: 2018-06-10
+  to_date: 2018-12-27
+  current: false
+  seq: 2
+  vfw_id: 10918348
+- member_id: 42
+  position: Quartermaster
+  from_date: 2018-06-10
+  to_date: 
+  current: false
+  seq: 3
+  vfw_id: 6032992
+- member_id: 42
+  position: Quartermaster
+  from_date: 2018-06-10
+  to_date: 2019-06-01
+  current: false
+  seq: 3
+  vfw_id: 6032992
+- member_id: 33
+  position: Judge Advocate
+  from_date: 2018-06-10
+  to_date: 
+  current: true
+  seq: 6
+  vfw_id: 10570617
+- member_id: 71
+  position: Surgeon
+  from_date: 2018-06-10
+  to_date: 
+  current: true
+  seq: 7
+  vfw_id: 9599111
+- member_id: 53
+  position: Trustee - 3 Year
+  from_date: 2018-06-10
+  to_date: 2019-06-01
+  current: false
+  seq: 10
+  vfw_id: 10581336
+- member_id: 33
+  position: Trustee - 2 Year
+  from_date: 2018-06-10
+  to_date: 
+  current: false
+  seq: 9
+  vfw_id: 10570617
+- member_id: 188
+  position: Trustee - 1 Year
+  from_date: 2018-06-10
+  to_date: 2019-06-01
+  current: false
+  seq: 8
+  vfw_id: 9620254
+- member_id: 186
+  position: Service Officer
+  from_date: 2018-06-10
+  to_date: 
+  current: true
+  seq: 11
+  vfw_id: 9230816
+- member_id: 230
+  position: Senior Vice-Commander
+  from_date: 2018-12-27
+  to_date: 
+  current: true
+  seq: 1
+  vfw_id: 10918348
+- member_id: 247
+  position: Junior Vice-Commander
+  from_date: 2019-06-11
+  to_date: 
+  current: true
+  seq: 2
+  vfw_id: 10506676
+- member_id: 27
+  position: Quartermaster
+  from_date: 2019-06-01
+  to_date: 
+  current: true
+  seq: 3
+  vfw_id: 10190106
+- member_id: 188
+  position: Adjutant
+  from_date: 2019-06-01
+  to_date: 
+  current: true
+  seq: 4
+  vfw_id: 9620254
+- member_id: 33
+  position: Trustee - 1 Year
+  from_date: 2019-06-01
+  to_date: 
+  current: true
+  seq: 8
+  vfw_id: 10570617
+- member_id: 53
+  position: Trustee - 2 Year
+  from_date: 2019-06-01
+  to_date: 
+  current: true
+  seq: 9
+  vfw_id: 10581336
+- member_id: 71
+  position: Trustee - 3 Year
+  from_date: 2019-06-01
+  to_date: 
+  current: true
+  seq: 10
+  vfw_id: 9599111

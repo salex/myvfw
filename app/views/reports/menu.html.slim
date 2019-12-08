@@ -1,0 +1,101 @@
+.w3-container.w3-white
+  / h5.strong= "VFW Post  Program Reporting Menu"
+  = render partial:'reports/links'
+
+  .w3-row-padding
+    .s1.w3-col &nbsp;
+    .s10.w3-col
+      #help.w3-panel.w3-display-container.w3-pale-green.w3-card-4
+        span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
+        .spacer About this Menu (Click X to remove this alert)
+        p.annotate Over the years, many paper reporting forms have been used for what we'll call Volunteerizm. This accounts for seeing thing like MIA/POW, PP, VOD programs referenced on different forms. Regardless of where you report it, it all comes down to someone volunteers to help someone and they spent time/hours, milage and maybe money in the effort. This puts all the options on one page. Just click the link button you feel comfortable with!
+
+    .s1.w3-col &nbsp;
+  hr.thin
+  .w3-row-padding
+    .m4.s12.w3-col
+      dl.indent-dd
+        dt.strong Community Service
+        dd
+          = new_reports_link(@post,'Community Service.Involvment')
+          .indent1.annotate Blood Drive, CPR Class, Recycling, Highway Cleanup, Restoration Projects, Cemeteries, etc.
+        dd 
+          = new_reports_link(@post,'Community Service.Cooperation')
+          .indent1.annotate Assist/Organize Fund/Food/Clothing Drives, Veternans Counsel, etc.
+        dd 
+          = new_reports_link(@post,'Community Service.Schools, Churches')
+          .indent1.annotate Volunteer, School Speaker Programs, Sunday School, Teacher's Award, etc
+        dd
+          = new_reports_link(@post,'Community Service.Aid to Others')
+          .indent1.annotate Hospital, Nursing Home Volunteer, Senior Citizens, Operation Uplink, Aid other Project, Hand made items for sick/vets, etc
+        dd
+          = new_reports_link(@post,'Community Service.Americanism')
+          .indent1.annotate Flag/Color Guard/Funeral,Patriotic Assesmbly, Get out the vote, School Flag Education, Veterans Day Programs, Pearl Harbor Programs, Memorial Day Programs, Loyalty Day Programs, POW/MIA, etc.
+        dd  
+          = new_reports_link(@post,'Community Service.Safety')
+          .indent1.annotate Pedestrian/Bicyle, Drug Awareness, Recreational/Boat, Home/Fire, Recognition, etc.
+        dd
+          = new_reports_link(@post,'Community Service.Youth Activities')
+          .indent1.annotate Sports/Athletics, Scouting/Organizations, Contests/Special Events, Education/Instruction, Voice of Democracy, Patriot Pen, etc.
+
+    .m4.s12.w3-col
+      dl.indent-dd
+        dt.strong Hospital
+        dd = new_reports_link(@post,'Hospital.Hospital Report')
+        dt.strong Legislative
+        dd = new_reports_link(@post,'Legislative.Local Activities')
+        dd = new_reports_link(@post,'Legislative.State Activities')
+        dd = new_reports_link(@post,'Legislative.National Activities')
+        dt.strong National Military Service
+        dd = new_reports_link(@post,'National Military Service.Adopt a Unit')
+        dd = new_reports_link(@post,'National Military Service.Application/Activiy Report')
+        dd = new_reports_link(@post,'National Military Service.Finacial Assistance to Vet')
+        dd = new_reports_link(@post,'National Military Service.Military Support Events')
+        dd = new_reports_link(@post,'National Military Service.Donations')
+        dt.strong Service Officer
+        dd = new_reports_link(@post,'Service Officer.Monthly Report')
+
+    .m4.s12.w3-col
+      dl.indent-dd
+
+        dt.strong Programs
+        dd = new_reports_link(@post,'Programs.VOD/PP')
+        dd = new_reports_link(@post,'Programs.Gold Metal')
+        dd = new_reports_link(@post,'Programs.Teacher')
+        dd = new_reports_link(@post,'Programs.Scout')
+        dd = new_reports_link(@post,'Programs.Community Service Scrapbook')
+        dd = new_reports_link(@post,'Programs.Media Awards')
+        dd = new_reports_link(@post,'Programs.Buddy Poppies')
+        dt.strong Membership
+        dd = new_reports_link(@post,'Membership.Membership Drive')
+        dd = new_reports_link(@post,'Membership.Contact Continuous/Reinstates') 
+// javascript:
+//   function myFunction() {
+//     var x = document.getElementById("help");
+//     if (x.style.display  == "none") {
+//       console.log("says it display:none");
+//       x.style.display = 'block';
+//     } else {
+//       console.log("says it display:'block'");
+
+//       x.style.display ="none";
+//     }
+//   }
+
+//   // function myFunction() {
+//   //   var el = document.getElementById("help");
+//   //   if (el.classList.contains("w3-hide")) {
+//   //     console.log(el.classList);
+//   //     console.log("says it has w3-hide");
+//   //     el.classList.remove('w3-hide');
+//   //     el.classList.add('w3-show');
+//   //     console.log(el.classList);
+//   //   } else {
+//   //     console.log("says it doesn't have w3-hide");
+//   //     el.classList.remove('w3-show');
+//   //     el.classList.add('w3-hide');
+//   //   }
+//   // }
+
+
+

@@ -1,0 +1,16 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
+      p about is under constuction
+      p = "SCU #{@current_user.inspect}"
+      p = "SCP #{@current_post.inspect}"
+      p = "S #{session_inspect}"
+      p = "CP #{Current.post}"
+      p = "CU #{Current.user}"
+      p = "CPU #{Current.post_user}"
+      p = "CPV #{Current.post_visitor}"
+
+
+    = render partial:'home/sidebar'
+
+

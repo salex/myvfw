@@ -1,0 +1,55 @@
+ = new_links(Member)
+ .w3-container.w3-row.w3-white.min-height
+  .w3-card
+    = simple_form_for([@member]) do |f|
+      - unless f.error_notification.blank?
+        .callout.alert = f.error_notification
+      .w3-row
+        .form-actions.s12.w3-col.callout.success
+          = f.button :submit, "Create New Applicant", class:'w3-button w3-blue-gray'
+
+      .w3-row
+        .form-inputs
+          = f.input :status, as: :hidden
+          = f.input :first_name
+          = f.input :mi
+          = f.input :last_name
+          = f.input :address
+          = f.input :city
+          = f.input :state
+          = f.input :zip, as: :integer
+          = f.input :phone, as: :tel
+          = f.input :alt_phone, as: :tel
+          = f.input :email, as: :email
+          / = .input :served, as: :text
+          = f.simple_fields_for :applicant do |applicant| 
+            .s4.w3-col
+              = applicant.collection_radio_buttons :gender, [['Male', 'Male'] ,['Female', 'Female']], :first, :last
+
+            .s4.w3-col
+              = applicant.input :dob
+            .s4.w3-col
+              span.label-box SSAN (optional)
+              = applicant.input :ssan
+            .s12.m4.w3-col
+              = applicant.input :service_dates, placeholder:'From year-month to year-month'
+
+              = applicant.collection_check_boxes :branch, [['Army','Army'], ['Navy','Navy'], ['Air Force','Air Force'], ['Navy','Navy'], ['Marines','Marines'], ['Coast Guard','Coast Guard']], :first, :last
+              = applicant.collection_radio_buttons :type_memb, [['Annual', 'Annual'] ,['Life', 'Life'], ['Life Installment', 'Life Installment']], :first, :last
+
+            .s12.m8.w3-col
+              - txt = "World War II |Occupational Service | Korean Service (1950-54) |Korean Duty (1955-Present) |Vietnam Service |Expeditionary Operations | Desert Sheild/Storm |Bosnia/Kosovo |Grobal War on Terrorism |Afganistan (2001-Present) |Iraq (2003-11) |SSBN Deterrent Patrol"
+              - c = txt.split("|")
+              - a = []
+              - c.each do |i|
+                - a << [i.strip,i.strip]
+
+              .strong Qualifying Foreign Service
+              = applicant.collection_check_boxes :foreign, a, :first, :last
+              = applicant.input :hostile, placeholder:'Location and Date'
+
+      
+
+
+
+

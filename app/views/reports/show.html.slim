@@ -1,0 +1,57 @@
+.w3-container.w3-white.min-height
+  / = render partial:'reports/links', locals:{buttons:[link_to('Edit',edit_report_path(@report),class:'button noprint'),
+  /   link_to('Destroy',edit_report_path(@report), data: { confirm: 'Are you sure?' }, :method => :delete,class:'button noprint')]}
+  .w3-row-padding.lite-goldey
+  = show_links(@report)
+  / .w3-col.s3 
+  /   = link_to edit_report_path(@report),class:'w3-btn w3-text-lite-blue' do
+  /     span.w3-text-blue Edit Report &nbsp;
+  /     i class="fas fa-edit"
+    
+  / .w3-col.s6 
+  /   h6.strong Program_report
+  .w3-row-padding
+    .s12.m6.w3-col
+      table.show-table.w100
+        
+        tr
+          th Type report:
+          td = @report.type_report
+        tr
+          th Date:
+          td = @report.date
+        tr
+          th Details:
+          td = @report.details
+        tr
+          th Area:
+          td = @report.area
+        tr
+          th Remarks:
+          td = text_area_tag nil,@report.remarks, rows:3
+    .s12.m6.w3-col
+      table.show-table.w100
+        tr
+          th Volunteers:
+          td = @report.volunteers
+        tr
+          th Hours each:
+          td = @report.hours_each
+        tr
+          th Miles each:
+          td = @report.miles_each
+        tr
+          th Expenses:
+          td = @report.expenses
+        tr
+          th Total hours:
+          td = @report.total_hours
+        tr
+          th Total miles:
+          td = @report.total_miles
+        tr
+          th Updated by:
+          td = @report.updated_by
+
+
+

@@ -1,0 +1,12 @@
+.w3-container.w3-row.w3-white.min-height
+  h5 Contact Addresses
+  p The following text fields contain contact addresses for Active Members. eMail add can be copied and pasted into a mail message. Street addresses can be copied into a file and used with a word processor mail merge feature.
+
+  .callout.m6.w3-col
+    .strong eMail Addresses
+    = text_area_tag nil,@email,rows:20,cols:50
+
+  .callout.m6.w3-col
+    .strong Street Addreses
+    = text_area_tag nil,@address,rows:20,cols:50
+

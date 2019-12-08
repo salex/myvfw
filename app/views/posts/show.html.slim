@@ -1,0 +1,82 @@
+= show_links(@post)
+
+
+.w3-container.w3-white.min-height
+
+  / .w3-row-padding
+  /   .w3-col.m2
+
+  /   .w3-col.m10
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Name:
+    .w3-col.s9
+      = @post.name
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Number:
+    .w3-col.s9
+      = @post.numb
+
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Department:
+    .w3-col.s9
+      = @post.department
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong District:
+    .w3-col.s9
+      = @post.district_id
+
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Address:
+    .w3-col.s9
+      = @post.address
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong City:
+    .w3-col.s9
+      = @post.city
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong State:
+    .w3-col.s9
+      = @post.state
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong ZIP:
+    .w3-col.s9
+      = @post.zip
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong eMail:
+    .w3-col.s9
+      = @post.email
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Phone:
+    .w3-col.s9
+      = @post.phone
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong FAX:
+    .w3-col.s9
+      = @post.fax
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong txt:
+    .w3-col.s9
+      = @post.txt
+  .w3-row
+    .w3-col.s3.my-text-right.my-pad-left-right
+      strong Web Site:
+    .w3-col.s9
+      = @post.web
+  / t.string "zip"
+      / t.string "email"
+      / t.string "fax"
+      / t.string "web"
+      / t.string "txt"
+

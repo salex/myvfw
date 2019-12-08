@@ -1,0 +1,55 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
+      h4.strong.text-center.malt Upcoming Calendar Events
+      .w3-row
+        - keys = @events.keys.sort
+        - get_col_mapping(keys.count,3).each do |c|
+
+          .m4.w3-col
+            - c.each do |i|
+              - day = @events[keys[i]]
+              strong = keys[i].strftime("%a %m/%d")
+              .callout
+                - day.each do |e|
+                  dl.indent-dd.indent1 style="color:#{e[:color]}"
+                    dt = e[:summary]
+                    - if e[:start_time].hour.zero?
+                      dd All Day
+                    - else
+                      dd = e[:start_time].strftime("%H%M") + " until " + e[:end_time].strftime("%H%M") + " Hours"
+                    - if e[:desc].present?
+                      dd = e[:desc]
+
+
+   
+    = render partial:'home/sidebar'
+
+
+/ .w3-container.min-height.w3-row
+/   == render partial: 'home/sidebar'
+
+/   .s12.m10.w3-col
+
+/     - keys = @events.keys.sort
+/     h6
+/       span.strong Upcoming Calendar Events
+/       |&nbsp;
+/       / span = link_to 'Refresh Calendars', display_calendars_path(refresh:true)
+/     - get_col_mapping(keys.count,2).each do |c|
+
+/       .m6.w3-col
+/         - c.each do |i|
+/           - day = @events[keys[i]]
+/           strong = keys[i].strftime("%a %m/%d")
+/           .callout
+/             - day.each do |e|
+/               dl.indent-dd.indent1 style="color:#{e[:color]}"
+/                 dt = e[:summary]
+/                 - if e[:start_time].hour.zero?
+/                   dd All Day
+/                 - else
+/                   dd = e[:start_time].strftime("%H%M") + " until " + e[:end_time].strftime("%H%M") + " Hours"
+/                 - if e[:desc].present?
+/                   dd = e[:desc]
+

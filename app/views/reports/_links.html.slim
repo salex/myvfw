@@ -1,0 +1,37 @@
+.w3-bar.goldey.noprint
+  span.link-bar-header.w3-large.w3-left Reports Menu
+  = link_to "New Report", menu_reports_path, class:' w3-bar-item w3-button w3-hover-blue-gray'
+  = link_to "List Reports", list_reports_path, class:' w3-bar-item w3-button w3-hover-blue-gray'
+
+  .w3-dropdown-hover
+    .w3-button.w3-hover-blue-gray 
+      |Summary
+      i.fa.fa-caret-down
+
+    .w3-dropdown-content.w3-bar-block.w3-card-4
+      = link_to "Summary (Year)", reports_path,class:"w3-bar-item w3-button"
+      = link_to "Audit (1)", audit_summary_reports_path(audit:0),class:"w3-bar-item w3-button"
+      = link_to "Audit (2)", audit_summary_reports_path(audit:1),class:"w3-bar-item w3-button"
+      = link_to "Audit (3)", audit_summary_reports_path(audit:2),class:"w3-bar-item w3-button"
+      = link_to "Audit (4)", audit_summary_reports_path(audit:3),class:"w3-bar-item w3-button"
+  = link_to "Last Reports", list_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+  = link_to "Last Summary", summary_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+  = link_to "Last Print", print_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+
+
+  .w3-dropdown-hover
+    .w3-button.w3-hover-blue-gray
+      |Print
+      i.fa.fa-caret-down
+
+    .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
+      = link_to "Summary (Year)", print_reports_path,class:"w3-bar-item w3-button"
+      = link_to "Audit (1)", print_reports_path(qtr:1),class:"w3-bar-item w3-button"
+      = link_to "Audit (2)", print_reports_path(qtr:2),class:"w3-bar-item w3-button"
+      = link_to "Audit (3)", print_reports_path(qtr:3),class:"w3-bar-item w3-button"
+      = link_to "Audit (4)", print_reports_path(qtr:4),class:"w3-bar-item w3-button"
+
+  / = link_to "Help",'#',class:"w3-bar-item w3-button w3-pale-green w3-right", onclick:"myFunction()"
+
+
+

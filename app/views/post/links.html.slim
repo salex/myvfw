@@ -1,0 +1,11 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile.markdown[style="width:85%;padding-right:16px;"]
+      h4.strong.text-center.malt Web Site Links 
+      - @markups.each do |m|
+        h6.strong = m.title
+        span.annotate = m.leadin
+        = markdown_text(m.content)
+
+    = render partial:'home/sidebar'
+

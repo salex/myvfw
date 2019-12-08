@@ -1,0 +1,67 @@
+= form_for @post do |f|
+  - if @post.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
+      ul
+        - @post.errors.full_messages.each do |message|
+          li = message
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong Name:
+    .w3-col.m4
+      = f.text_field :name, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong Number:
+    .w3-col.m4
+      = f.text_field :numb, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong Address:
+    .w3-col.m4
+      = f.text_field :address, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong City:
+    .w3-col.m4
+      = f.text_field :city, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong State:
+    .w3-col.m4
+      = f.text_field :state, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong ZIP:
+    .w3-col.m4
+      = f.text_field :zip, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong eMail:
+    .w3-col.m4
+      = f.text_field :email, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong Phone:
+    .w3-col.m4
+      = f.text_field :phone, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong FAX:
+    .w3-col.m4
+      = f.text_field :fax, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong txt:
+    .w3-col.m4
+      = f.text_field :txt, class: 'w3-input w3-border'
+  .w3-row.w3-padding-small
+    .w3-col.m2.my-text-right.my-pad-left-right
+      strong Web Site:
+    .w3-col.m4
+      = f.text_field :web, class: 'w3-input w3-border'
+  .w3-col.m2.w3-padding-small
+    .w3-button.w3-black.strong = f.submit
+
+
+

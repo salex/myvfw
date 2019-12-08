@@ -1,0 +1,59 @@
+/ = render partial:'home/index_links', locals:{instance:@markups}
+- @dropdown = capture do
+  .w3-dropdown-hover.w3-hover-blue-gray
+    .w3-button.w3-hover-blue-gray.goldey
+      |Filter Categories
+      i.fa.fa-caret-down
+    .w3-dropdown-content.w3-bar-block.w3-card-4
+      = link_to "All", markups_path,class:"w3-bar-item w3-button"
+      - Markup::CATAGORIES.each do |c|
+        = link_to c, markups_path(filter:c),class:"w3-bar-item w3-button"
+
+.w3-row-padding.w3-white.min-height
+  = index_links(Markup, buttons:[@dropdown])
+
+
+  / .w3-bar.goldey.noprint.w3-row
+  /   .w3-col.m6
+  /     = link_to "New Markup", new_markup_path, class:' w3-bar-item w3-btn w3-hover-blue-gray' if Current.user.is_admin?
+  /     = @dropdown
+  /     / .w3-dropdown-hover.w3-hover-blue-gray
+  /     /   .w3-button.w3-hover-blue-gray.goldey
+  /     /     |Filter Categories
+  /     /     i.fa.fa-caret-down
+  /     /   .w3-dropdown-content.w3-bar-block.w3-card-4
+  /     /     = link_to "All", markups_path,class:"w3-bar-item w3-button"
+  /     /     - Markup::CATAGORIES.each do |c|
+  /     /       = link_to c, markups_path(filter:c),class:"w3-bar-item w3-button"
+  /   .w3-col.m6 
+  /     .strong
+  /       |Markups&nbsp;
+  /       = Current.post.name
+
+
+  table.w3-table-all
+    tr.malt
+      th Date
+      th Category   
+      th.w25 Title
+      th.w15 Leadin
+      th Active
+      - if Current.user.is_admin?
+        th Actions 
+
+    - @markups.each do |markup|
+      tr
+        td.action-bar = link_to markup.date, markup_path(markup)
+
+        td = markup.category
+        td.w20p = markup.title
+        td.w30p = markup.leadin
+        td = markup.active
+        - if Current.user.is_admin?
+          td.action-bar 
+            = link_to 'Edit', edit_markup_path(markup),class:'w3-btn w3-blue-gray w3-padding-small'
+            / i.fas.fa-edit a
+            / <i class="fa fa-car" style="font-size:24px;color:blue;"></i>
+            | &nbsp;
+            = link_to 'Destroy', markup, data: { confirm: 'Are you sure?' }, :method => :delete,class:'w3-btn w3-blue-gray w3-padding-small w3-hover-red'
+

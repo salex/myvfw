@@ -1,0 +1,21 @@
+br
+= simple_form_for(@officer) do |f|
+  - unless f.error_notification.blank?
+    .callout.alert = f.error_notification
+  / .w3-row
+  /   .form-actions.s12.w3-col
+  /     = f.button :submit, class:'w3-button w3-blue'
+
+  .form-inputs.s12.m5.w3-col.w3-card
+
+
+    = f.association :member
+    = f.input :position, collection:Officer::OFFICERS
+    = f.input :from_date, as: :string, input_html:{data:{behavior:'flatpickr'}}
+    = f.input :to_date, as: :string, input_html:{data:{behavior:'flatpickr'}}
+    = f.input :current
+    br
+    = f.button :submit, class:'w3-button w3-blue'
+    div &nbsp;
+
+

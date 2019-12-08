@@ -1,0 +1,9 @@
+= other_links(Member, header:"Import VFW Member list")
+.w3-container.w3-white.min-height
+  p
+    | This form requires a CSV (comma separated values) file downloaded from the VFW site. This requires quartermaster privileges.
+      Just choose the file that was downloaded and click the import button. New members will be created if they do not exist. Existing members information will be
+      replaced, except Email if it exists on the local site and not on the VFW site. Members on local site not in imported list have their pay status set to 'Missing'.
+  = form_tag import_members_path, multipart: true do
+      = file_field_tag :file 
+      = submit_tag "Import", class:'w3-button w3-blue-gray '

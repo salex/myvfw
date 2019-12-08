@@ -1,0 +1,41 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
+      - if @greeting.present?
+         = render partial:'home/markup_home',locals:{article: @greeting}
+      - else
+        .w3-container.w3-pale-red.w3-leftbar.w3-border-red
+          p =  "Post #{@post.numb} has not been initialized"
+          p = session_inspect
+          p = Current.post
+      - if @alerts.present?
+        - @alerts.each do |alert|
+          - case alert.category
+            - when 'alert'
+              .w3-container.w3-pale-red.w3-leftbar.w3-border-red.w3-display-container
+                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
+                = render partial:'home/markup_home',locals:{article: alert}
+
+            - when 'warning'
+              .w3-container.w3-pale-yellow.w3-leftbar.w3-border-yellow.w3-display-container
+                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
+                = render partial:'home/markup_home',locals:{article: alert}
+            - when 'success'
+              .w3-container.w3-pale-green.w3-leftbar.w3-border-green.w3-display-container
+                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
+                = render partial:'home/markup_home',locals:{article: alert}
+            - when 'info'
+              .w3-container.w3-pale-blue.w3-leftbar.w3-border-blue.w3-display-container
+                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
+                = render partial:'home/markup_home',locals:{article: alert}
+
+          
+        - if @home.present?
+          - @home.each do |article|
+            = render partial:'home/markup_home',locals:{article: article}
+        - if @slim.present?
+          = render inline: @slim.content, type: :slim
+        
+    = render partial:'home/sidebar'
+
+ 

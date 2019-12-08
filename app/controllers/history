@@ -1,0 +1,19 @@
+504  cd ../my*
+  505  bin/rails g resource --help
+  506  bin/rails g scaffold post --no-migration
+  507  bin/rails g ressource post --no-migration
+  508  bin/rails g resource post --no-migration
+  509  rails g --help
+  510  rails g scaffold_controller --help
+  511  rails g scaffold_controller post
+  512   rails g scaffold_controller --help
+  513   rails g scaffold_controller markup markup_type user_id:integer post_id:integer category title conten active:boolean
+  514  bin/rails c
+  515  bin/rails db:reset
+  516  bin/rails c
+  517  bin/rails db:reset
+  518  bin/rails c
+  519  bin/rails c
+  520  bin/rails g migration add_department_to_post department
+  521  bin/rails db:migrate
+  rails g scaffold_controller user type email username full_name password password_confirmatin roles reset_token post:integer district:integer department

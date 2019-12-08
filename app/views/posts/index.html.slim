@@ -1,0 +1,28 @@
+= index_links(Post)
+.w3-container.w3-white
+
+  / p = session_inspect
+  / p = Current.post
+  table.w3-table
+    thead
+      tr
+        th Post
+        th Name
+        th City
+        th Actions
+        th
+        th
+
+    tbody
+      - @posts.each do |post|
+        tr
+          td = post.numb
+          td = post.name
+          td = post.city
+          td.actions
+            span = link_to 'Show', post
+            span = link_to 'Edit', edit_post_path(post)
+            span = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+
+
+

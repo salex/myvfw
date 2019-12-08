@@ -1,0 +1,48 @@
+table.w3-table-all
+  tr
+    th Full Name
+    th Vfw ID
+    th Age
+    th UD
+    th Contact
+    th City
+    th Pay Status
+    th Paid Thru
+    th Days
+
+    - if @current_user.present?
+      th E &nbsp;D
+
+
+  - members.each do |member|
+    tr class="#{member.undeliverable == 'Yes' ? 'undeliverable' : ''}"
+      td 
+        = link_to member.full_name,member_path(member),class:'w3-text-blue w3-hover-text-green'
+
+      td = member.vfw_id
+      td = member.age
+      td = member.undeliverable
+      td.markdown = display_contact(member)
+      / member.email.present? ? ((member.phone ||= '') + mail_to(member.email,'E')).html_safe : member.phone
+      td = member.state != 'AL' ? "#{member.city}/#{member.state}" : member.city
+      td = params[:limit].present? && params[:limit] == 'Missing' ? "Last-#{member.last_status}" : member.pay_status
+      - if member.pay_status == 'Life Member'
+        td &nbsp;
+        td &nbsp;
+      -else
+        td = member.paid_thru
+        - if member.paid_thru.present?
+          - exp = (Chronic.parse(member.paid_thru).to_date - Date.today).to_i
+          - if exp < 0
+            td.strong EXP
+          - elsif exp < 30 
+            td.strong = exp
+          - else
+            td = exp
+        - else
+          td &nbsp;
+      - if @current_user.present?
+
+        td.action-bar
+          = link_to 'Edit', edit_member_path(member), class:'edit-button'
+          = link_to 'Destroy', member_path(member), data: { confirm: 'Are you sure?' }, :method => :delete, class:'destroy-button'

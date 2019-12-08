@@ -1,0 +1,27 @@
+.w3-bar.malty 
+  .w3-row
+    .w3-col.m3
+      = image_tag('VFW-logo-header.png',width:200)
+    - if Current.post.blank?
+      .w3-col.m6
+        .w3-center 
+          .box 
+            strong Veterans of Foreign Wars
+          .box Nobody does more for Veterans
+      .w3-col.m3.w3-center
+        .box Something
+        .box 
+        .box 
+    - else
+      .w3-col.m6
+        .w3-center 
+          .box 
+            strong = "#{Current.post.name}"
+          .box = "#{Current.post.city} #{Current.post.state}"
+      .w3-col.m3.w3-center
+        .box = Current.post.address
+        .box =  "#{Current.post.city} #{Current.post.state}, #{Current.post.zip} "
+        .box = "Phone: #{Current.post.phone}"
+
+
+

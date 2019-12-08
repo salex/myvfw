@@ -1,0 +1,36 @@
+br
+= simple_form_for(@member) do |f|
+  - unless f.error_notification.blank?
+    .callout.alert = f.error_notification
+  .w3-row-padding.w3-card
+    div &nbsp;
+    .form-inputs.s12.m6.w3-col
+
+      = f.input :vfw_id
+      = f.input :first_name
+      = f.input :mi
+      = f.input :last_name
+      = f.input :full_name
+      = f.input :phone
+      = f.input :address
+      = f.input :city
+      = f.input :state
+      = f.input :zip
+      = f.input :status
+    .form-inputs.s12.m6.w3-col
+      = f.input :email
+      = f.input :type_pay
+      = f.input :pay_year
+      = f.input :pay_status
+      = f.input :pay_date, as: :string,input_html:{data:{behavior:'flatpickr'}}
+      / = f.input :country
+      = f.input :paid_thru
+      = f.input :days_remaining
+      = f.input :last_status
+      = f.input :served
+      = f.input :alt_phone
+    .form-actions.s12.w3-col
+      = f.button :submit, class:'w3-button w3-blue-gray'
+    div &nbsp;
+
+

@@ -1,0 +1,114 @@
+// html,body{font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+
+$malt: #991A1E;
+$vfw_gold: #A79055;
+$dark-blue: #0F3E61;
+
+.w100 {width:100%;}
+.w10p {width:10%;}
+.w20p {width:20%;}
+.w25p {width:25%;}
+
+.w30p {width:30%;}
+.w40p {width:40%;}
+
+.malty {background-color: $malt;color:#ddd;}
+.lgoldey,.lite-goldey  {background-color: lighten($vfw_gold,20);color:#333;}
+.goldey {background-color: $vfw_gold;color:#f8f8f8;}
+.strong {font-weight: bold;}
+body {
+  // background-color: lighten($malt,50);
+  background-color: $dark-blue;
+  // background-image: image-url("flag.jpeg");
+}
+.sticky-menu {
+  // list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+  // overflow: hidden;
+  // background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.my-pad-left-right {
+  padding: 0 12px;
+}
+.my-text-right {text-align: right;}
+.min-height-80 , .min-height {min-height: 80vh;}
+.print-page {height: 11in;width: 8.5in;margin:24px;}
+a {
+  text-decoration: none;
+}
+.box-center{
+  margin-top:20vh;
+  border: solid 1px #bbb;
+  padding:2rem;
+  background-color: white;
+}
+
+.dark-blue {background-color: $dark-blue;}
+
+@media print {
+  .page-break {page-break-after: always!important;}
+  .top,.header {display:none;}
+  fieldset {border:none;}
+  body {font-size: 11pt!important;background-color: #fff;}
+
+  a[href]:after {
+    content: none !important;
+  }
+  .noprint{
+    display: none !important;
+  }
+}
+span.link-bar-header{
+  font-weight: bold;
+  display:inline-block;
+  margin-right: 24px;
+  padding-top: 4px;
+  color:black;
+}
+table.small-table{
+  border-collapse: collapse;
+  width:100%;
+  // font-size: 1.4vw;
+  // line-height:1.5vw;
+  margin: auto;
+  th {text-align: left}
+  td.under {
+    text-decoration: underline;
+  }
+}
+.w3-bar button {margin:2px;}
+h5 {margin-top:8px; margin-bottom: 8px;}
+
+.table-cell-borders {
+  td, th {border:solid #333 1px;}
+}
+
+.w3-padding-bottom {padding-bottom: 8px!important;}
+
+.markdown {
+  a {color:blue;}
+}
+.action-bar  {
+  a {color:blue;
+    padding-right: 8px;}
+  a:hover {color:$malt;}
+}
+.form-inputs {
+  // simple form stuff
+  .input label {
+    display:inline-block;
+    padding-right: 12px;
+
+    width:30%;
+    height: 24px;
+    
+    background-color: #eee;
+
+    text-align: right;
+  }
+}

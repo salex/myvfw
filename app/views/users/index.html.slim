@@ -1,0 +1,35 @@
+= index_links(User)
+.w3-container.w3-white 
+
+  table.w3-table-all
+    thead
+      tr
+        th UserType
+        th Email
+        th Username
+        th Full name
+        th Roles
+        th Post
+        th District
+        th Department
+        th
+        th
+        th
+
+    tbody
+      - @users.each do |user|
+        tr
+          td = user.user_type
+          td = user.email
+          td = user.username
+          td = user.full_name
+          td = user.roles
+          td = user.post
+          td = user.district
+          td = user.department
+          td = link_to 'Show', user
+          td = link_to 'Edit', edit_user_path(user)
+          td = link_to 'Destroy', user, data: { confirm: 'Are you sure?' }, method: :delete
+
+  br
+

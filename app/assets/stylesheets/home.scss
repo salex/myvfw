@@ -1,0 +1,67 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.show-table{
+  border-collapse: collapse;
+  th {
+    text-align: right;
+    font-weight: bold;
+    width: 40%;
+    background-color: #fafafa;
+    border-bottom: solid 1px #eee;
+    padding: 0.2rem;
+    padding-right: 1.0rem;
+
+  }
+  td {
+    width: 60%;
+    background-color: #fff;
+    padding: 0.2rem;
+    border-bottom: solid 1px #eee;
+
+
+  }
+}
+
+button, input[type='submit'], input[type='button'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: transparent;
+
+}
+
+dl.indent-dd {
+  font-size: 1rem;
+  dd{margin-left: 1rem; line-height: 1.1rem;margin-bottom: 0.55rem;}
+}
+
+
+dl.outline {
+  dt {font-size: 1.2rem;font-weight: bold;}
+  dd {margin-left: 1.5rem; margin-bottom: 0.5rem}
+  dd li {line-height: 1.1rem}
+}
+.indent1 {margin-left: 1rem;}
+.indent2 {margin-left: 2rem;}
+
+span.annotate, div.annotate, dd.annotate, dl.annotate, li.annnotate {
+  font-style: italic;
+  font-size: 0.8rem!important;
+  line-height: 0.9rem;
+  font-weight: normal;
+}
+
+.hidden {display:none;}
+
+.undeliverable {
+
+  td{ color:red !important;}
+}
+
+.vdap-menu {
+  background-color: #ddd;
+  border-bottom: solid black 2px;
+}
+
+.text-center {text-align: center;}

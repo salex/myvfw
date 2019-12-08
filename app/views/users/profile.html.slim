@@ -1,0 +1,22 @@
+fieldset.w3-container.w3-white.min-height
+  .strong Update Profile
+  = simple_form_for(@user, url: update_profile_user_path(@user), method: :patch) do |f|
+    - unless f.error_notification.blank?
+      .callout.alert = f.error_notification
+    .w3-row
+      .form-inputs.m8.w3-col
+        = f.input :email
+        = f.input :username
+        = f.input :full_name
+        .annotate You may change your password below. Leave blank if just updating eMail or Username.
+        = f.input :password
+        = f.input :password_confirmation
+        .w3 
+          strong Roles
+          br
+          = @user.roles
+
+        .w3
+          = f.button :submit, 'Update Profile',class:'w3-button w3-blue-gray'
+          |&nbsp;&nbsp;&nbsp;
+          = link_to "Cancel", root_path,class:'w3-button w3-pale-yellow'

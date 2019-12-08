@@ -1,0 +1,17 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title == content_for?(:title) ? yield(:title) : "MyVFW"
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tag
+    = csp_meta_tag
+
+  body
+    .w3-container.w3-white.print-page
+      / .w3-white.min-height-80
+      == yield

@@ -1,0 +1,31 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title
+      = content_for?(:title) ? yield(:title) : "vdat - #{controller_name}"
+
+    == javascript_pack_tag "application"
+    == stylesheet_link_tag "application", :media => 'all'
+    = csrf_meta_tag
+    / script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" 
+
+
+  body
+    header.noprint
+      == render 'layouts/menubar'
+      - flash.each do |name, msg|
+        - if msg.is_a?(String)
+          div[class="callout  #{name.to_s == 'notice' ? 'success' : 'alert'}" style="z-index:0;" data-closable]
+            button.close-button aria-label=("Dismiss alert") data-close="" type="button" 
+              span aria-hidden="true"  &times;
+            = content_tag :h5, content_tag(:strong,msg)
+    .vdap-menu.w3-row-padding
+      == render 'layouts/vdap'
+    .w3-container.w3-white
+      .w3-row-padding
+
+        == yield
+

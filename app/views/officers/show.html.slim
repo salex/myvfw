@@ -1,0 +1,28 @@
+= show_links(@officer)
+.w3-container.w3-white.min-height
+  
+  table.s12.m6.w3-col.show-table
+    
+
+    tr
+      th Member:
+      td = @officer.name
+    tr
+      th Position:
+      td = @officer.position
+    tr
+      th From date:
+      td = @officer.from_date
+    tr
+      th To date:
+      td = @officer.to_date
+    tr
+      th Current:
+      td = @officer.current
+    tr
+      th Seq:
+      td = @officer.seq
+    
+    table.s12.m6.w3-col.show-table
+
+

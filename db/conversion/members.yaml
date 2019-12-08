@@ -1,0 +1,6577 @@
+---
+- vfw_id: 459166
+  first_name: Howard
+  mi: Q
+  last_name: Adams
+  full_name: Adams, Howard Q
+  phone: 
+  address: 933 Old Pleasant Valley
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 94
+  undeliverable: 
+- vfw_id: 10190106
+  first_name: Steven
+  mi: V
+  last_name: Alex
+  full_name: Alex, Steven V
+  phone: "(256) 4674348"
+  address: 405 Karaway Hls
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: salex@mac.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 10600612
+  first_name: Brandon
+  mi: P
+  last_name: Alexander
+  full_name: Alexander, Brandon P
+  phone: "(256) 4947726"
+  address: 100 Porter Dr
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: Continuous
+  email: alex1178.ba@gmail.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: Continuous
+  served: 
+  alt_phone: 
+  age: 34
+  undeliverable: 
+- vfw_id: 11001959
+  first_name: Kyle
+  mi: M
+  last_name: Alexander
+  full_name: Alexander, Kyle M
+  phone: "(256) 13 5525"
+  address: 322 Ap Hollingsworth Rd
+  city: Wellington
+  state: AL
+  zip: '36279'
+  status: New
+  email: kylealexander67@hotmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-08-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 22
+  undeliverable: 
+- vfw_id: 10222880
+  first_name: Charles
+  mi: A
+  last_name: Alietto
+  full_name: Alietto, Charles A
+  phone: "(256  )4428593"
+  address: 1325 Pleasant Valley Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: Roffiano3@gmail.com
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9587528
+  first_name: Stacey
+  mi: L
+  last_name: Alldredge
+  full_name: Alldredge, Stacey L
+  phone: 
+  address: 255 Oak Valley Dr
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 46
+  undeliverable: 
+- vfw_id: 4821229
+  first_name: Green
+  mi: L
+  last_name: Alley
+  full_name: Alley, Green L
+  phone: "(256) 5438330"
+  address: 2211 S 11th St
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Continuous
+  email: alleyscarpet@bellsouth.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 2710164
+  first_name: Charles
+  mi: D
+  last_name: Baker
+  full_name: Baker, Charles D
+  phone: 
+  address: 615 Oneal Dr
+  city: Birmingham
+  state: AL
+  zip: '35226'
+  status: Continuous
+  email: don_baker@bellsouth.net
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 81
+  undeliverable: 
+- vfw_id: 9691170
+  first_name: Richard
+  mi: W
+  last_name: Barnes
+  full_name: Barnes, Richard W
+  phone: "(256) 9277902"
+  address: 1695 County Road 61
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Life
+  email: bubbabar13@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 9640378
+  first_name: Tommy
+  mi: H
+  last_name: Batson
+  full_name: Batson, Tommy H
+  phone: "(256) 5437260"
+  address: 30 Aqua Vista Dr W
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-01-31'
+  days_remaining: '58'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 82
+  undeliverable: 
+- vfw_id: 10570617
+  first_name: Lorena
+  mi: L
+  last_name: Beam
+  full_name: Beam, Lorena L
+  phone: "(256) 4907595"
+  address: 400 Walter Whitt Rd
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: Life
+  email: lorenalbeam@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 53
+  undeliverable: 
+- vfw_id: 4911250
+  first_name: Kenneth
+  mi: E
+  last_name: Beason
+  full_name: Beason, Kenneth E
+  phone: "(256  )5387753"
+  address: 913 3rd St SW
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1340300
+  first_name: Joseph
+  mi: L
+  last_name: Bell
+  full_name: Bell, Joseph L
+  phone: 
+  address: PO Box 773
+  city: Grayson
+  state: GA
+  zip: '30017'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 10457594
+  first_name: Richard
+  mi: C
+  last_name: Benka
+  full_name: Benka, Richard C
+  phone: 
+  address: 37 Horizon Pl
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 64
+  undeliverable: 
+- vfw_id: 1419352
+  first_name: Dale
+  mi: M
+  last_name: Bigelow
+  full_name: Bigelow, Dale M
+  phone: 
+  address: PO Box 846
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 7016209
+  first_name: David
+  mi: W
+  last_name: Billingsley
+  full_name: Billingsley, David W
+  phone: 
+  address: 124 Washington St
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 
+- vfw_id: 476768
+  first_name: Charles
+  mi: A
+  last_name: Bircheat
+  full_name: Bircheat, Charles A
+  phone: 
+  address: 507 Cherry St; Apt 131
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 1475371
+  first_name: William
+  mi: B
+  last_name: Bishop
+  full_name: Bishop, William B
+  phone: 
+  address: 4640 Lay Springs Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 49
+  undeliverable: 
+- vfw_id: 3113256
+  first_name: Otis
+  mi: R
+  last_name: Blackwell
+  full_name: Blackwell, Otis R
+  phone: 
+  address: 5717 Fairview Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1046388
+  first_name: Johnnie
+  mi: F
+  last_name: Blevins
+  full_name: Blevins, Johnnie F
+  phone: 
+  address: 11095 Lee Road 72
+  city: Camp Hill
+  state: AL
+  zip: '36850'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 
+- vfw_id: 299020
+  first_name: Charles
+  mi: H
+  last_name: Bolton
+  full_name: Bolton, Charles H
+  phone: 
+  address: 181 Vinson Rd
+  city: Fort Valley
+  state: GA
+  zip: '31030'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 'Yes'
+- vfw_id: 2721446
+  first_name: James
+  mi: A
+  last_name: Booker
+  full_name: Booker, James A
+  phone: 
+  address: 604 N College St
+  city: Gadsden
+  state: AL
+  zip: '35905'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10998825
+  first_name: Hillsman
+  mi: L
+  last_name: Boyers
+  full_name: Boyers, Hillsman L
+  phone: "(256) 4421720"
+  address: 3623 Quail Point Way
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: New
+  email: hboyers@gmail.com
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2019-08-31'
+  days_remaining: 
+  last_status: Installment Life 2019-12-03
+  served: 
+  alt_phone: 
+  age: 67
+  undeliverable: 
+- vfw_id: 6032992
+  first_name: Jimmy Ray
+  mi: 
+  last_name: Bozeman
+  full_name: 'Bozeman, Jimmy Ray '
+  phone: "(256) 3902901"
+  address: 515 Westminster Dr
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: jrb1949@att.net
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2018-12-31'
+  days_remaining: 
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 5499090
+  first_name: Earl
+  mi: C
+  last_name: Breedwell
+  full_name: Breedwell, Earl C
+  phone: "(256  )5385386"
+  address: 172 Adcock Mayo Rd
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1046389
+  first_name: Dafford
+  mi: D
+  last_name: Brewster
+  full_name: Brewster, Dafford D
+  phone: 
+  address: 1909 Posey Rd
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 1371516
+  first_name: Bobby
+  mi: G
+  last_name: Bright
+  full_name: Bright, Bobby G
+  phone: 
+  address: 421 Marker Ave
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 88
+  undeliverable: 
+- vfw_id: 1413848
+  first_name: Jerry
+  mi: W
+  last_name: Broccolo
+  full_name: Broccolo, Jerry W
+  phone: "(256) 5430304"
+  address: 747 Elliott Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-04-17
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 11319267
+  first_name: John
+  mi: C
+  last_name: Brogdon
+  full_name: Brogdon, John C
+  phone: "(760) 4016324"
+  address: 102 Southgate Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: New
+  email: brogdonjc@msn.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 48
+  undeliverable: 
+- vfw_id: 11319269
+  first_name: Michelle
+  mi: D
+  last_name: Brogdon
+  full_name: Brogdon, Michelle D
+  phone: "(760) 4016323"
+  address: 102 Southgate Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: New
+  email: brogdon.michelle@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 41
+  undeliverable: 
+- vfw_id: 10273730
+  first_name: Jeremy
+  mi: M
+  last_name: Brown
+  full_name: Brown, Jeremy M
+  phone: "(256  )6892856"
+  address: 411 Hilltop Rd.
+  city: Weaver
+  state: AL
+  zip: '36277'
+  status: 
+  email: michael.jeremy.brown1@us.army.mil
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10190109
+  first_name: Randall
+  mi: E
+  last_name: Brown
+  full_name: Brown, Randall E
+  phone: "(256  )92 8787"
+  address: 5299 Johnson St
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: 
+  email: randall.e.brown@us.army.mil
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 505523
+  first_name: Roy Lee
+  mi: ''
+  last_name: Brown
+  full_name: 'Brown, Roy Lee '
+  phone: ''
+  address: 7200 Tabor Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: ''
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-11-28
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Deceased
+  served: Reported by family 11/11/2017
+  alt_phone: ''
+  age: 95
+  undeliverable: 
+- vfw_id: 9695159
+  first_name: Jerry
+  mi: A
+  last_name: Bruce
+  full_name: Bruce, Jerry A
+  phone: "(256) 8319754"
+  address: 122 Main St
+  city: Oxford
+  state: AL
+  zip: '36203'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-25'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 3324730
+  first_name: Billy
+  mi: H
+  last_name: Bryant
+  full_name: Bryant, Billy H
+  phone: 
+  address: 5605 3rd St
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-04-29'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10233610
+  first_name: Clarence
+  mi: M
+  last_name: Bryant
+  full_name: Bryant, Clarence M
+  phone: "(256) 4424319"
+  address: 4740 Crimson Sage Dr
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Continuous
+  email: Hap2mshap@aol.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 86
+  undeliverable: 
+- vfw_id: 10082130
+  first_name: Kyle
+  mi: G
+  last_name: Bryant
+  full_name: Bryant, Kyle G
+  phone: 
+  address: 2675 Elkmont Dr
+  city: Clarksville
+  state: TN
+  zip: '37040'
+  status: 
+  email: kyle.g.bryant@us.army.mil
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-25'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 32
+  undeliverable: 
+- vfw_id: 10239331
+  first_name: Dennis
+  mi: G
+  last_name: Bullock
+  full_name: Bullock, Dennis G
+  phone: "(256  )3993012"
+  address: 3935 Reeves Rd
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: 
+  email: dennisbullock506@yahoo.com
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10968759
+  first_name: Steward
+  mi: D
+  last_name: Burkey
+  full_name: Burkey, Steward D
+  phone: "(205) 8739528"
+  address: 426 Central Ave
+  city: Oneonta
+  state: AL
+  zip: '35121'
+  status: New
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-05-31'
+  days_remaining: EXPIRED
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 37
+  undeliverable: 
+- vfw_id: 10106568
+  first_name: Curtis
+  mi: D
+  last_name: Burks
+  full_name: Burks, Curtis D
+  phone: "(256  )3124682"
+  address: 151 Whisenant Rd
+  city: Steele
+  state: AL
+  zip: '35987'
+  status: 
+  email: dkburks03@peoplepc.com
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 5549015
+  first_name: Donald
+  mi: E
+  last_name: Butler
+  full_name: Butler, Donald E
+  phone: 
+  address: 8350 Lee Road 146
+  city: Opelika
+  state: AL
+  zip: '36804'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 11326727
+  first_name: Travis
+  mi: L
+  last_name: Butler
+  full_name: Butler, Travis L
+  phone: "(256) 6131869"
+  address: 3665 US Highway 11 S
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: New
+  email: travis.butler2@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 50
+  undeliverable: 
+- vfw_id: 10918349
+  first_name: Richard
+  mi: W
+  last_name: Byer
+  full_name: Byer, Richard W
+  phone: "(781) 2429385"
+  address: 88 Sutton Cir Apt 19
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: runall32@yahoo.com
+  type_pay: '4'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 55
+  undeliverable: 
+- vfw_id: 1566224
+  first_name: James
+  mi: J
+  last_name: Byrnes
+  full_name: Byrnes, James J
+  phone: 
+  address: 4195 N Cambridge Way
+  city: Milton
+  state: FL
+  zip: '32571'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 'Yes'
+- vfw_id: 10581336
+  first_name: Wilmer
+  mi: R
+  last_name: Campbell
+  full_name: Campbell, Wilmer R
+  phone: "(256) 3993314"
+  address: 502 2nd Ave NW
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: campbellwilmer@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 
+- vfw_id: 9467750
+  first_name: Danny
+  mi: L
+  last_name: Cannon
+  full_name: Cannon, Danny L
+  phone: "(256  )4580398"
+  address: 3492 Highway 5
+  city: Douglasville
+  state: GA
+  zip: '30135'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9534861
+  first_name: Frank
+  mi: J
+  last_name: Carini
+  full_name: Carini, Frank J
+  phone: "(256) 3284048"
+  address: 337 Norton Homestead Rd
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: frank_carini2001@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 776233
+  first_name: Charles
+  mi: D
+  last_name: Cash
+  full_name: Cash, Charles D
+  phone: "(256) 5471047"
+  address: 1107 Cabot Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 10904786
+  first_name: Steve
+  mi: D
+  last_name: Cate
+  full_name: Cate, Steve D
+  phone: "(256) 5463770"
+  address: 827 Cates Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 558321
+  first_name: Phillip
+  mi: A
+  last_name: Chavies
+  full_name: Chavies, Phillip A
+  phone: 
+  address: 1691 Jorden Dr
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 68
+  undeliverable: 
+- vfw_id: 5903501
+  first_name: Jimmy
+  mi: W
+  last_name: Cline
+  full_name: Cline, Jimmy W
+  phone: 
+  address: 122 Ilene St; Apt 2B
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 1503832
+  first_name: Donald
+  mi: 
+  last_name: Coburn
+  full_name: 'Coburn, Donald '
+  phone: 
+  address: 1130 Walnut St
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 74
+  undeliverable: 
+- vfw_id: 5294559
+  first_name: Woodrow
+  mi: N
+  last_name: Coheley
+  full_name: Coheley, Woodrow N
+  phone: "(256) 8924603"
+  address: 176 Cherry St
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: Life
+  email: verndrow@cableone.net
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 82
+  undeliverable: 
+- vfw_id: 9738207
+  first_name: Johnny
+  mi: O
+  last_name: Collier
+  full_name: Collier, Johnny O
+  phone: "(256) 3814877"
+  address: 2315 County Road 30
+  city: Florence
+  state: AL
+  zip: '35634'
+  status: Life
+  email: johnny.collier@us.army.mil
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 44
+  undeliverable: 
+- vfw_id: 10059525
+  first_name: Tommy
+  mi: W
+  last_name: Collier
+  full_name: Collier, Tommy W
+  phone: "(256) 5380897"
+  address: 2551 Mountain View Dr
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 393465
+  first_name: William
+  mi: C
+  last_name: Colvin
+  full_name: Colvin, William C
+  phone: 
+  address: 751 Medical Center Pkwy; Apt 111
+  city: Boaz
+  state: AL
+  zip: '35957'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 97
+  undeliverable: 
+- vfw_id: 1017986
+  first_name: Arnold
+  mi: S
+  last_name: Combs
+  full_name: Combs, Arnold S
+  phone: "(256) 5385242"
+  address: PO Box 385
+  city: Albertville
+  state: AL
+  zip: '35950'
+  status: Life
+  email: golffreak59@hotmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 65
+  undeliverable: 
+- vfw_id: 9958776
+  first_name: Michelle
+  mi: E
+  last_name: Cook
+  full_name: Cook, Michelle E
+  phone: "(256) 8400433"
+  address: 61 Bryant Rd
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: Life
+  email: mecook1967@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2017-12-31'
+  days_remaining: '17'
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 52
+  undeliverable: 
+- vfw_id: 9880872
+  first_name: Harold
+  mi: B
+  last_name: Cordle
+  full_name: Cordle, Harold B
+  phone: "(256) 4427660"
+  address: 1627 Williamsburg Ln
+  city: Tuscaloosa
+  state: AL
+  zip: '35406'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2017-12-31'
+  days_remaining: 
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 83
+  undeliverable: 
+- vfw_id: 10190104
+  first_name: Xavier
+  mi: J
+  last_name: Cortez
+  full_name: Cortez, Xavier J
+  phone: "(256  )90 0223"
+  address: 6742 Lay Springs Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: cortez254@aol.com
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 11270639
+  first_name: David`
+  mi: W
+  last_name: Couch
+  full_name: Couch, David` W
+  phone: "(256) 3124272"
+  address: 118 S Hawk Dr
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: New
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-02-29'
+  days_remaining: '87'
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 54
+  undeliverable: 
+- vfw_id: 10895193
+  first_name: Jonathan
+  mi: 
+  last_name: Cox
+  full_name: 'Cox, Jonathan '
+  phone: "(256) 5539114"
+  address: 6303 Thompson Dr S
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: Life
+  email: fiveoguy312@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2018-02-23'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 40
+  undeliverable: 
+- vfw_id: 1588590
+  first_name: Tully
+  mi: ''
+  last_name: Cox
+  full_name: 'Cox, Tully '
+  phone: ''
+  address: 6303 Thompson Dr S
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: Life
+  email: ''
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: ''
+  served: ''
+  alt_phone: ''
+  age: 85
+  undeliverable: 
+- vfw_id: 106151
+  first_name: Charles
+  mi: E
+  last_name: Crocker
+  full_name: Crocker, Charles E
+  phone: 
+  address: 817 Rainbow Dr
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 90
+  undeliverable: 
+- vfw_id: 11319271
+  first_name: Jeffrey
+  mi: S
+  last_name: Crossley
+  full_name: Crossley, Jeffrey S
+  phone: "(256) 2398891"
+  address: 120 Egypt Rd
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: New
+  email: jeffcrossley1295@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 35
+  undeliverable: 
+- vfw_id: 10222878
+  first_name: Jimmie
+  mi: L
+  last_name: Cunningham
+  full_name: Cunningham, Jimmie L
+  phone: "(256) 4920017"
+  address: 4988 Ferry Rd
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 1564991
+  first_name: Roger
+  mi: D
+  last_name: Davenport
+  full_name: Davenport, Roger D
+  phone: 
+  address: 944 Splawn St
+  city: Leesburg
+  state: AL
+  zip: '35983'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 62
+  undeliverable: 
+- vfw_id: 9398595
+  first_name: Allan
+  mi: W
+  last_name: Davis
+  full_name: Davis, Allan W
+  phone: "(256  )4927613"
+  address: 3230 Parker Dr
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9413908
+  first_name: Brian
+  mi: K
+  last_name: Davis
+  full_name: Davis, Brian K
+  phone: "(256) 5163274"
+  address: 420 McPherson Pkwy
+  city: Dallas
+  state: GA
+  zip: '30157'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 54
+  undeliverable: 
+- vfw_id: 10986196
+  first_name: James
+  mi: R
+  last_name: Davis
+  full_name: Davis, James R
+  phone: "(256) 2661398"
+  address: 854 County Road 112
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: New
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-05-31'
+  days_remaining: '43'
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 5257893
+  first_name: Kermit
+  mi: A
+  last_name: Davis
+  full_name: Davis, Kermit A
+  phone: 
+  address: 3431 Martin Dr
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: Continuous
+  email: kermitdavis@bellsouth.net
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-04-30'
+  days_remaining: 
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 1194735
+  first_name: William
+  mi: L
+  last_name: Deaton
+  full_name: Deaton, William L
+  phone: 
+  address: 310 4th Ave
+  city: Manchester
+  state: GA
+  zip: '31816'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 87
+  undeliverable: 
+- vfw_id: 1055628
+  first_name: Will
+  mi: R
+  last_name: Deerman
+  full_name: Deerman, Will R
+  phone: "(256) 5473535"
+  address: 3100 Lay Springs Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 83
+  undeliverable: 'Yes'
+- vfw_id: 9599111
+  first_name: Kevin
+  mi: P
+  last_name: Dehn
+  full_name: Dehn, Kevin P
+  phone: "(256) 9967445"
+  address: 164 Christopher St; Apt 53
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: kevindehn969@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 61
+  undeliverable: 
+- vfw_id: 6091893
+  first_name: John
+  mi: W
+  last_name: Doise
+  full_name: Doise, John W
+  phone: "(985  )2095590"
+  address: 245 Pine Haven Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: mdoise1@gmail.com
+  type_pay: '6'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2016-12-31'
+  days_remaining: 
+  last_status: Continuous Transfer
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 690512
+  first_name: Melvin
+  mi: L
+  last_name: Doyle
+  full_name: Doyle, Melvin L
+  phone: 
+  address: 2925 Weiss Lake Blvd
+  city: Leesburg
+  state: AL
+  zip: '35983'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2018-01-29
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 'Yes'
+- vfw_id: 10062944
+  first_name: Charles
+  mi: F
+  last_name: Driver
+  full_name: Driver, Charles F
+  phone: 
+  address: 301 Brown Ave
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: cdriver@comcastnet.com
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9822458
+  first_name: Arthur
+  mi: B
+  last_name: Duke
+  full_name: Duke, Arthur B
+  phone: "(256  )5475617"
+  address: 5790 US Highway 411
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 388777
+  first_name: Gene
+  mi: A
+  last_name: Dunn
+  full_name: Dunn, Gene A
+  phone: ''
+  address: 1655 Cedar Bend Rd N
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: ''
+  email: ''
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-09-21
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 1550293
+  first_name: Roger
+  mi: N
+  last_name: Eaton
+  full_name: Eaton, Roger N
+  phone: 
+  address: 151 Pine Harbor Ln
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 2735316
+  first_name: Manual
+  mi: C
+  last_name: Eidson
+  full_name: Eidson, Manual C
+  phone: 
+  address: 1541 Main St E; Apt L94
+  city: Rainsville
+  state: AL
+  zip: '35986'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 94
+  undeliverable: 'Yes'
+- vfw_id: 5367788
+  first_name: Benjamin
+  mi: F
+  last_name: Estes
+  full_name: Estes, Benjamin F
+  phone: 
+  address: 5705 Garden Wood Dr
+  city: Gardendale
+  state: AL
+  zip: '35071'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10297974
+  first_name: Jonathan
+  mi: S
+  last_name: Farris
+  full_name: Farris, Jonathan S
+  phone: "(250) 5533533"
+  address: 19 Audrey Ln
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: gpd193@yahoo.com
+  type_pay: '8'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-09-30'
+  days_remaining: 
+  last_status: Installment Life 2018-04-12
+  served: 
+  alt_phone: 
+  age: 51
+  undeliverable: 
+- vfw_id: 10222877
+  first_name: Johnny
+  mi: M
+  last_name: Fielding
+  full_name: Fielding, Johnny M
+  phone: "(256  )5430061"
+  address: 387 Longview Dr
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1568018
+  first_name: William
+  mi: L
+  last_name: Fielding
+  full_name: Fielding, William L
+  phone: "(256  )5464352"
+  address: 1238 Appalachian Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: 
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9539870
+  first_name: Josef
+  mi: T
+  last_name: Fincher
+  full_name: Fincher, Josef T
+  phone: "(256) 2958395"
+  address: 292 Mossy Oak Dr
+  city: Huntsville
+  state: AL
+  zip: '35806'
+  status: Life
+  email: tyfincher1@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 41
+  undeliverable: 'Yes'
+- vfw_id: 10919632
+  first_name: William
+  mi: R
+  last_name: Finerty
+  full_name: Finerty, William R
+  phone: "(256) 9609976"
+  address: 1638 Moon Rd
+  city: Boaz
+  state: AL
+  zip: '35957'
+  status: Continuous
+  email: williamfinerty@yahoo.com
+  type_pay: '4'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 66
+  undeliverable: 
+- vfw_id: 9388027
+  first_name: Gerald
+  mi: E
+  last_name: Finley
+  full_name: Finley, Gerald E
+  phone: "(256) 5469689"
+  address: 9322 Front Beach Rd
+  city: Panama City Beach
+  state: FL
+  zip: '32407'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 390026
+  first_name: James
+  mi: D
+  last_name: Ford
+  full_name: Ford, James D
+  phone: 
+  address: 3635 Vestavia Dr
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-04-17
+  served: 
+  alt_phone: 
+  age: 78
+  undeliverable: 
+- vfw_id: 1189397
+  first_name: L
+  mi: P
+  last_name: Frachiseur
+  full_name: Frachiseur, L P
+  phone: "(256) 4920322"
+  address: 3288 Parker Dr
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 1336668
+  first_name: Raymond
+  mi: D
+  last_name: Franklin
+  full_name: Franklin, Raymond D
+  phone: "(256  )"
+  address: 3318 Shady Grove Rd
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: ''
+  email: donfranklin3318@charter.net
+  type_pay: '0'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 2017-04-18
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 10348291
+  first_name: Larry
+  mi: P
+  last_name: Freeman
+  full_name: Freeman, Larry P
+  phone: 
+  address: 23343 W US Highway 281
+  city: San Benito
+  state: TX
+  zip: '78586'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 9295595
+  first_name: Robert
+  mi: D
+  last_name: Freeman
+  full_name: Freeman, Robert D
+  phone: 
+  address: PO Box 231
+  city: Alexandria
+  state: AL
+  zip: '36250'
+  status: 
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 1227590
+  first_name: Norris
+  mi: E
+  last_name: Fulford
+  full_name: Fulford, Norris E
+  phone: 
+  address: 3511 Vistamont Cir S
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 10506676
+  first_name: Phillip
+  mi: S
+  last_name: Garland
+  full_name: Garland, Phillip S
+  phone: "(541) 5545363"
+  address: 320 Hidden Hill Ln
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: Continuous
+  email: garlandphillip@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 43
+  undeliverable: 
+- vfw_id: 11325313
+  first_name: Jeffrey
+  mi: C
+  last_name: Garmon
+  full_name: Garmon, Jeffrey C
+  phone: "(256) 4420418"
+  address: 128 Hickory Ridge Dr
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: New-Life
+  email: jnsgarmon@bellsouth.net
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 57
+  undeliverable: 
+- vfw_id: 10594245
+  first_name: Robert
+  mi: W
+  last_name: Garmon
+  full_name: Garmon, Robert W
+  phone: "(256) 6223850"
+  address: 238 Lumbley Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-06-30'
+  days_remaining: EXPIRED
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 82
+  undeliverable: 
+- vfw_id: 11325315
+  first_name: Stacey
+  mi: G
+  last_name: Garmon
+  full_name: Garmon, Stacey G
+  phone: "(256) 4420418"
+  address: 128 Hickory Ridge Dr
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: New-Life
+  email: jnsgarmon@bellsouth.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 55
+  undeliverable: 
+- vfw_id: 1318436
+  first_name: Charles
+  mi: T
+  last_name: Garner
+  full_name: Garner, Charles T
+  phone: 
+  address: PO Box 1803
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 239998
+  first_name: Alvis
+  mi: D
+  last_name: Garretson
+  full_name: Garretson, Alvis D
+  phone: ''
+  address: 514 Diversey St
+  city: Gadsden
+  state: AL
+  zip: '35906'
+  status: ''
+  email: ''
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-09-21
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 171902
+  first_name: Donald
+  mi: R
+  last_name: Garrett
+  full_name: Garrett, Donald R
+  phone: 
+  address: 112 Becky Allen Cir
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 'Yes'
+- vfw_id: 558323
+  first_name: Robert
+  mi: J
+  last_name: Garrett
+  full_name: Garrett, Robert J
+  phone: 
+  address: PO Box 1212; Apt L94
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 88
+  undeliverable: 'Yes'
+- vfw_id: 10059513
+  first_name: Wayne
+  mi: C
+  last_name: Gibbs
+  full_name: Gibbs, Wayne C
+  phone: "(256  )4426989"
+  address: 2899 Riddles Bend Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: fallonfox@aol.com
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1322798
+  first_name: J
+  mi: C
+  last_name: Gibson
+  full_name: Gibson, J C
+  phone: 
+  address: 117 Norwood Dr
+  city: Gadsden
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-04-17
+  served: 
+  alt_phone: 
+  age: 106
+  undeliverable: 
+- vfw_id: 9388029
+  first_name: Connie
+  mi: W
+  last_name: Grant
+  full_name: Grant, Connie W
+  phone: "(256) 5490289"
+  address: 2902 Noccalula Pkwy
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 68
+  undeliverable: 
+- vfw_id: 274673
+  first_name: Frank
+  mi: 
+  last_name: Guy
+  full_name: 'Guy, Frank '
+  phone: 
+  address: 817 Rainbow Dr
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 85
+  undeliverable: 
+- vfw_id: 912693
+  first_name: Marvin
+  mi: L
+  last_name: Hageness
+  full_name: Hageness, Marvin L
+  phone: 
+  address: 3916 Bramble Rd
+  city: Anniston
+  state: AL
+  zip: '36207'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 731488
+  first_name: J
+  mi: H
+  last_name: Haithcock
+  full_name: Haithcock, J H
+  phone: 
+  address: 3501 Mountain View Dr
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 94
+  undeliverable: 
+- vfw_id: 3041123
+  first_name: Clyde
+  mi: J
+  last_name: Hall
+  full_name: Hall, Clyde J
+  phone: 
+  address: 78 Tomahawk Trl
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: 
+  email: 
+  type_pay: '0'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10304115
+  first_name: Richard
+  mi: W
+  last_name: Hall
+  full_name: Hall, Richard W
+  phone: 
+  address: 1030 Russell Dr
+  city: Weaver
+  state: AL
+  zip: '36277'
+  status: Life
+  email: ARCHIVE@CABLEONE.NET
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 65
+  undeliverable: 
+- vfw_id: 10222882
+  first_name: Joshua
+  mi: P
+  last_name: Hamilton
+  full_name: Hamilton, Joshua P
+  phone: "(256) 5049459"
+  address: 5445 Riddles Bend Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: joshua.p.hamilton@us.army.mil
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 32
+  undeliverable: 
+- vfw_id: 5856195
+  first_name: Ira
+  mi: J
+  last_name: Hand
+  full_name: Hand, Ira J
+  phone: "(256) 4923382"
+  address: 170 Tallasseehatchee Way
+  city: Wellington
+  state: AL
+  zip: '36279'
+  status: Life
+  email: akapete1@netzero.net
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 55
+  undeliverable: 
+- vfw_id: 2976502
+  first_name: James
+  mi: E
+  last_name: Hanks
+  full_name: Hanks, James E
+  phone: 
+  address: 2231 Veranda Trce
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 10580425
+  first_name: Justin
+  mi: H
+  last_name: Hanson
+  full_name: Hanson, Justin H
+  phone: "(256) 6136035"
+  address: 1104 Goodyear Ave Apt 205
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: 
+  email: ghanson18d@gmail.com
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-23'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 36
+  undeliverable: 'Yes'
+- vfw_id: 628694
+  first_name: James
+  mi: E
+  last_name: Hardin
+  full_name: Hardin, James E
+  phone: 
+  address: 70 County Road 11
+  city: Scottsboro
+  state: AL
+  zip: '35768'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 85
+  undeliverable: 
+- vfw_id: 11325316
+  first_name: Stephen
+  mi: S
+  last_name: Hardman
+  full_name: Hardman, Stephen S
+  phone: "(256) 5530735"
+  address: 77 Brasher Cut Off Rd
+  city: Gallant
+  state: AL
+  zip: '35972'
+  status: New
+  email: shardman1@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 45
+  undeliverable: 
+- vfw_id: 9230816
+  first_name: Joseph
+  mi: M
+  last_name: Harner
+  full_name: Harner, Joseph M
+  phone: "(770) 2413861"
+  address: 940 County Road 112
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Life
+  email: joe.harner@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: ''
+  served: ''
+  alt_phone: ''
+  age: 53
+  undeliverable: 
+- vfw_id: 299021
+  first_name: Jimmy
+  mi: G
+  last_name: Harp
+  full_name: Harp, Jimmy G
+  phone: 
+  address: 1936 Green Hills Rd
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 10895194
+  first_name: Reid
+  mi: B
+  last_name: Harris
+  full_name: Harris, Reid B
+  phone: "(858) 8484871"
+  address: 49 Horizon Pl
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: reidbharris@gmail.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 45
+  undeliverable: 'Yes'
+- vfw_id: 10046074
+  first_name: Joseph
+  mi: P
+  last_name: Hawkins
+  full_name: Hawkins, Joseph P
+  phone: "(205) 4723524"
+  address: 19 Lakeridge Dr
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: Life
+  email: joeandhanne@live.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 1355435
+  first_name: Gary
+  mi: M
+  last_name: Henry
+  full_name: Henry, Gary M
+  phone: 
+  address: 113 E Sunset Dr
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 343216
+  first_name: Lowery
+  mi: J
+  last_name: Hester
+  full_name: Hester, Lowery J
+  phone: 
+  address: PO Box 421
+  city: Leesburg
+  state: AL
+  zip: '35983'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 590966
+  first_name: Bobby
+  mi: L
+  last_name: Hicks
+  full_name: Hicks, Bobby L
+  phone: 
+  address: 6454 Al Highway 144
+  city: Ragland
+  state: AL
+  zip: '35131'
+  status: 
+  email: 
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 3197512
+  first_name: Henry
+  mi: W
+  last_name: Hodge
+  full_name: Hodge, Henry W
+  phone: "(256) 4925252"
+  address: 2119 Fuhrman Dr
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-12-31'
+  days_remaining: 
+  last_status: Continuous 2019-04-17
+  served: 
+  alt_phone: 
+  age: 79
+  undeliverable: 
+- vfw_id: 578090
+  first_name: Ray
+  mi: K
+  last_name: Holland
+  full_name: Holland, Ray K
+  phone: "(256) 494-9461"
+  address: 508 Lester St
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: Life
+  email: G
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 182556
+  first_name: Dallas
+  mi: C
+  last_name: Holmes
+  full_name: Holmes, Dallas C
+  phone: 
+  address: 3515 Park Ln; Apt L94
+  city: Gadsden
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 98
+  undeliverable: 'Yes'
+- vfw_id: 654838
+  first_name: Johnny
+  mi: M
+  last_name: Holmes
+  full_name: Holmes, Johnny M
+  phone: "(256) 4904336"
+  address: 222 Aqua Vista Dr E
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: mackann32@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 2230178
+  first_name: Larry Keith
+  mi: 
+  last_name: Hood
+  full_name: 'Hood, Larry Keith '
+  phone: 
+  address: 5295 Slasham Rd
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-02-29'
+  days_remaining: '87'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 10457593
+  first_name: Jedediah
+  mi: K
+  last_name: Hornbuckle
+  full_name: Hornbuckle, Jedediah K
+  phone: "(256) 6414377"
+  address: 225 Davis St
+  city: Collinsville
+  state: AL
+  zip: '35961'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 42
+  undeliverable: 
+- vfw_id: 11321450
+  first_name: Calvin
+  mi: 
+  last_name: Hutchison
+  full_name: 'Hutchison, Calvin '
+  phone: "(256) 4926060"
+  address: 1031 Glendale Ave
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: New
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 3749059
+  first_name: James
+  mi: D
+  last_name: Hyatt
+  full_name: Hyatt, James D
+  phone: "(256) 5387356"
+  address: 4984 Honeysuckle Ln E
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-12-31'
+  days_remaining: '37'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 813932
+  first_name: Conrad
+  mi: J
+  last_name: Inamorati
+  full_name: Inamorati, Conrad J
+  phone: "(256) 572-8589"
+  address: 116 Barrell Ave NE
+  city: Huntsville
+  state: AL
+  zip: '35801'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 86
+  undeliverable: 
+- vfw_id: 1553444
+  first_name: Daniel
+  mi: W
+  last_name: Jackson
+  full_name: Jackson, Daniel W
+  phone: 
+  address: 2510 Cedar Ridge Cir
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 43
+  undeliverable: 'Yes'
+- vfw_id: 5532517
+  first_name: William Ed
+  mi: 
+  last_name: Jackson
+  full_name: 'Jackson, William Ed '
+  phone: 
+  address: 2061 County Road 22
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: 
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-06-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 78
+  undeliverable: 
+- vfw_id: 1189505
+  first_name: Jimmie
+  mi: L
+  last_name: Jenkins
+  full_name: Jenkins, Jimmie L
+  phone: 
+  address: 1693 Holiday Dr
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 10382742
+  first_name: Larry
+  mi: T
+  last_name: Johnson
+  full_name: Johnson, Larry T
+  phone: "(256) 3932316"
+  address: 2905 Westmont Way
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Continuous
+  email: LarryT1048@gmail.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 10300744
+  first_name: S
+  mi: J
+  last_name: Johnson
+  full_name: Johnson, S J
+  phone: "(256) 9272542"
+  address: 107 Best St
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: 
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 1423202
+  first_name: William
+  mi: J
+  last_name: Johnson
+  full_name: Johnson, William J
+  phone: 
+  address: PO Box 364
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 57
+  undeliverable: 
+- vfw_id: 5094470
+  first_name: Clarence
+  mi: J
+  last_name: Johnston
+  full_name: Johnston, Clarence J
+  phone: 
+  address: 105 Silverstone Ln
+  city: Alabaster
+  state: AL
+  zip: '35007'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 74
+  undeliverable: 
+- vfw_id: 11008265
+  first_name: Christopher
+  mi: R
+  last_name: Jones
+  full_name: Jones, Christopher R
+  phone: "(256) 4419500"
+  address: 121 Piney Knl
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: New
+  email: chrisjones1968@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-10-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 51
+  undeliverable: 
+- vfw_id: 10425560
+  first_name: Russell
+  mi: A
+  last_name: Jones
+  full_name: Jones, Russell A
+  phone: "(256) 4923166"
+  address: 479 Tom Cat Rd
+  city: Piedmont
+  state: AL
+  zip: '36272'
+  status: Continuous
+  email: ppcadre@gmail.com
+  type_pay: '5'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: Reinstate 2018-04-12
+  served: 
+  alt_phone: 
+  age: 58
+  undeliverable: 
+- vfw_id: 10282435
+  first_name: Michael
+  mi: G
+  last_name: Jordan
+  full_name: Jordan, Michael G
+  phone: "(205  )5594244"
+  address: 7364 Old Mill Trl
+  city: Trussville
+  state: AL
+  zip: '35173'
+  status: 
+  email: signwizzard1@yahoo.com
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 734279
+  first_name: William
+  mi: L
+  last_name: Keener
+  full_name: Keener, William L
+  phone: 
+  address: 224 County Road 20
+  city: Leesburg
+  state: AL
+  zip: '35983'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 5705802
+  first_name: Christopher
+  mi: L
+  last_name: Kelly
+  full_name: Kelly, Christopher L
+  phone: 
+  address: 76 Andrew Ln
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: Reinstated
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-10-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 50
+  undeliverable: 'Yes'
+- vfw_id: 10314995
+  first_name: Ronald
+  mi: R
+  last_name: Kennedy
+  full_name: Kennedy, Ronald R
+  phone: "(540) 5601863"
+  address: 1279 Slasham Rd
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 10067974
+  first_name: Alexander
+  mi: V
+  last_name: Khan
+  full_name: Khan, Alexander V
+  phone: 
+  address: 3519 Georgia Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 6081969
+  first_name: Herman
+  mi: M
+  last_name: King
+  full_name: King, Herman M
+  phone: 
+  address: 820 County Road 245
+  city: Leesburg
+  state: AL
+  zip: '35983'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 74
+  undeliverable: 
+- vfw_id: 956613
+  first_name: James
+  mi: W
+  last_name: Klein
+  full_name: Klein, James W
+  phone: 
+  address: PO Box 833
+  city: Oneonta
+  state: AL
+  zip: '35121'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 92
+  undeliverable: 
+- vfw_id: 99907
+  first_name: David
+  mi: R
+  last_name: LaPoint
+  full_name: LaPoint, David R
+  phone: "(256) 2958181"
+  address: 2411 Ridge Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: dlapoint2010@yahoo.com
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-04-17
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 10239335
+  first_name: Sammy
+  mi: A
+  last_name: Lambert
+  full_name: Lambert, Sammy A
+  phone: "(256  )4920909"
+  address: 1009 Johnny Martin Rd
+  city: Gadsden
+  state: AL
+  zip: '35905'
+  status: 
+  email: SALAMB1023@AOL.COM
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10950513
+  first_name: Marcus
+  mi: A
+  last_name: Lee
+  full_name: Lee, Marcus A
+  phone: "(939) 2785686"
+  address: 426 S Eastern Ave
+  city: Los Angeles
+  state: CA
+  zip: '90022'
+  status: Continuous
+  email: marcus.anthony.lee@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 40
+  undeliverable: 
+- vfw_id: 6197402
+  first_name: Randy
+  mi: D
+  last_name: Little
+  full_name: Little, Randy D
+  phone: "(501  )7431274"
+  address: 3507 Mountain View Dr
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 2848475
+  first_name: Richard
+  mi: G
+  last_name: Lockey
+  full_name: Lockey, Richard G
+  phone: "(256  )4130608"
+  address: 88 Sutton Cir
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: rgl42@att.net
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9524113
+  first_name: Toney
+  mi: A
+  last_name: Lott
+  full_name: Lott, Toney A
+  phone: "(256) 2310098"
+  address: 1328 Elizabeth Ct
+  city: Anniston
+  state: AL
+  zip: '36207'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2018-12-31'
+  days_remaining: EXPIRED
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 299098
+  first_name: R
+  mi: F
+  last_name: Martin
+  full_name: Martin, R F
+  phone: 
+  address: RR 7 Box 15
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 91
+  undeliverable: 'Yes'
+- vfw_id: 4669092
+  first_name: Robert
+  mi: H
+  last_name: Martinez
+  full_name: Martinez, Robert H
+  phone: "(205  )4779886"
+  address: 22818 Downing Park Cir
+  city: Mc Calla
+  state: AL
+  zip: '35111'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2017-12-31'
+  days_remaining: 
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 987994
+  first_name: Miles
+  mi: O
+  last_name: Mashburn
+  full_name: Mashburn, Miles O
+  phone: 
+  address: PO Box 115
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 87
+  undeliverable: 
+- vfw_id: 788397
+  first_name: Enoch
+  mi: E
+  last_name: May
+  full_name: May, Enoch E
+  phone: 
+  address: 1545 Huff Ln
+  city: Springville
+  state: AL
+  zip: '35146'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2018-05-29
+  served: 
+  alt_phone: 
+  age: 106
+  undeliverable: 
+- vfw_id: 157288
+  first_name: Aubrey
+  mi: E
+  last_name: Mc Bride
+  full_name: Mc Bride, Aubrey E
+  phone: 
+  address: PO Box 847
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 83
+  undeliverable: 
+- vfw_id: 5657495
+  first_name: Lance
+  mi: A
+  last_name: Mc Callie
+  full_name: Mc Callie, Lance A
+  phone: 
+  address: 260 Joham St
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 5397936
+  first_name: David
+  mi: E
+  last_name: Mc Clain
+  full_name: Mc Clain, David E
+  phone: 
+  address: 2272 Solitude Rd
+  city: Albertville
+  state: AL
+  zip: '35950'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 61
+  undeliverable: 
+- vfw_id: 418490
+  first_name: Jerry
+  mi: ''
+  last_name: Mc Clain
+  full_name: 'Mc Clain, Jerry '
+  phone: ''
+  address: 4673 Geurin Rd
+  city: Gadsden
+  state: AL
+  zip: '35905'
+  status: ''
+  email: ''
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-09-21
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 2645270
+  first_name: Herbert
+  mi: H
+  last_name: Mc Clendon
+  full_name: Mc Clendon, Herbert H
+  phone: "(256) 5389514"
+  address: 7780 Gallant Rd
+  city: Gallant
+  state: AL
+  zip: '35972'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2021-01-31'
+  days_remaining: '10'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 90
+  undeliverable: 
+- vfw_id: 531426
+  first_name: Paul
+  mi: J
+  last_name: Mc Leod
+  full_name: Mc Leod, Paul J
+  phone: 
+  address: R R 3 Box 68
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 97
+  undeliverable: 'Yes'
+- vfw_id: 9794266
+  first_name: Thomas
+  mi: R
+  last_name: Mc Rae
+  full_name: Mc Rae, Thomas R
+  phone: "(256) 4905140"
+  address: 3141 Gilliland Rd
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: Life
+  email: rmcrae1028@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 65
+  undeliverable: 
+- vfw_id: 10903569
+  first_name: Tom
+  mi: 
+  last_name: Mcdowell
+  full_name: 'Mcdowell, Tom '
+  phone: "(256) 4424305"
+  address: 6583 Lister Ferry Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 68
+  undeliverable: 
+- vfw_id: 9878914
+  first_name: Thomas
+  mi: A
+  last_name: Miller
+  full_name: Miller, Thomas A
+  phone: "(615) 2932209"
+  address: 6720 Autumnwood Dr
+  city: Nashville
+  state: TN
+  zip: '37221'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-25'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 98
+  undeliverable: 
+- vfw_id: 5339722
+  first_name: Jack
+  mi: E
+  last_name: Mitchell
+  full_name: Mitchell, Jack E
+  phone: 
+  address: 1050 Briarcliff Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: megjack@comcast.net
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2021-02-28'
+  days_remaining: '3'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 85
+  undeliverable: 
+- vfw_id: 4881260
+  first_name: Harry
+  mi: F
+  last_name: Moon
+  full_name: Moon, Harry F
+  phone: 
+  address: 392 Gene Whitt Rd
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 408648
+  first_name: Javas
+  mi: L
+  last_name: Moon
+  full_name: Moon, Javas L
+  phone: ''
+  address: 2329 Norris Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: ''
+  email: ''
+  type_pay: '0'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 2017-04-18
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 481286
+  first_name: Edward
+  mi: E
+  last_name: Morris
+  full_name: Morris, Edward E
+  phone: 
+  address: 6198 Highway 77
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 82
+  undeliverable: 
+- vfw_id: 9435355
+  first_name: Hilliard
+  mi: W
+  last_name: Morrow
+  full_name: Morrow, Hilliard W
+  phone: 
+  address: 221 Cordell St
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 11008261
+  first_name: Alan
+  mi: R
+  last_name: Moses
+  full_name: Moses, Alan R
+  phone: "(256) 2956318"
+  address: PO Box 872
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: Continuous
+  email: rossmoses@bellsouth.net
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 51
+  undeliverable: 
+- vfw_id: 10996287
+  first_name: Dennis
+  mi: W
+  last_name: Moyer
+  full_name: Moyer, Dennis W
+  phone: "(256) 7701322"
+  address: "`; 258 Wayne Ct"
+  city: Weaver
+  state: AL
+  zip: '36277'
+  status: Life
+  email: dmoyer1148@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 1062916
+  first_name: George
+  mi: F
+  last_name: Myers
+  full_name: Myers, George F
+  phone: "(256  )8409435"
+  address: PO Box 1555
+  city: Boaz
+  state: AL
+  zip: '35957'
+  status: 
+  email: 
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 3313361
+  first_name: James
+  mi: E
+  last_name: Naylor
+  full_name: Naylor, James E
+  phone: "(256  )5469938"
+  address: 2413 Red Oak Rd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: JNAY36@BELLSOUTH.NET
+  type_pay: '3'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-25'
+  days_remaining: EXPIRED
+  last_status: Continuous
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10348287
+  first_name: Michael
+  mi: T
+  last_name: Nelson
+  full_name: Nelson, Michael T
+  phone: "(256) 5044123"
+  address: 705 S Belmont Dr
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Continuous
+  email: sgtnelson@outlook.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 35
+  undeliverable: 
+- vfw_id: 4987980
+  first_name: Kenneth
+  mi: D
+  last_name: Noojin
+  full_name: Noojin, Kenneth D
+  phone: "(256) 3904184"
+  address: 4007 Boone Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: kenneth.d.noojin@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 62
+  undeliverable: 
+- vfw_id: 993271
+  first_name: Carl
+  mi: D
+  last_name: Olsen
+  full_name: Olsen, Carl D
+  phone: 
+  address: 30 Plains Rd
+  city: Augusta
+  state: NJ
+  zip: '7822'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-04-17
+  served: 
+  alt_phone: 
+  age: 96
+  undeliverable: 
+- vfw_id: 9980056
+  first_name: Thomas
+  mi: A
+  last_name: Page
+  full_name: Page, Thomas A
+  phone: "(256  )5490391"
+  address: 105 Lauren Dr
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: thomas.a.page@us.army.mil
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 3749104
+  first_name: Gerald
+  mi: A
+  last_name: Panell
+  full_name: Panell, Gerald A
+  phone: 
+  address: 3880 Stockton Hill Rd
+  city: Kingman
+  state: AZ
+  zip: '86409'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 315159
+  first_name: Billy
+  mi: C
+  last_name: Parker
+  full_name: Parker, Billy C
+  phone: "(256) 2950166"
+  address: 1905 Springrock St
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 93
+  undeliverable: 
+- vfw_id: 262073
+  first_name: Roy
+  mi: L
+  last_name: Parks
+  full_name: Parks, Roy L
+  phone: 
+  address: 308 Chestnut St NW
+  city: Hartselle
+  state: AL
+  zip: '35640'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 89
+  undeliverable: 
+- vfw_id: 2518760
+  first_name: Jack
+  mi: 
+  last_name: Partee
+  full_name: 'Partee, Jack '
+  phone: 
+  address: 3602 Walnut St
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 88
+  undeliverable: 
+- vfw_id: 10239337
+  first_name: Ray
+  mi: N
+  last_name: Parton
+  full_name: Parton, Ray N
+  phone: "(256  )5380233"
+  address: 314 5th Ave NW
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-02-09'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1392631
+  first_name: George
+  mi: T
+  last_name: Pate
+  full_name: Pate, George T
+  phone: 
+  address: 4422 Rainbow Dr
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 3103835
+  first_name: Joe
+  mi: L
+  last_name: Patterson
+  full_name: Patterson, Joe L
+  phone: "(256  )4422549"
+  address: 476 Old Pleasant Valley Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10169485
+  first_name: Walter
+  mi: G
+  last_name: Pazmino
+  full_name: Pazmino, Walter G
+  phone: "(205) 7062171"
+  address: 715 Lakeshore Ave E
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 3749110
+  first_name: Andy
+  mi: 
+  last_name: Pearson
+  full_name: 'Pearson, Andy '
+  phone: 
+  address: 1620 Ardmore Hwy
+  city: Taft
+  state: TN
+  zip: '38488'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1289189
+  first_name: Jim
+  mi: 
+  last_name: Pendergrass
+  full_name: 'Pendergrass, Jim '
+  phone: 
+  address: 3000 Vaughn Rd
+  city: Altoona
+  state: AL
+  zip: '35952'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 10504590
+  first_name: Candice
+  mi: L
+  last_name: Phillips
+  full_name: Phillips, Candice L
+  phone: "(256) 6137228"
+  address: 425 Haralson Ave
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: candicet696@gmail.com
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-04-23'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 34
+  undeliverable: 
+- vfw_id: 407710
+  first_name: James
+  mi: S
+  last_name: Phillips
+  full_name: Phillips, James S
+  phone: 
+  address: 2807b Waters Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 96
+  undeliverable: 'Yes'
+- vfw_id: 9620254
+  first_name: Andrew
+  mi: W
+  last_name: Plam
+  full_name: Plam, Andrew W
+  phone: "(831) 5393963"
+  address: 4959 Big Oak Dr E
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Continuous
+  email: andrewoif@yahoo.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: '1'
+  last_status: Continuous 2018-04-12
+  served: ''
+  alt_phone: ''
+  age: 33
+  undeliverable: 
+- vfw_id: 3749116
+  first_name: Stanley
+  mi: B
+  last_name: Pledger
+  full_name: Pledger, Stanley B
+  phone: 
+  address: 5980 Vista Trl
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1527505
+  first_name: Gerald
+  mi: C
+  last_name: Poe
+  full_name: Poe, Gerald C
+  phone: "(256) 5469404"
+  address: PO Box 636
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 10570622
+  first_name: Gregory
+  mi: T
+  last_name: Porter
+  full_name: Porter, Gregory T
+  phone: "(256) 4583163"
+  address: 2245 Cornelia Cir W
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: gregporter1963@yahoo.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-10-31'
+  days_remaining: '43'
+  last_status: New Member
+  served: 
+  alt_phone: 
+  age: 56
+  undeliverable: 
+- vfw_id: 9248845
+  first_name: Bernie
+  mi: J
+  last_name: Pounds
+  full_name: Pounds, Bernie J
+  phone: "(256) 4354325"
+  address: 208 S Harris Ave
+  city: Piedmont
+  state: AL
+  zip: '36272'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 74
+  undeliverable: 
+- vfw_id: 11284087
+  first_name: Dominic
+  mi: J
+  last_name: Prankienas
+  full_name: Prankienas, Dominic J
+  phone: "(256) 5539127"
+  address: 3617 Hawk Rd
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: 
+  email: prankienas_d@hotmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-04-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 33
+  undeliverable: 
+- vfw_id: 1211505
+  first_name: Wilma
+  mi: L
+  last_name: Prevatte
+  full_name: Prevatte, Wilma L
+  phone: 
+  address: 212 Live Oak Ct
+  city: Mountain City
+  state: TX
+  zip: '78610'
+  status: 
+  email: 
+  type_pay: '0'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1222638
+  first_name: Jack
+  mi: P
+  last_name: Price
+  full_name: Price, Jack P
+  phone: 
+  address: 138 Marty Sands Rd
+  city: Cochran
+  state: GA
+  zip: '31014'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 11325307
+  first_name: Jerry
+  mi: Y
+  last_name: Pullen
+  full_name: Pullen, Jerry Y
+  phone: "(256) 2954351"
+  address: 112 Hidden Cir
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: New
+  email: josephpullen1959@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 88
+  undeliverable: 
+- vfw_id: 1367067
+  first_name: W
+  mi: M
+  last_name: Quinn
+  full_name: Quinn, W M
+  phone: 
+  address: 5585 Slasham Rd
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 88
+  undeliverable: 
+- vfw_id: 9166175
+  first_name: John
+  mi: W
+  last_name: Reeves
+  full_name: Reeves, John W
+  phone: 
+  address: 1001 Brooks Rd
+  city: Sylacauga
+  state: AL
+  zip: '35150'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 42
+  undeliverable: 
+- vfw_id: 9949988
+  first_name: Arthur E
+  mi: E
+  last_name: Reynolds
+  full_name: Reynolds, Arthur E E
+  phone: 
+  address: 780 Cox Gap Rd
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 6131894
+  first_name: Leroy
+  mi: H
+  last_name: Reynolds
+  full_name: Reynolds, Leroy H
+  phone: "(256  )4920736"
+  address: 1313 Jones Chapel Rd
+  city: Piedmont
+  state: AL
+  zip: '36272'
+  status: 
+  email: etcosa@bellsouth.net
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 9134567
+  first_name: Harry
+  mi: 
+  last_name: Riddle
+  full_name: 'Riddle, Harry '
+  phone: "(425  )3080742"
+  address: PO Box 88
+  city: North Lakewood
+  state: WA
+  zip: '98259'
+  status: 
+  email: Harry63@aol.com
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 2668574
+  first_name: James
+  mi: 
+  last_name: Roberson
+  full_name: 'Roberson, James '
+  phone: "(256  )5470752"
+  address: 2030 Mayfield Dr
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 908644
+  first_name: G
+  mi: L
+  last_name: Roberts
+  full_name: Roberts, G L
+  phone: 
+  address: 989 Garmon Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 93
+  undeliverable: 'Yes'
+- vfw_id: 10233621
+  first_name: Jack
+  mi: O
+  last_name: Roberts
+  full_name: Roberts, Jack O
+  phone: "(256  )5945214"
+  address: PO Box 73
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 476767
+  first_name: Katherine
+  mi: 
+  last_name: Robinson
+  full_name: 'Robinson, Katherine '
+  phone: 
+  address: 4910 Berridge Ln
+  city: Dallas
+  state: TX
+  zip: '75227'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 95
+  undeliverable: 'Yes'
+- vfw_id: 396233
+  first_name: Donald
+  mi: B
+  last_name: Russell
+  full_name: Russell, Donald B
+  phone: 
+  address: 3084 Walker Rd
+  city: York
+  state: AL
+  zip: '36925'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 84
+  undeliverable: 
+- vfw_id: 935842
+  first_name: Maurice
+  mi: J
+  last_name: Sanders
+  full_name: Sanders, Maurice J
+  phone: "(678) 2965428"
+  address: 365 Little Nose Dr
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 10996288
+  first_name: George
+  mi: W
+  last_name: Savage
+  full_name: Savage, George W
+  phone: "(256) 2837818"
+  address: 1501 Camellia Cir NE
+  city: Jacksonville
+  state: AL
+  zip: '36265'
+  status: New
+  email: gsavage693@aol.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-07-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 78
+  undeliverable: 
+- vfw_id: 10418261
+  first_name: Vincent
+  mi: J
+  last_name: Schaeffer
+  full_name: Schaeffer, Vincent J
+  phone: "(256) 4780056"
+  address: 4869 Whorton Bend Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: vjs3000@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 1026215
+  first_name: Richard
+  mi: L
+  last_name: Schafer
+  full_name: Schafer, Richard L
+  phone: "(256  )5474639"
+  address: 4989 Greensport Rd
+  city: Ashville
+  state: AL
+  zip: '35953'
+  status: ''
+  email: tsquarezz@cybrtyme.com
+  type_pay: '0'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 10948088
+  first_name: Zachary
+  mi: P
+  last_name: Scheller
+  full_name: Scheller, Zachary P
+  phone: "(828) 5148427"
+  address: 810 Randall St
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 36
+  undeliverable: 
+- vfw_id: 434288
+  first_name: William
+  mi: 
+  last_name: Schoonmaker
+  full_name: 'Schoonmaker, William '
+  phone: "(256) 5437482"
+  address: 209 W Sunset Dr
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 79
+  undeliverable: 'Yes'
+- vfw_id: 10614899
+  first_name: Herman
+  mi: N
+  last_name: Sewell
+  full_name: Sewell, Herman N
+  phone: "(256) 4522743"
+  address: 541 Robertson Rd
+  city: Piedmont
+  state: AL
+  zip: '36272'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 
+- vfw_id: 10597147
+  first_name: Joyce
+  mi: D
+  last_name: Shelley
+  full_name: Shelley, Joyce D
+  phone: "(256) 5046917"
+  address: 6540 River Hills Cir
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: joyceshelley75@gmail.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2016-12-01'
+  days_remaining: 75 - AutoPay
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 63
+  undeliverable: 
+- vfw_id: 10918347
+  first_name: Robert
+  mi: T
+  last_name: Shelley
+  full_name: Shelley, Robert T
+  phone: "(256) 5046919"
+  address: 6540 River Hills Cir
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Continuous
+  email: tylershelley1@gmail.com
+  type_pay: '4'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-07-31'
+  days_remaining: 
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 31
+  undeliverable: 
+- vfw_id: 1445433
+  first_name: Gary
+  mi: T
+  last_name: Shirkey
+  full_name: Shirkey, Gary T
+  phone: 
+  address: 500 N Hood Ave
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 64
+  undeliverable: 
+- vfw_id: 1590408
+  first_name: Curtis
+  mi: W
+  last_name: Shull
+  full_name: Shull, Curtis W
+  phone: 
+  address: 744 Lawson Gap Rd
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 57
+  undeliverable: 
+- vfw_id: 9991314
+  first_name: Leland
+  mi: C
+  last_name: Shull
+  full_name: Shull, Leland C
+  phone: "(256  )5387507"
+  address: 216 5th St NW
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: curtisshull@bellsouth.net
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-06-19'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 3749131
+  first_name: Norman
+  mi: L
+  last_name: Shurbutt
+  full_name: Shurbutt, Norman L
+  phone: 
+  address: 1660 Dunn Rd
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10082133
+  first_name: Eizens
+  mi: P
+  last_name: Silins
+  full_name: Silins, Eizens P
+  phone: 
+  address: 500 N Montgomery Ave; Apt 412
+  city: Sheffield
+  state: AL
+  zip: '35660'
+  status: 
+  email: ezoston@hotmail.com
+  type_pay: '1'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-06-16'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-12-03
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 2677159
+  first_name: Marshall
+  mi: I
+  last_name: Simmons
+  full_name: Simmons, Marshall I
+  phone: 
+  address: 203 Southview Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: Continuous
+  pay_date: 
+  country: United States
+  paid_thru: '2020-12-31'
+  days_remaining: '15'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 86
+  undeliverable: 
+- vfw_id: 1131991
+  first_name: E
+  mi: J
+  last_name: Sims
+  full_name: Sims, E J
+  phone: "(256) 4386092"
+  address: 13000 US Highway 278 E
+  city: Piedmont
+  state: AL
+  zip: '36272'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 71
+  undeliverable: 
+- vfw_id: 10062552
+  first_name: Raymond
+  mi: C
+  last_name: Slaton
+  full_name: Slaton, Raymond C
+  phone: 
+  address: 2203 Marshall St
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Reinstated
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-01-31'
+  days_remaining: '58'
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 1116680
+  first_name: Jarvis
+  mi: L
+  last_name: Smith
+  full_name: Smith, Jarvis L
+  phone: "(478) 4564444"
+  address: 1772 Buffington Rd
+  city: Boaz
+  state: AL
+  zip: '35956'
+  status: Life
+  email: boazcboy@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 61
+  undeliverable: 
+- vfw_id: 11325309
+  first_name: Matthew
+  mi: K
+  last_name: Smith
+  full_name: Smith, Matthew K
+  phone: "(205) 3820892"
+  address: 2657 Pinedale Dr
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: New
+  email: s.matthew86@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 32
+  undeliverable: 
+- vfw_id: 10570620
+  first_name: Michael
+  mi: P
+  last_name: Smith
+  full_name: Smith, Michael P
+  phone: "(256) 4923216"
+  address: 509 Pineview Ave RM 101
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: Continuous
+  email: 
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 'Yes'
+- vfw_id: 2292511
+  first_name: Royce
+  mi: L
+  last_name: Smith
+  full_name: Smith, Royce L
+  phone: "(256) 4426833"
+  address: 116 Windemere Dr
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 9614430
+  first_name: Timothy
+  mi: S
+  last_name: Smith
+  full_name: Smith, Timothy S
+  phone: "(256) 6136105"
+  address: 4130 Old Gallant Rd
+  city: Gallant
+  state: AL
+  zip: '35972'
+  status: Life
+  email: ts110410@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 55
+  undeliverable: 
+- vfw_id: 701250
+  first_name: Toney
+  mi: W
+  last_name: Smith
+  full_name: Smith, Toney W
+  phone: 
+  address: 1463 Holiday Dr
+  city: Southside
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 84
+  undeliverable: 
+- vfw_id: 11325304
+  first_name: Robin
+  mi: S
+  last_name: Sparks
+  full_name: Sparks, Robin S
+  phone: "(256) 5063624"
+  address: 1921 Putter Cir NE
+  city: Arab
+  state: AL
+  zip: '35016'
+  status: New
+  email: robin.s.sparks77@gmail.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: New Member
+  pay_date: 
+  country: United States
+  paid_thru: '2020-11-30'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 60
+  undeliverable: 
+- vfw_id: 10425567
+  first_name: Adam
+  mi: D
+  last_name: Spinkle
+  full_name: Spinkle, Adam D
+  phone: "(256  )4947002"
+  address: 802B Wilson St SE
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: 
+  email: sprinke1adma@yahoo.com
+  type_pay: '1'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-10-14'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10504592
+  first_name: Edward
+  mi: L
+  last_name: Spraley
+  full_name: Spraley, Edward L
+  phone: "(256) 4540134"
+  address: 127 Scenic Hills Dr
+  city: Newnan
+  state: GA
+  zip: '30265'
+  status: Continuous
+  email: espraley@gmail.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-05-31'
+  days_remaining: EXPIRED
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 10264345
+  first_name: Thomas
+  mi: R
+  last_name: Spurling
+  full_name: Spurling, Thomas R
+  phone: "(256  )3124025"
+  address: 20 Calhoun Dr
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2013-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1471794
+  first_name: Jerry
+  mi: R
+  last_name: Stanfield
+  full_name: Stanfield, Jerry R
+  phone: 
+  address: 513 S Moore Rd
+  city: Rising Fawn
+  state: GA
+  zip: '30738'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 11325310
+  first_name: Elizabeth
+  mi: A
+  last_name: Stanley
+  full_name: Stanley, Elizabeth A
+  phone: "(256) 2930210"
+  address: 806 Blount Ave
+  city: Guntersville
+  state: AL
+  zip: '35976'
+  status: New-Life
+  email: colstanley@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 63
+  undeliverable: 
+- vfw_id: 3412011
+  first_name: Clyde
+  mi: T
+  last_name: Stevens
+  full_name: Stevens, Clyde T
+  phone: "(256  )4226177"
+  address: 4909 Branch Mill Cir
+  city: Mountain Brk
+  state: AL
+  zip: '35223'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2016-05-01'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10423830
+  first_name: Cary
+  mi: S
+  last_name: Stewart
+  full_name: Stewart, Cary S
+  phone: "(256  )6469005"
+  address: 316 Howell Cir
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-10-03'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 10382741
+  first_name: Samuel
+  mi: E
+  last_name: Strickland
+  full_name: Strickland, Samuel E
+  phone: "(256) 2958005"
+  address: PO Box 6011
+  city: Kinston
+  state: NC
+  zip: '28501'
+  status: Continuous
+  email: elistrickland@rocketmail.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-05-31'
+  days_remaining: '11'
+  last_status: UnPaid 2018-04-12
+  served: 
+  alt_phone: 
+  age: 37
+  undeliverable: 
+- vfw_id: 11310365
+  first_name: Michael
+  mi: K
+  last_name: Swetina
+  full_name: Swetina, Michael K
+  phone: "(256) 5057620"
+  address: 398 Holder Rd
+  city: Albertville
+  state: AL
+  zip: '35951'
+  status: New-Life
+  email: 
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 10932038
+  first_name: Joey
+  mi: B
+  last_name: Thompson
+  full_name: Thompson, Joey B
+  phone: "(256) 5572122"
+  address: 130 County Road 494
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Continuous
+  email: joey.b.thompson69@gmail.com
+  type_pay: '4'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-12-31'
+  days_remaining: '27'
+  last_status: New Member 2018-04-12
+  served: 
+  alt_phone: 
+  age: 34
+  undeliverable: 
+- vfw_id: 10918348
+  first_name: Danny
+  mi: M
+  last_name: Thornton
+  full_name: Thornton, Danny M
+  phone: "(256) 3993451"
+  address: 165 Glen Oaks Circle
+  city: Glencoe
+  state: AL
+  zip: '35905'
+  status: Life
+  email: dmthornton51@gmail.com
+  type_pay: '4'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 2018-10-16
+  country: United States
+  paid_thru: '2019-07-31'
+  days_remaining: ''
+  last_status: New Member 2018-04-12
+  served: ''
+  alt_phone: ''
+  age: 68
+  undeliverable: 
+- vfw_id: 1163902
+  first_name: David
+  mi: L
+  last_name: Tommie
+  full_name: Tommie, David L
+  phone: 
+  address: 216 Elsmore Blvd
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 9557361
+  first_name: Larry
+  mi: L
+  last_name: Tumlin
+  full_name: Tumlin, Larry L
+  phone: "(256) 4923064"
+  address: 1764 New Liberty Rd
+  city: Wellington
+  state: AL
+  zip: '36279'
+  status: Life
+  email: tumlink@bellsouth.net
+  type_pay: '0'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: Life Member
+  served: ''
+  alt_phone: ''
+  age: 67
+  undeliverable: 
+- vfw_id: 5870340
+  first_name: David
+  mi: W
+  last_name: Turner
+  full_name: Turner, David W
+  phone: "(256) 5531860"
+  address: 4614 Fire Fly Cir
+  city: Las Vegas
+  state: NV
+  zip: '89122'
+  status: Life
+  email: ''
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: ''
+  days_remaining: ''
+  last_status: ''
+  served: ''
+  alt_phone: ''
+  age: 69
+  undeliverable: 
+- vfw_id: 2767756
+  first_name: George
+  mi: 
+  last_name: Turner
+  full_name: 'Turner, George '
+  phone: 
+  address: 330 Howell Cir
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2018-08-12'
+  days_remaining: '74'
+  last_status: Continuous 2019-04-17
+  served: 
+  alt_phone: 
+  age: 91
+  undeliverable: 
+- vfw_id: 3126420
+  first_name: George
+  mi: C
+  last_name: Usry
+  full_name: Usry, George C
+  phone: 
+  address: 2406 Hill Ave
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: 
+  email: 
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 5454451
+  first_name: James
+  mi: B
+  last_name: Vaughn
+  full_name: Vaughn, James B
+  phone: 
+  address: 2281 Highway 77
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 69
+  undeliverable: 
+- vfw_id: 869123
+  first_name: Johnny
+  mi: L
+  last_name: Vinyard
+  full_name: Vinyard, Johnny L
+  phone: 
+  address: 144 Vinyard Dr
+  city: Wellington
+  state: AL
+  zip: '36279'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 2216175
+  first_name: James
+  mi: E
+  last_name: Waddell
+  full_name: Waddell, James E
+  phone: "(256  )4422457"
+  address: 617 Becky Allen Cir
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: ''
+  email: ''
+  type_pay: '3'
+  pay_year: '2017'
+  pay_status: Missing
+  pay_date: 2017-04-18
+  country: United States
+  paid_thru: '2017-12-31'
+  days_remaining: ''
+  last_status: Continuous-deceased
+  served: ''
+  alt_phone: ''
+  age: 
+  undeliverable: 
+- vfw_id: 1381621
+  first_name: Connie
+  mi: L
+  last_name: Walden
+  full_name: Walden, Connie L
+  phone: 
+  address: 250 Carter Dr
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 65
+  undeliverable: 
+- vfw_id: 1381622
+  first_name: Oscar
+  mi: L
+  last_name: Walden
+  full_name: Walden, Oscar L
+  phone: 
+  address: 250 Carter Dr
+  city: Ohatchee
+  state: AL
+  zip: '36271'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 77
+  undeliverable: 
+- vfw_id: 10597144
+  first_name: Billy
+  mi: M
+  last_name: Waldrop
+  full_name: Waldrop, Billy M
+  phone: "(256) 2450340"
+  address: 1210B Rabbittown Rd
+  city: Gadsden
+  state: AL
+  zip: '35905'
+  status: Life
+  email: billyglevcoeal@netzero.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2016-12-01'
+  days_remaining: 75 - AutoPay
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 64
+  undeliverable: 
+- vfw_id: 9279189
+  first_name: Thomas
+  mi: E
+  last_name: Walker
+  full_name: Walker, Thomas E
+  phone: "(256  )4909652"
+  address: 7348 Gallant Rd
+  city: Gallant
+  state: AL
+  zip: '35972'
+  status: 
+  email: medicironshek@yahoo.com
+  type_pay: '1'
+  pay_year: '2016'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2014-12-31'
+  days_remaining: EXPIRED
+  last_status: UnPaid
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 5564309
+  first_name: Patrick
+  mi: 
+  last_name: Walsh
+  full_name: 'Walsh, Patrick '
+  phone: 
+  address: 501 Bellevue Dr
+  city: Gadsden
+  state: AL
+  zip: '35904'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 76
+  undeliverable: 
+- vfw_id: 10622949
+  first_name: Cedric
+  mi: M
+  last_name: Walton
+  full_name: Walton, Cedric M
+  phone: "(256) 7942461"
+  address: 625 Walton Rd
+  city: Alex City
+  state: AL
+  zip: '35010'
+  status: ''
+  email: cedricwalton78@gmail.com
+  type_pay: '1'
+  pay_year: '2018'
+  pay_status: Missing
+  pay_date: 2017-01-17
+  country: United States
+  paid_thru: '2017-04-24'
+  days_remaining: EXPIRED
+  last_status: UnPaid 2019-04-17
+  served: ''
+  alt_phone: ''
+  age: 57
+  undeliverable: 
+- vfw_id: 894314
+  first_name: Hubert
+  mi: L
+  last_name: Ward
+  full_name: Ward, Hubert L
+  phone: 
+  address: 508 Peach Ave
+  city: Albertville
+  state: AL
+  zip: '35950'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 84
+  undeliverable: 
+- vfw_id: 936259
+  first_name: Michael
+  mi: E
+  last_name: Waters
+  full_name: Waters, Michael E
+  phone: 
+  address: 2167 Cedar Bend Rd N
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 78
+  undeliverable: 'Yes'
+- vfw_id: 1044055
+  first_name: Ralph
+  mi: D
+  last_name: Watts
+  full_name: Watts, Ralph D
+  phone: 
+  address: 281 Watson Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 79
+  undeliverable: 
+- vfw_id: 9763718
+  first_name: Jackie
+  mi: L
+  last_name: Wayer
+  full_name: Wayer, Jackie L
+  phone: "(870) 5442722"
+  address: 3350 Riddles Bend Rd
+  city: Rainbow City
+  state: AL
+  zip: '35906'
+  status: Continuous
+  email: jpawayer@centurytel.net
+  type_pay: 
+  pay_year: '2020'
+  pay_status: Continuous Transfer
+  pay_date: 
+  country: United States
+  paid_thru: '2020-12-31'
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 70
+  undeliverable: 
+- vfw_id: 9832198
+  first_name: Charles
+  mi: W
+  last_name: Wetzel
+  full_name: Wetzel, Charles W
+  phone: "(256) 4137337"
+  address: 701 Lakeshore Ave E
+  city: Gadsden
+  state: AL
+  zip: '35907'
+  status: Life
+  email: snake2489@aol.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 10593249
+  first_name: Harold
+  mi: D
+  last_name: Whaley
+  full_name: Whaley, Harold D
+  phone: "(256) 4385769"
+  address: 745 Walnut St Apt 611
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: hdwhaley@comcast.net
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: '2016-11-09'
+  days_remaining: 
+  last_status: Life Member
+  served: 
+  alt_phone: 
+  age: 75
+  undeliverable: 
+- vfw_id: 10961417
+  first_name: George
+  mi: E
+  last_name: Wilburn
+  full_name: Wilburn, George E
+  phone: "(206) 4588594"
+  address: PO Box 541
+  city: Gadsden
+  state: AL
+  zip: '35902'
+  status: New
+  email: wil7029@yahoo.com
+  type_pay: 
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2019-01-31'
+  days_remaining: EXPIRED
+  last_status: Installment Life 2018-04-12
+  served: 
+  alt_phone: 
+  age: 72
+  undeliverable: 
+- vfw_id: 10310817
+  first_name: Jeremy
+  mi: E
+  last_name: Wilder
+  full_name: Wilder, Jeremy E
+  phone: "(256) 2585471"
+  address: 4620 US Highway 11 S
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Continuous
+  email: jeremywilder28@gmail.com
+  type_pay: '8'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-02-29'
+  days_remaining: '87'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 35
+  undeliverable: 
+- vfw_id: 10280932
+  first_name: Gary
+  mi: R
+  last_name: Williams
+  full_name: Williams, Gary R
+  phone: "(256) 4383039"
+  address: 300 Summit Ave
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Continuous
+  email: Gary.raywilliams@yahoo.com
+  type_pay: '1'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-04-30'
+  days_remaining: '60'
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 30
+  undeliverable: 
+- vfw_id: 481287
+  first_name: David
+  mi: L
+  last_name: Woodard
+  full_name: Woodard, David L
+  phone: 
+  address: 1215 Hooks Lake Rd
+  city: Gadsden
+  state: AL
+  zip: '35901'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2019'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: Life Member 2019-12-03
+  served: 
+  alt_phone: 
+  age: 87
+  undeliverable: 
+- vfw_id: 2367187
+  first_name: William
+  mi: M
+  last_name: Woods
+  full_name: Woods, William M
+  phone: 
+  address: 8175 US Highway 411 N
+  city: Centre
+  state: AL
+  zip: '35960'
+  status: Continuous
+  email: 
+  type_pay: '3'
+  pay_year: '2020'
+  pay_status: UnPaid
+  pay_date: 
+  country: United States
+  paid_thru: '2020-04-30'
+  days_remaining: EXPIRED
+  last_status: Continuous 2018-04-12
+  served: 
+  alt_phone: 
+  age: 80
+  undeliverable: 
+- vfw_id: 3134603
+  first_name: George
+  mi: S
+  last_name: Wright
+  full_name: Wright, George S
+  phone: 
+  address: 5888 Eastview Ave
+  city: Hokes Bluff
+  state: AL
+  zip: '35903'
+  status: 
+  email: 
+  type_pay: '3'
+  pay_year: '2015'
+  pay_status: Missing
+  pay_date: 
+  country: United States
+  paid_thru: '2015-12-31'
+  days_remaining: 
+  last_status: Continuous
+  served: 
+  alt_phone: 
+  age: 
+  undeliverable: 
+- vfw_id: 1547536
+  first_name: Gary
+  mi: C
+  last_name: Yeager
+  full_name: Yeager, Gary C
+  phone: 
+  address: 1209 Turner St
+  city: Gadsden
+  state: AL
+  zip: '35903'
+  status: Life
+  email: 
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 73
+  undeliverable: 
+- vfw_id: 1589413
+  first_name: John
+  mi: R
+  last_name: Zvodar
+  full_name: Zvodar, John R
+  phone: 
+  address: 549 County Road 363
+  city: Attalla
+  state: AL
+  zip: '35954'
+  status: Life
+  email: diverjohnz@yahoo.com
+  type_pay: '0'
+  pay_year: '2020'
+  pay_status: Life Member
+  pay_date: 
+  country: United States
+  paid_thru: 
+  days_remaining: 
+  last_status: 
+  served: 
+  alt_phone: 
+  age: 54
+  undeliverable: 

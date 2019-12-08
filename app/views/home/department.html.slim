@@ -1,0 +1,17 @@
+
+.w3-container.w3-white.min-height
+  .w3-row
+    .w3-col.m2
+      h3.some instructions
+      p  stuff
+
+    .w3-col.m10
+      h3.strong Department#index
+      p Welcome to a post home page
+      - post_districts = Post.district_posts
+      = post_districts
+      - post_districts.each do |d,posts|
+        span= "District #{d}"
+        .w3-bar.goldey
+          - posts.each do |p,id|
+            = link_to p, visit_post_path(id), class:'w3-bar-item w3-button lite-goldey'

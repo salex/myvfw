@@ -1,0 +1,64 @@
+.pl-row {
+  width: 44rem;
+  .pl-col-acct{
+    display: inline-block;
+    width: 10rem;
+    text-align: left;
+    &.p0{ padding-left: 0rem;}
+    &.p1{ padding-left: 1rem;}
+    &.p2{ padding-left: 2rem;}
+    &.p3{ padding-left: 3rem;}
+    &.p4{ padding-left: 4rem;}
+    &.p5{ padding-left: 5rem;}
+  }
+  .col-acct{
+    display: inline-block;
+    width: 15rem;
+    text-align: left;
+    &.p0{ padding-left: 0rem;}
+    &.p1{ padding-left: 1rem;}
+    &.p2{ padding-left: 2rem;}
+    &.p3{ padding-left: 3rem;}
+    &.p4{ padding-left: 4rem;}
+    &.p5{ padding-left: 5rem;}
+  }
+
+  .pl-col-11 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right;
+  }
+  .pl-col-12 {
+    display: inline-block;
+    width: 12rem;
+    text-align: right;
+  }
+  .pl-col-13 {
+    display: inline-block;
+    width: 18rem;
+    text-align: right;
+  }
+  .pl-col-22 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right;
+  }
+  .pl-col-23 {
+    display: inline-block;
+    width: 12rem;
+    text-align: right;
+  }
+  .pl-col-33 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right;
+  }
+  .pl-col-tot {
+    display: inline-block;
+    width: 7rem;
+    text-align: right;
+  }
+
+
+}
+.tright {text-align: right;}

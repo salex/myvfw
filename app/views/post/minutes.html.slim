@@ -1,0 +1,11 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
+      h4.strong.text-center.malt Post Membership Meetings
+      table
+        -@markups.each do |link|
+
+          = render partial:'markups/markup_links',locals:{article: link}
+
+    = render partial:'home/sidebar'
+

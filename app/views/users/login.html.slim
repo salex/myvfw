@@ -1,0 +1,23 @@
+.w3-container.min-height
+  .w3-row
+    .w3-col.s4 &nbsp;
+    .box-center.s4.w3-col.w3-white.w3-padding 
+      = form_tag signin_users_path do
+        h5.strong.malt Login
+        .flabel
+          = label_tag(:email, 'eMail or Username')
+          - uname = params[:email].present? ? params[:email] : cookies[:remember_me]
+        .ffield
+          = text_field_tag( :email, uname)
+        .flabel
+          = label_tag( :password)
+        .ffield
+          = password_field_tag( :password)
+          p &nbsp;
+          = submit_tag( "Login",class:'w3-button w3-blue-gray')
+          span.indent
+            |&nbsp;
+            = check_box_tag(:remember_me,1,cookies[:remember_me].present?)
+            |&nbsp;Remember Me
+          /   .indent2 = link_to "Forgot Password",forgot_password_users_path
+    .w3-col.s4 &nbsp;

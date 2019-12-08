@@ -1,0 +1,8 @@
+.w3-container.min-height.w3-row
+  == render partial: 'home/sidebar'
+
+  .s12.m10.w3-col
+    h3.strong.text-center.malt Articles
+    -@markups.each do |link|
+      = render partial:'markups/markup_links',locals:{article: link}
+

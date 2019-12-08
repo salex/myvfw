@@ -1,0 +1,35 @@
+.title-bar data-hide-for="medium" data-responsive-toggle="responsive-menu" 
+  button.menu-icon data-toggle="responsive-menu" type="button" 
+  .title-bar-title Menu
+#responsive-menu.top-bar
+  .top-bar-left
+    ul.dropdown.menu data-dropdown-menu="" 
+      li.menu-text
+        strong 
+          |VFWPost8600
+          span style="font-size:.5rem;" .org
+      li = link_to "Home", root_path
+      li = link_to "Post", post_about_path
+      li = link_to "Members", members_path
+      li = link_to "Officers", post_officers_path
+
+      li.has-submenu
+        a href="#0" Links
+        ul.submenu.menu.vertical data-submenu="" 
+          / li = link_to "Contact Us",contact_path,class:'button unpad' 
+          li = link_to "About",post_about_path,class:'button unpad'
+          li = link_to "Map",post_map_path,class:'button unpad' 
+          li = link_to "Articles",post_articles_path,class:'button unpad' 
+          li = link_to "Links",post_links_path,class:'button unpad' 
+          li = link_to "News",post_news_path,class:'button unpad' 
+          li = link_to "Minutes", post_minutes_path,class:'button unpad'
+          li = link_to "Calendar", post_calendar_path,class:'button unpad'
+          li = link_to "Radar",post_radar_path,class:'button unpad' 
+  .top-bar-right
+    ul.menu
+      - if  current_user.present?
+        li = link_to "Profile",profile_path, class:'button small'
+        li &nbsp;
+        li = link_to "Logout",logout_path, class:'button small'
+      - else
+        li = link_to "Login",login_path, class:'button small', style:'color:#888;background-color:#333;'

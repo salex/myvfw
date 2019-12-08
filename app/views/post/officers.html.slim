@@ -1,0 +1,27 @@
+.w3-container.min-height.w3-row
+  == render partial: 'home/sidebar'
+  .s12.m10.w3-col
+    .w3-row
+      .s1.w3-col
+        = image_tag "vfw-logo.png"
+      .s10.w3-col
+        - today = Date.current
+        - yr = today.month > 5 ? "#{today.year}-#{today.year+1}" : "#{today.year-1}-#{today.year}"
+        h4.text-center.strong.malt Current Officers #{yr}
+      .s1.w3-col
+        = image_tag "vfw-logo.png"
+    .w3-row
+      .s12.w3-col
+        hr
+        table.w100
+          tr
+            th Position
+            th Name
+            th From
+            th Contact
+          - @officers.each do |position,who|
+            tr
+              td = position
+              td = who[:name]
+              td = who[:from]
+              td = who[:email].blank? ? '' : link_to( "eMail", "/contact_officer/#{position}")

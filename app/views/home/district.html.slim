@@ -1,0 +1,24 @@
+
+.w3-container.w3-white.min-height
+  .w3-row
+    .w3-col.m4.my-pad-left-right
+      p some instructions
+    .w3-col.m8.my-pad-left-right
+      h3.strong District#posts
+      table.small-table
+        thead
+          tr
+            th Post
+            th Name
+            th City
+            th Actions
+    
+
+        tbody
+          - @posts.each do |post|
+            tr
+              td.text-right = post.numb
+              td = post.name
+              td = post.city
+              td = link_to "Visit Post", visit_post_path(post.id),class:'w3-btn lite-goldey w3-small'
+

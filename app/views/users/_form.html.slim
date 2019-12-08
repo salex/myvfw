@@ -1,0 +1,32 @@
+= simple_form_for @user do |f|
+  - if @user.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+      ul
+        - @user.errors.full_messages.each do |message|
+          li = message
+  br
+  .form-inputs.s12.m5.w3-col.w3-card
+
+    = f.input :user_type
+    = f.input :email
+    = f.input :username
+    = f.input :full_name
+    = f.input :password
+    = f.input :password_confirmation
+    / = f.input :roles
+    / = f.input :reset_token
+    = f.input :post
+    = f.input :district
+    = f.input :department
+    label Roles
+    - checkboxes = role_checkboxes(@user.roles)
+    - checkboxes.each do |b|
+      .medium-3.columns
+        = check_box_tag 'user[roles][]', b[0],b[1]
+        |&nbsp;
+        = b[0]
+    
+    br
+    = f.button :submit, class:'w3-button w3-blue-gray'
+    div &nbsp;

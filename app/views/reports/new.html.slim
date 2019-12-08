@@ -1,0 +1,7 @@
+.w3-container.w3-white.min-height
+  / = render partial:'reports/links'
+  / h6.strong New Program_report
+  = index_links(Markup,header:"New Report Menu")
+
+  == render partial:'form', locals:{action:"New Program_Report"}
+

@@ -1,0 +1,43 @@
+.w3-container.w3-white.min-height
+  - other = capture do
+    = link_to('Display',@markup.permalink,class:'w3-button w3-bar-item w3-hover-blue-gray')
+    = link_to('Print',print_markup_path(@markup),class:'w3-button w3-bar-item w3-hover-blue-gray')
+
+
+  = show_links(@markup,buttons:[other])
+
+  .w3-row
+    / .w3-bar.goldey
+    /   .w3-col.m6
+    /     .w3-menu-item = link_to('Display',@markup.permalink,class:'w3-button w3-bar-item w3-hover-blue-gray')
+    /     .w3-menu-item = link_to('Print',print_markup_path(@markup),class:'w3-button w3-bar-item w3-hover-blue-gray')
+    /   .w3-col.m6
+    /     .strong.w3-large Markup
+  
+  table.s12.m6.w3-col.show-table
+    
+
+    tr
+      th User:
+      td = @markup.user
+    tr
+      th Category:
+      td = @markup.category
+    tr
+      th Date:
+      td = @markup.date
+    tr
+      th Title:
+      td = @markup.title
+    tr
+      th Leadin:
+      td = @markup.leadin
+    tr
+      th Content:
+      td = text_area_tag nil,@markup.content
+    tr
+      th Active:
+      td = @markup.active
+    table.s12.m6.w3-col.show-table
+
+

@@ -1,0 +1,30 @@
+.s12.w3-col
+  table.w3-table-all.table-cell-borders
+    / - if @range.present?
+    /   caption = "Summary Range:  #{@range}"
+    tr
+      td.strong Program
+      td.strong.text-right Reports 
+      td.strong.text-right Volunteers
+      td.strong.text-right Hours
+      td.strong.text-right Miles
+      td.strong.text-right Expenses
+      td.strong.text-right Cost
+    - summary.each do |prg,s|
+      tr
+        td = prg
+        td.text-right = s[:count]
+        td.text-right = s[:volunteers]
+        td.text-right = s[:total_hours]
+        td.text-right = s[:total_miles]
+        td.text-right = number_to_currency(s[:expenses])
+        td.text-right = number_to_currency(s[:total_cost])
+    tr
+      td Totals
+      td.text-right = totals[:count]
+      td.text-right = totals[:volunteers]
+      td.text-right = totals[:total_hours]
+      td.text-right = totals[:total_miles]
+      td.text-right = number_to_currency(totals[:expenses])
+      td.text-right = number_to_currency(totals[:total_cost])
+

@@ -1,0 +1,9 @@
+.w3-bar.malty
+  w3-bar-item= link_to "Printer Friendly", print_markup_path(@markup), class:'noprint w3-text-white '
+
+.w3-container.min-height-80.w3-row.w3-white
+  / == render partial: 'home/sidebar'
+
+  .s12.m10.w3-col
+    = render partial:'markups/markup_display',locals:{article: @markup}
+
