@@ -1,4 +1,5 @@
 class PostController < ApplicationController
+  before_action :require_post
   # def officers
   #   if current_user.present?
 
@@ -17,28 +18,49 @@ class PostController < ApplicationController
   def members
   end
 
+  def map
+    @map = Current.post.markups.find_by(title:'map')
+  end
+
+  def radar
+    @radar = Current.post.markups.find_by(title:'radar')
+  end
+
   def news
   end
 
   def links
-    @markups =  Markup.where(category:'links',active:true).order(:date).reverse_order
+    @markups =  Current.post.markups.where(category:'links',active:true).order(:date).reverse_order
 
   end
 
   def articles
-    @markups =  Markup.where(category:'articles',active:true).order(:date).reverse_order
+    @markups =  Current.post.markups.where(category:'articles',active:true).order(:date).reverse_order
   end
 
   def minutes
-    @markups =  Markup.where(category:'minutes',active:true).order(:date).reverse_order
+    @markups =  Current.post.markups.where(category:'minutes',active:true).order(:date).reverse_order
   end
 
   def calendar
-    @events = Ical.new(params[:refresh]).upcoming_events
+    calendar = Current.post.markups.find_by(category:'kiosk',title:'calendar')
+    if calendar.present?
+      @events = Ical.new(params[:refresh]).upcoming_events
+    else
+      redirect_to root_path, notice: "Calendars were not found in markup kiosk/calendar"
+    end
   end
 
   def contact
     redirect_to root_path, alert: "Post/Officer Contact is under construction"
   end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def require_post
+      @post = Current.post
+      cant_do_that if @post.blank?
+    end
+
 
 end

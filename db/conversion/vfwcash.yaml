@@ -1,0 +1,81 @@
+---
+:qm:
+  :name: Steven V Alex
+  :address: 405 Karaway Hls
+  :city: Gadsden AL, 35901
+:post:
+  :name: Wilson Parris
+  :post: VFW Post 8600
+  :numb: 8600
+  :address: 817 Rainbow Dr
+  :city: Gadsden AL, 35901
+  :department: Alabama
+:accounts:
+  -
+    :name: General
+    :beginning: 0
+    :debit: 0
+    :credit: 0
+    :ending: 0
+    :type: Ck
+  -
+    :name: Relief
+    :beginning: 0
+    :debit: 0
+    :credit: 0
+    :ending: 0
+    :type: Ck
+  -
+    :name: CD
+    :beginning: 0
+    :debit: 0
+    :credit: 0
+    :ending: 0
+    :type: Sv
+  -
+    :name: Cash
+    :beginning: 0
+    :debit: 0
+    :credit: 0
+    :ending: 0
+    :type: Pc
+:acct_types: 'Ck Sv Pc'
+:operations:
+  - 
+    :question: Have required payroll deductions been made?
+    :response: 'Yes'
+  - 
+    :question: Have payments been made to the proper State & Federal agencies this quarter?
+    :response: 'Yes'
+  - 
+    :question: Have Sales Taxes been collected and paid?
+    :response: 'Yes'
+  - 
+    :question: Are Club employees bonded?
+    :response: 'Yes'
+  -
+    :question: Amount of outstanding bills?
+    :response: 0
+  -
+    :question: Value of Real Estate?
+    :response: 59420000
+  -
+    :question: Amount of Liability Insurance?
+    :response: 30000000
+  -
+    :question: Owed on Mortgages and Loans?
+    :response: 0
+  -
+    :question: Value of Personal Property?
+    :response: 594200
+  -
+    :question: Amount of Property Insurance?
+    :response: 31350000
+:date: '2019-07-09'
+:bond:
+  :name: Tallman Insurance Agency
+  :amount: 5000000
+  :to: '2020-08-31'
+:checking:
+  :balance:  2129428
+  :outstanding: 51569

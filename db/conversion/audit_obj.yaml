@@ -1,0 +1,100 @@
+--- !ruby/object:TrusteeAudit
+config: !ruby/object:OpenStruct
+  table:
+    :qm: !ruby/object:OpenStruct
+      table:
+        :name: Steven V Alex
+        :address: 405 Karaway Hls
+        :city: Gadsden AL, 35901
+      modifiable: true
+    :post: !ruby/object:OpenStruct
+      table:
+        :name: Wilson Parris
+        :post: VFW Post 8600
+        :numb: 8600
+        :address: 817 Rainbow Dr
+        :city: Gadsden AL, 35901
+        :department: Alabama
+      modifiable: true
+    :accounts:
+    - !ruby/object:OpenStruct
+      table:
+        :name: General
+        :beginning: 0
+        :debit: 0
+        :credit: 0
+        :ending: 0
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :name: Releif
+        :beginning: 0
+        :debit: 0
+        :credit: 0
+        :ending: 0
+      modifiable: true
+    :operations:
+    - !ruby/object:OpenStruct
+      table:
+        :question: Have required payroll deductions been made?
+        :response: 'Yes'
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Have payments been made to the proper State & Federal agencies
+          this quarter?
+        :response: 'Yes'
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Have Sales Taxes been collected and paid?
+        :response: 'Yes'
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Are Club employees bonded?
+        :response: 'Yes'
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Amount of outstanding bills?
+        :response: 0
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Value of Real Estate?
+        :response: 59420000
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Amount of Liability Insurance?
+        :response: 30000000
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Owed on Mortgages and Loans?
+        :response: 0
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Value of Personal Property?
+        :response: 594200
+      modifiable: true
+    - !ruby/object:OpenStruct
+      table:
+        :question: Amount of Property Insurance?
+        :response: 31350000
+      modifiable: true
+    :date: '2019-07-09'
+    :bond: !ruby/object:OpenStruct
+      table:
+        :name: Tallman Insurance Agency
+        :amount: 5000000
+        :to: '2020-08-31'
+      modifiable: true
+    :checking: !ruby/object:OpenStruct
+      table:
+        :balance: 2129428
+        :outstanding: 51569
+      modifiable: true
+  modifiable: true

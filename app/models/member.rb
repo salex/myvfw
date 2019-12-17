@@ -30,22 +30,25 @@ class Member < ApplicationRecord
   end
 
   def self.search(params)
-    members = Current.post.members.all
+    members = Current.post.members.active
+    # puts "WHAT PARAMS #{params}"
     unless params[:name].blank?
       if params[:name].include?(":where,")
         # Backdoor hidden where clause
         q =  params[:name].split(":where,")
         # p "DDDDDD #{q}"
-        members = Current.post.members.active.send(:where,q[1])
+        members = members.active.send(:where,q[1])
       else
-        name_query = Current.post.members.ilike_contains_query("members.full_name",params[:name])
-        city_query = Current.post.members.ilike_contains_query("members.city",params[:name])
-        # pin_query = ilike_equals_query("players.pin",params[:name])
-        name_ids = Current.post.members.where(name_query).pluck(:id)
-        city_ids = Current.post.members.where(city_query).pluck(:id)
+        words = params[:name].split unless words.class == Array
+        words.map!{|v| "%#{v}%"}
+        name_query = members.where(Member.arel_table[:full_name].matches_any(words))
+        city_query = members.where(Member.arel_table[:city].matches_any(words))
+        name_ids = name_query.pluck(:id)
+        city_ids = city_query.pluck(:id)
         # pin_ids = Player.where(pin_query).pluck(:id)
         all_ids = (name_ids + city_ids ).uniq
         members = members.where(id:all_ids )
+        # puts "SEARCJ #{members.count}"
       end
     end
     members.order(:full_name)
@@ -203,10 +206,10 @@ class Member < ApplicationRecord
   end
 
 
-  def self.ilike_contains_query(column,keys)
-    keys = keys.split unless keys.class == Array
-    values = keys.map{|v| "%#{v}%"}
-    ilike = [keys.map {|i| "#{column} ILiKE ? "}.join(" OR "), *values ]
-  end
+  # def self.ilike_contains_query(column,keys)
+  #   keys = keys.split unless keys.class == Array
+  #   values = keys.map{|v| "%#{v}%"}
+  #   ilike = [keys.map {|i| "#{column} ILiKE ? "}.join(" OR "), *values ]
+  # end
 
 end

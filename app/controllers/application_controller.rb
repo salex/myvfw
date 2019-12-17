@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include Pundit
+  protect_from_forgery
   # after_action :verify_authorized, only: [:new,:create,:edit,:update,:destroy]
 
 

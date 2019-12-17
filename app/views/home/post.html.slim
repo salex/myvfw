@@ -4,7 +4,7 @@
       - if @greeting.present?
          = render partial:'home/markup_home',locals:{article: @greeting}
       - else
-        .w3-container.w3-pale-red.w3-leftbar.w3-border-red
+        .w3-container.w3-pale-yellow.w3-leftbar.w3-border-yellow
           p =  "Post #{@post.numb} has not been initialized"
           p = session_inspect
           p = Current.post
@@ -33,8 +33,8 @@
         - if @home.present?
           - @home.each do |article|
             = render partial:'home/markup_home',locals:{article: article}
-        - if @slim.present?
-          = render inline: @slim.content, type: :slim
+        / - if @slim.present?
+        /   = render inline: @slim.content, type: :slim
         
     = render partial:'home/sidebar'
 

@@ -1,6 +1,6 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
-  before_action :require_login, except: [:index,:show,:search,:logout]
+  before_action :require_login, except: [:index,:show,:search,:logout,:list,:summary,:audit_summary,:print]
 
   # before_action :require_trustee
 
@@ -90,7 +90,7 @@ class ReportsController < ApplicationController
   end
 
   def summary
-    @summary,@totals,@range = Report.report_summary(params[:rdate])
+    @summary,@totals,@range = Current.post.reports.report_summary(params[:rdate])
     render template:'reports/post_summary'
     # respond_to do |format|
     #   format.html { render template:'reports/post_summary' }
@@ -99,12 +99,34 @@ class ReportsController < ApplicationController
   end
 
   def audit_summary
-    @summary,@totals,@range = Report.audit_summary(params[:audit]) # 0 to 3
+    @summary,@totals,@range = Current.post.reports.audit_summary(params[:audit]) # 0 to 3
     render template:'reports/post_summary'
     # respond_to do |format|
     #   format.html { render template:'reports/post_summary' }
     #   format.js {render template:'reports/programs'}
     #  end
+  end
+
+  def trustee_audit
+    @audit = TrusteeAudit.new(params[:date]).config
+  end
+
+  def trustee_audit_pdf
+    pdf = PdfAudit.new(params[:date])
+    send_data pdf.render, filename: "trustee_audit",
+      type: "application/pdf",
+      disposition: "inline"
+  end
+
+
+  def update_audit
+    pp = audit_params
+    audit = pp[:audit]
+    # puts audit
+    # render plain: audit
+    if TrusteeAudit.save(audit)
+      redirect_to root_path, notice: "Audit report has been saved"
+    end
   end
 
 
@@ -117,8 +139,8 @@ class ReportsController < ApplicationController
     # @summary,@totals = Report.report_summary(params[:rdate])
     # range = Report.report_range(params[:rdate])
     # @reports = Report.where(date:range).order(:date).reverse
-    @results = Report.quarter_summary(params[:rdate])
-    @summary,@totals,@range = Report.report_summary(params[:rdate])
+    @results = Current.post.reports.quarter_summary(params[:rdate])
+    @summary,@totals,@range = Current.post.reports.report_summary(params[:rdate])
 
     render template:'reports/print', layout: 'print'
   end
@@ -128,9 +150,12 @@ class ReportsController < ApplicationController
     def set_report
       @report = Current.post.reports.find(params[:id])
     end
+    def audit_params
+      params.permit!.to_h
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def report_params
-      params.require(:report).permit(:type_report, :date, :details, :area, :remarks, :volunteers, :hours_each, :miles_each, :expenses, :total_hours, :total_miles, :updated_by)
+      params.require(:report).permit(:audit,:type_report, :date, :details, :area, :remarks, :volunteers, :hours_each, :miles_each, :expenses, :total_hours, :total_miles, :updated_by)
     end
 end

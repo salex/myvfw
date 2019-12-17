@@ -24,6 +24,9 @@ Rails.application.routes.draw do
       get :list
       get :print
       get :audit_summary
+      get :trustee_audit
+      post :update_audit
+      get :trustee_audit_pdf
     end
   end
 
@@ -53,6 +56,8 @@ Rails.application.routes.draw do
       get :import_form
       post :import
       get :search
+      post :search
+      patch :search
       get :contacts
       get :new_applicant
     end

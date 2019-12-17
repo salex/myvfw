@@ -7,11 +7,12 @@
         .w3-center 
           .box 
             strong Veterans of Foreign Wars
-          .box Nobody does more for Veterans
-      .w3-col.m3.w3-center
-        .box Something
-        .box 
-        .box 
+          .small-caps  No One Does More For Veterans
+      - if @current_user.present?
+        .w3-col.m3.w3-center
+          .box= @current_user.to_label
+          .box= "Dept:#{ @current_user.department}" 
+          .box= "Dest: #{@current_user.district}"
     - else
       .w3-col.m6
         .w3-center 

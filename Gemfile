@@ -50,7 +50,7 @@ group :test do
   gem 'webdrivers'
 end
 
-group :production do
+group :production, :staging do
   gem 'pg'
 end
 
@@ -61,8 +61,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # myvfw included gems
 gem 'slim-rails'
 gem 'simple_form'
-# gem 'prawn'
-# gem 'prawn-table'
+gem 'prawn'
+gem 'prawn-table'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'pundit'
 gem 'chronic'

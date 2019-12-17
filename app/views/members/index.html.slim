@@ -62,8 +62,8 @@
 
       =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')
 
-    .s3.w3-col
-      = search_field_tag 'name',params[:name], data:{behavior:'members_search'}, placeholder:'Search for name, city', class:'w100'
+    .s3.w3-col[data-controller="membersSearch"]
+      = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
 
  
   - if params[:phone].present?

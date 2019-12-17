@@ -38,7 +38,7 @@ html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
-table td, table th, button, .pl-row, a.button{
+table td, table th, button, label,input,.pl-row, a.button{
   @include fluid-type($min_width, $max_width, $table-min_font, $table-max_font);
 }
 

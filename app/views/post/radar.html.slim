@@ -1,10 +1,9 @@
 .w3-container.w3-white.min-height
   .w3-cell-row
     .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
-
-      h4.strong.text-center.malt Local Radar 
-      .box = link_to("View on Sepearate Page","https://www.wunderground.com/radar/radblast.asp?ID=HTX&lat=34.022076&lon=-85.950935&label=Gadsden%2C+AL&type=N0R&zoommode=pan&map.x=400&map.y=240&centerx=307&centery=-550&prevzoom=zoom&num=8&delay=15&scale=0.125&showlabels=1&smooth=1&noclutter=0&showstorms=0&rainsnow=1&lightning=0",target:'_blank')
-      <iframe width="800" height="600" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://www.wunderground.com/radar/radblast.asp?ID=HTX&lat=34.022076&lon=-85.950935&label=Gadsden%2C+AL&type=N0R&zoommode=pan&map.x=400&map.y=240&centerx=307&centery=-550&prevzoom=zoom&num=8&delay=15&scale=0.125&showlabels=1&smooth=1&noclutter=0&showstorms=0&rainsnow=1&lightning=0"></iframe>
-
+      - if @radar.present?
+        = render inline: @radar.content, type: :slim
+      - else
+        h4.strong Radar iframe is not available, need to instructions
 
     = render partial:'home/sidebar'

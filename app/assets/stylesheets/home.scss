@@ -28,7 +28,6 @@ button, input[type='submit'], input[type='button'] {
   -moz-appearance: none;
   border: none;
   background: transparent;
-
 }
 
 dl.indent-dd {
@@ -44,6 +43,7 @@ dl.outline {
 }
 .indent1 {margin-left: 1rem;}
 .indent2 {margin-left: 2rem;}
+.indent-btn {margin-right:3px;}
 
 span.annotate, div.annotate, dd.annotate, dl.annotate, li.annnotate {
   font-style: italic;
@@ -65,3 +65,7 @@ span.annotate, div.annotate, dd.annotate, dl.annotate, li.annnotate {
 }
 
 .text-center {text-align: center;}
+
+.small-caps {
+  font-variant: small-caps;
+}

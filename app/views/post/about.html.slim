@@ -5,11 +5,11 @@
       p = "SCU #{@current_user.inspect}"
       p = "SCP #{@current_post.inspect}"
       p = "S #{session_inspect}"
-      p = "CP #{Current.post}"
+      p = "CP #{Current.post.inspect}"
       p = "CU #{Current.user}"
       p = "CPU #{Current.post_user}"
       p = "CPV #{Current.post_visitor}"
-
+      p = Current.post.numb.to_s + '-'
 
     = render partial:'home/sidebar'
 

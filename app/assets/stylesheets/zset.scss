@@ -8,9 +8,11 @@ $dark-blue: #0F3E61;
 .w10p {width:10%;}
 .w20p {width:20%;}
 .w25p {width:25%;}
-
-.w30p {width:30%;}
+.w05p {width: 5%}
+.w30p {width:30%!important;}
 .w40p {width:40%;}
+.w70p {width:70%;}
+.w80p {width:80%;}
 
 .malty {background-color: $malt;color:#ddd;}
 .lgoldey,.lite-goldey  {background-color: lighten($vfw_gold,20);color:#333;}
@@ -112,3 +114,26 @@ h5 {margin-top:8px; margin-bottom: 8px;}
     text-align: right;
   }
 }
+
+.form-row {
+  // simple form stuff
+  label {
+    display:inline-block;
+    padding-right: 12px;
+
+    width:40%;
+    height: 24px;
+    
+    background-color: #eee;
+
+    text-align: right;
+  }
+  input {
+    display:inline-block;
+    width:55%;
+    height: 24px;
+
+
+  }
+}
+

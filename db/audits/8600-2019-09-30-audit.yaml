@@ -1,0 +1,109 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+date: '2019-10-10'
+qm: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Steven V Alex
+  address: 405 Karaway Hls
+  city: Gadsden AL, 35901
+bond: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Tallman Insurance Agency
+  amount: '50000.00'
+  to: '2020-08-31'
+accounts:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: General
+  type: Ck
+  beginning: '1000.00'
+  debit: '3443.00'
+  credit: '3223.00'
+  ending: '1220.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Relief
+  type: Ck
+  beginning: '8000.00'
+  debit: '1344.00'
+  credit: '877.00'
+  ending: '8467.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: CD
+  type: CD
+  beginning: '15000.00'
+  debit: '5.55'
+  credit: '0.00'
+  ending: '15005.55'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Cash
+  type: Ca
+  beginning: '1000.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '1000.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Savings
+  type: Sv
+  beginning: '1234.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '1234.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: ''
+  type: ''
+  beginning: ''
+  debit: ''
+  credit: ''
+  ending: ''
+totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  beginning: '26234.00'
+  debit: '4792.55'
+  credit: '4100.00'
+  ending: '26926.55'
+acct_types: Ck Sv CD Ca
+operations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have required payroll deductions been made?
+  response: 'Yes'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have payments been made to the proper State & Federal agencies this quarter?
+  response: 'Yes'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have Sales Taxes been collected and paid?
+  response: 'Yes'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Are Club employees bonded?
+  response: 'Yes'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of outstanding bills?
+  response: '0'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Value of Real Estate?
+  response: '594200.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of Liability Insurance?
+  response: '300000.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Owed on Mortgages and Loans?
+  response: '0'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Value of Personal Property?
+  response: '5942.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of Property Insurance?
+  response: '313500.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: ''
+  response: ''
+checking: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  balance: '9987.00'
+  outstanding: '305.00'
+  actual: '9682.00'
+  other: '1234.00'
+  cash: '1000.00'
+  subtotal: '11916.00'
+  cd: '15005.55'
+  total: '26921.55'
+post: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Wilson Parris
+  post: VFW Post 8600
+  numb: '8600'
+  address: 817 Rainbow Dr
+  city: Gadsden AL, 35901
+  department: Alabama

@@ -1,7 +1,7 @@
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
   before_action :require_login, except: [:index,:show,:search,:logout]
-  before_action :require_admin, only: [:new,:create,:edit,:update,:destroy]
+  before_action :require_admin, only: [:new,:create,:edit,:update,:destroy,:import,:import_form]
 
 
   protect_from_forgery except: :search
@@ -17,7 +17,10 @@ class MembersController < ApplicationController
   end
 
   def search
+    puts "DDDDD got to search #{params}"
     @members = Member.search(params)
+    puts "DDDDD #{@members.count}"
+
     respond_to do |format|
       format.html {render text:"I'm sorry, I can't do that.", layout:true}
       format.js 

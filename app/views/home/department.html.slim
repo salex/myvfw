@@ -6,12 +6,12 @@
       p  stuff
 
     .w3-col.m10
-      h3.strong Department#index
-      p Welcome to a post home page
+      h4.strong Department#index
+      p.strong Welcome to a Department home page - Click on a number to visit that post
       - post_districts = Post.district_posts
-      = post_districts
+      / = post_districts
       - post_districts.each do |d,posts|
         span= "District #{d}"
         .w3-bar.goldey
           - posts.each do |p,id|
-            = link_to p, visit_post_path(id), class:'w3-bar-item w3-button lite-goldey'
+            = link_to p, visit_post_path(id), class:'w3-bar-item w3-button lite-goldey indent-btn'

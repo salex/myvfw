@@ -7,7 +7,7 @@ class HomeController < ApplicationController
       @post = Current.post
       @greeting = @post.markups.find_by(category:'greeting')
       @home = @post.markups.where(category:'home',active:true).order(:updated_at).reverse_order
-      @slim = @post.markups.find_by(category:'slim')
+      # @slim = @post.markups.find_by(category:'slim')
       @alerts = @post.markups.where(category:%w{alert warning success info},active:true).order(:updated_at).reverse_order
       if @greeting.blank? && !session[:visitor]
         render template: 'home/index'
@@ -28,6 +28,7 @@ class HomeController < ApplicationController
   def welcome
     render template:'home/welcome'
   end
+  
   def hello
   end
 
@@ -44,9 +45,8 @@ class HomeController < ApplicationController
         @post = Current.post
         @greeting = @post.markups.find_by(category:'greeting')
         @home = @post.markups.where(category:'home',active:true).order(:updated_at).reverse_order
-        @slim = @post.markups.find_by(category:'slim')
         @alerts = @post.markups.where(category:%w{alert warning success info},active:true).order(:updated_at).reverse_order
-        render template: 'home/post'
+        redirect_to root_path, notice: "Visiting Post #{@post.numb}"
       else
         redirect_to root_path, notice: "Sorry, Post #{post} could not be found"
       end

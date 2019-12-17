@@ -38,7 +38,7 @@
       th.w25 Title
       th.w15 Leadin
       th Active
-      - if Current.user.is_admin?
+      - if Current.user.present? && Current.user.is_admin?
         th Actions 
 
     - @markups.each do |markup|
@@ -49,7 +49,7 @@
         td.w20p = markup.title
         td.w30p = markup.leadin
         td = markup.active
-        - if Current.user.is_admin?
+        - if Current.user.present? && Current.user.is_admin?
           td.action-bar 
             = link_to 'Edit', edit_markup_path(markup),class:'w3-btn w3-blue-gray w3-padding-small'
             / i.fas.fa-edit a

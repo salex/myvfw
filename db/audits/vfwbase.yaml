@@ -1,0 +1,99 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+date: '2019-10-10'
+qm: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: name
+  address: Address
+  city: City ST, zip
+bond: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name:  Insurance Agency
+  amount: '0.00'
+  to: '2020-08-31'
+accounts:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: General
+  type: Ck
+  beginning: '0.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Relief
+  type: Ck
+  beginning: '.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: CD
+  type: CD
+  beginning: '0.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Cash
+  type: Ca
+  beginning: '0.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Savings
+  type: Sv
+  beginning: '0.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  beginning: '0.00'
+  debit: '0.00'
+  credit: '0.00'
+  ending: '0.00'
+acct_types: Ck Sv Ca CD
+operations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have required payroll deductions been made?
+  response: ''
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have payments been made to the proper State & Federal agencies this quarter?
+  response: ''
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Have Sales Taxes been collected and paid?
+  response: ''
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Are Club employees bonded?
+  response: ''
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of outstanding bills?
+  response: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Value of Real Estate?
+  response: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of Liability Insurance?
+  response: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Owed on Mortgages and Loans?
+  response: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Value of Personal Property?
+  response: '0.00'
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  question: Amount of Property Insurance?
+  response: '0.00'
+checking: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  balance: '0.00'
+  outstanding: '0.00'
+  actual: '0.00'
+  other: '0.00'
+  cash: '0.00'
+  subtotal: '0.00'
+  cd: '0.00'
+  total: '0.00'
+post: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  name: Name
+  post: VFW Post numb
+  numb: '0000'
+  address: address
+  city: City ST, zip
+  department: department
