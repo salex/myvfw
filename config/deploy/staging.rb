@@ -9,6 +9,7 @@
 
 server "raspberry.local", user: "pi", roles: %w{app db web}
 
+set :user,            'pi'
 
 # role-based syntax
 # ==================
