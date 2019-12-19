@@ -2,7 +2,7 @@
   / = render partial:'reports/links', locals:{buttons:[link_to('Edit',edit_report_path(@report),class:'button noprint'),
   /   link_to('Destroy',edit_report_path(@report), data: { confirm: 'Are you sure?' }, :method => :delete,class:'button noprint')]}
   .w3-row-padding.lite-goldey
-  = show_links(@report)
+  = show_links(@report,nolist: true, buttons:[link_to("List/Cancel",list_reports_path,class:' w3-bar-item w3-button w3-large w3-hover-blue-gray')])
   / .w3-col.s3 
   /   = link_to edit_report_path(@report),class:'w3-btn w3-text-lite-blue' do
   /     span.w3-text-blue Edit Report &nbsp;

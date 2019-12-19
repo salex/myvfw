@@ -20,10 +20,10 @@ module CrudHelper
   def show_links(instance,opt={})
     header = opt[:header].present? ? opt[:header] : "&nbsp;Showing #{instance.model_name.human}".html_safe
     other_buttons = opt[:buttons].present? ? opt[:buttons] : []
-    buttons = [
-      link_to("List", "/#{instance.model_name.collection}",
-        class:' w3-bar-item w3-button w3-large w3-hover-blue-gray')
-    ]
+    buttons = []
+    buttons <<  link_to("List", "/#{instance.model_name.collection}",
+        class:' w3-bar-item w3-button w3-large w3-hover-blue-gray') unless opt[:nolist].present?
+ 
     add_edit_button(buttons,instance) if authorized?
     add_destroy_button(buttons,instance) if authorized?
     buttons = buttons + other_buttons unless other_buttons.blank?
@@ -34,11 +34,12 @@ module CrudHelper
     header = opt[:header].present? ? opt[:header] : "&nbsp;Editing #{instance.model_name.human}".html_safe
     other_buttons = opt[:buttons].present? ? opt[:buttons] : []
     buttons = [
-      link_to("List/Cancel", "/#{instance.model_name.collection}",
-        class:' w3-bar-item w3-button w3-large w3-hover-blue-gray'),
       link_to("Show/Cancel", "/#{instance.model_name.collection}/#{instance.id}",
         class:' w3-bar-item w3-button w3-large w3-hover-blue-gray')
     ]
+    buttons = link_to("List/Cancel", "/#{instance.model_name.collection}",
+      class:' w3-bar-item w3-button w3-large w3-hover-blue-gray') unless opt[:nolist].present?
+
     add_destroy_button(buttons,instance) if authorized?
     buttons = buttons + other_buttons unless other_buttons.blank?
     new_bar buttons,header
@@ -47,10 +48,10 @@ module CrudHelper
   def new_links(instance,opt={})
     header = opt[:header].present? ? opt[:header] : "&nbsp;New #{instance.model_name.human}".html_safe
     other_buttons = opt[:buttons].present? ? opt[:buttons] : []
-    buttons = [
-      link_to("List/Cancel", "/#{instance.model_name.collection}",
-        class:' w3-bar-item w3-button w3-large w3-hover-blue-gray'),
-    ]
+    buttons = []
+    buttons <<  link_to("List", "/#{instance.model_name.collection}",
+        class:' w3-bar-item w3-button w3-large w3-hover-blue-gray') unless opt[:nolist].present?
+    
     buttons = buttons + other_buttons unless other_buttons.blank?
     new_bar buttons,header
   end

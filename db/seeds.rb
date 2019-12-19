@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ImportDept.new
+Conversion.new.import_myvfw
+
+# bundle exec rake RAILS_ENV=staging db:reset

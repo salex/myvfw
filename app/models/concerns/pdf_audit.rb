@@ -74,32 +74,19 @@ class PdfAudit < Prawn::Document
     end
     grid([0,5], [3,23]).bounding_box do
       font_size(9)
-      move_down 5
+      move_down 7
 
       text "TRUSTEES' REPORT OF AUDIT of",style: :bold, size:14      # stroke_bounds
-      move_down 6
-      text_box "The Books and Records of the Quartermaster and Adjutant of:  <strong><u>#{@config.post.name} #{@config.post.post}</u></strong>", at:[30,50], inline_format:true
-      text_box "Department of <strong><u>#{@config.post.department}</u></strong> for Fiscal Quarter ending:     <strong><u>#{@range.last}</u></strong>", at:[30,35], inline_format:true
-      text_box "Fiscal Quarter    <strong><u> #{@range}</u></strong>", at:[30,20], inline_format:true
+      text_box "The Books and Records of the Quartermaster and Adjutant of:  <strong><u>#{@config.post.name} #{@config.post.post}</u></strong>", at:[20,68], inline_format:true
+      text_box "Department of <strong><u>#{@config.post.department}</u></strong> for Fiscal Quarter ending:     <strong><u>#{@range.last}</u></strong>", at:[20,57], inline_format:true
+      text_box "Fiscal Quarter    <strong><u> #{@range}</u></strong>", at:[20,46], inline_format:true
     end
   end
 
   def assets
 
-    grid([4,0], [10,23]).bounding_box do
-      # cash = checking = savings = total = nil
-      # @summary.each do |k,v|
-      #   cash = v if v[:name] == 'Cash'
-      #   checking =  v if v[:name] == 'Checking'
-      #   savings =  v if v[:name] == 'Savings'
-      #   total = v if v[:name] == 'Current'
-      # end
-      # @save = savings[:ending]
-      # @cash = cash[:ending]
-      # @total = total[:ending]
-      # @check = checking[:ending]
-
-      # @funds = checking[:children].count
+    grid([3,0], [10,23]).bounding_box do
+      # stroke_bounds
       font_size(9)
       rows = []
       h = [ "FUNDS - Current Assets",
@@ -130,35 +117,13 @@ class PdfAudit < Prawn::Document
         ]
         rows << h
       end
-      # rows << [" ","","","",""]
       e = make_table rows,:cell_style => {:padding => [1, 2, 2, 1] ,border_color:"777777"},
         :column_widths => [240, 75,75,75,75] do
           column(1..4).align = :right
           # row(-1).align = :right
       end
       e.draw
-      # rows = []
-      # h = ["#{@funds+1}. #{savings[:description]}",
-      #   money(savings[:beginning]),
-      #   money(savings[:debits]),
-      #   money(savings[:credits]),
-      #   money(savings[:ending])
-      # ]
-      # rows << h
-      # h = ["#{@funds+2}. #{cash[:description]}",
-      #   money(cash[:beginning]),
-      #   money(cash[:debits]),
-      #   money(cash[:credits]),
-      #   money(cash[:ending])
-
-      #   ]
-      # rows << h
-      # e = make_table rows,:cell_style => {:padding => [1, 2, 2, 1] ,border_color:"777777"},
-      #   :column_widths => [240, 75,75,75,75] do
-      #     column(1..4).align = :right
-      #     # row(-1).align = :right
-      # end
-      # e.draw
+ 
       tot = @config.totals
       rows = [
         ["#{@funds+5}. Totals",
@@ -194,7 +159,6 @@ class PdfAudit < Prawn::Document
       letters = "abcdefghijklmn"
       puts letters
       qr.each_with_index do |r,i|
-        # puts "|#{r.response}| #{r.response == '0'} #{} "
         r.response = "0.00" if r.response == '0'
         fixed = !r.response.match(/\d\.\d\d/).nil?
         rows << ["#{letters[i]}. #{r.question}",fixed ? money(r.response) : r.response] unless r.question.blank?
@@ -223,9 +187,6 @@ class PdfAudit < Prawn::Document
       rows << ['Checking Account Balance',{content:money(@config.checking.balance),align: :right},nil]
       rows << ['Less Outstand Checks',{content:money(@config.checking.outstanding), align: :right},nil]
       ck = @config.checking
-      # t1 = ab+@cash
-      # bond = @save
-      # t2 = t1 + bond
       diff = @config.totals.ending == ck.total 
       if !diff
         diff_amt = int_to_fixed(fixed_to_int(@config.totals.ending) - fixed_to_int(ck.total))

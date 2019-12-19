@@ -6,7 +6,7 @@ class ReportsController < ApplicationController
 
   # GET /reports
   # GET /reports.json
-  def index
+  def community_service
     @summary,@totals,@range = Current.post.reports.report_summary(params[:rdate])
     render template:'reports/post_summary'
 
@@ -16,7 +16,7 @@ class ReportsController < ApplicationController
 
   def list
     @reports = Current.post.reports.where(date:Report.report_range(params[:rdate])).order(:date).reverse
-    render template:'reports/index'
+    render template:'reports/_list'
   end
 
   # GET /reports/1

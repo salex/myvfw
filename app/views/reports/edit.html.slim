@@ -1,6 +1,6 @@
 .w3-container.w3-white
   / = render partial:'reports/links'
-  = edit_links(@report)
+  = edit_links(@report,nolist: true, buttons:[link_to("List/Cancel",list_reports_path,class:' w3-bar-item w3-button w3-large w3-hover-blue-gray')])
   / h6.strong  Edit Program_report
 
   == render partial:'form', locals:{action:"Edit Program_Report"}

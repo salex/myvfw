@@ -1,4 +1,7 @@
-.w3-container.w3-white.min-height(data-controller="trusteeAudit")
+= other_links(@audit, header:"Trustee Audit Edit",
+  buttons:[link_to("Trustee Audit PDF",trustee_audit_pdf_reports_path,class:"w3-bar-item w3-button w3-light-blue"),
+    link_to("Cancel",reports_path,class:"w3-bar-item w3-button w3-yellow")])
+.w3-container.w3-white.min-height.w3-padding-bottom(data-controller="trusteeAudit")
   = form_with url: update_audit_reports_path do |f|
     .w3-row
       .w3-col.m4

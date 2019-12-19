@@ -9,7 +9,7 @@
       i.fa.fa-caret-down
 
     .w3-dropdown-content.w3-bar-block.w3-card-4
-      = link_to "Summary (Year)", reports_path,class:"w3-bar-item w3-button"
+      = link_to "Summary (Year)", audit_summary_reports_path,class:"w3-bar-item w3-button"
       = link_to "Audit (1)", audit_summary_reports_path(audit:0),class:"w3-bar-item w3-button"
       = link_to "Audit (2)", audit_summary_reports_path(audit:1),class:"w3-bar-item w3-button"
       = link_to "Audit (3)", audit_summary_reports_path(audit:2),class:"w3-bar-item w3-button"
@@ -29,9 +29,6 @@
       = link_to "Audit (2)", print_reports_path(qtr:2),class:"w3-bar-item w3-button"
       = link_to "Audit (3)", print_reports_path(qtr:3),class:"w3-bar-item w3-button"
       = link_to "Audit (4)", print_reports_path(qtr:4),class:"w3-bar-item w3-button"
-  = link_to "Trustee Audit", trustee_audit_reports_path,class:"w3-bar-item w3-button"
-  = link_to "PDF", trustee_audit_pdf_reports_path,class:"w3-bar-item w3-button"
-
 
   / = link_to "Help",'#',class:"w3-bar-item w3-button w3-pale-green w3-right", onclick:"myFunction()"
 

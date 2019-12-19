@@ -23,6 +23,7 @@ Rails.application.routes.draw do
       get :summary
       get :list
       get :print
+      get :community_service
       get :audit_summary
       get :trustee_audit
       post :update_audit

@@ -5,13 +5,26 @@ class Conversion
     @deposits = {}
     @post = post
     Current.post = @post
+
   end
 
   def create_super
     user = User.find_by(email:'salex@mac.com')
     if user.blank?
-      User.create(email:'salex@mac.com',password:'crap',username:'salex',full_name:'Steve Alex',roles:['super'])
+      User.create(password:'crap',user_type: "PostUser", email: "salex@mac.com", username: "salex", full_name: "Steven V Alex", roles: ["super"], reset_token: "", post: 8600, district: 2, department: "Alabama")
+      # User.create(email:'salex@mac.com',password:'crap',username:'salex',full_name:'Steve Alex',roles:['super'])
     end
+  end
+
+  def import_myvfw
+    ImportDept.new
+    Current.post = Post.find_by(numb:8600)
+    @post = Current.post
+    suser = create_super
+    import_members
+    import_officers
+    import_markup
+    import_reports
   end
 
   def import_vfw_post

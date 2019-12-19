@@ -1,1 +1,49 @@
-== render partial: 'reports/list'
+.w3-container.w3-white.min-height
+  h4.strong.w3-gray Reports currently consists of two reporting areas. The blue button links below will that you to that area
+  .w3-row-padding
+    .w3-half
+      h5.strong = link_to "Community Service",community_service_reports_path, class:'w3-button w3-blue'
+      p  
+        | Community Service reports are due at the end of each VFW Fiscal Quarter and include a variety of reporting areas.
+          Reports must be submitted by the end of the month following the end of the quarter.
+          Over the years, many paper reporting forms have been used for what we'll call Volunteerizm. This accounts for seeing thing like MIA/POW, PP, VOD programs referenced on different forms. Regardless of where you report it, it all comes down to someone volunteers to help someone and they spent time/hours, milage and maybe money in the effort. This puts all the options on one report, but separated by areas.
+      p Both summary and details are available for the Current and Last year
+      ul
+        li Display Current year summary or just the summary for each of the quarter
+        li List Current year report details. You can edit reports from this area.
+        li A printable page of the year summary or just the summary for each of the quarter
+        li Display Current year details or details for each quarter
+      p Details used to generate the reports include:
+      ul
+        li Service area
+        li Who created the report (User)
+        li Date of the service
+        li How many volunteers took part
+        li How many hours each (or Total hours) were spent on the service
+        li How many miles each (or Total miles) were spent on the service
+        li Any post expense incurred
+        li Details or summary of what the service was
+        li Remarks. Any additional remarks/details (not on reports)
+
+
+
+    .w3-half
+      h5.strong = link_to "Trustee Audit",trustee_audit_reports_path, class:'w3-button w3-blue'
+      p  
+        | Trustee Audit Reports are due at the end of each VFW Fiscal Quarter.
+          Reports must be submitted by the end of the month following the end of the quarter. 
+
+      p
+        |Reporting basically is a web-based spread sheet that allows you the fill out various parts of the report. Those inputs will calculate other parts of the report. These parts include:
+      ul
+        li Date. Submission date of report. Assumed to be sometime in the current quarter
+        li Post. Information about the Post (Name, Number, Address)
+        li Quartermaster. Contact information about the Post Quartermaster (Name, Number, Address)
+        li Information. Questions and Responses to the questions
+        li Checking. Checking account balance and outstanding amounts from bank statement(s)
+        li Accounts/Funds. Each current asset managed by the Post. There are four account types: Checking, Savings, CD's and Cash. The Beginning Balance is required for each account the the increases and decreases for each account.
+      p After the information is updated, a PDF of the report can be generated. New reports will copy static information from the last report (if available) and reset any balancing areas.
+
+
+  .w3-third
+    p Other reports may be added in the future
