@@ -37,7 +37,7 @@ module CrudHelper
       link_to("Show/Cancel", "/#{instance.model_name.collection}/#{instance.id}",
         class:' w3-bar-item w3-button w3-large w3-hover-blue-gray')
     ]
-    buttons = link_to("List/Cancel", "/#{instance.model_name.collection}",
+    buttons << link_to("List/Cancel", "/#{instance.model_name.collection}",
       class:' w3-bar-item w3-button w3-large w3-hover-blue-gray') unless opt[:nolist].present?
 
     add_destroy_button(buttons,instance) if authorized?

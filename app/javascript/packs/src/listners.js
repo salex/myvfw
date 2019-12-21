@@ -4,5 +4,6 @@ document.addEventListener("turbolinks:load", () => {
     altFormat: "F j, Y",
     dateFormat: "Y-m-d",
   })
+  console.log("got a picker")
 })
 
