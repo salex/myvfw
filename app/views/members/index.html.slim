@@ -1,14 +1,29 @@
 .w3-container.w3-white 
+  .link-bar.w3-row.noprint
+    .s8.w3-col.w3-bar.goldey
+      - if @current_user.present? 
+        - if current_user.is_admin?
+          = link_to "Import OMS File", import_form_members_path,class:'w3-bar-item w3-button'
+          = link_to "Contacts", contacts_members_path,class:'w3-bar-item w3-button'
+        = link_to "NewApplicant", new_applicant_members_path,class:'w3-bar-item w3-button'
+
+      =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')
+
+    .s4.w3-col.w3-padding[data-controller="membersSearch"]
+      = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
+
 
   - if @members.blank?
     .callout.warning
       | There are no members uploaded for this post 
   - else
     .w3-row-padding.noprint
-      .strong.malt Memstats
+      .strong.malt 
+        span.strong = "Memstats: Post Members (#{@members.count} #{params[:limit]})&nbsp;".html_safe
+
 
       - remote = request.xhr? ? true :false
-      .s12.m6.w3-col
+      .s12.l6.w3-col
         table.w3-table-all.table-cell-borders
           tr
             th All
@@ -28,17 +43,17 @@
             td.text-right = @memstats['UnPaid'].zero? ? @memstats['UnPaid'] : link_to(@memstats['UnPaid'], members_path(limit:'UnPaid'), remote:remote)
             td.text-right = @memstats['New Member'].zero? ? @memstats['New Member'] : link_to(@memstats['New Member'], members_path(limit:'New Member'), remote:remote)
             td.text-right = @memstats['Non-Pay Transfer'].zero? ? @memstats['Non-Pay Transfer'] : link_to(@memstats['Non-Pay Transfer'], members_path(limit:'Non-Pay Transfer'), remote:remote)
-      .s12.m6.w3-col
+      .s12.l6.w3-col
         table.w3-table-all.table-cell-borders
           tr
             th cTran
             th Reins
             th Desc
             th Missing
-            th Applicant
+            th Appl
             th ExPaid
             th Paid
-            th Expired
+            th Exp
           tr.markdown
             td.text-right = @memstats['Continuous Transfer'].zero? ? @memstats['Continuous Transfer'] : link_to(@memstats['Continuous Transfer'], members_path(limit:'Continuous Transfer'), remote:remote)
             td.text-right = @memstats['Reinstate'].zero? ? @memstats['Reinstate'] : link_to(@memstats['Reinstate'], members_path(limit:'Reinstate'), remote:remote)
@@ -49,21 +64,6 @@
             td.text-right = @memstats['ExpiredPaid'].zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
             td.text-right = @memstats['Paid'].zero? ? @memstats['Paid'] : link_to(@memstats['Paid'], members_path(limit:'Paid'), remote:remote)
             td.text-right = @memstats['Expired'].zero? ? @memstats['Expired'] : link_to(@memstats['Expired'], members_path(limit:'Expired'), remote:remote)
-
-  .link-bar.w3-row-padding.noprint
-    .s3.w3-col
-      span.strong.malt = "Post Members (#{@members.count} #{params[:limit]})&nbsp;".html_safe
-    .s6.w3-col.w3-bar.goldey
-      - if @current_user.present? 
-        - if current_user.is_admin?
-          = link_to "Import OMS File", import_form_members_path,class:'w3-bar-item w3-button'
-          = link_to "Contacts", contacts_members_path,class:'w3-bar-item w3-button'
-        = link_to "NewApplicant", new_applicant_members_path,class:'w3-bar-item w3-button'
-
-      =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')
-
-    .s3.w3-col[data-controller="membersSearch"]
-      = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
 
  
   - if params[:phone].present?

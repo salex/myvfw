@@ -10,9 +10,6 @@ table.w3-table-all
     th Paid Thru
     th Days
 
-    - if authorized?
-      th E &nbsp;D
-
 
   - members.each do |member|
     tr class="#{member.undeliverable == 'Yes' ? 'undeliverable' : ''}"
@@ -41,8 +38,8 @@ table.w3-table-all
             td = exp
         - else
           td &nbsp;
-      - if authorized?
+      / - if authorized?
 
-        td.action-bar
-          = link_to 'Edit', edit_member_path(member), class:'edit-button' 
-          = link_to 'Destroy', member_path(member), data: { confirm: 'Are you sure?' }, :method => :delete, class:'destroy-button'
+      /   td.action-bar
+      /     = link_to 'Edit', edit_member_path(member), class:'edit-button' 
+      /     = link_to 'Destroy', member_path(member), data: { confirm: 'Are you sure?' }, :method => :delete, class:'destroy-button'
