@@ -11,7 +11,7 @@
       = f.input :category,collection:Markup::CATAGORIES, input_html:{class:'w3-input w3-border'}
       = f.input :title, input_html:{class:'w3-input w3-border'}
       = f.input :leadin, input_html:{class:'w3-input w3-border'}
-      = f.input :date, as: :string, input_html:{class:'w3-input w3-border',data:{behavior:'flatpickr'}}
+      = f.input :date, as: :string, input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
       = f.input :active, input_html:{class:'w3-input w3-border'}
       = f.button :submit, class:'w3-btn w3-blue-grey'
 

@@ -20,7 +20,7 @@
         span.strong Report Area: 
         = @report.area
       = select_tag(:kind,options_for_select(program_options,selected: (@report.type_report + '.' + @report.area)))
-      = f.input :date, as: :string,input_html:{class:'w3-input w3-border',data:{behavior:'flatpickr'}}
+      = f.input :date, as: :string,input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
       = f.input :updated_by, input_html:{value:@current_user.username,class:'w3-input w3-border'}
       = f.input :details, as: :text, label:'Description',hint: "Brief Description of Project and Who Benefited", input_html:{rows:5}, input_html:{class:'w3-input w3-border'}
       = f.button :submit, class:'w3-btn w3-blue-gray'

@@ -8,7 +8,7 @@
         .strong Submitted
         .form-row
           = f.label 'date'
-          = f.text_field 'audit[date]', value:@audit.date, data:{behavior:'flatpickr'}
+          = f.text_field 'audit[date]', value:@audit.date, data:{controller:'flatpickr'}
 
         .strong Quarermaster
         .form-row
@@ -32,7 +32,7 @@
           = f.text_field 'audit[bond][amount]', value:@audit.bond.amount
         .form-row
           = f.label "Expires"
-          = f.text_field 'audit[bond][to]', value:@audit.bond.to, data:{behavior:'flatpickr'}
+          = f.text_field 'audit[bond][to]', value:@audit.bond.to, data:{controller:'flatpickr'}
 
       .w3-col.m8
         / .strong Accounts

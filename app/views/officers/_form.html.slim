@@ -11,8 +11,8 @@ br
 
     = f.association :member
     = f.input :position, collection:Officer::OFFICERS
-    = f.input :from_date, as: :string, input_html:{data:{behavior:'flatpickr'}}
-    = f.input :to_date, as: :string, input_html:{data:{behavior:'flatpickr'}}
+    = f.input :from_date, as: :string, input_html:{data:{controller:'flatpickr'}}
+    = f.input :to_date, as: :string, input_html:{data:{controller:'flatpickr'}}
     = f.input :current
     br
     = f.button :submit, class:'w3-button w3-blue'
