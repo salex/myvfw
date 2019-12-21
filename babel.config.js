@@ -1,10 +1,10 @@
 module.exports = function(api) {
-  var validEnv = ['development', 'test', 'production','staging']
+  var validEnv = ['development', 'test', 'production']
   var currentEnv = api.env()
   var isDevelopmentEnv = api.env('development')
   var isProductionEnv = api.env('production')
   var isTestEnv = api.env('test')
-  var isStagingEnv = api.env('staging')
+  // var isStagingEnv = api.env('staging')
 
 
   if (!validEnv.includes(currentEnv)) {
@@ -27,7 +27,7 @@ module.exports = function(api) {
           }
         }
       ],
-      (isProductionEnv || isDevelopmentEnv || isStagingEnv) && [
+      (isProductionEnv || isDevelopmentEnv) && [
         '@babel/preset-env',
         {
           forceAllTransforms: true,
