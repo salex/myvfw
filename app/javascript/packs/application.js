@@ -8,16 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import { Application } from 'stimulus'
-// import Flatpickr
-import Flatpickr from 'stimulus-flatpickr'
+import "flatpickr/dist/flatpickr.css";
 
-import { definitionsFromContext } from 'stimulus/webpack-helpers'
-const application = Application.start()
-const context = require.context('../controllers', true, /\.js$/)
-application.load(definitionsFromContext(context))
-
-// Manually register Flatpickr as a stimulus controller
-application.register('flatpickr', Flatpickr)
-
-// import "controllers"
+import "controllers"
