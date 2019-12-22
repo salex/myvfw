@@ -8,6 +8,16 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "flatpickr/dist/flatpickr.css";
+// import "flatpickr/dist/flatpickr.css";
+import flatpickr from "flatpickr"
+require("flatpickr/dist/flatpickr.css")
+
+document.addEventListener("turbolinks:load", () => {
+  flatpickr("[data-controller='flatpickr']", {
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+  })
+})
 
 import "controllers"
