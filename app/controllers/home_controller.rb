@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     # session[:user_id] = 20
     # session[:post_id] = 19
-    p "what is current dist #{Current.district} post #{Current.post} dept #{Current.department}"
+    # p "what is current dist #{Current.district} post #{Current.post} dept #{Current.department}"
     if @current_post.present?
       @post = Current.post
       @greeting = @post.markups.find_by(category:'greeting')
@@ -21,7 +21,7 @@ class HomeController < ApplicationController
       render template: 'home/department'
 
     else
-      render template: 'home/index'
+      render template: 'about/about'
     end
   end
 

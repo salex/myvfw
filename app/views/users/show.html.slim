@@ -1,33 +1,15 @@
-p#notice = notice
+= show_links(@user)
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
 
-p
-  strong Type:
-  = @user.user_type
-p
-  strong Email:
-  = @user.email
-p
-  strong Username:
-  = @user.username
-p
-  strong Full name:
-  = @user.full_name
-p
-  strong Roles:
-  = @user.roles
-p
-  strong Reset token:
-  = @user.reset_token
-p
-  strong Post:
-  = @user.post
-p
-  strong District:
-  = @user.district
-p
-  strong Department:
-  = @user.department
-
-=> link_to 'Edit', edit_user_path(@user)
-'|
-=< link_to 'Back', users_path
+      table.show-table
+        = show_row('Type:', @user.user_type)
+        = show_row('Email:', @user.email)
+        = show_row('Username:',@user.username)
+        = show_row('Full name:',@user.full_name)
+        = show_row('Roles:',@user.roles)
+        = show_row('Reset token:',@user.reset_token)
+        = show_row('Post:',@user.post)
+        = show_row('District:',@user.district)
+        = show_row('Department:',@user.department)

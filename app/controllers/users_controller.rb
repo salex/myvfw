@@ -2,11 +2,20 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_login, except: [:login,:signin,:logout]
   before_action :require_admin, except: [:login,:signin,:logout,:profile,:update_profile]
+  before_action :require_super, only: [:district_users,:department_users,:post_users]
 
   # GET /users
   # GET /users.json
   def index 
-    @users = User.all
+    if @current_user && @current_user.is_super?
+      @users = User.all
+    elsif @current_user && @current_user.is_admin?
+      @users = User.where(user_type:'PostUser',post:Current.post.numb)
+
+      render action: :index
+    else
+      cant_do_that
+    end
   end
 
   def district_users
@@ -153,6 +162,7 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
+      # refactor only post users
       @user = User.find(params[:id])
     end
 

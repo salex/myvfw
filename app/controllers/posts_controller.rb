@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :require_super, only: [:new,:create,:destroy]
+  before_action :require_super, only: [:index,:new,:create,:destroy]
   before_action :require_admin, only: [:edit,:update]
 
   # GET /posts

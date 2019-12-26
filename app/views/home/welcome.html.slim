@@ -1,2 +1,33 @@
-h1 Home#welcome
-p Find me in app/views/home/welcome.html.slim
+.w3-container.w3-white.min-height
+  .w3-row-padding
+    #about_content.s12.m9.w3-col.markdown
+      h4.strong.text-center.maltly Welcome to MyVFW.us
+      p This is a prototype Demo of a service that <u>could</u> be implemented at the Department level to give Post tools to help manage their operations and reporting. Knowing the acceptance of web based services by many posts (think All American Dashboard!), it would most likely be optional.
+      .strong A little history
+      p When I first joined the VFW (2012) the Post staff wanted a Web site. I said I could build them one, but someone else needs to keep it updated (articles, events, etc). Well that failed! I still build <a href="https://vfwpost8600.org">vfwpost8600.org</a> and added 'Facebook' type stuff (this was before Facebook became a dominate force in social media). I also added 'Tools' to help manage the Post and generate internal and required reports. That part of the web site became the primary reason to have a web site. Managing included Accounting and Reporting. We have a canteen so Accounting requires more than a paper ledger, things like Inventory, Sales, Deposits and other information we had to provide to our accountant. Reporting included tools to try to get a handle on Community Service, Audits, Minutes, Membership, Officers, etc.
+
+      p I eventually pulled most of the Accounting area out of the Post web site and moved it to a separate web server. What was left was the Reporting area and the Facebook like stuff that is almost dormant. I'm now in the process of modernizing what is left. I decided to attempt to build a Department version to see if there was any interest is such a tool. For about $20 a month this prototype could be implemented on a cloud server. If there is little or no interest in the department scheme, a single Post version could be implemented at the Post level (what I currently do) for about $15 a month plus and annual domain registration fee. That option does require some technicals skills, at least in the initial setup. It also can be implemented on a local computer. I don't have high-hopes for either of the above implementations so I'll just re-factor this into a new version of what we currently use. But if anyone is interested call me and I'll provide more information.
+
+    .s12.m3.w3-col.w3-mobile
+     .w3-large.strong About Information
+     .w3-card-2.w3-bar-block
+       .w3-bar-item = link_to "Why? Some History",post_about_path,class:'w3-btn lite-goldey w100'
+       .w3-bar-item = link_to "Usage",post_map_path,class:'w3-btn lite-goldey w100' 
+       .w3-bar-item = link_to "Articles",post_articles_path,class:'w3-btn lite-goldey w100' 
+       .w3-bar-item = link_to "Links",post_links_path,class:'w3-btn lite-goldey w100' 
+       .w3-bar-item = link_to "News",post_news_path,class:'w3-btn lite-goldey w100' 
+       .w3-bar-item = link_to "Minutes", post_minutes_path,class:'w3-btn lite-goldey w100'
+       .w3-bar-item = link_to "Calendar", post_calendar_path,class:'w3-btn lite-goldey w100'
+       .w3-bar-item = link_to "Radar",post_radar_path,class:'w3-btn lite-goldey w100' 
+     - if Current.user.present? && Current.user.is_admin?
+       .w3-large.strong Admin Links
+       .w3-card-2.w3-bar-block
+         .w3-bar-item = link_to "Members",members_path,class:'w3-btn lite-goldey w100'
+         .w3-bar-item = link_to "Officers",officers_path,class:'w3-btn lite-goldey w100' 
+         .w3-bar-item = link_to "Markups",markups_path,class:'w3-btn lite-goldey w100' 
+         .w3-bar-item = link_to "Reports",reports_path,class:'w3-btn lite-goldey w100' 
+         .w3-bar-item = link_to "Users",users_path,class:'w3-btn lite-goldey w100' 
+
+
+
+

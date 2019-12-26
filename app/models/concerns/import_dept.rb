@@ -52,6 +52,9 @@ class ImportDept
     u.post = @post_numb
     u.password = "#{u.username}_qm"
     u.user_type = 'PostUser'
+    unless u.roles.include?('admin')
+      u.roles << 'admin'
+    end
     u.save
   end
 
@@ -64,6 +67,10 @@ class ImportDept
     u.department = @dept
     u.password = "#{u.username}_qm"
     u.user_type = 'DistrictUser'
+    unless u.roles.include?('admin')
+      u.roles << 'admin'
+    end
+
     u.save
   end
 
@@ -75,6 +82,10 @@ class ImportDept
     u.department = @dept
     u.password = "#{u.username}_qm"
     u.user_type = 'DepartmentUser'
+    unless u.roles.include?('admin')
+      u.roles << 'admin'
+    end
+
     u.save
   end
 

@@ -87,6 +87,15 @@ Rails.application.routes.draw do
   get 'post/about'
   get 'post/calendar'
 
+  get 'about/about'
+  get 'about/history'
+  get 'about/structure'
+  get 'about/access'
+  get 'about/markups'
+  get 'about/reports'
+  get 'about/members'
+  get 'about/officers'
+
 
 
 
@@ -97,7 +106,6 @@ Rails.application.routes.draw do
 
 
   get 'home/index'
-  get 'home/hello'
 
   get 'home/welcome'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -18,6 +18,7 @@ document.addEventListener("turbolinks:load", () => {
     altFormat: "F j, Y",
     dateFormat: "Y-m-d",
   })
+  console.log("turbo load")
 })
 
 import "controllers"
