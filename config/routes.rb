@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     member do
       get :display
       get :print
+      get :plain
     end
   end
 
@@ -67,6 +68,7 @@ Rails.application.routes.draw do
   resources :officers
 
   get 'vdap/', to: 'vdap#home'
+  get '/page/:id', to: 'vdap#resources'
   get 'vdap/home'
   get 'vdap/about'
   get 'vdap/resources'
@@ -74,7 +76,7 @@ Rails.application.routes.draw do
   get 'post/officers'
 
   get 'post/members'
-
+  get 'post/edit'
   get 'post/news'
   get 'post/articles'
   get 'post/map'

@@ -27,6 +27,15 @@ class User < ApplicationRecord
    end
 
    # Role checker, from low of scheduler to high of super
+  def is_post_user?
+    return self.user_type == 'PostUser'
+  end
+  def is_district_user?
+    return self.user_type == 'DistrictUser'
+  end
+  def is_department_user?
+    return self.user_type == 'DepartmentUser'
+  end
 
   def is_super?
     return has_role?('super')

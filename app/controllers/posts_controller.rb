@@ -1,12 +1,12 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :require_super, only: [:index,:new,:create,:destroy]
-  before_action :require_admin, only: [:edit,:update]
+  before_action :require_super, only: [:new,:create,:destroy]
+  before_action :require_admin, only: [:index,:edit,:update]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order(:numb)
+    @posts = policy_scope(Post).order(:numb)
   end
 
   # GET /posts/1
@@ -86,11 +86,14 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+    
+      @post =  policy_scope(Post).find_by(id:params[:id])
+      require_member if @post.blank?
+
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:name,:numb,:address,:city,:state,:phone,:txt,:email,:web,:zip,:fax)
+      params.require(:post).permit(:name,:numb,:address,:city,:state,:phone,:txt,:email,:web,:zip,:fax, :district_id,:department)
     end
 end

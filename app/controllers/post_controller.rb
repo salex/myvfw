@@ -15,6 +15,11 @@ class PostController < ApplicationController
   #   end
   # end
 
+  def edit
+    @post = Current.post
+    render template:'posts/edit'
+  end
+
   def members
   end
 
@@ -59,7 +64,7 @@ class PostController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def require_post
       @post = Current.post
-      cant_do_that if @post.blank?
+      require_member if @post.blank?
     end
 
 

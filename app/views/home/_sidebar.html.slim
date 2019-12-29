@@ -8,8 +8,9 @@
     .w3-bar-item = link_to "News",post_news_path,class:'w3-btn lite-goldey w100' 
     .w3-bar-item = link_to "Minutes", post_minutes_path,class:'w3-btn lite-goldey w100'
     .w3-bar-item = link_to "Calendar", post_calendar_path,class:'w3-btn lite-goldey w100'
-    .w3-bar-item = link_to "Radar",post_radar_path,class:'w3-btn lite-goldey w100' 
-  - if Current.user.present? && Current.user.is_admin?
+    .w3-bar-item = link_to "Radar",post_radar_path,class:'w3-btn lite-goldey w100'
+    .w3-bar-item = link_to "Post",post_path(Current.post),class:'w3-btn lite-goldey w100' if Current.user
+  - if Current.user.present? && Current.user.is_admin? && Current.post_user
     .w3-large.strong Admin Links
     .w3-card-2.w3-bar-block
       .w3-bar-item = link_to "Members",members_path,class:'w3-btn lite-goldey w100'
@@ -17,5 +18,7 @@
       .w3-bar-item = link_to "Markups",markups_path,class:'w3-btn lite-goldey w100' 
       .w3-bar-item = link_to "Reports",reports_path,class:'w3-btn lite-goldey w100' 
       .w3-bar-item = link_to "Users",users_path,class:'w3-btn lite-goldey w100' 
+      .w3-bar-item = link_to "Post",posts_path,class:'w3-btn lite-goldey w100' 
+
 
 

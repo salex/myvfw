@@ -10,48 +10,25 @@
     
   / .w3-col.s6 
   /   h6.strong Program_report
-  .w3-row-padding
-    .s12.m6.w3-col
-      table.show-table.w100
-        
-        tr
-          th Type report:
-          td = @report.type_report
-        tr
-          th Date:
-          td = @report.date
-        tr
-          th Details:
-          td = @report.details
-        tr
-          th Area:
-          td = @report.area
-        tr
-          th Remarks:
-          td = text_area_tag nil,@report.remarks, rows:3
-    .s12.m6.w3-col
-      table.show-table.w100
-        tr
-          th Volunteers:
-          td = @report.volunteers
-        tr
-          th Hours each:
-          td = @report.hours_each
-        tr
-          th Miles each:
-          td = @report.miles_each
-        tr
-          th Expenses:
-          td = @report.expenses
-        tr
-          th Total hours:
-          td = @report.total_hours
-        tr
-          th Total miles:
-          td = @report.total_miles
-        tr
-          th Updated by:
-          td = @report.updated_by
+  fieldset.w3-border
+    .w3-row-padding
+      .s12.m6.w3-col
+        table.show-table.w100
+          
+          =show_row("Type report:",@report.type_report)
+          =show_row("Date:",@report.date)
+          =show_row("Details:",@report.details)
+          =show_row("Area:",@report.area)
+          =show_row("Remarks:",text_area_tag( nil,@report.remarks, rows:3))
+      .s12.m6.w3-col
+        table.show-table.w100
+          =show_row("Volunteers:",@report.volunteers)
+          =show_row("Hours each:",@report.hours_each)
+          =show_row("Miles each:",@report.miles_each)
+          =show_row("Expenses:",@report.expenses)
+          =show_row("Total hours:",@report.total_hours)
+          =show_row("Total miles:",@report.total_miles)
+          =show_row("Updated by:",@report.updated_by)
 
 
 

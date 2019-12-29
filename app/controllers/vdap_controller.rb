@@ -1,5 +1,5 @@
 class VdapController < ApplicationController
-  layout 'vdap'
+  layout 'plain'
   def home
   end
 
@@ -7,5 +7,11 @@ class VdapController < ApplicationController
   end
 
   def resources
+    @markup = Current.post.markups.find_by(id:params[:id])
+    if @markup
+      render template:'markups/plain', layout: 'plain'
+    else
+      cant_do_that
+    end
   end
 end

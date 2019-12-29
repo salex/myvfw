@@ -18,11 +18,22 @@ $dark-blue: #0F3E61;
 .lgoldey,.lite-goldey  {background-color: lighten($vfw_gold,20);color:#333;}
 .goldey {background-color: $vfw_gold;color:#f8f8f8;}
 .strong {font-weight: bold;}
+.text-center {text-align: center!important;}
+.text-right {text-align: right!important;}
+
+
 body {
   // background-color: lighten($malt,50);
   background-color: $dark-blue;
   // background-image: image-url("flag.jpeg");
 }
+
+body.plain {
+  // background-color: lighten($malt,50);
+  background-color: white;
+  // background-image: image-url("flag.jpeg");
+}
+
 .sticky-menu {
   // list-style-type: none;
   // margin: 0;
@@ -33,6 +44,7 @@ body {
   position: sticky;
   top: 0;
 }
+
 
 .my-pad-left-right {
   padding: 0 12px;
@@ -138,4 +150,3 @@ h5 {margin-top:8px; margin-bottom: 8px;}
 
   }
 }
-

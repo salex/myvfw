@@ -23,6 +23,11 @@
   }
 }
 
+td.actions, div.actions {
+  a {padding-right: 14px;}
+}
+
+
 button, input[type='submit'], input[type='button'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -59,12 +64,10 @@ span.annotate, div.annotate, dd.annotate, dl.annotate, li.annnotate {
   td{ color:red !important;}
 }
 
-.vdap-menu {
+.plain-menu {
   background-color: #ddd;
   border-bottom: solid black 2px;
 }
-
-.text-center {text-align: center;}
 
 .small-caps {
   font-variant: small-caps;

@@ -93,6 +93,7 @@ class UsersController < ApplicationController
       else
         cookies.delete(:remember_me)
       end
+      session.delete(:visitor)
       session[:user_id] = user.id
       session[:full_name] = user.to_label
       session[:expires_at] = Time.now.midnight + 1.day

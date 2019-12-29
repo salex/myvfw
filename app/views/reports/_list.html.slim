@@ -6,30 +6,38 @@
   = render partial:'reports/links'
 
   table.w3-table-all
-    tr
-      th 
-        |Date&nbsp;
-        i class="fas fa-eye"
-
-      th Type
-      th Area
-      th.w25p Details
-      th #Vol
-      th Hours
-      th Miles
-      th Exp
-      th Cost
-
-    - @reports.each do |report|
+    thead[data-controller="sortable"]
       tr
-        td.w3-text-blue.w3-hover-green = link_to report_path(report) do
-          = report.date
-          
-        td = report.type_report
-        td = report.area
-        td = report.details
-        td = report.volunteers
-        td.text-right = report.total_hours
-        td.text-right = report.total_miles
-        td.text-right = number_to_currency(report.expenses)
-        td.text-right = number_to_currency(report.total_cost)
+        th[data-action='click->sortable#clicked']
+          i.fas.fa-sort
+          |Date&nbsp;
+          i class="fas fa-eye"
+
+        th[data-action='click->sortable#clicked'] 
+          i.fas.fa-sort
+          |Type
+        th[data-action='click->sortable#clicked'] 
+          i.fas.fa-sort
+          |Area
+        th.w25p Details
+        th #Vol
+        th Hours
+        th Miles
+        th Exp
+        th[data-action='click->sortable#clicked'] 
+          i.fas.fa-sort
+          |Cost
+    tbody
+      - @reports.each do |report|
+        tr
+          td.w3-text-blue.w3-hover-green = link_to report_path(report) do
+            = report.date
+            
+          td = report.type_report
+          td = report.area
+          td = report.details
+          td = report.volunteers
+          td.text-right = report.total_hours
+          td.text-right = report.total_miles
+          td.text-right = number_to_currency(report.expenses)
+          td.w3-right-align = number_to_currency(report.total_cost)

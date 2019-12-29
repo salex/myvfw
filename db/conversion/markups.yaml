@@ -1,8 +1,29 @@
 ---
-- user_id: 1
+- markup_type: 
+  user_id: 20
+  post_id: 
+  category: greeting
+  title: A new greeting
+  content: ".slim\r\n.strong Welcome to Veterans of Foreign Wars Wilson-Parris Post
+    8600\r\n.w3-row-padding\r\n  | klfd  dfdjjd adsjf dsjlksdjf dsfj fdsjfl dfj dslfjlksd
+    fd fldsjf ljajeeijijrlklfdklfkdl f af kldfkdlmflksd isf lasdfdsoijf feojlsd fldsflsd
+    mfoeiielkm dfioel aeileildlkdofiel ielieleilei ldfle emdl ieme jksdjld feojoejriojlkdsmflkmdsoifjeoi
+    lsdmf iejoijre lmdkfm \r\n  .w3-col.s6\r\n    p   \r\n      | klfd  dfdjjd adsjf
+    dsjlksdjf dsfj fdsjfl dfj dslfjlksd fd fldsjf ljajeeijijrlklfdklfkdl f af kldfkdlmflksd
+    isf lasdfdsoijf feojlsd fldsfls dmfoeiie lkmdfioel aeileildlkdofiel ieliele ileildfle
+    emdl ieme jksdjld feojoejriojl kdsmflkmdsoifjeoi lsdmf iejoijre lmdkfm\r\n\r\n
+    \ .w3-col.s6   \r\n    | klfd  dfdjjd adsjf dsjlksdjf dsfj fdsjfl dfj dslfjlksd
+    fd fldsjf ljajeeijijrlklfdklfkdl f af kldfkdlmflksd isf lasdfdsoijf feojlsd fldsfls
+    dmfoe iielkmdfi oela eileildl kdofiel ielie leileildfle emdl ieme jksdjld feojo
+    ejriojlk dsmflkmds oifjeoi lsdmf iejoijre lmdkfm\r\n"
+  active: true
+  leadin: none for now
+  date: '2019-11-29'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Meeting Minutes - October 2016
-  leadin: ''
   content: ".slim\r\n\r\n.strong.center Wilson Parris VFW Post 8600\r\n.strong.center
     817 Rainbow Drive\r\n.strong.center Gadsden, Alabama  35901\r\n\r\n.strong.center
     Minutes\r\n.strong.center Post Membership Meeting\r\n.strong.center October 11,
@@ -63,11 +84,13 @@
     Adjourned by Commander LaPoint at 7:25 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant\r\n.annotate Corrected Bozeman was at meeting, not excused."
   active: true
-  date: 2016-11-07
-- user_id: 1
+  leadin: ''
+  date: '2016-11-07'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Meeting Minutes - November 2016
-  leadin: ''
   content: ".slim\r\n\r\n.strong.center Wilson Parris VFW Post 8600\r\n.strong.center
     817 Rainbow Drive\r\n.strong.center Gadsden, Alabama  35901\r\n\r\n.strong.center
     Minutes\r\n.strong.center Post Membership Meeting\r\n.strong.center November 8,
@@ -122,11 +145,13 @@
     Adjourned by Commander LaPoint at 7:20 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant"
   active: true
-  date: 2016-12-12
-- user_id: 1
+  leadin: ''
+  date: '2016-12-12'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Dec 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:06 PM by Commander
@@ -218,11 +243,13 @@
     \ li Closing Ceremonies performed and meeting Adjourned by Commander LaPoint at
     7:30 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-12-12
-- user_id: 1
+  leadin: ''
+  date: '2017-12-12'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - April 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes April 11, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n
@@ -291,34 +318,42 @@
     and meeting Adjourned by Commander LaPoint at 7:28 PM.\r\n\r\n\r\n.strong Steven
     Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-05-09
-- user_id: 1
+  leadin: ''
+  date: '2017-05-09'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: success
   title: Congratulations to Post 8600, an All-State, All-American Post 2016-17
-  leadin: ''
   content: Thanks to all that made that happen.
   active: false
-  date: 2016-09-01
-- user_id: 1
+  leadin: ''
+  date: '2016-09-01'
+- markup_type: 
+  user_id: 75
+  post_id: 19
   category: kiosk
   title: calendar
-  leadin: ''
-  content: ''
+  content: "{\"holidays\":{\"color\":\"Blue\",\"active\":true,\"uri\":\"https://p21-calendars.icloud.com/holiday/US_en.ics\",\"ics\":\"\"},\r\n\"vfw\":{\"color\":\"#871B15\",\"active\":true,\"uri\":\"https://p03-calendars.icloud.com/published/2/yDA7SN0imoKyRwRczElJRZZI9onlqUtZCftvEpV4cGtOJUv5InLGSj9y1FxR4x6ea1ME5at0r-5aP6gF__sXR2g3l3PFwn93tRZoV22HyG8\",\"ics\":\"\"},\r\n\"tide\":{\"color\":\"Crimson\",\"active\":true,\"uri\":\"https://api.calreply.net/webcal/a680a869-336c-483f-8d9f-9f06dafb0595\",\"ics\":\"\"},\r\n\"tigers\":{\"color\":\"#f68026\",\"active\":true,\"uri\":\"https://api.calreply.net/webcal/ec3695ca-88bd-4b2f-83ab-6e32c5ac8389\",\"ics\":\"\"}\r\n}"
   active: false
-  date: 2017-01-19
-- user_id: 1
+  leadin: ''
+  date: '2017-01-19'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: Checkout our Facebook and Web sites
-  leadin: ''
   content: ".slim\r\ndl.kiosk-dd\r\n  dt Facebook\r\n  dd www.facebook.com/VFWPost8600\r\n
     \ dt Or our Post web site\r\n  dd VFWPost8600.org\r\n  dd.indent Basic information
     on Post\r\n"
   active: true
-  date: 2017-01-30
-- user_id: 1
+  leadin: ''
+  date: '2017-01-30'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: warning
   title: Special Meeting - Tuesday, Feb 14th 2017
-  leadin: Pizza at 5, Meet at 6
   content: "A special meeting has been called for Tuesday, Feb 14th 2017  at 6PM.
     The sole purpose of the meeting is discussing and voting on relocating the Post
     home. The special meeting is in lieu of a general membership meeting, with the
@@ -329,11 +364,13 @@
     will requires 2/3 majority of the members present at the meeting. \r\n\r\nSee
     Article [Making a Case for Relocating the Post Home](/markups/12/display)"
   active: false
-  date: 2017-01-10
-- user_id: 1
+  leadin: Pizza at 5, Meet at 6
+  date: '2017-01-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: links
   title: VFW Links
-  leadin: Links to various VFW/Veterans Sites
   content: ".slim\r\ndl.indent-dd\r\n  dt \r\n    a[href=\"http://vfw.org\"] VFW National\r\n
     \ dd VFW National Home Page\r\n  dt\r\n     a[href=\"http://alvfw.org\"] Department
     of Alabama\r\n  dd VFW Department of Alabama Home Page\r\n  dt\r\n     a[href=\"http://drugrehab.com\"]
@@ -344,11 +381,13 @@
     those impacted by alcohol and drug dependence. DrugRehab.com is a free web resource
     that provides information and support to people fighting substance abuse and addiction.\r\n"
   active: true
-  date: 2017-01-24
-- user_id: 1
+  leadin: Links to various VFW/Veterans Sites
+  date: '2017-01-24'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Meeting Minutes - December 2016
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes December 14, 2016\r\n\r\nol\r\n\r\n\r\n  li \r\n
@@ -405,11 +444,13 @@
     Ceremonies performed and meeting Adjourned by Commander LaPoint at 7:20 PM.\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-01-10
-- user_id: 1
+  leadin: ''
+  date: '2017-01-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Nov 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:15 PM by Commander
@@ -486,11 +527,13 @@
     and meeting Adjourned by Commander LaPoint at 8:00 PM.\r\n\r\n\r\n.strong Steven
     Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-11-14
-- user_id: 1
+  leadin: ''
+  date: '2017-11-14'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - May 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes May 9, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n    strong
@@ -535,11 +578,13 @@
     again!\r\n  li Closing Ceremonies performed and meeting Adjourned by Commander
     LaPoint at 7:15 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-06-13
-- user_id: 1
+  leadin: ''
+  date: '2017-06-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Jan 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:10 PM by Commander
@@ -625,20 +670,24 @@
     13th.\r\n\r\n  li Closing Ceremonies performed and meeting Adjourned by Commander
     LaPoint at 7:30 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-01-09
-- user_id: 1
+  leadin: ''
+  date: '2018-01-09'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: Canteen Hours
-  leadin: ''
   content: ".slim\r\n\r\ndl.kiosk-dd\r\n  dt Sunday Through Friday\r\n  dd 3PM to
     Midnight\r\n  dt Saturday\r\n  dd 3PM to 1AM\r\n\r\n  dt  Happy Hour, Monday through
     Friday\r\n  dd 3PM to 6PM\r\n  dd $1 off all mixed drinks, $.50 off all beer.\r\n"
   active: true
-  date: 2017-01-30
-- user_id: 1
+  leadin: ''
+  date: '2017-01-30'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: articles
   title: Making a Case for Relocating Post Home
-  leadin: ''
   content: ".slim\r\n\r\np Our Post is surviving, but just barely. Something needs
     to be done if our Post is to exist past the next year. During a Special Post Membership
     Meeting on February 14th, 2017 at 6:00PM a plan will be presented to gather our
@@ -763,11 +812,13 @@
     Sanders\r\n  dd Steve Alex\r\n  dd Joyce Shelly\r\n  dd Jimmy Bozeman\r\n  dd
     Ray Holland"
   active: true
-  date: 2017-01-21
-- user_id: 1
+  leadin: ''
+  date: '2017-01-21'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Pot Membership Meeting  - Oct 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes Oct 10, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n    strong
@@ -824,28 +875,34 @@
     meeting Adjourned by Commander LaPoint at 7:20 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant"
   active: true
-  date: 2017-10-10
-- user_id: 1
+  leadin: ''
+  date: '2017-10-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: A Thought!
-  leadin: ''
   content: ".slim\r\n.marquee.malty.strong[ data-direction=\"left\" data-duplicated='true'
     data-delayBeforeStart=\"100\" data-gap=\"200\" data-duration=\"5000\"]   Now is
     the time for all good members to come to the aid of their Post!"
   active: true
-  date: 2017-01-13
-- user_id: 1
+  leadin: ''
+  date: '2017-01-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: All-State All-American Post
-  leadin: ''
   content: Congratulations to Post 8600, an All-State, All-American Post 2016-17 -
     Thanks to all that made it happen.
   active: true
-  date: 2017-01-13
-- user_id: 1
+  leadin: ''
+  date: '2017-01-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - March 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:08 PM by Commander
@@ -908,11 +965,13 @@
     Adjourned by Commander LaPoint at 7:24 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant"
   active: true
-  date: 2018-03-13
-- user_id: 5
+  leadin: ''
+  date: '2018-03-13'
+- markup_type: 
+  user_id: 5
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Sept 2017
-  leadin: ''
   content: "POST MEMBERSHIP MEETING-SEPTEMBER 12 2017\r\nWILSON PARRIS VFW POST 8600\r\n817
     Rainbow Drive\r\nGadsden, Al 35901\r\n\r\n1. Opening ceremony: Meeting opened
     at 6:00 p.m. by Commander Dave LaPoint. Opening ceremonies conducted. Chaplain
@@ -960,11 +1019,13 @@
     Closing Ceremonies performed and meeting adjourned at 7:57 p.m.\r\n\r\nJoyce Shelley\r\nFor
     Steven Alex, Adjutant \r\n\r\n "
   active: true
-  date: 2017-09-12
-- user_id: 1
+  leadin: ''
+  date: '2017-09-12'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - July 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes July 11, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n    strong
@@ -1016,11 +1077,13 @@
     and meeting Adjourned by Commander LaPoint at 7:05 PM.\r\n\r\n\r\n.strong Steven
     Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-08-08
-- user_id: 1
+  leadin: ''
+  date: '2017-08-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Special Meeting - Feb 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Special Meeting Minutes February 14, 2016 to vote on putting the Post Home
@@ -1108,11 +1171,13 @@
     Closing Ceremonies performed and meeting Adjourned by Commander LaPoint at 7:30
     PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-03-14
-- user_id: 1
+  leadin: ''
+  date: '2017-03-14'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Meeting Minutes - January 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes January 10, 2016\r\n\r\nol\r\n\r\n\r\n  li \r\n
@@ -1164,11 +1229,13 @@
     performed and meeting Adjourned by Commander LaPoint at 7:20 PM.\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-03-14
-- user_id: 1
+  leadin: ''
+  date: '2017-03-14'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Feb 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:04 PM by Commander
@@ -1243,11 +1310,13 @@
     Closing Ceremonies performed and meeting Adjourned by Commander LaPoint at 7:24
     PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-02-13
-- user_id: 1
+  leadin: ''
+  date: '2018-02-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: Saturday Night Dance
-  leadin: ''
   content: ".slim\r\ndl.kiosk-dd\r\n  dt Saturday Night Dance\r\n  dd Saturday Night
     Dances have been canceled until further notice due to lack of participation.\r\n
     \ dd We are searching for a new band, but even if we find one, they won't stay
@@ -1255,20 +1324,24 @@
     reviews and has not increased participation.\r\n  dt We are sorry for taking this
     action and are open to suggestions from are patrons to increase participation.\r\n "
   active: true
-  date: 2017-05-08
-- user_id: 1
+  leadin: ''
+  date: '2017-05-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: Post Membership Meeting
-  leadin: ''
   content: ".slim\r\ndl.kiosk-dd\r\n  dt The next Post Membership meeting will be
     Tuesday, May 9th 2017.  \r\n  dt 2017-18 Installation of new Officers\r\nh4 If
     you think something is wrong, only you can change things. Be there!"
   active: true
-  date: 2017-01-13
-- user_id: 1
+  leadin: ''
+  date: '2017-01-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - June 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes June 12, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n    strong
@@ -1313,11 +1386,13 @@
     performed and meeting Adjourned by Commander LaPoint at 7:15 PM.\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-07-11
-- user_id: 1
+  leadin: ''
+  date: '2017-07-11'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - March 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes March 14, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n
@@ -1367,11 +1442,13 @@
     and meeting Adjourned by Commander LaPoint at 7:20 PM.\r\n\r\n\r\n.strong Steven
     Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-04-11
-- user_id: 1
+  leadin: ''
+  date: '2017-04-11'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - April 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened at 6:10 PM by Commander
@@ -1457,11 +1534,13 @@
     \r\n  li Closing Ceremonies performed and meeting Adjourned by Commander LaPoint
     at 7:40 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-04-10
-- user_id: 1
+  leadin: ''
+  date: '2018-04-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Pot Membership Meeting - August 2017
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\n\r\n.strong.text-center
     Post Membership Meeting Minutes Aug 8, 2017\r\n\r\nol\r\n\r\n\r\n  li \r\n    strong
@@ -1517,11 +1596,13 @@
     \ li Closing Ceremonies performed and meeting Adjourned by SV Commander Holmes
     at 7:15 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2017-08-08
-- user_id: 1
+  leadin: ''
+  date: '2017-08-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - May 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened on May 7th, 2018
@@ -1594,11 +1675,13 @@
     Ceremonies performed and meeting Adjourned by Commander LaPoint at 7:40 PM.\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-05-08
-- user_id: 1
+  leadin: ''
+  date: '2018-05-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - June 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Prior to meeting there was an
@@ -1663,11 +1746,13 @@
     by Commander Shelley at 8:00 PM.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant"
   active: true
-  date: 2018-07-08
-- user_id: 1
+  leadin: ''
+  date: '2018-07-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - September 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened on September 11th,
@@ -1730,11 +1815,13 @@
     at 6:50pm by Jr Vice Commander Thornton.\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong
     Adjutant"
   active: true
-  date: 2018-09-11
-- user_id: 1
+  leadin: ''
+  date: '2018-09-11'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - July 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened on July 10th, 2018
@@ -1809,11 +1896,13 @@
     performed and meeting Adjourned by Commander Shelley at 7:40 PM.\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-07-10
-- user_id: 1
+  leadin: ''
+  date: '2018-07-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - Aug 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: \r\n    | Meeting Opened on August 14th,
@@ -1887,11 +1976,13 @@
     \  \r\n  li Closing Ceremonies performed and meeting Adjourned by Commander Shelley.\r\n\r\n\r\n.strong
     Jimmy Bozeman\r\n\r\n.strong Adjutant for the Day"
   active: true
-  date: 2018-08-14
-- user_id: 1
+  leadin: ''
+  date: '2018-08-14'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - November 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:00:00)\r\n    | Meeting Opened on Nov
@@ -1971,11 +2062,13 @@
     at 6:50pm by Commander Shelley. Next meeting Dec 11th, 2018. (01:35:22)\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-11-13
-- user_id: 1
+  leadin: ''
+  date: '2018-11-13'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: kiosk
   title: ical
-  leadin: ''
   content: "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:icalendar-ruby\r\nCALSCALE:GREGORIAN\r\nX-WR-CALNAME:US
     Holidays\r\nX-APPLE-LANGUAGE:en-US\r\nX-APPLE-REGION:US\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224632Z\r\nUID:c5bbb4ae-8dfd-33db-b3e0-4862c55e3ce7\r\nDTSTART;VALUE=DATE:20180704\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Independence
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:f42c6443-488d-9756-925b-bf42f63a3348\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:324589c2-b85c-30b1-ae19-596762da4a75\r\nDTSTART;VALUE=DATE:20181225\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Christmas
@@ -1983,23 +2076,23 @@
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:0f8a6482-b1c4-1b83-b390-f651e245bdae\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:fdc817f4-1e63-3669-abeb-3a4adf767698\r\nDTSTART;VALUE=DATE:20180614\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Flag
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:bfc1642a-310f-205e-e7ea-5cfae2283834\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:90239c44-528c-3c39-8859-98e2a11f5e84\r\nDTSTART;VALUE=DATE:20180202\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Groundhog
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:9611d4f7-ead2-b8a4-7a4b-480bb62fffc1\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:8f874e27-9c86-3340-a8a0-087eb6698451\r\nDTSTART;VALUE=DATE:20181031\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Halloween\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:56dc8264-41cb-cf5c-8d85-ebd58a2d2759\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:e9db12d6-8e44-38f7-b9f1-6e36c3b663ba\r\nDTSTART;VALUE=DATE:20180101\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:New
-    Year’s Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:42902458-1dd4-5105-04d0-2dccc0194c5f\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:8f12a062-6028-3f29-a80c-9e4a13f1ce7c\r\nDTSTART;VALUE=DATE:20180214\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Valentine’s
+    Year???s Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:42902458-1dd4-5105-04d0-2dccc0194c5f\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:8f12a062-6028-3f29-a80c-9e4a13f1ce7c\r\nDTSTART;VALUE=DATE:20180214\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Valentine???s
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:a22c507b-fe57-cf6b-d046-60b9f6aa5c99\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:9deab19c-a205-384f-8551-4196c4ea36dc\r\nDTSTART;VALUE=DATE:20181111\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Veterans
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:93acff05-ea79-b086-8222-7cfb1b5f5c81\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:420095d0-fc5c-39c6-8686-0ab29a2db155\r\nDTSTART;VALUE=DATE:20180401\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:April
     Fools' Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:027c4e4c-3e34-da34-9dcc-7d141da820a0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:a377f315-6634-3d34-b080-e36b8bfd1d3b\r\nDTSTART;VALUE=DATE:20180317\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:St.
-    Patrick’s Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:11164aae-d9e4-fa0b-cb59-45243db175e4\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:b37822e6-a5e6-31c5-9277-69e36b6b8e19\r\nDTSTART;VALUE=DATE:20181224\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Christmas
+    Patrick???s Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:11164aae-d9e4-fa0b-cb59-45243db175e4\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:b37822e6-a5e6-31c5-9277-69e36b6b8e19\r\nDTSTART;VALUE=DATE:20181224\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Christmas
     Eve\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:4915413d-d013-5a61-75f6-9510dbd51a7b\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:d13f5af6-eb2f-3b12-978b-45792377d175\r\nDTSTART;VALUE=DATE:20180505\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Cinco
     de Mayo\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:7ddee31e-7cbf-6bbd-427d-cfa53ff256bc\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:6ee28300-4feb-3be6-b680-b4093426cc86\r\nDTSTART;VALUE=DATE:20181231\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:New
-    Year’s Eve\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:fd3d065f-d1ca-aa01-544a-91fd05242267\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:4f31dfc0-2c9b-3fe0-8fb0-52b2c9d572ce\r\nDTSTART;VALUE=DATE:20180619\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Juneteenth\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:48f51f4a-8688-b05c-5acb-148c3a969369\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:b33b8449-918a-33fb-9742-c5c01447953c\r\nDTSTART;VALUE=DATE:20181226\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Kwanzaa\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:3a5f8c2a-998c-0c72-1ce9-a6cd8d01d6b1\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:dd9e5700-93d3-335f-aa27-9fb6a4a8a7a9\r\nDTSTART;VALUE=DATE:20180311\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Daylight
+    Year???s Eve\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:fd3d065f-d1ca-aa01-544a-91fd05242267\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:4f31dfc0-2c9b-3fe0-8fb0-52b2c9d572ce\r\nDTSTART;VALUE=DATE:20180619\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Juneteenth\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:48f51f4a-8688-b05c-5acb-148c3a969369\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:b33b8449-918a-33fb-9742-c5c01447953c\r\nDTSTART;VALUE=DATE:20181226\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Kwanzaa\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:3a5f8c2a-998c-0c72-1ce9-a6cd8d01d6b1\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:dd9e5700-93d3-335f-aa27-9fb6a4a8a7a9\r\nDTSTART;VALUE=DATE:20180311\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Daylight
     Saving Time\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=2SU;BYMONTH=3\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:fda9344c-04b8-b023-c1f9-e72260eb903f\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:3d25e513-f1e1-371b-b6f2-05a48364cc0d\r\nDTSTART;VALUE=DATE:20181104\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Daylight
-    Saving Time End\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=1SU;BYMONTH=11\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:821e5d5a-e4b0-8daa-166a-4b702a93e487\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:00e85552-eb2f-3980-b555-fc2670764ab1\r\nDTSTART;VALUE=DATE:20180617\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Father’s
+    Saving Time End\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=1SU;BYMONTH=11\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:821e5d5a-e4b0-8daa-166a-4b702a93e487\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:00e85552-eb2f-3980-b555-fc2670764ab1\r\nDTSTART;VALUE=DATE:20180617\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Father???s
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=3SU;BYMONTH=6\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:74d0fff7-b7a0-ba3f-1f43-23a1d26c2d15\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:0f466b56-5e8b-35cf-bfbc-9380675b3afb\r\nDTSTART;VALUE=DATE:20180903\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Labor
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=1MO;BYMONTH=9\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:7f80de1c-4cdc-55a9-40c4-72789a37bafc\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:45cc6d4f-dd36-367f-87c4-bf0d59c2bfdd\r\nDTSTART;VALUE=DATE:20180115\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Martin
     Luther King\\, Jr. Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=3MO;BYMONTH=1\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:ea7d1900-876a-7c53-2015-a84a9eea1354\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:70ac6e98-a035-3ccd-8931-cfac527c8a62\r\nDTSTART;VALUE=DATE:20180528\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Memorial
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=-1MO;BYMONTH=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:90c8d709-ca5a-0c44-ba76-ad07f357dfb9\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:77566754-b3d1-3c1e-b23f-b4b61cd6d128\r\nDTSTART;VALUE=DATE:20181008\r\nCLASS:PUBLIC\r\nDESCRIPTION:This
     is not a nation-wide holiday\\; it may not be observed in y\r\n our region.\r\nSUMMARY;LANGUAGE=en-US:Columbus
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=2MO;BYMONTH=10\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:acf3f39c-be67-2163-3ca8-9aa9986c2ecf\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:84328b17-c50b-38c9-bc5d-a2d102729cdd\r\nDTSTART;VALUE=DATE:20180219\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:President's
-    Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=3MO;BYMONTH=2\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:b67593a2-8d09-02a7-6aea-a4bf0071e5c6\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:15a55f0e-d90d-3c47-8fd3-8b128f7b45e9\r\nDTSTART;VALUE=DATE:20180513\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Mother’s
+    Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=3MO;BYMONTH=2\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:b67593a2-8d09-02a7-6aea-a4bf0071e5c6\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:15a55f0e-d90d-3c47-8fd3-8b128f7b45e9\r\nDTSTART;VALUE=DATE:20180513\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Mother???s
     Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=2SU;BYMONTH=5\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:9882941f-6ff1-b648-2438-61dea7f7ff33\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:424e6ef2-3645-35fd-8c8e-cb465cd6a320\r\nDTSTART;VALUE=DATE:20181008\r\nCLASS:PUBLIC\r\nDESCRIPTION:This
     is not a nation-wide holiday\\; it may not be observed in y\r\n our region.\r\nSUMMARY;LANGUAGE=en-US:Indigenous
     Peoples' Day\r\nTRANSP:TRANSPARENT\r\nRRULE:FREQ=YEARLY;COUNT=5;BYDAY=2MO;BYMONTH=10\r\nCATEGORIES:Holidays\r\nX-APPLE-UNIVERSAL-ID:802face3-803d-075c-588f-ea603e22f1f6\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTSTAMP:20190531T224633Z\r\nUID:24ccb28f-892f-3976-b5c0-57d57812eb4f\r\nDTSTART;VALUE=DATE:20200703\r\nCLASS:PUBLIC\r\nSUMMARY;LANGUAGE=en-US:Independence
@@ -2098,15 +2191,16 @@
     - DJ\r\nDTSTART;TZID=America/Chicago:20160827T200000\r\nDTSTAMP:20160810T121005Z\r\nSEQUENCE:0\r\nDESCRIPTION:Danny
     Fraizer - Little Elvis\\n Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141026T151420Z\r\nUID:09C799DF-38C1-441A-BBB4-FF632E2DE48D\r\nDTEND;TZID=America/Chicago:20141101T160000\r\nSUMMARY:Buddy
     Poppy Drive\r\nDTSTART;TZID=America/Chicago:20141101T080000\r\nDTSTAMP:20141026T151558Z\r\nSEQUENCE:7\r\nDESCRIPTION:Roadblock
-    Hwy 77 & Steele Station\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20151217T165042Z\r\nUID:0E31173E-4DC1-4987-BD55-220633B34AB6\r\nRRULE:FREQ=MONTHLY;UNTIL=20160214T015959Z;BYDAY=2SA\r\nDTEND;TZID=America/Chicago:20151212T230000\r\nEXDATE;TZID=America/Chicago:20151212T200000\r\nSUMMARY:Dance
+    Hwy 77 & Steele Station\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;TZID=America/Chicago:20180805T200000\r\nDTSTART;TZID=America/Chicago:20180805T160000\r\nUID:0CBE2132-9F43-4859-B6B8-84FF323E96E1\r\nDTSTAMP:20191206T123055Z\r\nDESCRIPTION:\\n
+    Johnnt is your KJ\\n\r\nSEQUENCE:0\r\nSUMMARY:Karaoke\r\nLAST-MODIFIED:20191206T123048Z\r\nCREATED:20191206T123048Z\r\nRRULE:FREQ=WEEKLY;UNTIL=20191208T215959Z;INTERVAL=1\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20151217T165042Z\r\nUID:0E31173E-4DC1-4987-BD55-220633B34AB6\r\nRRULE:FREQ=MONTHLY;UNTIL=20160214T015959Z;BYDAY=2SA\r\nDTEND;TZID=America/Chicago:20151212T230000\r\nEXDATE;TZID=America/Chicago:20151212T200000\r\nSUMMARY:Dance
     - Band\r\nDTSTART;TZID=America/Chicago:20151212T200000\r\nDTSTAMP:20151217T165042Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141027T115123Z\r\nUID:154225BE-D308-43C8-802D-4F7F794E9FA7\r\nDTEND;VALUE=DATE:20141128\r\nSUMMARY:Canteen
     Opens at 5PM\r\nDTSTART;VALUE=DATE:20141127\r\nDTSTAMP:20141126T150247Z\r\nSEQUENCE:4\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141026T150941Z\r\nUID:17D63961-8A07-4602-BCFF-1A8AFBF512DA\r\nRRULE:FREQ=WEEKLY;UNTIL=20151205T235959Z\r\nDTEND;TZID=America/Chicago:20150103T235900\r\nSUMMARY:Dance\r\nDTSTART;TZID=America/Chicago:20150103T190000\r\nDTSTAMP:20150106T112152Z\r\nSEQUENCE:10\r\nDESCRIPTION:New
-    Band.\\nClassic 60’s Band\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160509T025421Z\r\nUID:1823E700-EE82-43D5-AF4A-B8CEB45D82C4\r\nDTEND;TZID=America/Chicago:20160515T000000\r\nSUMMARY:Dance
+    Band.\\nClassic 60???s Band\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160509T025421Z\r\nUID:1823E700-EE82-43D5-AF4A-B8CEB45D82C4\r\nDTEND;TZID=America/Chicago:20160515T000000\r\nSUMMARY:Dance
     - DJ\r\nDTSTART;TZID=America/Chicago:20160514T200000\r\nDTSTAMP:20160509T025421Z\r\nSEQUENCE:0\r\nDESCRIPTION:Johnny\\n
     Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141025T003340Z\r\nUID:186A298F-BC26-42D2-A6F9-E61E442F4374\r\nRRULE:FREQ=MONTHLY;UNTIL=20150113T055959Z;BYDAY=2TU\r\nDTEND;TZID=America/Chicago:20141209T200000\r\nSUMMARY:Post
     Meeting\r\nDTSTART;TZID=America/Chicago:20141209T180000\r\nDTSTAMP:20150106T111917Z\r\nSEQUENCE:8\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160410T150856Z\r\nUID:18E470C4-936B-4830-946A-34C62D457812\r\nDTEND;TZID=America/Chicago:20160414T230000\r\nSUMMARY:Karaoke
-    bar\r\nDTSTART;TZID=America/Chicago:20160414T180000\r\nDTSTAMP:20160410T150856Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;TZID=America/Chicago:20171217T200000\r\nLAST-MODIFIED:20170508T122719Z\r\nUID:1A04A8DA-C313-4614-B6EF-B2340AA2446E\r\nDTSTAMP:20171212T132328Z\r\nDESCRIPTION:\\n
-    Phil & Teresa are your KJ\\n\r\nSEQUENCE:0\r\nSUMMARY:Karaoke\r\nDTSTART;TZID=America/Chicago:20171217T160000\r\nCREATED:20180808T023809Z\r\nRRULE:FREQ=WEEKLY;UNTIL=20180805T205959Z\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20150128T144423Z\r\nUID:1A37878B-38D4-45A4-960D-3B51A0C4B14F\r\nDTEND;TZID=America/Chicago:20150129T100000\r\nSUMMARY:update
+    bar\r\nDTSTART;TZID=America/Chicago:20160414T180000\r\nDTSTAMP:20160410T150856Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20180808T023809Z\r\nUID:1A04A8DA-C313-4614-B6EF-B2340AA2446E\r\nRRULE:FREQ=WEEKLY;UNTIL=20180805T205959Z\r\nDTEND;TZID=America/Chicago:20171217T200000\r\nSUMMARY:Karaoke\r\nDTSTART;TZID=America/Chicago:20171217T160000\r\nDTSTAMP:20171212T132328Z\r\nSEQUENCE:0\r\nDESCRIPTION:\\n
+    Phil & Teresa are your KJ\\n\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20150128T144423Z\r\nUID:1A37878B-38D4-45A4-960D-3B51A0C4B14F\r\nDTEND;TZID=America/Chicago:20150129T100000\r\nSUMMARY:update
     cd\r\nDTSTART;TZID=America/Chicago:20150129T090000\r\nDTSTAMP:20150128T144711Z\r\nSEQUENCE:3\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160415T220312Z\r\nUID:1AA06390-80BE-4C82-986A-FCDD01FACBAD\r\nDTEND;TZID=America/Chicago:20160424T000000\r\nSUMMARY:Dance
     - DJ\r\nDTSTART;TZID=America/Chicago:20160423T200000\r\nDTSTAMP:20160415T220312Z\r\nSEQUENCE:0\r\nDESCRIPTION:Johnny\\n
     Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160722T133422Z\r\nUID:28AF97C3-557E-45CB-AF3D-D3D6C905C397\r\nDTEND;TZID=America/Chicago:20160710T000000\r\nSUMMARY:Dance
@@ -2117,8 +2211,8 @@
     2760 - Gadsden\\, Lunch at 1 meet at 2.\\nState Rep: Comma\r\n nder Calvin Underwood\r\nDTEND;TZID=US/Central:20150419T143000\r\nDTSTAMP:20150222T201038Z\r\nDTSTART;TZID=US/Central:20150419T130000\r\nLAST-MODIFIED:20150222T201036Z\r\nLOCATION:Ft
     Payne\r\nSEQUENCE:6\r\nSUMMARY:District 2 Meeting\r\nUID:394E5AD2-31CE-4C26-881D-EB61EB80898D\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160812T195134Z\r\nDESCRIPTION:Free
     hot dogs and cokes for donors.\r\nDTEND;TZID=America/Chicago:20160817T170000\r\nDTSTAMP:20160812T195135Z\r\nDTSTART;TZID=America/Chicago:20160817T103000\r\nLAST-MODIFIED:20160812T195134Z\r\nSEQUENCE:0\r\nSUMMARY:Life
-    South blood drive\r\nUID:3D8EF996-E0C7-4C88-8AFE-04785FE6E559\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;TZID=America/Chicago:20180805T200000\r\nLAST-MODIFIED:20170508T122719Z\r\nUID:417762F8-B6EB-4FC2-9EBE-9002B5BD669C\r\nDTSTAMP:20180808T023809Z\r\nDESCRIPTION:\\n
-    Johnnt is your KJ\\n\r\nSEQUENCE:0\r\nSUMMARY:Karaoke\r\nDTSTART;TZID=America/Chicago:20180805T160000\r\nCREATED:20170508T120523Z\r\nRRULE:FREQ=WEEKLY\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160118T172529Z\r\nUID:475F4637-7795-461F-9C73-459B56B5C8AA\r\nDTEND;TZID=America/Chicago:20160214T000000\r\nSUMMARY:Dance
+    South blood drive\r\nUID:3D8EF996-E0C7-4C88-8AFE-04785FE6E559\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;TZID=America/Chicago:20191208T200000\r\nDTSTART;TZID=America/Chicago:20191208T160000\r\nUID:417762F8-B6EB-4FC2-9EBE-9002B5BD669C\r\nDTSTAMP:20180808T023809Z\r\nDESCRIPTION:\\n
+    Johnny Neyman is your KJ\\n\r\nSEQUENCE:0\r\nSUMMARY:Karaoke\r\nLAST-MODIFIED:20191206T123048Z\r\nCREATED:20170508T120523Z\r\nRRULE:FREQ=WEEKLY\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160118T172529Z\r\nUID:475F4637-7795-461F-9C73-459B56B5C8AA\r\nDTEND;TZID=America/Chicago:20160214T000000\r\nSUMMARY:Dance
     - Band\r\nDTSTART;TZID=America/Chicago:20160213T200000\r\nDTSTAMP:20160118T172529Z\r\nSEQUENCE:0\r\nDESCRIPTION:Classic
     60's Band\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20171212T144038Z\r\nUID:4878E1E1-3B23-495D-A205-0C3819FE43F6\r\nDTEND;TZID=America/Chicago:20171215T200000\r\nSUMMARY:Post
     8600 Christmas Party\r\nDTSTART;TZID=America/Chicago:20171215T180000\r\nDTSTAMP:20171212T144214Z\r\nLOCATION:VFW
@@ -2136,7 +2230,7 @@
     - DJ\r\nDTSTART;TZID=America/Chicago:20160618T200000\r\nDTSTAMP:20160602T175413Z\r\nSEQUENCE:0\r\nDESCRIPTION:Danny
     Fraizer - Little Elvis\\n Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160107T154607Z\r\nUID:53D60BA2-5B5A-45EC-8ECE-C9A78B15C67B\r\nDTEND;VALUE=DATE:20160110\r\nSUMMARY:Football
     NFL Wildcard\r\nDTSTART;VALUE=DATE:20160109\r\nDTSTAMP:20160108T234453Z\r\nSEQUENCE:0\r\nDESCRIPTION:\\nAFC:
-    \\n2:45 - Chiefs VS Texans\\n\\n 7:15 - Steelers VS Benga\r\n ls\\n\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"董嚎\";CUTYPE=INDIVIDUAL;EMAIL=qku8@f15.xyz;PARTSTAT=ACCEPTED;R\r\n
+    \\n2:45 - Chiefs VS Texans\\n\\n 7:15 - Steelers VS Benga\r\n ls\\n\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"??????\";CUTYPE=INDIVIDUAL;EMAIL=qku8@f15.xyz;PARTSTAT=ACCEPTED;R\r\n
     OLE=CHAIR:/aMjUxMDIwMzY1MDQyNTEwMhqxtIv1B1c3noaih-As6TTmITehnvbDltTMa7ww\r\n YhUt/principal/\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex8@icloud.com;PARTSTAT=NEEDS-ACTION;\r\n
     ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex8@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex97412@icloud.com;PARTSTAT=NEEDS-ACT\r\n
     ION;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex97412@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex9@icloud.com;PARTSTAT=NEEDS-ACTION;\r\n
@@ -2148,7 +2242,7 @@
     ON;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salexa1999@gmail.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;PARTSTAT=DECLINED;ROLE=REQ-PARTICIPANT;CN=Stev\r\n
     e Alex;EMAIL=salex@icloud.com;X-CALENDARSERVER-DTSTAMP=20161126T004628Z:\r\n /aNDg3NjQ2MjQ4NzY0NjI0OO9GWhhBCGI33pBEKfxJ38QbY3Q9ECPg68rHiFzZ7Gnh/princ\r\n
     ipal/\r\nCREATED:20161126T003236Z\r\nDESCRIPTION:www.michaelkorsapple.com $49
-    Michael Kors Black Friday Sale 2\r\n 016.\r\nDTEND;VALUE=DATE:20161130\r\nDTSTAMP:20161126T004627Z\r\nDTSTART;VALUE=DATE:20161125\r\nLAST-MODIFIED:20161126T004626Z\r\nORGANIZER;CN=\"董嚎\":/aMjUxMDIwMzY1MDQyNTEwMhqxtIv1B1c3noaih-As6TTmITehnvbDl\r\n
+    Michael Kors Black Friday Sale 2\r\n 016.\r\nDTEND;VALUE=DATE:20161130\r\nDTSTAMP:20161126T004627Z\r\nDTSTART;VALUE=DATE:20161125\r\nLAST-MODIFIED:20161126T004626Z\r\nORGANIZER;CN=\"??????\":/aMjUxMDIwMzY1MDQyNTEwMhqxtIv1B1c3noaih-As6TTmITehnvbDl\r\n
     tTMa7wwYhUt/principal/\r\nSEQUENCE:0\r\nSUMMARY:$49 Michael Kors Black Friday
     Sale 2016.\r\nUID:6F151541-41C7-8EDC-8758-668C318A622C\r\nURL;VALUE=URI:www.michaelkorsapple.com\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141027T114454Z\r\nUID:59B099AF-2E5F-4AE0-B80D-BC8B1ED9A2A0\r\nDTEND;TZID=America/Chicago:20141116T150000\r\nSUMMARY:District
     2 Meeting - Boaz\r\nDTSTART;TZID=America/Chicago:20141116T130000\r\nDTSTAMP:20141027T114618Z\r\nSEQUENCE:5\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160415T220406Z\r\nUID:5AE603E7-D436-41C9-B176-1F39B94FDA7F\r\nDTEND;TZID=America/Chicago:20160416T181500\r\nSUMMARY:Alabama
@@ -2201,7 +2295,7 @@
     Post 8600\r\nDESCRIPTION:Outlaw Band\r\nSEQUENCE:0\r\nSUMMARY:Dance\r\nDTSTART;TZID=America/Chicago:20171216T190000\r\nCREATED:20171212T144226Z\r\nRRULE:FREQ=WEEKLY;UNTIL=20180407T235959Z\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160314T121911Z\r\nUID:B22C262E-185A-4E8B-BE82-2CA1ED482D57\r\nDTEND;TZID=America/Chicago:20160327T000000\r\nSUMMARY:Dance
     - DJ\r\nDTSTART;TZID=America/Chicago:20160326T200000\r\nDTSTAMP:20160314T121911Z\r\nSEQUENCE:0\r\nDESCRIPTION:Johnny\\n
     Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20141026T151607Z\r\nUID:B2DFE516-D849-4CED-BCEF-AE9D5EDFB6E2\r\nRRULE:FREQ=DAILY;COUNT=3\r\nDTEND;TZID=America/Chicago:20141107T140000\r\nSUMMARY:Buddy
-    Poppy Drive\r\nDTSTART;TZID=America/Chicago:20141107T090000\r\nDTSTAMP:20141026T151923Z\r\nSEQUENCE:11\r\nDESCRIPTION:Johnson’s
+    Poppy Drive\r\nDTSTART;TZID=America/Chicago:20141107T090000\r\nDTSTAMP:20141026T151923Z\r\nSEQUENCE:11\r\nDESCRIPTION:Johnson???s
     Walmart\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160509T025436Z\r\nUID:B505E3A2-04AB-4828-967C-EDB648E5F575\r\nDTEND;TZID=America/Chicago:20160605T000000\r\nSUMMARY:Dance
     - DJ\r\nDTSTART;TZID=America/Chicago:20160604T200000\r\nDTSTAMP:20160602T175406Z\r\nSEQUENCE:0\r\nDESCRIPTION:Danny
     Fraizer - Little Elvis\\n Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160415T220744Z\r\nUID:B53A9BA5-7098-4B43-AFE7-825C8A7F7CB1\r\nDTEND;TZID=America/Chicago:20160429T230000\r\nSUMMARY:Bar
@@ -2246,7 +2340,7 @@
     Post 8600 Auditorium\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20160830T164256Z\r\nUID:EF9C301D-A4FC-416E-AA02-6D2CBC0A969E\r\nDTEND;TZID=America/Chicago:20160904T000000\r\nSUMMARY:Dance
     - DJ\r\nDTSTART;TZID=America/Chicago:20160903T200000\r\nDTSTAMP:20160830T164256Z\r\nSEQUENCE:0\r\nDESCRIPTION:Danny
     Fraizer - Little Elvis\\n Spins with a little Karaoke\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nCREATED:20170126T145714Z\r\nUID:F130C2D5-2892-4973-A74D-832F7C239AEF\r\nDTEND;TZID=America/Chicago:20170209T190000\r\nSUMMARY:House
-    Committee Meeting\r\nDTSTART;TZID=America/Chicago:20170209T180000\r\nDTSTAMP:20170126T150030Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"饶颢雨\";CUTYPE=INDIVIDUAL;EMAIL=1069020164188303532787575@87654\r\n
+    Committee Meeting\r\nDTSTART;TZID=America/Chicago:20170209T180000\r\nDTSTAMP:20170126T150030Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"?????????\";CUTYPE=INDIVIDUAL;EMAIL=1069020164188303532787575@87654\r\n
     56.tk;PARTSTAT=ACCEPTED;ROLE=CHAIR:/aMTAyNTA2MDQ0NzYxMDI1MBr8tNMNL5Bi0XD\r\n qZ9oAxKNJNMC6AbS4JjWYse7UkryZ/principal/\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex555@icloud.com;PARTSTAT=NEEDS-ACTIO\r\n
     N;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex555@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex72@me.com;PARTSTAT=NEEDS-ACTION;ROL\r\n
     E=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex72@me.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex7@icloud.com;PARTSTAT=NEEDS-ACTION;\r\n
@@ -2258,9 +2352,9 @@
     ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salexa@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;PARTSTAT=DECLINED;ROLE=REQ-PARTICIPANT;CN=Stev\r\n
     e Alex;EMAIL=salex@icloud.com;X-CALENDARSERVER-DTSTAMP=20161126T004626Z:\r\n /aNDg3NjQ2MjQ4NzY0NjI0OO9GWhhBCGI33pBEKfxJ38QbY3Q9ECPg68rHiFzZ7Gnh/princ\r\n
     ipal/\r\nCREATED:20161126T003233Z\r\nDESCRIPTION:http://t.cn/RfCSatd $19.99 Ray-ban&Oakley
-    Black Friday Deals \r\n Online.\r\nDTEND;VALUE=DATE:20161130\r\nDTSTAMP:20161126T004625Z\r\nDTSTART;VALUE=DATE:20161124\r\nLAST-MODIFIED:20161126T004625Z\r\nORGANIZER;CN=\"饶颢雨\":/aMTAyNTA2MDQ0NzYxMDI1MBr8tNMNL5Bi0XDqZ9oAxKNJNMC6AbS4\r\n
+    Black Friday Deals \r\n Online.\r\nDTEND;VALUE=DATE:20161130\r\nDTSTAMP:20161126T004625Z\r\nDTSTART;VALUE=DATE:20161124\r\nLAST-MODIFIED:20161126T004625Z\r\nORGANIZER;CN=\"?????????\":/aMTAyNTA2MDQ0NzYxMDI1MBr8tNMNL5Bi0XDqZ9oAxKNJNMC6AbS4\r\n
     JjWYse7UkryZ/principal/\r\nSEQUENCE:0\r\nSUMMARY:$19.99 Ray-ban&Oakley Black Friday
-    Deals Online.\r\nUID:4A0FCB1D-38DF-5EC9-B8EC-0A75988A49FF\r\nURL;VALUE=URI:http://t.cn/RfCSatd\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"丘政超\";CUTYPE=INDIVIDUAL;EMAIL=tjzll3371@iismail.com;PARTSTAT=\r\n
+    Deals Online.\r\nUID:4A0FCB1D-38DF-5EC9-B8EC-0A75988A49FF\r\nURL;VALUE=URI:http://t.cn/RfCSatd\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nATTENDEE;CN=\"?????????\";CUTYPE=INDIVIDUAL;EMAIL=tjzll3371@iismail.com;PARTSTAT=\r\n
     ACCEPTED;ROLE=CHAIR:/aMjUwNTI0NTY4NDkyNTA1MhqxtIv1B1c3noaih-As6TTmITehnv\r\n bDltTMa7wwYhUt/principal/\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex772@icloud.com;PARTSTAT=NEEDS-ACTIO\r\n
     N;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex772@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex7898@icloud.com;PARTSTAT=NEEDS-ACTI\r\n
     ON;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salex7898@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex79@icloud.com;PARTSTAT=NEEDS-ACTION\r\n
@@ -2272,9 +2366,9 @@
     ION;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salexa0627@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salexa1013@aol.com;PARTSTAT=NEEDS-ACTION\r\n
     ;ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:salexa1013@aol.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;PARTSTAT=DECLINED;ROLE=REQ-PARTICIPANT;CN=Stev\r\n
     e Alex;EMAIL=salex@mac.com;X-CALENDARSERVER-DTSTAMP=20161122T192159Z:/aN\r\n Dg3NjQ2MjQ4NzY0NjI0OO9GWhhBCGI33pBEKfxJ38QbY3Q9ECPg68rHiFzZ7Gnh/principa\r\n
-    l/\r\nDESCRIPTION:$19.99 Ray-ban&Oakley Sunglasses Black Friday Sales 80% off.\r\nDTEND;VALUE=DATE:20161124\r\nDTSTAMP:20161122T192156Z\r\nDTSTART;VALUE=DATE:20161122\r\nLAST-MODIFIED:20161122T192156Z\r\nLOCATION:\r\nORGANIZER;CN=\"丘政超\";EMAIL=tjzll3371@iismail.com:/aMjUwNTI0NTY4NDkyNTA1Mhqx\r\n
+    l/\r\nDESCRIPTION:$19.99 Ray-ban&Oakley Sunglasses Black Friday Sales 80% off.\r\nDTEND;VALUE=DATE:20161124\r\nDTSTAMP:20161122T192156Z\r\nDTSTART;VALUE=DATE:20161122\r\nLAST-MODIFIED:20161122T192156Z\r\nLOCATION:\r\nORGANIZER;CN=\"?????????\";EMAIL=tjzll3371@iismail.com:/aMjUwNTI0NTY4NDkyNTA1Mhqx\r\n
     tIv1B1c3noaih-As6TTmITehnvbDltTMa7wwYhUt/principal/\r\nSEQUENCE:0\r\nSUMMARY:$19.99
-    Ray-ban&Oakley Sunglasses Black Friday Sales 80% off.\r\nUID:50247EDC-F43C-F62C-9B5A-0969B0D2AB29\r\nURL;VALUE=URI:http://tinyurl.com/zywqa9r\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;VALUE=DATE:20161106\r\nLAST-MODIFIED:20161105T015458Z\r\nORGANIZER;CN=\"柴浩才\":/aMTA2ODA0OTA1NTgxMDY4ME3ggHIm8vyYdtt6YWSXdgH0oT_0q6wu\r\n
+    Ray-ban&Oakley Sunglasses Black Friday Sales 80% off.\r\nUID:50247EDC-F43C-F62C-9B5A-0969B0D2AB29\r\nURL;VALUE=URI:http://tinyurl.com/zywqa9r\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nDTEND;VALUE=DATE:20161106\r\nLAST-MODIFIED:20161105T015458Z\r\nORGANIZER;CN=\"?????????\":/aMTA2ODA0OTA1NTgxMDY4ME3ggHIm8vyYdtt6YWSXdgH0oT_0q6wu\r\n
     8PLsgLVrz-cj/principal/\r\nUID:97162E43-BA84-0BD6-44EA-EF6452863BA2\r\nDTSTAMP:20161105T114245Z\r\nDESCRIPTION:www.ok-stores.com
     $19.99 Ray-ban&Oakley Sunglasses Online.Up \r\n To 80% Off Sunglasses.Compare
     And Save.\r\nSEQUENCE:0\r\nSUMMARY:$19.99 Ray-ban&Oakley Sunglasses Online.Up
@@ -2288,71 +2382,49 @@
     P=TRUE:mailto:mjguelaud@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;PARTSTAT=NEEDS-ACTION;ROLE=REQ-PARTICIPANT;RSV\r\n
     P=TRUE:mailto:yugawad@icloud.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;EMAIL=salex@icloud.com;PARTSTAT=DECLINED;ROLE=\r\n
     REQ-PARTICIPANT;CN=Steve Alex;X-CALENDARSERVER-DTSTAMP=20161105T114248Z:\r\n /aNDg3NjQ2MjQ4NzY0NjI0OO9GWhhBCGI33pBEKfxJ38QbY3Q9ECPg68rHiFzZ7Gnh/princ\r\n
-    ipal/\r\nATTENDEE;CN=\"柴浩才\";CUTYPE=INDIVIDUAL;EMAIL=dlggj32rz@srnkm.com;PARTSTAT=AC\r\n
+    ipal/\r\nATTENDEE;CN=\"?????????\";CUTYPE=INDIVIDUAL;EMAIL=dlggj32rz@srnkm.com;PARTSTAT=AC\r\n
     CEPTED;ROLE=CHAIR:/aMTA2ODA0OTA1NTgxMDY4ME3ggHIm8vyYdtt6YWSXdgH0oT_0q6wu\r\n 8PLsgLVrz-cj/principal/\r\nATTENDEE;CUTYPE=INDIVIDUAL;PARTSTAT=NEEDS-ACTION;ROLE=REQ-PARTICIPANT;RSV\r\n
     P=TRUE:mailto:simon903@icloud.com\r\nEND:VEVENT\r\nBEGIN:VTIMEZONE\r\nTZID:America/Chicago\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:STANDARD\r\nDTSTART:18831118T120924\r\nRDATE:18831118T120924\r\nTZNAME:CST\r\nTZOFFSETFROM:-055036\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19180331T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19190330T080000Z;BYMONTH=3;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19181027T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19191026T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19200101T000000\r\nRDATE:19200101T000000\r\nRDATE:19420101T000000\r\nRDATE:19460101T000000\r\nRDATE:19670101T000000\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19200613T020000\r\nRDATE:19200613T020000\r\nRDATE:19210327T020000\r\nRDATE:19740106T020000\r\nRDATE:19750223T020000\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19201031T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19211030T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19220430T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19350428T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19220924T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19350929T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19360301T020000\r\nRDATE:19360301T020000\r\nTZNAME:EST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19361115T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19410928T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19370425T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19410427T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19420209T020000\r\nRDATE:19420209T020000\r\nTZNAME:CWT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19450814T180000\r\nRDATE:19450814T180000\r\nTZNAME:CPT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19450930T020000\r\nRDATE:19450930T020000\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19460428T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19660424T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19460929T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19540926T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19551030T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19661030T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19670430T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19730429T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19671029T020000\r\nRRULE:FREQ=YEARLY;UNTIL=20061029T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19760425T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19860427T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19870405T020000\r\nRRULE:FREQ=YEARLY;UNTIL=20060402T080000Z;BYMONTH=4;BYDAY=1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070311T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:20071104T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nBEGIN:VTIMEZONE\r\nTZID:US/Central\r\nX-LIC-LOCATION:US/Central\r\nBEGIN:STANDARD\r\nDTSTART:18831118T120924\r\nRDATE:18831118T120924\r\nTZNAME:CST\r\nTZOFFSETFROM:-055036\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19180331T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19190330T080000Z;BYMONTH=3;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19181027T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19191026T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19200101T000000\r\nRDATE:19200101T000000\r\nRDATE:19420101T000000\r\nRDATE:19460101T000000\r\nRDATE:19670101T000000\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19200613T020000\r\nRDATE:19200613T020000\r\nRDATE:19210327T020000\r\nRDATE:19740106T020000\r\nRDATE:19750223T020000\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19201031T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19211030T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19220430T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19350428T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19220924T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19350929T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19360301T020000\r\nRDATE:19360301T020000\r\nTZNAME:EST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19361115T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19410928T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19370425T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19410427T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19420209T020000\r\nRDATE:19420209T020000\r\nTZNAME:CWT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19450814T180000\r\nRDATE:19450814T180000\r\nTZNAME:CPT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19450930T020000\r\nRDATE:19450930T020000\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19460428T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19660424T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19460929T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19540926T070000Z;BYMONTH=9;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:STANDARD\r\nDTSTART:19551030T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19661030T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19670430T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19730429T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:19671029T020000\r\nRRULE:FREQ=YEARLY;UNTIL=20061029T070000Z;BYMONTH=10;BYDAY=-1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19760425T020000\r\nRRULE:FREQ=YEARLY;UNTIL=19860427T080000Z;BYMONTH=4;BYDAY=-1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:19870405T020000\r\nRRULE:FREQ=YEARLY;UNTIL=20060402T080000Z;BYMONTH=4;BYDAY=1SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070311T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nDTSTART:20071104T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nEND:VCALENDAR\r\nBEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//ShopReply
     Inc//CalReply 1.0//EN\r\nMETHOD:REFRESH\r\nX-WR-CALDESC:This is the Official calendar
     for the NCAAF Southeastern Confe\r\n\trence on ESPN. \\n\\nClick the \"Add to
     Calendar\" button to add your team's sche\r\n\tdule to your calendar so you never
-    miss a game!\r\nX-WR-CALNAME:Southeastern Conference - Alabama Crimson Tide\r\nX-WR-RELCALID:e3c7bebe-ad72-e511-a14c-063521276427\r\nX-PUBLISH-TTL:P1D\r\nBEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nBEGIN:STANDARD\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU;\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU;\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE\r\nBEGIN:VTIMEZONE\r\nTZID:UTC\r\nBEGIN:STANDARD\r\nDTSTART:19800101T000000\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nBEGIN:VEVENT\r\nUID:2920b20a-37d4-440b-94cd-a4448efe9a78\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Alabama Crimson Tide @ Mississippi State Bulldogs\r\nDTSTART;TZID=\"America/New_York\":20191116T120000\r\nDTEND;TZID=\"America/New_York\":20191116T150000\r\nDESCRIPTION:Watch
-    the Alabama Crimson Tide take on the Mississippi State Bu\r\n\tlldogs LIVE on
-    WatchESPN! http://espn.go.com/watchespn/index?gameId=401110851\r\n\t&sport=college-football\\n\\nFollow
-    along online for live updates at: http://es\r\n\tpn.go.com/college-football/game?gameId=401110851\\n\\nGear
-    up at the ESPN Fan S\r\n\thop powered by Ebay: https://calrep.ly/ncaafebay\\n\\nShare
-    - http://calrep.ly/\r\n\t2pKBAOg\\n\\nYou may unsubscribe by following - https://espncfb.calreplyapp.com\r\n\t/unsubscribe/a680a869336c483f8d9f9f06dafb0595\\n\\nPowered
-    by Rokt Calendar\r\nLOCATION:FINAL: Alabama Crimson Tide 38 - 7 Mississippi State
-    Bulldogs\r\nDTSTAMP:20191117T081121Z\r\nLAST-MODIFIED:20191117T081121Z\r\nSEQUENCE:3\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:8f76a9d9-435f-4ee8-b927-f7de0e960bad\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Western Carolina Catamounts @ Alabama Crimson Tide\r\nDTSTART;TZID=\"America/New_York\":20191123T120000\r\nDTEND;TZID=\"America/New_York\":20191123T150000\r\nDESCRIPTION:Watch
-    the Western Carolina Catamounts take on the Alabama Crims\r\n\ton Tide LIVE on
-    WatchESPN! http://espn.go.com/watchespn/index?gameId=40111085\r\n\t5&sport=college-football\\n\\nFollow
-    along online for live updates at: http://e\r\n\tspn.go.com/college-football/game?gameId=401110855\\n\\nBuy
-    Tickets with Vivid S\r\n\teats! https://www.vividseats.com/ncaaf/alabama-crimson-tide-tickets/alabama-1\r\n\t1-23-2849028.html?wsUser=717?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PARTESPN\\n\\nG\r\n\tear
-    up at the ESPN Fan Shop powered by Ebay: https://calrep.ly/ncaafebay\\n\\nS\r\n\thare
-    - http://calrep.ly/2pKBAOg\\n\\nYou may unsubscribe by following - https:/\r\n\t/espncfb.calreplyapp.com/unsubscribe/a680a869336c483f8d9f9f06dafb0595\\n\\nPowe\r\n\tred
-    by Rokt Calendar\r\nLOCATION:Watch on ESPN\r\nDTSTAMP:20191118T080614Z\r\nLAST-MODIFIED:20191118T080614Z\r\nSEQUENCE:2\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:27eb0890-9ed3-422e-9cdf-9ff1ce1c4369\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Alabama Crimson Tide @ Auburn Tigers\r\nDTSTART;TZID=\"America/New_York\":20191130T153000\r\nDTEND;TZID=\"America/New_York\":20191130T183000\r\nDESCRIPTION:Follow
-    along online for live updates at: http://espn.go.com/col\r\n\tlege-football/game?gameId=401110865\\n\\nBuy
-    Tickets with Vivid Seats! https://\r\n\twww.vividseats.com/ncaaf/auburn-tigers-tickets/auburn-11-30-2849162.html?wsUs\r\n\ter=717?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PARTESPN\\n\\nGear
-    up at the ESPN Fan\r\n\t Shop powered by Ebay: https://calrep.ly/ncaafebay\\n\\nShare
-    - http://calrep.l\r\n\ty/2pKBAOg\\n\\nYou may unsubscribe by following - https://espncfb.calreplyapp.c\r\n\tom/unsubscribe/a680a869336c483f8d9f9f06dafb0595\\n\\nPowered
-    by Rokt Calendar\r\nLOCATION:Watch on CBS\r\nDTSTAMP:20191119T080924Z\r\nLAST-MODIFIED:20191119T080924Z\r\nSEQUENCE:0\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:a680a869-336c-483f-8d9f-9f06dafb0595\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:You
+    miss a game!\r\nX-WR-CALNAME:Southeastern Conference - Alabama Crimson Tide\r\nX-WR-RELCALID:e3c7bebe-ad72-e511-a14c-063521276427\r\nX-PUBLISH-TTL:P1D\r\nBEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nBEGIN:STANDARD\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU;\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU;\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE\r\nBEGIN:VTIMEZONE\r\nTZID:UTC\r\nBEGIN:STANDARD\r\nDTSTART:19800101T000000\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nBEGIN:VEVENT\r\nUID:898c161b-e71d-423e-9880-a0d7e26ce7f4\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:????
+    \ Michigan Wolverines @ Alabama Crimson Tide\r\nDTSTART;TZID=\"America/New_York\":20200101T130000\r\nDTEND;TZID=\"America/New_York\":20200101T160000\r\nDESCRIPTION:Watch
+    the Michigan Wolverines take on the Alabama Crimson Tide \r\n\tin the Vrbo Citrus
+    Bowl LIVE on WatchESPN! http://espn.go.com/watchespn/index\r\n\t?gameId=401135286&sport=college-football\\n\\nFollow
+    along online for live upda\r\n\ttes at: http://espn.go.com/college-football/game?gameId=401135286\\n\\nBuy
+    Tick\r\n\tets with Vivid Seats! https://www.vividseats.com/ncaaf/citrus-bowl-tickets/ci\r\n\ttrus-bowl-1-1-3121771.html?wsUser=717?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PART\r\n\tESPN\\n\\nGear
+    up at the ESPN Fan Shop powered by Ebay: https://calrep.ly/ncaaf\r\n\tebay\\n\\nShare
+    - http://calrep.ly/2pKBAOg\\n\\nYou may unsubscribe by following \r\n\t- https://espncfb.calreplyapp.com/unsubscribe/a680a869336c483f8d9f9f06dafb059\r\n\t5\\n\\nPowered
+    by Rokt Calendar\r\nLOCATION:Watch on ABC\r\nDTSTAMP:20191209T080927Z\r\nLAST-MODIFIED:20191209T080927Z\r\nSEQUENCE:0\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:a680a869-336c-483f-8d9f-9f06dafb0595\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:You
     have successfully subscribed to the Southeastern Conference calendar\r\nDTSTART:20160830T183147Z\r\nDTEND:20160830T183647Z\r\nDESCRIPTION:\\n\\nShare
     - http://calrep.ly/2pKBAOg\\n\\nYou may unsubscribe by \r\n\tfollowing - https://espncfb.calreplyapp.com/unsubscribe/a680a869336c483f8d9f9\r\n\tf06dafb0595\\n\\nPowered
     by Rokt Calendar\r\nLOCATION:Your calendar will be updated automatically when
-    new events become\r\n\t available\r\nDTSTAMP:20191121T131008Z\r\nLAST-MODIFIED:20191121T131008Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nEND:VCALENDAR\r\nBEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//ShopReply
+    new events become\r\n\t available\r\nDTSTAMP:20191225T132222Z\r\nLAST-MODIFIED:20191225T132222Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nEND:VCALENDAR\r\nBEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//ShopReply
     Inc//CalReply 1.0//EN\r\nMETHOD:REFRESH\r\nX-WR-CALDESC:This is the Official calendar
     for the NCAAF Southeastern Confe\r\n\trence on ESPN. \\n\\nClick the \"Add to
     Calendar\" button to add your team's sche\r\n\tdule to your calendar so you never
-    miss a game!\r\nX-WR-CALNAME:Southeastern Conference - Auburn Tigers\r\nX-WR-RELCALID:e3c7bebe-ad72-e511-a14c-063521276427\r\nX-PUBLISH-TTL:P1D\r\nBEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nBEGIN:STANDARD\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU;\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU;\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE\r\nBEGIN:VTIMEZONE\r\nTZID:UTC\r\nBEGIN:STANDARD\r\nDTSTART:19800101T000000\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nBEGIN:VEVENT\r\nUID:35c4f0cd-c995-431a-848a-321c13947bb5\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Georgia Bulldogs @ Auburn Tigers\r\nDTSTART;TZID=\"America/New_York\":20191116T153000\r\nDTEND;TZID=\"America/New_York\":20191116T183000\r\nDESCRIPTION:Follow
-    along online for live updates at: http://espn.go.com/col\r\n\tlege-football/game?gameId=401110849\\n\\nGear
-    up at the ESPN Fan Shop powered b\r\n\ty Ebay: https://calrep.ly/ncaafebay\\n\\nShare
-    - http://calrep.ly/2pKBAOg\\n\\nYo\r\n\tu may unsubscribe by following - https://espncfb.calreplyapp.com/unsubscribe/\r\n\tec3695ca88bd4b2f83ab6e32c5ac8389\\n\\nPowered
-    by Rokt Calendar\r\nLOCATION:FINAL: Georgia Bulldogs 21 - 14 Auburn Tigers\r\nDTSTAMP:20191117T081121Z\r\nLAST-MODIFIED:20191117T081121Z\r\nSEQUENCE:1\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:b3247898-bd40-4b58-b418-3c157955a80d\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Samford Bulldogs @ Auburn Tigers\r\nDTSTART;TZID=\"America/New_York\":20191123T120000\r\nDTEND;TZID=\"America/New_York\":20191123T150000\r\nDESCRIPTION:Watch
-    the Samford Bulldogs take on the Auburn Tigers LIVE on Wa\r\n\ttchESPN! http://espn.go.com/watchespn/index?gameId=401110856&sport=college-fo\r\n\totball\\n\\nFollow
-    along online for live updates at: http://espn.go.com/college\r\n\t-football/game?gameId=401110856\\n\\nBuy
-    Tickets with Vivid Seats! https://www.\r\n\tvividseats.com/ncaaf/auburn-tigers-tickets/auburn-11-23-2849161.html?wsUser=7\r\n\t17?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PARTESPN\\n\\nGear
-    up at the ESPN Fan Sho\r\n\tp powered by Ebay: https://calrep.ly/ncaafebay\\n\\nShare
-    - http://calrep.ly/2p\r\n\tKBAOg\\n\\nYou may unsubscribe by following - https://espncfb.calreplyapp.com/u\r\n\tnsubscribe/ec3695ca88bd4b2f83ab6e32c5ac8389\\n\\nPowered
-    by Rokt Calendar\r\nLOCATION:Watch on SECN\r\nDTSTAMP:20191118T080614Z\r\nLAST-MODIFIED:20191118T080614Z\r\nSEQUENCE:2\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:27eb0890-9ed3-422e-9cdf-9ff1ce1c4369\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:\U0001F3C8
-    \ Alabama Crimson Tide @ Auburn Tigers\r\nDTSTART;TZID=\"America/New_York\":20191130T153000\r\nDTEND;TZID=\"America/New_York\":20191130T183000\r\nDESCRIPTION:Follow
-    along online for live updates at: http://espn.go.com/col\r\n\tlege-football/game?gameId=401110865\\n\\nBuy
-    Tickets with Vivid Seats! https://\r\n\twww.vividseats.com/ncaaf/auburn-tigers-tickets/auburn-11-30-2849162.html?wsUs\r\n\ter=717?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PARTESPN\\n\\nGear
-    up at the ESPN Fan\r\n\t Shop powered by Ebay: https://calrep.ly/ncaafebay\\n\\nShare
-    - http://calrep.l\r\n\ty/2pKBAOg\\n\\nYou may unsubscribe by following - https://espncfb.calreplyapp.c\r\n\tom/unsubscribe/ec3695ca88bd4b2f83ab6e32c5ac8389\\n\\nPowered
-    by Rokt Calendar\r\nLOCATION:Watch on CBS\r\nDTSTAMP:20191119T080924Z\r\nLAST-MODIFIED:20191119T080924Z\r\nSEQUENCE:0\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:ec3695ca-88bd-4b2f-83ab-6e32c5ac8389\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:You
+    miss a game!\r\nX-WR-CALNAME:Southeastern Conference - Auburn Tigers\r\nX-WR-RELCALID:e3c7bebe-ad72-e511-a14c-063521276427\r\nX-PUBLISH-TTL:P1D\r\nBEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nBEGIN:STANDARD\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU;\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:20070101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU;\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE\r\nBEGIN:VTIMEZONE\r\nTZID:UTC\r\nBEGIN:STANDARD\r\nDTSTART:19800101T000000\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\nBEGIN:VEVENT\r\nUID:c38d86e4-2e17-49a3-ae8b-d15ae68cef41\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:????
+    \ Minnesota Golden Gophers @ Auburn Tigers\r\nDTSTART;TZID=\"America/New_York\":20200101T130000\r\nDTEND;TZID=\"America/New_York\":20200101T160000\r\nDESCRIPTION:Watch
+    the Minnesota Golden Gophers take on the Auburn Tigers in\r\n\t the Outback Bowl
+    LIVE on WatchESPN! http://espn.go.com/watchespn/index?gameI\r\n\td=401135287&sport=college-football\\n\\nFollow
+    along online for live updates at\r\n\t: http://espn.go.com/college-football/game?gameId=401135287\\n\\nBuy
+    Tickets wi\r\n\tth Vivid Seats! https://www.vividseats.com/ncaaf/outback-bowl-tickets/outback\r\n\t-bowl-1-1-3047083.html?wsUser=717?gcid=CHAFF--GEOUS-_-CMPCALEXPORT-_-PARTESPN\r\n\t\\n\\nGear
+    up at the ESPN Fan Shop powered by Ebay: https://calrep.ly/ncaafebay\r\n\t\\n\\nShare
+    - http://calrep.ly/2pKBAOg\\n\\nYou may unsubscribe by following - ht\r\n\ttps://espncfb.calreplyapp.com/unsubscribe/ec3695ca88bd4b2f83ab6e32c5ac8389\\n\\\r\n\tnPowered
+    by Rokt Calendar\r\nLOCATION:Watch on ESPN\r\nDTSTAMP:20191209T080927Z\r\nLAST-MODIFIED:20191209T080927Z\r\nSEQUENCE:0\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:ec3695ca-88bd-4b2f-83ab-6e32c5ac8389\r\nCLASS:PUBLIC\r\nTRANSP:TRANSPARENT\r\nSUMMARY:You
     have successfully subscribed to the Southeastern Conference calendar\r\nDTSTART:20160830T183701Z\r\nDTEND:20160830T184201Z\r\nDESCRIPTION:\\n\\nShare
     - http://calrep.ly/2pKBAOg\\n\\nYou may unsubscribe by \r\n\tfollowing - https://espncfb.calreplyapp.com/unsubscribe/ec3695ca88bd4b2f83ab6\r\n\te32c5ac8389\\n\\nPowered
     by Rokt Calendar\r\nLOCATION:Your calendar will be updated automatically when
-    new events become\r\n\t available\r\nDTSTAMP:20191121T131007Z\r\nLAST-MODIFIED:20191121T131007Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    new events become\r\n\t available\r\nDTSTAMP:20191225T132224Z\r\nLAST-MODIFIED:20191225T132224Z\r\nSEQUENCE:0\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
   active: false
-  date: 2017-01-19
-- user_id: 1
+  leadin: ''
+  date: '2017-01-19'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: 2018 EOY QM Report
-  leadin: ''
   content: ".slim\r\n<fieldset class=\"callout print\"><h3 class=\"strong\">Profit
     &amp; Loss For Period Covering 2018-01-01 to 2018-12-31</h3><div><div class=\"pl-row
     strong\"><div class=\"pl-col-acct p0\">Income</div><div class=\"pl-col-11\">Increase</div><div
@@ -2422,11 +2494,13 @@
     class=\"text-right\">137,624.81</td><td class=\"text-right\">-2,644.96</td><td
     class=\"text-right\">41,980.60</td></tr></tbody></table></div></div>"
   active: true
-  date: 2019-01-08
-- user_id: 1
+  leadin: ''
+  date: '2019-01-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: articles
   title: What are we going to do?
-  leadin: ''
   content: ".slim\r\np After 5 or 6 years of helping to keep this place alive I come
     to the conclusion that we have to make drastic changes, but we can't afford them.
     We've existed, but just barely. We need to start doing some things and stop doing
@@ -2486,11 +2560,13 @@
     School's out, Independence Day, Football's coming, Football's here, Halloween,
     Turkey Day, Christmas - and others. Just don't overdo it \r\n\r\n"
   active: false
-  date: 2019-02-11
-- user_id: 1
+  leadin: ''
+  date: '2019-02-11'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting, January 2019
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:06:15)&nbsp;\r\n    | Meeting Opened
@@ -2554,11 +2630,13 @@
     Adjourned at 8:05pm by Commander Shelley. Next meeting Feb 12th, 2019. \r\n\r\n\r\n\r\n.strong
     Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2019-01-08
-- user_id: 1
+  leadin: ''
+  date: '2019-01-08'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting, December 2018
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:00:00)&nbsp;\r\n    | Meeting Opened
@@ -2621,11 +2699,13 @@
     meeting Adjourned at 7:18pm by Commander Shelley. Next meeting Jan 8th, 2019.
     \r\n\r\n\r\n\r\n.strong Steven Alex\r\n\r\n.strong Adjutant"
   active: true
-  date: 2018-12-11
-- user_id: 1
+  leadin: ''
+  date: '2018-12-11'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - February 2019
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:01:45)&nbsp;\r\n    | Meeting Opened
@@ -2733,11 +2813,13 @@
     class=\"text-right\">21,339.36</td><td class=\"text-right\">-2,966.59</td><td
     class=\"text-right\">39,014.01</td></tr></tbody></table>\r\n"
   active: true
-  date: 2019-03-12
-- user_id: 1
+  leadin: ''
+  date: '2019-03-12'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership Meeting - April 2019
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:02:00)&nbsp;\r\n    | Meeting Opened
@@ -2804,11 +2886,13 @@
     and meeting Adjourned at 7:20pm by Commander Shelley. Next meeting March 12th,
     2019. \r\n\r\n.strong Steven Alex\r\n.strong Adjutant\r\n.page-break\r\n"
   active: true
-  date: 2019-04-09
-- user_id: 1
+  leadin: ''
+  date: '2019-04-09'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: minutes
   title: Post Membership meeting - May 2019
-  leadin: ''
   content: ".slim\r\n\r\n.strong.text-center Wilson Parris VFW Post 8600\r\n.strong.text-center
     817 Rainbow Drive\r\n.strong.text-center Gadsden, Alabama  35901\r\nol\r\n\r\n
     \ li \r\n    strong Opening Ceremony: (00:01:10)&nbsp;\r\n    | Meeting Opened
@@ -2869,38 +2953,171 @@
     and meeting Adjourned at 7:35pm by Commander Shelley. Next meeting June 11th,
     2019. \r\n\r\n.strong Steven Alex\r\n.strong Adjutant\r\n.page-break\r\n"
   active: true
-  date: 2019-06-11
-- user_id: 1
-  category: greeting
-  title: Welcome to VFW Post 8600 - An All-State, All-American Post 2016-19
   leadin: ''
+  date: '2019-06-11'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: greeting
+  title: Welcome to VFW Post 8600 - An All-State, All-American Post 2017-19
   content: "This is a new version of the Posts web site. It is still under construction
     and the public view is only partially implemented.  This is not Facebook, although
     we do have a [Facebook site](https://www.facebook.com/VFWPost8600/). \r\n\r\nThe
     Post website's purpose is to find information about the Post, Members, and Officers.
     There is also other information. All this can be found using the buttons in the
-    top menu bar or in the Post links in the left sidebar."
+    top menu bar or in the Post info line in the right sidebar."
   active: true
-  date: 2017-01-10
-- user_id: 1
+  leadin: ''
+  date: '2017-01-10'
+- markup_type: 
+  user_id: 1
+  post_id: 19
   category: links
   title: Veterans Assistance Sites
+  content: ".slim\r\n.w3-row-padding\r\n  .s4.w3-col.w3-right-align.w3-text-blue \r\n
+    \   a[href=\"http://vfw.org\"] VFW National Web Site\r\n  .s8.w3-col No one does
+    more more for Veterans\r\n  .s4.w3-col.w3-right-align.w3-text-blue\r\n    a[href=\"http://va.com\"]
+    Veterans Affairs\r\n  .s8.w3-col U.S Department of Veterans Affairs\r\n  .s4.w3-col.w3-right-align.w3-text-blue\r\n
+    \   a[href=\"https://www.myhealth.va.gov\"] MyHealthVet\r\n  .s8.w3-col VA My
+    Health Site\r\n  .s4.w3-col.w3-right-align.w3-text-blue \r\n    a[href=\"https://www.usajobs.gov\"]
+    USA Jobs Site\r\n  .s8.w3-col Jobs site\r\n  .s4.w3-col.w3-right-align.w3-text-blue\r\n
+    \   a[href=\"https://whitehouse.gov\"] Whitehouse\r\n  .s8.w3-col Keep America
+    Great\r\n"
+  active: true
   leadin: ''
-  content: ".slim\r\n.grid-x.grid-margin-x\r\n  .small-4.cell.text-right \r\n    a[href=\"http://vfw.org\"]
-    VFW National Web Site\r\n  .small-8.cell No one does more more for Veterans\r\n
-    \ .small-4.cell.text-right\r\n    a[href=\"http://va.com\"] Veterans Affairs\r\n
-    \ .small-8.cell U.S Department of Veterans Affairs\r\n  .small-4.cell.text-right
-    \r\n    a[href=\"https://www.myhealth.va.gov\"] MyHealthVet\r\n  .small-8.cell
-    VA My Health Site\r\n  .small-4.cell.text-right \r\n    a[href=\"https://www.usajobs.gov\"]
-    USA Jobs Site\r\n  .small-8.cell Jobs site\r\n  .small-4.cell.text-right \r\n
-    \   a[href=\"https://whitehouse.gov\"] Whitehouse\r\n  .small-8.cell Keep America
-    Great\r\n\r\n\r\n"
+  date: '2019-11-07'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: alert
+  title: It's going to rain tomorrow
+  content: Whoa is me!
   active: true
-  date: 2019-11-07
-- user_id: 1
+  leadin: Oh no!
+  date: '2019-12-03'
+- markup_type: 
+  user_id: 75
+  post_id: 19
   category: home
-  title: Veteran's Digital Assistance Program
-  leadin: If partnership with Comcast, Inc. We are providing a new service to Veterans.
-  content: ".slim\r\n"
+  title: VDAP
+  content: ".w3-row-padding.slim\r\n\r\n  .s2.w3-col\r\n    = image_tag('vfw-logo3.png',width:140)\r\n\r\n
+    \ .s8.w3-col\r\n    h4.w3-center VFW Post 8600 and Comcast\r\n    .w3-center.annotate
+    Presents\r\n    h4.strong.malt.w3-center Veteran's Digital Assistance Program(VDAP)\r\n
+    \ .s2.w3-col[style=\"margin_top:-24px!important;\"]\r\n    =image_tag('corporate_Official-Comcast-Logo.png',width:140)\r\n.w3-row\r\n
+    \ .w3-center\r\n    | For details visit:&nbsp;&nbsp;\r\n    =link_to \"Veteran's
+    Digital Assistance Program(VDAP)\", vdap_home_path, class:\"w3-text-blue\"\r\n.w3-row\r\n
+    \ - markup = Current.post.markups.find_by(title:'Veterans Assistance Sites')\r\n
+    \ - if markup.present?\r\n    .s12.w3-col \r\n      = render partial:'home/markup_home',locals:{article:
+    markup}\r\n  - else\r\n    .s12.w3-col \r\n      | Click the 'Links' button in
+    the sidebar for Veterans Assistance Programs\r\n"
   active: true
-  date: 2019-10-20
+  leadin: ''
+  date: '2019-12-05'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: warning
+  title: We better get about 10 members
+  content: "If we don't get about 10 members renewed by the end of the month we are
+    going to be in trouble\r\n\r\nEach line officer should pick 3 to 4  expired/expiring
+    member at meeting and we'll spend about $300 to pay their dues"
+  active: true
+  leadin: ''
+  date: '2019-12-05'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: success
+  title: We did something
+  content: "Not sure what?\r\n\r\nBut I'm getting tired of 3-4 people doing everything."
+  active: true
+  leadin: This will show up someplace sometime
+  date: '2019-12-05'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: info
+  title: Not a good week
+  content: We do have to pay bills!. Where in the hell are our members?
+  active: true
+  leadin: ''
+  date: '2019-12-05'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: slim
+  title: map
+  content: ".slim\r\n.s12.m10.w3-cell.w3-mobile[style=\"width:85%;padding-right:16px;\"]\r\n
+    \ h4.strong.text-center.malt Map to Post \r\n  <iframe width=\"800\" height=\"600\"
+    frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://maps.google.com/maps?client=safari&amp;oe=UTF-8&amp;q=map+817+Rainbow+Dr++Gadsden,+AL+35901&amp;ie=UTF8&amp;hq=&amp;hnear=817+Rainbow+Dr,+Gadsden,+Etowah,+Alabama+35901&amp;gl=us&amp;ll=34.001674,-86.00471&amp;spn=0.01183,0.016243&amp;t=h&amp;z=14&amp;output=embed\"></iframe><br
+    /><small><a href=\"https://maps.google.com/maps?client=safari&amp;oe=UTF-8&amp;q=map+817+Rainbow+Dr++Gadsden,+AL+35901&amp;ie=UTF8&amp;hq=&amp;hnear=817+Rainbow+Dr,+Gadsden,+Etowah,+Alabama+35901&amp;gl=us&amp;ll=34.001674,-86.00471&amp;spn=0.01183,0.016243&amp;t=h&amp;z=14&amp;source=embed\"
+    style=\"color:#0000FF;text-align:left\">View Larger Map</a></small>\r\n"
+  active: false
+  leadin: ''
+  date: '2019-12-08'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: slim
+  title: radar
+  content: ".slim\r\nh4.strong.text-center.malt Local Radar \r\n.box = link_to(\"View
+    on Sepearate Page\",\"https://www.wunderground.com/radar/radblast.asp?ID=HTX&lat=34.022076&lon=-85.950935&label=Gadsden%2C+AL&type=N0R&zoommode=pan&map.x=400&map.y=240&centerx=307&centery=-550&prevzoom=zoom&num=8&delay=15&scale=0.125&showlabels=1&smooth=1&noclutter=0&showstorms=0&rainsnow=1&lightning=0\",target:'_blank')\r\n<iframe
+    width=\"800\" height=\"600\" frameborder=\"0\" scrolling=\"yes\" marginheight=\"0\"
+    marginwidth=\"0\" src=\"https://www.wunderground.com/radar/radblast.asp?ID=HTX&lat=34.022076&lon=-85.950935&label=Gadsden%2C+AL&type=N0R&zoommode=pan&map.x=400&map.y=240&centerx=307&centery=-550&prevzoom=zoom&num=8&delay=15&scale=0.125&showlabels=1&smooth=1&noclutter=0&showstorms=0&rainsnow=1&lightning=0\"></iframe>\r\n"
+  active: false
+  leadin: ''
+  date: '2019-12-08'
+- markup_type: 
+  user_id: 75
+  post_id: 19
+  category: minutes
+  title: Post Membership Meeting Nov 2019
+  content: "Post Membership Meeting\r\nNov 12, 2019\r\n\r\n\r\n\r\n1) Opening Ceremony:
+    Meeting called to order at 18:20 by Commander. Chaplin gave opening prayer and
+    all joined in the Pledge of Allegiance\r\n\r\n2) Guests: none\r\n\r\n3) Roll call
+    of Officers: 15 present, 3 excused (adj, sr office, 1yr trustee)\r\n\r\n4) Petitions
+    for membership: Partition for  membership: Robin Sparks, Jerry Pollan, Matthew
+    Smith, Elizabeth Stanley, Jeffery Garman, StaceyGarman, Stephen Hardman, Jack
+    Wayer Transfer.  Motion to accept by Johnny H, seconded by Jimmy B\r\n\r\n5) Reading
+    Highlights of previous minutes: Distributed. Correction, change word 'passed'
+    on item 4 to 'accept' . Motion to accept made by Johnny, second by Maurice. \r\n\r\n6)
+    Quartermaster Report of income and disbursements: The financial situation was
+    discussed and read over. Motion to accept by Danny, second by Maurice. Subject
+    to audit. \r\n\r\n7) Comrade in Distress: None.\r\n\r\n8) Committee Reports: Buddy
+    Poppy drive in Rainbow City this Saturday. House Committee: Hire another bar tender,
+    maybe one night a week or fill in. New Years eve party, looking at cheaper band.
+    $20 Single, $35 couple. Christmas Veterans Christmas Party Dec 13th, also Post
+    Party in evening. Air Conditioner still having property heating. Raffle for computer
+    donated. Looking for Realtor to put building up for sale. Closing Thanksgiving,
+    Christmas Eve and Day. Commander: Explained  Community service and highlighted
+    a few thing done recently for VIN (Veterans in Need). Short discussion on reputation
+    - bad press.\r\n\r\n9) Reading of official Communications: Jan 16th to 19th mid-winter
+    conference. \r\n\r\n10) Unfinished Business: None\r\n\r\n11) New Business: \r\n\r\n*
+    \ Jimmy B made motion to allocate up to $900 for New Years eve Party. This is
+    contingency, in past Pre-sale of tickets has taken care of all expenses. Motion
+    to accept by Johnny H, second by Kevin D. Motion passed.\r\n\r\n*  Jimmy B request
+    to allocate $500 for Veterans Christmas Party. Motion by Steve A, seconded by
+    Kevin D. Motion passed \r\n\r\n*  Jimmy B request we give Christmas bonus of $100
+    to bartenders. Motion by Kevin D, seconded by Johnny H. Motion passed.  \r\n\r\n*
+    \ Discussion on Fund Raisers. All must be voted on at membership meeting. Steve
+    A motioned we raffle for 2 computers and allow whiskey raffle for bartenders.
+    Seconded by Jimmy B. Motion passed\r\n\r\n12) Good of the Order: District meeting
+    at Glennco this Sunday. Need Commander and or Adjutant to get access to Dashboard
+    on VFW site. Had a little peep talk on what it takes to run the post and doing
+    community service.\r\n\r\n13) Closing Ceremony: Performed and meeting adjourned
+    by Commander Shelly. Next meeting will be held December 10.\r\n\r\nAdjutant, Andrew
+    Plam  (Quartermaster took minutes) \r\n\r\nCommander, Joyce Shelley\r\n"
+  active: true
+  leadin: ''
+  date: '2019-11-12'
+- markup_type: 
+  user_id: 2
+  post_id: 2
+  category: greeting
+  title: Welcome
+  content: "Welcome to Veterans of Foreign Wars Post 2702\r\n\r\n\r\nhtml\r\n\r\n
+    \   <p>This is a paragraph</p>\r\n\r\ncode\r\n\r\n    * this\r\n    * that\r\ngives\r\n\r\n*
+    this\r\n* that\r\n\r\n#### Header\r\n\r\n1. one\r\n1. two\r\n1. three"
+  active: true
+  leadin: ''
+  date: '2019-12-25'

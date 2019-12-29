@@ -18,6 +18,7 @@ html lang="en"
     header.noprint
       == render 'layouts/header'
     == render 'layouts/menubar'
+
     - flash.each do |name, msg|
       - if msg.is_a?(String)
         .w3-panel.w3-display-container[class="callout  #{name.to_s == 'notice' ? 'w3-light-green' : 'w3-red'}" style="z-index:0;"]

@@ -59,7 +59,8 @@ class ApplicationController < ActionController::Base
 
   def require_login
     if current_user.nil? 
-      redirect_to root_url, alert: "I'm sorry. I can't do that."
+      # redirect_to root_url, alert: "I'm sorry. I can't do that."
+      user_not_authorized
     end
   end
   helper_method :require_login

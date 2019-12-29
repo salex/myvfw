@@ -1,89 +1,39 @@
 = show_links(@member)
-.w3-container.w3-row-padding.w3-white.min-height
-  / .w3-bar.goldey
-  /   .w3-col.s6
-  /     = link_to 'Edit', edit_member_path(@member),class:' w3-bar-item w3-button' if @current_user.present?
-  /     = link_to 'Back', members_path,class:' w3-bar-item w3-button'
-  /   .w3-col.s6
-  /     h6.strong Member
-  .s12.m6.w3-col
-    table.show-table.w100
-      
+.w3-container.w3-white.min-height
+  fieldset.w3-border.w3-row-padding
+    .s12.m6.w3-col
+      table.show-table.w100
 
-      tr
-        th Vfw:
-        td = @member.vfw_id
-      tr
-        th First name:
-        td = @member.first_name
-      tr
-        th Mi:
-        td = @member.mi
-      tr
-        th Last name:
-        td = @member.last_name
-      tr
-        th Full name:
-        td = @member.full_name
-      tr
-        th Phone:
-        td = display_phone(@member)
-      tr
-        th Address:
-        td = @member.address
-      tr
-        th City:
-        td = @member.city
-      tr
-        th State:
-        td = @member.state
-      tr
-        th Zip:
-        td = @member.zip
-      tr
-        th Served:
-        td = text_area_tag nil, @member.served
-  .s12.m6.w3-col
-    table.show-table.w100
-
-      tr
-        th Status:
-        td = @member.status
-      tr
-        th Email:
-        td = display_email(@member)
-      tr
-        th Type pay:
-        td = @member.type_pay
-      tr
-        th Pay year:
-        td = @member.pay_year
-      tr
-        th Pay status:
-        td = @member.pay_status
-      tr
-        th Pay date:
-        td = @member.pay_date
-      tr
-        th Country:
-        td = @member.country
-      tr
-        th Paid thru:
-        td = @member.paid_thru
-      tr
-        th Days remaining:
+        = show_row("Vfw:",@member.vfw_id)
+        = show_row("First name:",@member.first_name)
+        = show_row("Mi:",@member.mi)
+        = show_row("Last name:",@member.last_name)
+        = show_row("Full name:",@member.full_name)
+        = show_row("Phone:",display_phone(@member))
+        = show_row("Address:",@member.address)
+        = show_row("City:",@member.city)
+        = show_row("State:",@member.state)
+        = show_row("Zip:",@member.zip)
+        = show_row("Served:",text_area_tag(nil, @member.served))
+    .s12.m6.w3-col
+      table.show-table.w100
+        - email = display_email(@member)
+        = show_row("Status:",@member.status)
+        = show_row("Email:", email)
+        = show_row("Type pay:",@member.type_pay)
+        = show_row("Pay year:",@member.pay_year)
+        = show_row("Pay status:",@member.pay_status)
+        = show_row("Pay date:",@member.pay_date)
+        = show_row("Country:",@member.country)
+        = show_row("Paid thru:",@member.paid_thru)
         - if  @member.paid_thru.present?
-          td  = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i
+          - dr = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i
         - else
-          td &nbsp;
-      tr
-        th Last status:
-        td = @member.last_status
-      tr
-        th Served:
-        td = @member.served
-      tr
-        th Alt phone:
-        td = @member.alt_phone
+          - dr = "&nbsp;"
+        
+        = show_row("Days Remaining:", dr)
+        = show_row("Last status:",@member.last_status)
+        = show_row("Served:",@member.served)
+        = show_row("Alt phone:",@member.alt_phone)
 
 
