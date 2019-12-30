@@ -1,32 +1,33 @@
-.w3-black.w3-bar.noprint
-  / <button class="w3-button w3-left w3-large" onclick="w3_open()">☰</button>
+ .sticky-menu
+  .w3-black.w3-bar.noprint
+    / <button class="w3-button w3-left w3-large" onclick="w3_open()">☰</button>
 
 
-  = link_to "Home", root_path, class:"w3-bar-item w3-button"
-  = link_to "About", about_about_path, class:"w3-bar-item w3-button" 
-  / if Current.post_user || Current.post_visitor
-  / = link_to "Reporting", reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
-  = link_to "Markups", markups_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
-  = link_to "Members", members_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
-  = link_to "Officers", officers_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
-  .w3-dropdown-hover
-    button.w3-button
-      | Reporting
-      i.fa.fa-caret-down
-    .w3-dropdown-content.w3-bar-block.w3-card-4
-      = link_to "Reporting Requirements", reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
+    = link_to "Home", root_path, class:"w3-bar-item w3-button"
+    = link_to "About", about_about_path, class:"w3-bar-item w3-button" 
+    -if Current.post_user || Current.post_visitor
+      / = link_to "Reporting", reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
+      = link_to "Markups", markups_path, class:"w3-bar-item w3-button" 
+      = link_to "Members", members_path, class:"w3-bar-item w3-button" 
+      = link_to "Officers", officers_path, class:"w3-bar-item w3-button" 
+      .w3-dropdown-hover
+        button.w3-button
+          | Reporting
+          i.fa.fa-caret-down
+        .w3-dropdown-content.w3-bar-block.w3-card-4
+          = link_to "Reporting Requirements", reports_path, class:"w3-bar-item w3-button" 
 
-      = link_to "Community Service", audit_summary_reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
-      = link_to "Trustee Audit", trustee_audit_reports_path, class:"w3-bar-item w3-button" if Current.post_user && Current.user.is_admin?
-      = link_to "Trustee Audit PDF", trustee_audit_pdf_reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
+          = link_to "Community Service", audit_summary_reports_path, class:"w3-bar-item w3-button" 
+          = link_to "Trustee Audit", trustee_audit_reports_path, class:"w3-bar-item w3-button" if Current.post_user && Current.user.is_admin?
+          = link_to "Trustee Audit PDF", trustee_audit_pdf_reports_path, class:"w3-bar-item w3-button" 
 
-  - if @current_user.present?
-    span.w3-bar-item.w3-button.w3-right = link_to "Logout", logout_path
-    span.w3-bar-item.w3-button.w3-right = link_to "Profile", profile_path
-  - else
-    span.w3-bar-item.w3-button.w3-right = link_to "Login", login_path
-  - if Current.post_visitor
-    span.w3-bar-item.w3-button.w3-right = link_to "Exit Vist", exit_visit_post_path(Current.post)
+    - if @current_user.present?
+      span.w3-bar-item.w3-button.w3-right = link_to "Logout", logout_path
+      span.w3-bar-item.w3-button.w3-right = link_to "Profile", profile_path
+    - else
+      span.w3-bar-item.w3-button.w3-right = link_to "Login", login_path
+    - if Current.post_visitor
+      span.w3-bar-item.w3-button.w3-right = link_to "Exit Vist", exit_visit_post_path(Current.post)
 
 
 

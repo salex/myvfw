@@ -36,6 +36,15 @@ class Conversion
     end
   end
 
+  def fix_all_user
+    User.all.each do |u|
+      if u.roles.blank?
+        u.roles << 'admin'
+        u.save
+      end
+    end
+  end
+
 
   # def import_vfw_post
   #   get_deposit_dates

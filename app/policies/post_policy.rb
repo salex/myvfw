@@ -10,6 +10,9 @@ class PostPolicy < ApplicationPolicy
           scope.where(district_id:user.district,department:user.department)
         elsif user.is_department_user? && user.is_admin?
           scope.where(department:user.department)
+        else
+          scope.where(numb:Current.post.numb)
+          #bug if not admin
         end
       end
     end
