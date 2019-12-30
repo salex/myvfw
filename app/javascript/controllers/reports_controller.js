@@ -8,9 +8,13 @@ export default class extends Controller {
     var volunteers_val = this.get_volenteers()
     var hours_each_val = this.get_hours_each()
     var miles_each_val = this.get_miles_each()
-    this.set_total_miles(volunteers_val * miles_each_val)
-    this.set_total_hours(volunteers_val * hours_each_val)
-    console.log("something changed")
+    if(miles_each_val > 0){
+      this.set_total_miles(volunteers_val * miles_each_val)
+    }
+    if(hours_each_val > 0){
+      this.set_total_hours(volunteers_val * hours_each_val)
+    }
+    // console.log("something changed")
   }
 
   get_volenteers(){

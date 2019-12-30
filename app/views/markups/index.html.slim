@@ -48,7 +48,7 @@
         td = markup.category
         td.w20p = markup.title
         td.w30p = markup.leadin
-        td = markup.active
+        td = "#{markup.active} Expires: #{markup.expires}"
         - if Current.user.present? && Current.user.is_admin?
           td.action-bar 
             = link_to 'Edit', edit_markup_path(markup),class:'w3-btn w3-blue-gray w3-padding-small'

@@ -87,6 +87,6 @@ class MarkupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def markup_params
-      params.require(:markup).permit(:user_id, :category, :title, :leadin, :content, :active, :date)
+      params.require(:markup).permit(:user_id, :category, :title, :leadin, :content, :active, :date, :expires)
     end
 end

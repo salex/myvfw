@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_04_122205) do
+ActiveRecord::Schema.define(version: 2019_12_30_151833) do
 
   create_table "markups", force: :cascade do |t|
     t.string "markup_type"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_12_04_122205) do
     t.datetime "updated_at", null: false
     t.string "leadin"
     t.date "date"
+    t.date "expires"
     t.index ["category"], name: "index_markups_on_category"
     t.index ["markup_type"], name: "index_markups_on_markup_type"
     t.index ["user_id"], name: "index_markups_on_user_id"

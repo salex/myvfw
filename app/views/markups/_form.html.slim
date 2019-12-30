@@ -1,23 +1,27 @@
-= simple_form_for(@markup) do |f|
-  - unless f.error_notification.blank?
-    .callout.alert = f.error_notification
-  .w3-row-padding
-    .form-inputs.s12.m4.w3-col.w3-card
+fieldset
+  = simple_form_for(@markup) do |f|
+    - unless f.error_notification.blank?
+      .callout.alert = f.error_notification
+    .w3-row-padding
+      .s12.m4.w3-col.w3-card
 
-    
-      = f.input :user_id, as: :hidden, input_html:{value:Current.user.id}
-      = "User: #{ Current.user.full_name}"
-      / ,label:'Author',collection: User, label_method: :full_name, value_method: :id, input_html:{value:current_user.id}
-      = f.input :category,collection:Markup::CATAGORIES, input_html:{class:'w3-input w3-border'}
-      = f.input :title, input_html:{class:'w3-input w3-border'}
-      = f.input :leadin, input_html:{class:'w3-input w3-border'}
-      = f.input :date, as: :string, input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
-      = f.input :active, input_html:{class:'w3-input w3-border'}
-      = f.button :submit, class:'w3-btn w3-blue-grey'
+      
+        = f.input :user_id, as: :hidden, input_html:{value:Current.user.id}
+        = "User: #{ Current.user.full_name}"
+        / ,label:'Author',collection: User, label_method: :full_name, value_method: :id, input_html:{value:current_user.id}
+        = f.input :category,collection:Markup::CATAGORIES, input_html:{class:'w3-input w3-border'}
+        = f.input :title, input_html:{class:'w3-input w3-border'}
+        = f.input :leadin, input_html:{class:'w3-input w3- border'}
+        = f.input :date, as: :string, input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
+        span Active:   
+        = f.input_field :active,input_html:{class:'w3-input w3-border w3-right-align w3-border'}
+        = f.input :expires, as: :string, input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
+        p.annotate Active with out an expires date is always Active. With expires date it is Active until that date.
+        = f.button :submit, class:'w3-btn w3-blue-grey'
 
-    .form-inputs.s12.m8.w3-col.w3-card
+      .s12.m8.w3-col.w3-card
 
-      = f.input :content, input_html:{rows:20,class:'w3-input w3-border'}
+        = f.input :content, input_html:{rows:20,class:'w3-input w3-border'}
 
 
 

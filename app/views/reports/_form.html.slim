@@ -1,46 +1,39 @@
- = simple_form_for(@report) do |f|
-  - unless f.error_notification.blank?
-    .alert-box.alert = f.error_notification
-  / .w3-row.lite-goldey
-  /   .s2.w3-col
-  /     = f.button :submit, class:'w3-btn w3-blue-gray'
-  /   .s2.w3-col
-  /     = link_to "Cancel" , reports_path, class:'w3-btn w3-yellow'
-  /   .s8.w3-col
-  /     h6.strong = action if defined?(action)
+ fieldset
+   = simple_form_for(@report) do |f|
+    - unless f.error_notification.blank?
+      .alert-box.alert = f.error_notification
 
+    .w3-row-padding
+      .s12.m4.w3-col.w3-card.w3-padding-bottom
+        h6 
+          span.strong Report Type: 
+          = @report.type_report
+        = f.input :type_report, as: :hidden
+        h6 
+          span.strong Report Area: 
+          = @report.area
+        = select_tag(:kind,options_for_select(program_options,selected: (@report.type_report + '.' + @report.area)))
+        = f.input :date, as: :string,input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
+        = f.input :updated_by, input_html:{value:@current_user.username,class:'w3-input w3-border'}
+        = f.input :details, as: :text, label:'Description',hint: "Brief Description of Project and Who Benefited", input_html:{rows:5}, input_html:{class:'w3-input w3-border'}
+        = f.button :submit, class:'w3-btn w3-blue-gray'
 
-  .w3-row-padding
-    .form-inputs.s12.m4.w3-col.w3-card.w3-padding-bottom
-      h6 
-        span.strong Report Type: 
-        = @report.type_report
-      = f.input :type_report, as: :hidden
-      h6 
-        span.strong Report Area: 
-        = @report.area
-      = select_tag(:kind,options_for_select(program_options,selected: (@report.type_report + '.' + @report.area)))
-      = f.input :date, as: :string,input_html:{class:'w3-input w3-border',data:{controller:'flatpickr'}}
-      = f.input :updated_by, input_html:{value:@current_user.username,class:'w3-input w3-border'}
-      = f.input :details, as: :text, label:'Description',hint: "Brief Description of Project and Who Benefited", input_html:{rows:5}, input_html:{class:'w3-input w3-border'}
-      = f.button :submit, class:'w3-btn w3-blue-gray'
+      .s12.m3.w3-col.w3-card.w3-padding-bottom[data-controller="reports"]
+        = f.input :volunteers, input_html:{class:'w3-input w3-border',
+          data:{target: 'reports.volunteers',action:'reports#changed'}}
+        = f.input :hours_each, input_html:{class:'w3-input w3-border',
+          data:{target: 'reports.hours_each',action:'reports#changed'}}
+        = f.input :total_hours, input_html:{class:'w3-input w3-border',
+          data:{target:'reports.total_hours',action:'reports#changed'}}
+        = f.input :miles_each, input_html:{class:'w3-input w3-border',
+          data:{target: 'reports.miles_each',action:'reports#changed'}}
+        = f.input :total_miles, input_html:{class:'w3-input w3-border',
+          data:{target:'reports.total_miles',action:'reports#changed'}}
+        = f.input :expenses, input_html:{class:'w3-input w3-border'}
 
-    .form-inputs.s12.m3.w3-col.w3-card.w3-padding-bottom[data-controller="reports"]
-      = f.input :volunteers, input_html:{class:'w3-input w3-border',
-        data:{target: 'reports.volunteers',action:'reports#changed'}}
-      = f.input :hours_each, input_html:{class:'w3-input w3-border',
-        data:{target: 'reports.hours_each',action:'reports#changed'}}
-      = f.input :total_hours, input_html:{readonly:true,class:'w3-input w3-border',
-        data:{target:'reports.total_hours',action:'reports#changed'}}
-      = f.input :miles_each, input_html:{class:'w3-input w3-border',
-        data:{target: 'reports.miles_each',action:'reports#changed'}}
-      = f.input :total_miles, input_html:{readonly:true,class:'w3-input w3-border',
-        data:{target:'reports.total_miles',action:'reports#changed'}}
-      = f.input :expenses, input_html:{class:'w3-input w3-border'}
-
-    .s12.m5.w3-col.w3-card.w3-padding-bottom
-      h5.strong.scaps Instructions
-      p Volunteers can be either the number of volunteers at the event/project, or the number of times a volunteer(s) participated in a repeating project.
-      p If Miles Each or Hours Each is entered, total hours and/or miles will be computed as that number times the number of volunteers.
-      = f.input :remarks, as: :text,label:'Remarks/Details', input_html:{rows:5,class:'w3-input w3-border'}
+      .s12.m5.w3-col.w3-card.w3-padding-bottom
+        h5.strong.scaps Instructions
+        p Volunteers can be either the number of volunteers at the event/project, or the number of times a volunteer(s) participated in a repeating project.
+        p If Miles Each or Hours Each is entered, total hours and/or miles will be computed as that number times the number of volunteers.
+        = f.input :remarks, as: :text,label:'Remarks/Details', input_html:{rows:5,class:'w3-input w3-border'}
 

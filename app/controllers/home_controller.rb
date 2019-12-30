@@ -5,10 +5,10 @@ class HomeController < ApplicationController
     # p "what is current dist #{Current.district} post #{Current.post} dept #{Current.department}"
     if @current_post.present?
       @post = Current.post
-      @greeting = @post.markups.find_by(category:'greeting')
-      @home = @post.markups.where(category:'home',active:true).order(:updated_at).reverse_order
+      @greeting = @post.markups.find_by(category:'greeting') # greeting never expires and only first
+      @home = Markup.get_active(['home'])
       # @slim = @post.markups.find_by(category:'slim')
-      @alerts = @post.markups.where(category:%w{alert warning success info},active:true).order(:updated_at).reverse_order
+      @alerts = Markup.get_active(%w{alert warning success info})
       if @greeting.blank? && !session[:visitor]
         render template: 'home/index'
       else

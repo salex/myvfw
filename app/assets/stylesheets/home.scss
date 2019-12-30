@@ -50,10 +50,10 @@ dl.outline {
 .indent2 {margin-left: 2rem;}
 .indent-btn {margin-right:3px;}
 
-span.annotate, div.annotate, dd.annotate, dl.annotate, li.annnotate {
+span.annotate, div.annotate, dd.annotate, dl.annotate, li.annotate, p.annotate{
   font-style: italic;
   font-size: 0.8rem!important;
-  line-height: 0.9rem;
+  line-height: 0.9rem!important;
   font-weight: normal;
 }
 
