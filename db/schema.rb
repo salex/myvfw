@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_30_151833) do
+ActiveRecord::Schema.define(version: 2019_12_31_144947) do
 
   create_table "markups", force: :cascade do |t|
     t.string "markup_type"
@@ -117,6 +117,19 @@ ActiveRecord::Schema.define(version: 2019_12_30_151833) do
     t.index ["post_id"], name: "index_reports_on_post_id"
   end
 
+  create_table "stashes", force: :cascade do |t|
+    t.integer "post_id", null: false
+    t.string "type"
+    t.string "key"
+    t.date "date"
+    t.text "hash_data"
+    t.text "array_data"
+    t.text "text_data"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["post_id"], name: "index_stashes_on_post_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "user_type"
     t.string "email"
@@ -133,4 +146,5 @@ ActiveRecord::Schema.define(version: 2019_12_30_151833) do
   add_foreign_key "markups", "posts"
   add_foreign_key "members", "posts"
   add_foreign_key "reports", "posts"
+  add_foreign_key "stashes", "posts"
 end

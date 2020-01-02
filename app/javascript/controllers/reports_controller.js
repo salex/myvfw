@@ -10,9 +10,13 @@ export default class extends Controller {
     var miles_each_val = this.get_miles_each()
     if(miles_each_val > 0){
       this.set_total_miles(volunteers_val * miles_each_val)
+    }else{
+      this.fix_total_miles()
     }
     if(hours_each_val > 0){
       this.set_total_hours(volunteers_val * hours_each_val)
+    }else{
+      this.fix_total_hours()
     }
     // console.log("something changed")
   }
@@ -27,6 +31,16 @@ export default class extends Controller {
 
   get_miles_each(){
     return Number(this.targets.find("miles_each").value)
+  }
+
+  fix_total_miles(){
+    var total = this.targets.find("total_miles")
+    total.value = Number(total.value).toFixed(1)
+  }
+
+  fix_total_hours(){
+    var total = this.targets.find("total_hours")
+    total.value = Number(total.value).toFixed(1)
   }
 
   set_total_miles(val){

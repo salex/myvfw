@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post: one
+  type: 
+  key: MyString
+  date: 2019-12-31
+  hash_data: MyText
+  array_data: MyText
+  text_date: MyText
+
+two:
+  post: two
+  type: 
+  key: MyString
+  date: 2019-12-31
+  hash_data: MyText
+  array_data: MyText
+  text_date: MyText

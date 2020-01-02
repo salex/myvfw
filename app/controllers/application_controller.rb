@@ -27,6 +27,7 @@ class ApplicationController < ActionController::Base
         Current.district = nil
         Current.department = nil
         Current.post_user = Current.post.numb == Current.user.post if Current.post.present? && Current.user.present?
+        Current.post_visitor = false
       when 'DistrictUser'
         Current.district = @current_user.district
         Current.department = nil

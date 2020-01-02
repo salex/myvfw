@@ -70,7 +70,7 @@ class ReportsController < ApplicationController
     end
     respond_to do |format|
       if @report.update(report_params)
-        format.html { redirect_to report_path(@report), notice: 'Program was successfully updated.' }
+        format.html { redirect_to report_path(@report), notice: 'Report was successfully updated.' }
         format.json { render :show, status: :ok, location: @report }
       else
         format.html { render :edit }
@@ -84,7 +84,7 @@ class ReportsController < ApplicationController
   def destroy
     @report.destroy
     respond_to do |format|
-      format.html { redirect_to programs_url, notice: 'Program was successfully destroyed.' }
+      format.html { redirect_to community_service_reports_url, notice: 'Report was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -107,27 +107,27 @@ class ReportsController < ApplicationController
     #  end
   end
 
-  def trustee_audit
-    @audit = TrusteeAudit.new(params[:date]).config
-  end
+  # def trustee_audit
+  #   @audit = TrusteeAudit.new(params[:date]).config
+  # end
 
-  def trustee_audit_pdf
-    pdf = PdfAudit.new(params[:date])
-    send_data pdf.render, filename: "trustee_audit",
-      type: "application/pdf",
-      disposition: "inline"
-  end
+  # def trustee_audit_pdf
+  #   pdf = PdfAudit.new(params[:date])
+  #   send_data pdf.render, filename: "trustee_audit",
+  #     type: "application/pdf",
+  #     disposition: "inline"
+  # end
 
 
-  def update_audit
-    pp = audit_params
-    audit = pp[:audit]
-    # puts audit
-    # render plain: audit
-    if TrusteeAudit.save(audit)
-      redirect_to root_path, notice: "Audit report has been saved"
-    end
-  end
+  # def update_audit
+  #   pp = audit_params
+  #   audit = pp[:audit]
+  #   # puts audit
+  #   # render plain: audit
+  #   if TrusteeAudit.save(audit)
+  #     redirect_to root_path, notice: "Audit report has been saved"
+  #   end
+  # end
 
 
 

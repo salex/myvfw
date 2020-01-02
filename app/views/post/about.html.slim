@@ -6,10 +6,11 @@
       p = "SCP #{@current_post.inspect}"
       p = "S #{session_inspect}"
       p = "CP #{Current.post.inspect}"
-      p = "CU #{Current.user}"
+      p = "CU #{Current.user.inspect}"
       p = "CPU #{Current.post_user}"
       p = "CPV #{Current.post_visitor}"
-      p = Current.post.numb.to_s + '-'
+      p = "CDist #{Current.district}"
+      p = "CDept #{Current.department}"
 
     = render partial:'home/sidebar'
 

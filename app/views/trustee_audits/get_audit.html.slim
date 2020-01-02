@@ -1,0 +1,204 @@
+- if @audit_obj.present?
+ - report = @audit_obj.audit.report
+ - id = @audit_obj.audit.id
+ - key = @audit_obj.audit.key
+-else
+  - report = @audit.report
+  - id = @audit.id
+  - key = @audit.key
+
+= other_links(report || @audit, header:"Trustee Audit Edit",
+  buttons:[link_to("Trustee Audit PDF",pdf_trustee_audits_path,class:"w3-bar-item w3-button w3-light-blue"),
+    link_to("Cancel",reports_path,class:"w3-bar-item w3-button w3-yellow"),
+    link_to("List",trustee_audits_path,class:"w3-bar-item w3-button w3-light-blue")])
+.w3-container.w3-white.min-height.w3-padding-bottom(data-controller="trusteeAudit")
+  = form_with url: update_audit_trustee_audits_path(keyname:report.keyname) do |f|
+    = f.hidden_field 'audit[keyname]',value:key
+    = f.hidden_field "audit[id]",value: id
+    .w3-row
+      .w3-col.m4
+        .strong Submitted
+        .form-row
+          = f.label 'Date Submitted'
+          = f.text_field 'audit[date_submitted]', value:report.date_submitted, data:{controller:'flatpickr'}
+
+        .strong Quarermaster
+        .form-row
+
+          = f.label 'Name'
+          = f.text_field 'audit[qm][name]', value:report.qm.name
+        .form-row
+
+          = f.label 'Address'
+          = f.text_field 'audit[qm][address]', value:report.qm.address
+        .form-row
+
+          = f.label 'City/St'
+          = f.text_field 'audit[qm][city]', value:report.qm.city
+        .strong Bonding
+        .form-row
+          =  f.label "Company"
+          = f.text_field 'audit[bond][name]', value:report.bond.name
+        .form-row
+          = f.label "Amount"
+          = f.text_field 'audit[bond][amount]', value:report.bond.amount
+        .form-row
+          = f.label "Expires"
+          = f.text_field 'audit[bond][to]', value:report.bond.to, data:{controller:'flatpickr'}
+
+      .w3-col.m8
+        / .strong Accounts
+        table.small-table.w3-border
+          caption.strong Accounts
+          thead
+            tr
+              th.w20p Fund/Account
+              th.w05p Type
+              th.w10p  Beginning
+              th.w10p  Increase
+              th.w10p  Decrease
+              th.w10p  Ending
+
+          - cnt = report.accounts.count
+          tbody
+
+            - 0.upto cnt -1 do |i|
+
+              - unless report.accounts[i].name.blank?
+                tr(id="acct-#{i}" data-targets="row")
+                  td = f.text_field( "audit[accounts][#{i}][name]", value:report.accounts[i].name, class:" w80p",
+                    data:{target: 'trusteeAudit.name',action:'trusteeAudit#changed'})
+                  td = f.select( "audit[accounts][#{i}][type]",
+                    options_for_select(%w(Ck Ca CD Sv),report.accounts[i].type), { include_blank: true },
+                    data:{target: 'trusteeAudit.type',action:'trusteeAudit#changed'})
+                  td = f.text_field( "audit[accounts][#{i}][beginning]", 
+                    value:report.accounts[i].beginning, class:"w80p w3-right-align", 
+                    data:{target: 'trusteeAudit.beginning',action:'trusteeAudit#changed'})
+                  td = f.text_field( "audit[accounts][#{i}][debit]", value:report.accounts[i].debit, 
+                    class:"w80p w3-right-align", 
+                    data:{target: 'trusteeAudit.debit',action:'trusteeAudit#changed'})
+                  td = f.text_field( "audit[accounts][#{i}][credit]", value:report.accounts[i].credit, 
+                    class:"w80p w3-right-align", 
+                    data:{target: 'trusteeAudit.credit',action:'trusteeAudit#changed'})
+                  td = f.text_field( "audit[accounts][#{i}][ending]", value:report.accounts[i].ending, 
+                    class:"w80p w3-right-align",readonly:true,
+                    data:{target: 'trusteeAudit.ending'})
+            tr(id="acct-#{cnt}")
+              td = f.text_field( "audit[accounts][#{cnt}][name]", class:" w80p",
+                data:{target: 'trusteeAudit.name',action:'trusteeAudit#changed'},)
+              td = f.select( "audit[accounts][#{cnt}][type]",
+                options_for_select(%w(Ck Ca CD Sv)), { include_blank: true },
+                data:{target: 'trusteeAudit.type',action:'trusteeAudit#changed'})
+              td = f.text_field( "audit[accounts][#{cnt}][beginning]", class:" w80p w3-right-align", 
+                data:{target: 'trusteeAudit.beginning',action:'trusteeAudit#changed'})
+              td = f.text_field( "audit[accounts][#{cnt}][debit]", class:" w80p w3-right-align", 
+                data:{target: 'trusteeAudit.debit',action:'trusteeAudit#changed'}) 
+              td = f.text_field( "audit[accounts][#{cnt}][credit]", class:" w80p w3-right-align", 
+                data:{target: 'trusteeAudit.credit',action:'trusteeAudit#changed'})
+              td = f.text_field( "audit[accounts][#{cnt}][ending]", readonly:true,class:" w80p w3-right-align",
+                data:{target: 'trusteeAudit.ending'})
+            / maybe move to diffent tbody
+          tbody
+            tr.w3-light-gray(id="acct-totals")
+              td.strong.w3-right-align[colspan="2"] Totals
+              
+              td = f.text_field( "audit[totals][beginning]",readonly:true, class:"w3-right-align w80p", 
+                data:{target: 'trusteeAudit.beginningTotal'})
+              td = f.text_field( "audit[totals][debit]", readonly:true,class:"w3-right-align w80p", 
+                data:{target: 'trusteeAudit.debitTotal'}) 
+              td = f.text_field( "audit[totals][credit]",readonly:true, class:"w3-right-align w80p", 
+                data:{target: 'trusteeAudit.creditTotal'})
+              td = f.text_field( "audit[totals][ending]", readonly:true,class:"w3-right-align w80p", 
+                data:{target: 'trusteeAudit.totalTotal'})
+
+    .w3-row-padding
+      div &nbsp;
+      .w3-col.m8  
+        span = f.hidden_field("audit[acct_types]",value:report.acct_types)
+        table.small-table
+          tr
+            th.w80p Operations Question
+            th.w20p Response
+
+          - cnt = report.operations.count
+          - 0.upto cnt -1 do |i|
+            -numeric = report.operations[i].response == sprintf('%.2f', report.operations[i].response.to_f) || report.operations[i].response == '0'
+            - puts "isnumeric #{numeric}"
+            - unless report.operations[i].question.blank?
+              tr
+
+                td = f.text_field "audit[operations][#{i}][question]", value:report.operations[i].question, class:"w100"
+                - if numeric
+                  td[data-controller="setfixed"] = f.text_field( "audit[operations][#{i}][response]",
+                   value:report.operations[i].response, data:{target: 'setfixed.textfield',action:'setfixed#changed'},
+                   class:"w3-right-align")
+
+                - else
+                  td = f.text_field "audit[operations][#{i}][response]", value:report.operations[i].response
+          tr
+            td = f.text_field "audit[operations][#{cnt}][question]", class:'w100'
+            td = f.text_field "audit[operations][#{cnt}][response]"
+
+      .w3-col.m4
+        .strong Bank and Computed Balances
+        .form-row
+          = f.label "Bank Balance","Bank Balance"
+          = f.text_field('audit[checking][balance]', value:report.checking.balance,
+          data:{target: 'trusteeAudit.balance',action:'trusteeAudit#changed'},class:"w30p",)
+        .form-row
+          = f.label "Outstanding"
+          = f.text_field('audit[checking][outstanding]', value:report.checking.outstanding,
+          data:{target: 'trusteeAudit.outstanding',action:'trusteeAudit#changed'},class:"w30p")
+        #balanceBox
+          .form-row
+            = f.label "Actual Balance","Actual Balance"
+            = f.text_field('audit[checking][actual]', value:report.checking.actual, readonly:true,class:"w3-right-align")
+          .form-row
+            = f.label "Other Savings","Other Savings"
+            = f.text_field('audit[checking][other]', value:report.checking.other,
+            data:{target: 'trusteeAudit.other',action:'trusteeAudit#changed'},class:"w3-right-align")
+          .form-row
+            = f.label "Cash on Hand","Cash on Hand"
+            = f.text_field('audit[checking][cash]', value:report.checking.cash, readonly:true,class:"w3-right-align")
+          .form-row
+            = f.label "Sub Total", "Sub Total"
+            = f.text_field('audit[checking][subtotal]', value:report.checking.subtotal, readonly:true,class:"w3-right-align")
+          .form-row
+            = f.label  "CD", "CD"
+            = f.text_field('audit[checking][cd]', value:report.checking.cd, readonly:true,class:"w3-right-align")
+          .form-row
+            = f.label "Total"
+            = f.text_field('audit[checking][total]', value:report.checking.total, readonly:true,class:"w3-right-align")
+
+        .w3-container
+
+
+          .w3-cell
+            .w3-button.w3-green = f.submit "Save", class:'w3-text-white'
+          .w3-cell.w05p &nbsp;
+          #balanceError.w3-cell.w3-red.w80p.w3-padding Error will go here
+
+        .strong Post
+        .form-row
+          = f.label "Formal Name"
+          = f.text_field 'audit[post][name]', value:report.post.name
+        .form-row
+          = f.label "Name"
+          = f.text_field 'audit[post][post]', value:report.post.post
+        .form-row
+          = f.label "Number"
+          = f.text_field 'audit[post][numb]', value:report.post.numb
+        .form-row
+          = f.label "Address"
+          = f.text_field 'audit[post][address]', value:report.post.address
+        .form-row
+          = f.label "City/State"
+          = f.text_field 'audit[post][city]', value:report.post.city
+        .form-row
+          = f.label "Department"
+          = f.text_field 'audit[post][department]', value:report.post.department
+
+
+
+
+

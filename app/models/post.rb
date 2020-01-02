@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   has_many :markups
   has_many :reports
   has_many :officers
+  has_many :trustee_audits
 
   def self.districts
     dist = User.where.not(district:nil).pluck(:district).uniq.sort

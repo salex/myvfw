@@ -18,8 +18,10 @@
           = link_to "Reporting Requirements", reports_path, class:"w3-bar-item w3-button" 
 
           = link_to "Community Service", audit_summary_reports_path, class:"w3-bar-item w3-button" 
-          = link_to "Trustee Audit", trustee_audit_reports_path, class:"w3-bar-item w3-button" if Current.post_user && Current.user.is_admin?
-          = link_to "Trustee Audit PDF", trustee_audit_pdf_reports_path, class:"w3-bar-item w3-button" 
+          = link_to "Trustee Audit List", trustee_audits_path, class:"w3-bar-item w3-button" 
+
+          = link_to "Trustee Audit", get_audit_trustee_audits_path, class:"w3-bar-item w3-button" if Current.post_user && Current.user.is_admin?
+          = link_to "Trustee Audit PDF", pdf_trustee_audits_path, class:"w3-bar-item w3-button" 
 
     - if @current_user.present?
       span.w3-bar-item.w3-button.w3-right = link_to "Logout", logout_path

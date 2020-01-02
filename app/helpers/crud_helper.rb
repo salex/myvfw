@@ -68,7 +68,7 @@ module CrudHelper
   end
 
   def add_destroy_button(buttons,instance)
-    buttons << link_to('Destroy', "/#{instance.model_name.collection}", data: { confirm: 'Are you sure?' },
+    buttons << link_to('Destroy', "/#{instance.model_name.collection}/#{instance.id}", data: { confirm: 'Are you sure?' },
       :method => :delete, class:'w3-bar-item w3-button w3-large w3-hover-red')
   end
 

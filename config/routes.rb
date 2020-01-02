@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  # get 'trustee_audits/index'
+  # get 'trustee_audits/show'
+  # get 'trustee_audits/new'
+  # get 'trustee_audits/create'
+  # get 'trustee_audits/edit'
+  # get 'trustee_audits/update'
+  # get 'trustee_audits/destroy'
+  # get 'trustee_audits/pdf'
   resources :posts do
     resources :officers,only: [:new, :create]
     # resources :markups,only: [:new, :create]
@@ -26,9 +34,20 @@ Rails.application.routes.draw do
       get :print
       get :community_service
       get :audit_summary
-      get :trustee_audit
+      # get :trustee_audit
+      # post :update_audit
+      # get :trustee_audit_pdf
+    end
+  end
+
+  resources :trustee_audits do
+    collection do
+      get :get_audit
+      get :pdf
       post :update_audit
-      get :trustee_audit_pdf
+    end
+    member do
+      get :pdf
     end
   end
 

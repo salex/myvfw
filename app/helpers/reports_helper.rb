@@ -15,4 +15,21 @@ module ReportsHelper
     opt 
   end
 
+  def money(fixed,sign="")
+    sign+fixed.gsub(/(\d)(?=(\d{3})+(?!\d))/, "\\1,") # add commas
+  end
+
+  def fixed_to_int(fixed)
+    fixed.gsub(/\D/,'').to_i
+  end
+
+  def int_to_fixed(int)
+    dollars = int / 100
+    cents = (int % 100) / 100.0
+    amt = dollars + cents
+    fixed = sprintf('%.2f',amt) # now have a string to 2 decimals
+    money(fixed)
+  end
+
+
 end
