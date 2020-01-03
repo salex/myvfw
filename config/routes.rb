@@ -16,6 +16,10 @@ Rails.application.routes.draw do
         get :new_applicant
       end
     end
+    member do
+      get :edit_calendar
+      post :update_calendar
+    end
   end
 
   resources :markups do

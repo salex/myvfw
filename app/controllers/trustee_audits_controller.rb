@@ -1,6 +1,9 @@
 class TrusteeAuditsController < ApplicationController
   before_action :require_admin, only: [:new,:create,:edit,:update,:destroy,:get_audit]
+  before_action :require_post
+
   # before_action :set_audit, only: [:show, :edit, :update, :destroy]
+
 
 
   def index
@@ -86,6 +89,12 @@ class TrusteeAuditsController < ApplicationController
     def audit_params
       params.permit!.to_h
     end
+
+    def require_post
+      @post = Current.post
+      require_member if @post.blank?
+    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trustee_audit_params

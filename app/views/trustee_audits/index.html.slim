@@ -29,6 +29,7 @@
               i class="far fa-edit"
 
             span = link_to pdf_trustee_audit_path(a)  do
-              i{style="font-size:9px"} PDF
-            span = link_to trustee_audit_path(a), data: { confirm: 'Are you sure?' }, method: :delete do
+              i{style="font-size:9px;"} PDF
+
+            span.w3-right = link_to trustee_audit_path(a), data: { confirm: 'Are you sure?' }, method: :delete do
               i.far.fa-trash-alt

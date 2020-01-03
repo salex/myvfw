@@ -48,11 +48,14 @@ class PostController < ApplicationController
   end
 
   def calendar
-    calendar = Current.post.markups.find_by(category:'kiosk',title:'calendar')
+    calendar = Current.post.post_calendar
+    if calendar.blank?
+      calendar = Current.post.build_calendar
+    end
     if calendar.present?
       @events = Ical.new(params[:refresh]).upcoming_events
     else
-      redirect_to root_path, notice: "Calendars were not found in markup kiosk/calendar"
+      redirect_to root_path, notice: "Post Calendar not found, see about to add calendars"
     end
   end
 

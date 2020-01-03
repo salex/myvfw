@@ -2,33 +2,18 @@ require 'icalendar/recurrence'
 class Ical
   attr_accessor :calendars, :ics_string, :date_events, :colors, :names, :session
 
-  def initialize(session=nil)
-    @session = session
-    kiosk_calendar = Calendar.new
-    ical = Markup.find_by(category:'kiosk',title:'ical')
-    today = Date.today
+  def initialize(refresh=false)
+
+    post_calendar = Current.post.post_calendar
+    @ics_string = post_calendar.get_ics(refresh)
+    post_calendars = post_calendar.get_calendars
     @colors = []
     @names = []
-
-    if ical.present? && @session.blank? && ical.content.present?  && ical.updated_at.to_date == today 
-      kiosk_calendar.calendars.each do |c,v|
-        @colors << v["color"]
-        @names << c  
-      end
-      ics_string = ical.content
-      @calendars = Icalendar::Calendar.parse(ics_string)
-    else
-      kiosk_calendar.get_ics(@session.blank?)
-      calendars = kiosk_calendar.calendars
-      ics_string = ""
-      calendars.each do |c,v|
-        ics_string << v["ics"]
-        @colors << v["color"]
-        @names << c  
-      end
-      ical.update(content:ics_string.to_s.encode('UTF-8', invalid: :replace, undef: :replace, replace: '?'))
-      @calendars = Icalendar::Calendar.parse(ics_string)
+    post_calendars.each do |c,v|
+      @colors << v["color"]
+      @names << c  
     end
+    @calendars = Icalendar::Calendar.parse(ics_string)
   end
 
   def upcoming_events

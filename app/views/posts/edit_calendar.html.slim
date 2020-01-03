@@ -1,0 +1,48 @@
+/ - if @audit_obj.present?
+/  - report = @audit_obj.audit.report
+/  - id = @audit_obj.audit.id
+/  - key = @audit_obj.audit.key
+/ -else
+/   - report = @audit.report
+/   - id = @audit.id
+/   - key = @audit.key
+
+/ = other_links(report || @audit, header:"Trustee Audit Edit",
+/   buttons:[link_to("Trustee Audit PDF",pdf_trustee_audits_path,class:"w3-bar-item w3-button w3-light-blue"),
+/     link_to("Cancel",reports_path,class:"w3-bar-item w3-button w3-yellow"),
+/     link_to("List",trustee_audits_path,class:"w3-bar-item w3-button w3-light-blue")])
+.w3-container.w3-white.min-height.w3-padding-bottom
+  .w3-row
+    = form_with url: update_calendar_post_path(@post) do |f|
+      / # = f.hidden_field 'calendar[keyname]',value:@calendar.key
+      = f.hidden_field "post[numb]",value: @post.numb
+      - calendars = @calendar.get_calendars
+      table.w3-table-all.w100
+        caption.strong Accounts
+        thead
+          tr
+            th Calendar
+            th Color
+            th Active
+            th.w100 URI/URL
+
+        tbody
+          -cnt = 0
+          - calendars.each do |name,val|
+            tr
+              td = f.text_field("calendar[#{cnt}][name]",value:name)
+              td = f.text_field("calendar[#{cnt}][color]",value:val["color"])
+              td = f.text_field("calendar[#{cnt}][active]",value:val["active"])
+              td = f.text_area("calendar[#{cnt}][uri]",value:val["uri"],class:'w100')
+            - cnt += 1
+
+          tr
+            td = f.text_field("calendar[#{cnt}][name]",value:'')
+            td = f.text_field("calendar[#{cnt}][color]",value:'')
+            td = f.text_field("calendar[#{cnt}][active]",value:'')
+            td = f.text_area("calendar[#{cnt}][uri]",value:'')
+      .strong.w3-button.w3-green = f.submit "Save", class:'w3-text-white'
+
+  .w3-row
+    .strong instructions
+

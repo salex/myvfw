@@ -83,6 +83,32 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit_calendar
+    set_post
+    @calendar = @post.post_calendar
+    if @calendar.blank?
+      @calendar = Current.post.build_calendar
+    end
+  end
+
+  def update_calendar
+    set_post
+    pp = calendar_params
+    cal_params = pp[:calendar]
+
+    respond_to do |format|
+      if @post.update_calendar(cal_params)
+        format.html { redirect_to root_path, notice: 'Post Calendar was successfully updated.' }
+        format.json { render :show, status: :ok, location: @post }
+      else
+        format.html { redirect_to root_path,alert:"why" }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -92,8 +118,14 @@ class PostsController < ApplicationController
 
     end
 
+    def calendar_params
+      params.permit!.to_h
+    end
+
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:name,:numb,:address,:city,:state,:phone,:txt,:email,:web,:zip,:fax, :district_id,:department)
+      params.require(:post).permit(:name,:numb,:address,:city,:state,:phone,:txt,:email,
+        :web,:zip,:fax, :district_id,:department,calendar:{})
     end
 end
