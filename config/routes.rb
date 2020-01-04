@@ -111,6 +111,7 @@ Rails.application.routes.draw do
 
   get 'post/about'
   get 'post/calendar'
+  get 'post/month_calendar'
 
   get 'about/about'
   get 'about/history'

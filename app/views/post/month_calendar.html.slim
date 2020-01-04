@@ -1,0 +1,35 @@
+.w3-container.w3-white.min-height
+  #events
+    h2#month
+      = link_to( "<", date: @date.prev_month.to_date , cal: params[:cal]) if @date > Date.current - 18.months
+      = @date.strftime("%B %Y")
+      = link_to( ">", date: @date.next_month.to_date, cal: params[:cal]) if @date < Date.current + 18.months
+      = link_to(image_tag('refresh.png'),post_month_calendar_path(refresh:true))
+    - cnt = 0
+    = calendar @date.to_date do |date|
+      = date.day
+      - if @events[date]
+        dl
+          - @events[date].each do |event|
+            - cnt += 1
+            dt style="font-size:0.8em"
+              - tip = "#{event[:summary]} - #{event[:start_time].strftime('%H:%M')} until #{event[:end_time].strftime('%H:%M')}\n#{event[:desc]}"
+              / data-tooltip="true" aria-haspopup="true"
+              span.has-tip  title="#{tip}" id="cnt_#{cnt}" style="color:#{event[:color]};"
+                = event[:summary]
+
+  p.link-box
+    strong Calendars: 
+
+    button.w3-button.w3-border.strong.w3-black 
+
+      = link_to 'All',post_month_calendar_path(date:@date)
+    button.w3-button.w3-border.strong.w3-green 
+
+      = link_to 'Upcoming Events',post_calendar_path
+
+    - i = 0
+    - @ical.post_calendars.each do |k,v|
+      button.w3-button.w3-border.strong{style="color:#{v['white']};background-color:#{v['color']}"}
+        = link_to k, post_month_calendar_path(cal:i,date:@date)
+      -i += 1

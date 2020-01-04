@@ -1,14 +1,16 @@
 require 'icalendar/recurrence'
 class Ical
-  attr_accessor :calendars, :ics_string, :date_events, :colors, :names, :session
+  attr_accessor :calendars, :ics_string, :date_events, :colors, :names, :slices, :post_calendars
+  # COLORS = %w(Crimson #f68026 Purple DarkGreen FireBrick Blue DarkGreen DarkRed DarkMegenta)
+  # CAL = %w(Alabama\ Crimson\ Tide Auburn\ Tigers VFW\ Post Holidays)
 
-  def initialize(refresh=false)
-
+  def initialize(params)
     post_calendar = Current.post.post_calendar
-    @ics_string = post_calendar.get_ics(refresh)
-    post_calendars = post_calendar.get_calendars
+    @ics_string = post_calendar.get_ics(params)
+    @post_calendars = post_calendar.get_calendars
     @colors = []
     @names = []
+    @slices = post_calendar.slices
     post_calendars.each do |c,v|
       @colors << v["color"]
       @names << c  

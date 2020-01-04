@@ -53,11 +53,19 @@ class PostController < ApplicationController
       calendar = Current.post.build_calendar
     end
     if calendar.present?
-      @events = Ical.new(params[:refresh]).upcoming_events
+      @events = Ical.new(params).upcoming_events
     else
       redirect_to root_path, notice: "Post Calendar not found, see about to add calendars"
     end
   end
+  def month_calendar
+    @date = params[:date].present? ? Date.parse(params[:date]) : Date.current
+    @ical = Ical.new(params)
+    first = @date.beginning_of_month.beginning_of_week(:sunday)
+    last = @date.end_of_month.end_of_week(:sunday)
+    @events = @ical.find_events(first,last,params)
+  end
+
 
   def contact
     redirect_to root_path, alert: "Post/Officer Contact is under construction"
@@ -72,3 +80,6 @@ class PostController < ApplicationController
 
 
 end
+
+#https://p03-calendars.icloud.com/published/2/yDA7SN0imoKyRwRczElJRZZI9onlqUtZCftvEpV4cGtOJUv5InLGSj9y1FxR4x6ea1ME5at0r-5aP6gF__sXR2g3l3PFwn93tRZoV22HyG8
+# webcal://p44-caldav.icloud.com/published/2/NDg3NjQ2MjQ4NzY0NjI0OEjYH9s2TxLD7vDgbdxkRpuKrgDocoMJw3KBXikypUzvN4fu55d4CdJ0kyQea2RMyOydOvHczC9IspyAUP4g1pc

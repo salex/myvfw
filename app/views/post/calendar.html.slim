@@ -1,7 +1,9 @@
 .w3-container.w3-white.min-height
   .w3-cell-row
     .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
-      h4.strong.text-center.malt Upcoming Calendar Events
+      h4.strong.text-center.malt 
+        | Upcoming Calendar Events
+
       .w3-row
         - keys = @events.keys.sort
         - get_col_mapping(keys.count,3).each do |c|
@@ -20,6 +22,8 @@
                       dd = e[:start_time].strftime("%H%M") + " until " + e[:end_time].strftime("%H%M") + " Hours"
                     - if e[:desc].present?
                       dd = e[:desc]
+    button.w3-button.w3-border.w3-green 
+      = link_to 'Month Calendar',post_month_calendar_path
 
 
    
