@@ -29,7 +29,7 @@
         - if  @member.paid_thru.present?
           - dr = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i
         - else
-          - dr = "&nbsp;"
+          - dr = "&nbsp;".html_safe
         
         = show_row("Days Remaining:", dr)
         = show_row("Last status:",@member.last_status)

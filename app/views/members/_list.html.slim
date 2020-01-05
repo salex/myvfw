@@ -9,7 +9,7 @@
           dd{id="member_#{idx}_dd" class="hidden"}
             .show-table
               table
-                = show_table_row('Show',link_to(member.full_name,member))
+                = show_table_row('Show',link_to(member.full_name,member,class:'w3-text-blue w3-hover-green'))
                 = show_table_row('VfwID',member.vfw_id)
                 / = show_table_row('First name',member.first_name)
                 / = show_table_row('Mi',member.mi)

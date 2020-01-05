@@ -75,8 +75,8 @@ class Ical
   end
 
   def add_occurrence(e,o,cal)
-    e.summary = e.summary.force_encoding("UTF-8", invalid: :replace, undef: :replace, replace: '')
-    e.description = e.description.force_encoding("UTF-8", invalid: :replace, undef: :replace, replace: '') if e.description.present?
+    e.summary = e.summary.force_encoding("UTF-8")
+    e.description = e.description.force_encoding("UTF-8") if e.description.present?
     dt = o.start_time.localtime.to_date
     occ = {start_time:o.start_time.localtime,
       end_time:o.end_time.localtime,
