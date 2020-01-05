@@ -1,10 +1,11 @@
-.w3-container
+.w3-container(data-controller="dropdown")
   - map_count_to_columns(@members.count,4).each do |column|
     .s12.m3.w3-col
       - column.each do |idx|
         dl.index-list
           - member = @members[idx]
-          dt{id="member_#{idx}" class="hidden-toggle"} = link_to(member.full_name,"#member_#{idx}",class:"w3-text-blue w3-hover-green")
+          dt{id="member_#{idx}"} 
+            span.w3-text-blue.w3-hover-green{id="#member_#{idx}" data-target="dropdown.name" data-action="click->dropdown#showme"}= member.full_name
           dd{id="member_#{idx}_dd" class="hidden"}
             .show-table
               table

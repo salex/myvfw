@@ -2,7 +2,7 @@
 p Markups is what allows you to customize home pages and add options such as articles, links, news, calendars and other stuff. There are a number of markup types that define where they are used [greeting home articles news links kiosk minutes alert warning success info slim]
 ul 
   li Greeting, Home and alerts [alert warning success and info] are displayed on the home page
-  li Most of the other type are displayed on their own page e.g., links articles, news. There are a few other that have special purposes, like storing information to generate a map to the location, or displaying a post calendar.
+  li Most of the other type are displayed on their own page e.g., links articles, news. There are a few other that have special purposes, like storing information to generate a map to the location.
   li Visit post8600 and look at markup
 
 p Markups are just Text content written in a language called `markdown`. In its simplest form, it allows you to write Paragraphs, Headings and Lists. For instance writing this in a text box:
@@ -23,7 +23,7 @@ p Markups are just Text content written in a language called `markdown`. In its 
         1. one
         1. two
         1. three
-
+  .w3-col.s6
     p Produces
     markdown:
       ### Heading
@@ -39,25 +39,13 @@ p Markups are just Text content written in a language called `markdown`. In its 
       1. two
       1. three
 
-  .w3-col.s6
-
-    <h5 id="additional-resources">Additional Resources<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#additional-resources" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: 1; font-family: anchorjs-icons; padding-left: 0.375em;"></a></h5>
-    <ul>
-      <li><a href="https://daringfireball.net/projects/markdown/">John Gruber’s Markdown documentation</a>. The original guide written by the creator of Markdown.</li>
-      <li><a href="https://www.markdowntutorial.com/">Markdown Tutorial</a>. An open source website that allows you to try Markdown in your web browser.</li>
-      <li><a href="https://github.com/mundimark/awesome-markdown">Awesome Markdown</a>. A list of Markdown tools and learning resources.</li>
-      <li><a href="https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1">Typesetting Markdown</a>. A multi-part series that describes an ecosystem for typesetting Markdown documents using <a href="https://pandoc.org/">pandoc</a> and <a href="https://www.contextgarden.net/">ConTeXt</a>.</li>
-    </ul>
-    ul
-      li = link_to "Slim Template", 'http://slim-lang.com'
-      li = link_to "W3.css", 'https://www.w3schools.com/w3css/'
 
 p In addition to just using markdown
 ul
   li You can write in HTML if you know HTML
   li Even if you don't know html, you can copy html from a page source and paste it into a text field. That's mainly what I did for the map and radar
   li You can use a template engine call Slim which is a short form of HTML that use indentation instead of tags.
-  li Both HTML and Slim allow you use styles and/or CSS. This site uses W3.css to style pages. While css is may seem complicated, writing something like:
+  li Both HTML and Slim allow you use styles and/or CSS. This site uses W3.css to style pages. While css may seem complicated, writing something like:
   ul
     li 
       pre
@@ -69,6 +57,19 @@ ul
 p produces
 .slim
 p.w3-text-red This is a paragraph colored RED
+
+
+
+<h5 id="additional-resources">Additional Resources<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#additional-resources" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: 1; font-family: anchorjs-icons; padding-left: 0.375em;"></a></h5>
+<ul class="markdown">
+  <li><a href="https://daringfireball.net/projects/markdown/">John Gruber’s Markdown documentation</a>. The original guide written by the creator of Markdown.</li>
+  <li><a href="https://www.markdowntutorial.com/">Markdown Tutorial</a>. An open source website that allows you to try Markdown in your web browser.</li>
+  <li><a href="https://github.com/mundimark/awesome-markdown">Awesome Markdown</a>. A list of Markdown tools and learning resources.</li>
+  <li><a href="https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1">Typesetting Markdown</a>. A multi-part series that describes an ecosystem for typesetting Markdown documents using <a href="https://pandoc.org/">pandoc</a> and <a href="https://www.contextgarden.net/">ConTeXt</a>.</li>
+  </ul>
+  ul.markdown
+    li = link_to "Slim Template", 'http://slim-lang.com'
+    li = link_to "W3.css", 'https://www.w3schools.com/w3css/'
 
 
 

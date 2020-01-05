@@ -6,13 +6,14 @@
 // <div data-controller="hello">
 //   <h1 data-target="hello.output"></h1>
 // </div>
-
+// hello_controller.js
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "output" ]
+  static targets = [ "name", "output" ]
 
-  connect() {
-    this.outputTarget.textContent = 'Hello, My Stimulus! I do not understand it yet, but wow!'
+  greet() {
+    this.outputTarget.textContent =
+      `Hello, ${this.nameTarget.value}!`
   }
 }

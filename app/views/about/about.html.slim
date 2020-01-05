@@ -1,10 +1,10 @@
 .w3-container.w3-white.min-height
   .w3-row-padding
-    .s12.m9.w3-col.markdown
+    .s12.m9.w3-col
       h4.strong.text-center.maltly Welcome to MyVFW.us
       #about_content
-        p This is a prototype Demo of a service that <u>could</u> be implemented at the Department level to give Post tools to help manage their operations and reporting. Knowing the acceptance of web based services by many posts (think All American Dashboard!), it would most likely be optional.
-        p Click the About Information links on the right to find out about this Demo
+        p This is a prototype Demo of a service that <u>could</u> be implemented at the Department level to give Posts tools to help manage their operations and reporting. Knowing the acceptance of web based services by many posts (think All American Dashboard!), it would most likely be optional.
+        p Click the About Information links on the right to find out about this Demo.
         ul
           li Why? gives a little background on where this came from
           li Structure describes what data is available and a little preview of the other areas
@@ -13,6 +13,8 @@
           li Officer describes how you can manage current and past officers
           li Markup describes how you can customize your web site
           li Reports provide a method to manage community service and other type of reports
+        button.w3-button.w3-border.strong{style="color:white!important;background-color:#991A1E;"}
+          = link_to 'Vist VFW Post 8600 for a preview if you a tired of reading', 'http://myvfw.us/post8600'
 
     = render partial:'about/sidebar'
   

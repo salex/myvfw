@@ -1,5 +1,5 @@
 class TrusteeAuditsController < ApplicationController
-  before_action :require_admin, only: [:new,:create,:edit,:update,:destroy,:get_audit]
+  before_action :require_admin, except: :pdf
   before_action :require_post
 
   # before_action :set_audit, only: [:show, :edit, :update, :destroy]
@@ -7,7 +7,11 @@ class TrusteeAuditsController < ApplicationController
 
 
   def index
-    @audits = policy_scope(TrusteeAudit).order(:key).reverse_order
+    if Current.post_user
+      @audits = policy_scope(TrusteeAudit).order(:key).reverse_order
+    else
+      cant_do_that
+    end
 
   end
 
