@@ -18,13 +18,9 @@
       - if @events[date]
         dl
           - @events[date].each do |event|
-            - cnt += 1
-            dt style="font-size:0.8em"
-              - tip = "#{event[:summary]} - #{event[:start_time].strftime('%H:%M')} until #{event[:end_time].strftime('%H:%M')}\n#{event[:desc]}"
-              / data-tooltip="true" aria-haspopup="true"
-              span.has-tip  title="#{tip}" id="cnt_#{cnt}" style="color:#{event[:color]};"
-                = event[:summary]
-
+            - tip = "#{event[:start_time].strftime('%H:%M')} until #{event[:end_time].strftime('%H:%M')}\n#{event[:desc]}"
+            .box{style="color:#{event[:color]};font-size:13px;" title="#{tip}"} = event[:summary]
+  
   p.link-box
     strong Calendars: 
 

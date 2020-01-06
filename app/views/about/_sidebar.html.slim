@@ -1,3 +1,4 @@
+
 .s12.m2.w3-cell.w3-mobile
   .w3-large.strong About Information
   .w3-card-2.w3-bar-block
@@ -10,13 +11,3 @@
     .w3-bar-item = link_to "Officers", about_officers_path,class:'w3-btn lite-goldey w100', remote:true 
     .w3-bar-item = link_to "Reports",about_reports_path,class:'w3-btn lite-goldey w100', remote:true 
     .w3-bar-item = link_to "Markups", about_markups_path,class:'w3-btn lite-goldey w100', remote:true
-  / - if Current.user.present? && Current.user.is_admin?
-  /   .w3-large.strong Admin Links
-  /   .w3-card-2.w3-bar-block
-  /     .w3-bar-item = link_to "Members",members_path,class:'w3-btn lite-goldey w100'
-  /     .w3-bar-item = link_to "Officers",officers_path,class:'w3-btn lite-goldey w100' 
-  /     .w3-bar-item = link_to "Markups",markups_path,class:'w3-btn lite-goldey w100' 
-  /     .w3-bar-item = link_to "Reports",reports_path,class:'w3-btn lite-goldey w100' 
-  /     .w3-bar-item = link_to "Users",users_path,class:'w3-btn lite-goldey w100' 
-
-
