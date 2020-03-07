@@ -1,0 +1,18 @@
+.w3-row
+  p Test two, move element using Rails.ujs
+  / This is a hidden form, payload may be usefull in other applications
+  = form_with( url:'/test/fire',method: :patch, html: {data: { type: "html", action: "ajax:success->testTwo#onPostSuccess",target:'testTwo.form' } },class:'w3-hide') do |form|
+    = form.text_area :payload, data: { target: "testTwo.payload" }
+
+  .w3-col.s6
+    p Left list (Cleared)
+    ul
+      - session[:test_list].each do |k,v|
+        - if v == 'c'
+          li[data-action="click->testTwo#unclear" data-id="#{k}"] = "#{k} item is #{v}"
+  .w3-col.s6
+    p Right list (Uncleared)
+    ul
+      - session[:test_list].each do |k,v|
+        - if v == 'n'
+         li[data-action="click->testTwo#clear" data-id="#{k}"] = "#{k} item is #{v}"

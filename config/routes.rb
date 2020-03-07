@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'test/test'
+  patch 'test/fire'
+  patch 'test/clear'
+  patch 'test/unclear'
+  get 'test/link'
+  post 'test/link'
+
   # get 'trustee_audits/index'
   # get 'trustee_audits/show'
   # get 'trustee_audits/new'

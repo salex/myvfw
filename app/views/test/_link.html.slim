@@ -1,0 +1,14 @@
+.w3-row
+  p Test thee, move elements using link_to data-remote.
+  .w3-col.s6
+    p Left list (Cleared)
+    ul
+      - session[:test_list].each do |k,v|
+        - if v == 'c'
+          li = link_to("#{k} item is #{v}","/test/link?payload=n|#{k}",data:{remote:true})
+  .w3-col.s6
+    p Right list (Uncleared)
+    ul
+      - session[:test_list].each do |k,v|
+        - if v == 'n'
+          li = link_to("#{k} item is #{v}","/test/link?payload=c|#{k}",data:{remote:true})
