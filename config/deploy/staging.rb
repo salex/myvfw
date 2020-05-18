@@ -7,9 +7,9 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server "debian.local", user: "salex", roles: %w{app db web}
+server "staging.local", user: "developer", roles: %w{app db web}
 
-set :user,            'salex'
+set :user,            'developer'
 
 # role-based syntax
 # ==================
