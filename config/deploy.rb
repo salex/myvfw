@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.13.0"
+lock "~> 3.14.0"
 
 set :application, "myvfw"
 set :repo_url, "developer@stevealex.us:/Users/developer/repo/#{fetch(:application)}.git"
