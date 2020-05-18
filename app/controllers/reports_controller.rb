@@ -1,6 +1,6 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
-  before_action :require_login, except: [:index,:show,:search,:logout,:list,:summary,:audit_summary,:print,:community_service, :trustee_audit_pdf]
+  before_action :require_login #, except: [:index,:show,:search,:logout,:list,:summary,:audit_summary,:print,:community_service, :trustee_audit_pdf]
 
   # before_action :require_trustee
 

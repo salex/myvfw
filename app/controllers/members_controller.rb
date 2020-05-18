@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
-  before_action :require_login, except: [:index,:show,:search,:logout]
+  before_action :require_login, except: [:index,:search,:logout]
   before_action :require_admin, only: [:new,:create,:edit,:update,:destroy,:import,:import_form]
 
 

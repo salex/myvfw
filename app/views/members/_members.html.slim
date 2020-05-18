@@ -1,10 +1,12 @@
 table.w3-table-all
   tr
     th Full Name
-    th Vfw ID
+    - if Current.user
+      th Vfw ID
     th Age
     th UD
-    th Contact
+    - if Current.user
+      th Contact
     th City
     th Pay Status
     th Paid Thru
@@ -14,12 +16,16 @@ table.w3-table-all
   - members.each do |member|
     tr class="#{member.undeliverable == 'Yes' ? 'undeliverable' : ''}"
       td 
-        = link_to member.full_name,member_path(member),class:'w3-text-blue w3-hover-text-green'
-
-      td = member.vfw_id
+        - if Current.user
+          = link_to member.full_name,member_path(member),class:'w3-text-blue w3-hover-text-green'
+        - else
+        = member.full_name
+      - if Current.user
+        td = member.vfw_id 
       td = member.age
       td = member.undeliverable
-      td.markdown = display_contact(member)
+      -  if Current.user
+        td.markdown = display_contact(member)
       / member.email.present? ? ((member.phone ||= '') + mail_to(member.email,'E')).html_safe : member.phone
       td = member.state != 'AL' ? "#{member.city}/#{member.state}" : member.city
       td = params[:limit].present? && params[:limit] == 'Missing' ? "Last-#{member.last_status}" : member.pay_status

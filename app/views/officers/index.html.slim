@@ -14,7 +14,8 @@
       th From date
       th To date
       th Current
-      th Actions
+      - if Current.user
+        th Actions
 
     - @officers.each do |officer|
       tr
@@ -23,8 +24,10 @@
         td = officer.from_date
         td = officer.to_date
         td = officer.current
-        td.action-bar 
-          = link_to 'Show', officer
-          = link_to 'Edit', edit_officer_path(officer)
-          = link_to 'Destroy', officer, data: { confirm: 'Are you sure?' }, :method => :delete
+        - if Current.user
+
+          td.action-bar 
+            = link_to 'Show', officer
+            = link_to 'Edit', edit_officer_path(officer)
+            = link_to 'Destroy', officer, data: { confirm: 'Are you sure?' }, :method => :delete
 

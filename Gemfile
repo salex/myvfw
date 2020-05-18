@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.3'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.0'
+gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use Puma as the app server
 gem "puma", ">= 4.3.3"
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5'
+gem 'sass-rails', '~> 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -72,7 +72,7 @@ gem 'slim-rails'
 gem 'simple_form'
 gem 'prawn'
 gem 'prawn-table'
-gem 'font-awesome-sass', '~> 5.11.2'
+gem 'font-awesome-sass', '~> 5.12.0'
 gem 'pundit'
 gem 'chronic'
 gem 'smarter_csv', require: false

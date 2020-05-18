@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
 
 
   before_action :current_user
-  # before_action :current_post
+  #below will hard wire to only use post 8600
+  before_action :current_post
   def cant_do_that
     puts "cant_do_that"
     redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that."
@@ -52,8 +53,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def current_post
-    @current_post ||= Post.find_by(id:session[:post_id]) if session[:post_id]
+    @current_post ||= Post.find_by(numb:8600)  #if session[:post_id]
     Current.post =@current_post
+    puts "JOOOOOOOOOOOO"
     @current_post
   end
   helper_method :current_post

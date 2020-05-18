@@ -7,10 +7,10 @@
           = link_to "Contacts", contacts_members_path,class:'w3-bar-item w3-button'
         = link_to "NewApplicant", new_applicant_members_path,class:'w3-bar-item w3-button'
 
-      =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')
-
-    .s4.w3-col.w3-padding[data-controller="membersSearch"]
-      = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
+      =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')  if Current.user
+    - if Current.user
+      .s4.w3-col.w3-padding[data-controller="membersSearch"]
+        = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
 
 
   - if @members.blank?
@@ -70,4 +70,4 @@
     = render partial:'members/list'
   - else
     .s12.w3-col#search
-    == render partial:'members/members', locals:{members:@members}
+      == render partial:'members/members', locals:{members:@members}

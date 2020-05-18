@@ -1,6 +1,8 @@
 class MarkupsController < ApplicationController
   before_action :set_markup, only: [:show, :edit, :update, :destroy, :display, :print, :plain]
   before_action :require_admin, only: [:new,:create,:edit,:update,:destroy]
+  before_action :require_login, except: [:show,:display]
+
 
   # GET /markups
   # GET /markups.json
