@@ -1,2697 +1,230 @@
 ---
 - type_report: Programs
-  date: 2015-10-09
-  details: Talked to vol fire dept about VFW Programs
-  area: Community Service Scrapbook
-  remarks: ''
+  date: 2019-12-09
+  details: Submitted application for roadblock to GPD.
+  area: Buddy Poppies
+  remarks: 'Volunteer: Danny Thornton '
   volunteers: 1
   hours_each: 2.0
-  miles_each: 35.0
-  expenses: 0.0
+  miles_each: 24.0
+  expenses: 
   total_hours: 2.0
-  total_miles: 35.0
-  updated_by: dlapoint
-- type_report: National Military Service
-  date: 2015-10-10
-  details: Missing
-  area: Finacial Assistance to Vet
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 15.0
-  updated_by: dlapoint
-- type_report: National Military Service
-  date: 2015-10-13
-  details: Missing
-  area: Finacial Assistance to Vet
-  remarks: ''
-  volunteers: 3
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 40.0
-  total_hours: 3.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2015-11-05
-  details: 2 days
-  area: VOD/PP
-  remarks: ''
-  volunteers: 4
-  hours_each: 10.0
-  miles_each: 20.0
-  expenses: 0.0
-  total_hours: 40.0
-  total_miles: 80.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2015-11-06
-  details: Missing
-  area: Schools, Churches
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.5
-  miles_each: 30.0
-  expenses: 0.0
-  total_hours: 1.5
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2015-11-07
-  details: Missing
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 12
-  hours_each: 6.0
-  miles_each: 10.0
-  expenses: 650.0
-  total_hours: 72.0
-  total_miles: 120.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-01-25
-  details: Missing
-  area: Aid to Others
-  remarks: ''
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 25.0
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-02-18
-  details: Missing
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 
-  expenses: 1613.0
-  total_hours: 3.0
-  total_miles: 
-  updated_by: dlapoint
-- type_report: Hospital
-  date: 2016-02-22
-  details: Missing
-  area: Hospital Report
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 20.0
-  expenses: 0.0
-  total_hours: 3.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Hospital
-  date: 2016-02-23
-  details: Missing
-  area: Hospital Report
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.5
-  miles_each: 20.0
-  expenses: 0.0
-  total_hours: 1.5
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-02-26
-  details: Missing
-  area: Teacher
-  remarks: ''
-  volunteers: 1
-  hours_each: 6.0
-  miles_each: 40.0
-  expenses: 0.0
-  total_hours: 6.0
-  total_miles: 40.0
-  updated_by: dlapoint
-- type_report: Membership
-  date: 2016-03-04
-  details: Dave, Steve, Ed
-  area: Membership Drive
-  remarks: ''
-  volunteers: 3
-  hours_each: 2.0
-  miles_each: 
-  expenses: 0.0
-  total_hours: 6.0
-  total_miles: 45.0
-  updated_by: salex
-- type_report: Programs
-  date: 2016-03-04
-  details: Missing
-  area: Teacher
-  remarks: ''
-  volunteers: 3
-  hours_each: 
-  miles_each: 
-  expenses: 200.0
-  total_hours: 6.0
-  total_miles: 135.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-03-12
-  details: Donated hall and volunteers to assist benefit.
-  area: Cooperation
-  remarks: ''
-  volunteers: 6
-  hours_each: 10.0
-  miles_each: 10.0
-  expenses: 500.0
-  total_hours: 60.0
-  total_miles: 60.0
-  updated_by: dlapoint
-- type_report: National Military Service
-  date: 2016-03-14
-  details: Missing
-  area: Finacial Assistance to Vet
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 25.0
-  total_hours: 4.0
-  total_miles: 20.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2016-04-20
-  details: Work at Way of the Cross soup kitchen from June 2015 to May 2016/ 12 miles
-    round trip, 5.5 hour each day
-  area: Cooperation
-  remarks: ''
-  volunteers: 32
-  hours_each: 5.5
-  miles_each: 12.0
-  expenses: 120.0
-  total_hours: 176.0
-  total_miles: 384.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-04-22
-  details: Johnny, Dave, Margret
-  area: Teacher
-  remarks: ''
-  volunteers: 2
-  hours_each: 1.5
-  miles_each: 10.0
-  expenses: 275.0
-  total_hours: 3.0
-  total_miles: 20.0
-  updated_by: salex
-- type_report: Programs
-  date: 2016-04-25
-  details: Missing
-  area: VOD/PP
-  remarks: ''
-  volunteers: 3
-  hours_each: 2.0
-  miles_each: 
-  expenses: 425.0
-  total_hours: 6.0
-  total_miles: 45.0
-  updated_by: salex
-- type_report: Service Officer
-  date: 2016-05-03
-  details: Missing
-  area: Monthly Report
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 0.0
-  updated_by: salex
-- type_report: Programs
-  date: 2016-05-14
-  details: Missing
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 4
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 18.0
-  total_miles: 52.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-05-16
-  details: Plaques, Certificates, Frames, VOD Dog Tag, VOD Lapel Pen, VOD Medal
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 3.0
-  miles_each: 35.0
-  expenses: 384.75
-  total_hours: 6.0
-  total_miles: 70.0
-  updated_by: jholmes
-- type_report: Programs
-  date: 2016-05-20
-  details: Missing
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 6
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 36.0
-  total_miles: 65.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-05-21
-  details: Missing
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 9
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 45.0
-  total_miles: 70.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-05-25
-  details: Steve Alex volunteer at soup kitchen
-  area: Cooperation
-  remarks: ''
-  volunteers: 3
-  hours_each: 5.5
-  miles_each: 12.0
-  expenses: 0.0
-  total_hours: 16.5
-  total_miles: 36.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2016-06-29
-  details: Steve Alex volunteer at soup kitchen
-  area: Cooperation
-  remarks: ''
-  volunteers: 2
-  hours_each: 5.5
-  miles_each: 12.0
-  expenses: 0.0
-  total_hours: 11.0
   total_miles: 24.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2016-07-18
-  details: Take Ray to grocery store and home
-  area: Aid to Others
-  remarks: ''
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 30.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2016-07-27
-  details: Steve Alex volunteer at soup kitchen
-  area: Cooperation
-  remarks: ''
-  volunteers: 3
-  hours_each: 5.5
-  miles_each: 12.0
-  expenses: 0.0
-  total_hours: 16.5
-  total_miles: 36.0
-  updated_by: salex
-- type_report: Membership
-  date: 2016-08-05
-  details: Danny Frazier (or dance DJ) performed at First Friday to advertise the
-    Post events and membership literature handed out at event.
-  area: Membership Drive
-  remarks: ''
-  volunteers: 6
-  hours_each: 4.0
-  miles_each: 2.0
-  expenses: 25.0
-  total_hours: 24.0
-  total_miles: 12.0
-  updated_by: salex
-- type_report: Legislative
-  date: 2016-08-15
-  details: H.R.2577 and S. 2806 both passed with a non-veto majority.
-  area: National Activities
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 0.0
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: jholmes
-- type_report: Community Service
-  date: 2016-08-17
-  details: make sure we get credit for 7 pints of blood
-  area: Involvment
-  remarks: ''
-  volunteers: 3
-  hours_each: 
-  miles_each: 
-  expenses: 25.0
-  total_hours: 15.0
-  total_miles: 45.0
-  updated_by: dlapoint
+  updated_by: danny
 - type_report: Programs
-  date: 2016-08-18
-  details: Missing
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 35.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-08-20
-  details: Missing
-  area: Aid to Others
-  remarks: ''
-  volunteers: 8
-  hours_each: 
-  miles_each: 
-  expenses: 650.0
-  total_hours: 35.0
-  total_miles: 68.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-08-22
-  details: All Kindergarten and 1st Grade students were provided these items. The
-    School principal accepted the application for  Teacher Nomination.
-  area: Youth Activities
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 27.5
-  expenses: 74.0
-  total_hours: 4.0
-  total_miles: 55.0
-  updated_by: jholmes
-- type_report: Programs
-  date: 2016-08-24
-  details: Missing
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 4.0
-  total_miles: 52.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-08-25
-  details: principal out sick,will have to return at a later date.
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 1.5
-  total_miles: 55.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-09-05
-  details: Missing
-  area: Aid to Others
-  remarks: ''
-  volunteers: 3
-  hours_each: 
-  miles_each: 
-  expenses: 25.0
-  total_hours: 1.5
-  total_miles: 35.0
-  updated_by: dlapoint
-- type_report: Legislative
-  date: 2016-09-12
-  details: Congressman Aderholt Responded favorably to my request.
-  area: National Activities
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 0.0
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: jholmes
-- type_report: Community Service
-  date: 2016-09-13
-  details: Missing
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 10.0
-  updated_by: salex
-- type_report: Programs
-  date: 2016-09-20
-  details: Missing
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 55.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-09-21
-  details: Steve Alex volunteer work at soup kitchen Aug and Sept
-  area: Cooperation
-  remarks: ''
-  volunteers: 6
-  hours_each: 4.0
-  miles_each: 10.0
-  expenses: 0.0
-  total_hours: 24.0
-  total_miles: 60.0
-  updated_by: salex
-- type_report: Service Officer
-  date: 2016-10-01
-  details: Answer questions from wife of vet who passed away.
-  area: Monthly Report
-  remarks: Wanted to know if post did Military Honors for funeral for her husband.Explained
-    that we did not. Told her to check for benefits from the V.A. and gave her the
-    number for the U.S.Army for military honors.
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-12-30
-  details: "Steve Alex Volunteer at Way of the Cross Soup Kitchen from October to
-    December 2016\r\n"
-  area: Cooperation
-  remarks: ''
-  volunteers: 7
-  hours_each: 5.5
-  miles_each: 10.0
-  expenses: 
-  total_hours: 38.5
-  total_miles: 70.0
-  updated_by: salex
-- type_report: Service Officer
-  date: 2016-10-27
-  details: Son of vet needed info on military Honors for father.
-  area: Monthly Report
-  remarks: Father passed away 5 yrs. ago,mother did funeral with no honors,son not
-    happy. Talked with V.A. rep.,and Marine Corp League. Explained to him that he
-    needed a copy of fathers DD-214 and copy of death certificate before anything
-    could be done for him.
-  volunteers: 1
-  hours_each: 1.5
-  miles_each: 
-  expenses: 0.0
-  total_hours: 1.5
-  total_miles: 0.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-10-26
-  details: vet in need
-  area: Involvment
-  remarks: Picked up vet at his home,drove him to store to purchase food,returned
-    him home.
-  volunteers: 1
-  hours_each: 2.5
-  miles_each: 35.0
-  expenses: 
-  total_hours: 2.5
-  total_miles: 35.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-10-11
-  details: Eagle Scout project
-  area: Involvment
-  remarks: Help scout with a donation for his eagle scout project of building a new
-    foot bridge in a park.
-  volunteers: 10
-  hours_each: 10.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 100.0
-  total_miles: 100.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-10-11
-  details: made donation to scout for his eagle scout project
-  area: Involvment
-  remarks: ''
-  volunteers: 10
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 10.0
-  total_miles: 100.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-11-09
-  details: judging PP at post
-  area: VOD/PP
-  remarks: ''
-  volunteers: 6
-  hours_each: 6.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 36.0
-  total_miles: 60.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-11-10
-  details: buddy poppys drive
+  date: 2019-12-10
+  details: Picked up approved roadblock application from GPD.
   area: Buddy Poppies
-  remarks: ''
-  volunteers: 8
-  hours_each: 8.0
-  miles_each: 10.0
-  expenses: 0.0
-  total_hours: 64.0
-  total_miles: 80.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-11-14
-  details: vet in need
-  area: Involvment
-  remarks: pay electric bill
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2016-11-10
-  details: judging VOD at post
-  area: VOD/PP
-  remarks: ''
-  volunteers: 8
-  hours_each: 8.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 64.0
-  total_miles: 80.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-12-10
-  details: District judging VOD,PP
-  area: Involvment
-  remarks: District judging at Ft.Payne,Dave,Johnny,Will
-  volunteers: 3
-  hours_each: 7.0
-  miles_each: 
-  expenses: 
-  total_hours: 21.0
-  total_miles: 123.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-12-14
-  details: Help John S.Jones  School sent care packages to troops in Afghanistan.
-  area: Involvment
-  remarks: ''
-  volunteers: 10
-  hours_each: 10.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 100.0
-  total_miles: 100.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2016-12-23
-  details: Help vet in need.
-  area: Involvment
-  remarks: son passed away,spent savings on funeral leaving nothing for Christmas
-    gifts for other children.
-  volunteers: 5
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 5.0
-  total_miles: 50.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-21
-  details: present programs to the Etowah County Volunteer firefighters assoc. for
-    EMT,and firefighter at Altoona fire dept.
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 45.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 45.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-21
-  details: present programs to Etowah County Sheriff's Dept. for LEO.
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 12.0
-  updated_by: dlapoint
-- type_report: National Military Service
-  date: 2016-12-28
-  details: Received call from Rainbow City VA Doctor Gale Brown about a Vet who was
-    in need of food. Called the Vet,Garold Sewell, and asked him what he needed and
-    delivered food to his home.
-  area: Finacial Assistance to Vet
-  remarks: Danielle/Steve. Delivered food on 12/29/2017
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 
-  expenses: 50.0
-  total_hours: 4.0
-  total_miles: 10.0
-  updated_by: jholmes
-- type_report: Community Service
-  date: 2016-12-15
-  details: Help Walnut Park School with the purchase of Christmas presents for children
-    in need.
-  area: Involvment
-  remarks: ''
-  volunteers: 12
-  hours_each: 10.0
-  miles_each: 10.0
-  expenses: 750.0
-  total_hours: 120.0
-  total_miles: 120.0
-  updated_by: jholmes
-- type_report: Community Service
-  date: 2017-01-11
-  details: vet in need of ride to store
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-03-06
-  details: vet in need of ride to Anniston,Al. to catch train back to Mississippi.
-  area: Aid to Others
-  remarks: "had to take him back to church to pick-up his ID,than go pick up his luggage
-    at another address,back to church to get his glasses,back to post and than Anniston.\r\n\r\n"
-  volunteers: 1
-  hours_each: 3.5
-  miles_each: 89.4
-  expenses: 
-  total_hours: 3.5
-  total_miles: 89.4
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-03-14
-  details: flag presentation ceremony Gaston School
-  area: Involvment
-  remarks: flag,staff,base
-  volunteers: 4
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 60.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-03-29
-  details: Steve Alex Volunteer at Way of the Cross soup kitchen from January through
-    March 2017
-  area: Cooperation
-  remarks: ''
-  volunteers: 8
-  hours_each: 3.0
-  miles_each: 19.0
-  expenses: 32.0
-  total_hours: 24.0
-  total_miles: 152.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2017-03-17
-  details: Transported Disabled Vet (David Billingsley) to VA appointment in Birmingham
-    and bought his lunch.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 6.0
-  miles_each: 144.0
-  expenses: 26.0
-  total_hours: 6.0
-  total_miles: 144.0
-  updated_by: jholmes
-- type_report: Community Service
-  date: 2017-05-02
-  details: Litchfield elm. school patriot's pen awards
-  area: Education
-  remarks: ''
-  volunteers: 3
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 45.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-05-02
-  details: "Emma Samson elm.school\r\nPatriot's pen awards"
-  area: Education
-  remarks: ''
-  volunteers: 3
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 375.0
-  total_hours: 3.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-05-29
-  details: Piedmont high school vod awards 1st and 2nd place winners
-  area: Education
-  remarks: ''
-  volunteers: 3
-  hours_each: 1.0
-  miles_each: 110.0
-  expenses: 543.0
-  total_hours: 3.0
-  total_miles: 330.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-06-15
-  details: Gadsden police dept. gold medal award 1st place winner
-  area: Gold Metal
-  remarks: ''
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 225.0
-  total_hours: 2.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-06-27
-  details: Etowah county sheriff's dept. gold medal 2nd place winner
-  area: Gold Metal
-  remarks: ''
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 15.0
-  expenses: 175.0
-  total_hours: 2.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-08-30
-  details: Piedmont high school,donation of 30 class room flags.
-  area: Involvment
-  remarks: ''
-  volunteers: 3
-  hours_each: 3.0
-  miles_each: 110.0
-  expenses: 278.0
-  total_hours: 9.0
-  total_miles: 330.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-09-05
-  details: vfw dept. of al. donation to texas relief fund
-  area: Aid to Others
-  remarks: ''
-  volunteers: 8
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 100.0
-  total_hours: 8.0
-  total_miles: 80.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-09-12
-  details: vfw national,donation to emergency relief fund
-  area: Aid to Others
-  remarks: ''
-  volunteers: 10
-  hours_each: 1.0
-  miles_each: 10.0
-  expenses: 100.0
-  total_hours: 10.0
-  total_miles: 100.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-08-31
-  details: "Steve Alex Volunteer at Way of the Cross soup kitchen from May through
-    August 2017\r\n"
-  area: Cooperation
-  remarks: ''
-  volunteers: 4
-  hours_each: 4.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 16.0
-  total_miles: 48.0
-  updated_by: salex
-- type_report: Programs
-  date: 2017-05-20
-  details: Buddy Poppy Drive - Road block on Rainbow Drive
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 9
-  hours_each: 5.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 45.0
-  total_miles: 90.0
-  updated_by: salex
-- type_report: Programs
-  date: 2017-05-27
-  details: Buddy Poppy Drive - Roadblock Highway 77
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 10
-  hours_each: 5.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 50.0
-  total_miles: 100.0
-  updated_by: salex
-- type_report: Programs
-  date: 2017-09-19
-  details: present program for EMT to the Etowah County Rescue Squad.
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 15.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-20
-  details: present programs to Emma Samson middle School,Pat's pen and teacher
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 21.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 21.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-20
-  details: present programs to Litchfield Middle School,Pat's pen and teacher
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 16.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-20
-  details: present programs to Southside High School for VOD and teacher
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 25.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 25.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-09-20
-  details: present programs to Gaston school for Pat's pen,vod and teacher
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-10-21
-  details: Vet in need,transported to store to purchase food,etc.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 2
-  hours_each: 3.0
-  miles_each: 58.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 116.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-10-24
-  details: take vet to VA office in Gadsden,look for housing.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 4.0
-  miles_each: 
-  expenses: 
-  total_hours: 4.0
-  total_miles: 72.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-10-26
-  details: phone work,making calls trying to locate housing for vet in need.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 
-  expenses: 
-  total_hours: 3.0
-  total_miles: 10.0
-  updated_by: dlapoint
-- type_report: Membership
-  date: 2017-10-28
-  details: membership drive,tractor supply
-  area: Membership Drive
-  remarks: ''
-  volunteers: 2
-  hours_each: 4.0
-  miles_each: 14.0
-  expenses: 
-  total_hours: 8.0
-  total_miles: 28.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-11-04
-  details: buddy poppy drive,roadblock
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 8
-  hours_each: 4.0
-  miles_each: 14.0
-  expenses: 100.0
-  total_hours: 32.0
-  total_miles: 112.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-11-07
-  details: vet family in need,purchase food
-  area: Aid to Others
-  remarks: ''
-  volunteers: 4
-  hours_each: 1.0
-  miles_each: 13.0
-  expenses: 100.0
-  total_hours: 4.0
-  total_miles: 52.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-11-07
-  details: post judging pat's pen
-  area: VOD/PP
-  remarks: ''
-  volunteers: 9
-  hours_each: 5.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 45.0
-  total_miles: 108.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-11-07
-  details: post judging teacher
-  area: Teacher
-  remarks: ''
-  volunteers: 8
-  hours_each: 6.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 48.0
-  total_miles: 96.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-11-08
-  details: post judging,VOD
-  area: VOD/PP
-  remarks: ''
-  volunteers: 8
-  hours_each: 6.0
-  miles_each: 13.0
-  expenses: 
-  total_hours: 48.0
-  total_miles: 104.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-11-11
-  details: Buddy Poppy drive,all three Johnson stores
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 10
-  hours_each: 4.0
-  miles_each: 11.0
-  expenses: 
-  total_hours: 40.0
-  total_miles: 110.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-12-07
-  details: District judging VOD at Exchange Bank,Gadsden
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 18.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 36.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-12-07
-  details: District judging,teacher at Exchange Bank,Gadsden
-  area: Teacher
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 18.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 36.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-12-09
-  details: District judging,tally winners to send to Dept. for pat's pen,vod,teacher
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 5.0
-  miles_each: 18.0
-  expenses: 
-  total_hours: 10.0
-  total_miles: 36.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-12-12
-  details: Help family in need for Christmas gifts for children.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 11
-  hours_each: 1.0
-  miles_each: 11.0
-  expenses: 300.0
-  total_hours: 11.0
-  total_miles: 121.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-12-15
-  details: Veterans Christmas party at post 8600 for all veterans. served ham,sweet
-    potatoes,mashed potatoes,green beans,chicken dressing with gravey . entertainment
-    provided by post membership,and Santa for the children. stocking given out to
-    all.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 16
-  hours_each: 10.0
-  miles_each: 31.0
-  expenses: 400.0
-  total_hours: 160.0
-  total_miles: 496.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-12-19
-  details: 'enter reports '
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 
-  expenses: 
-  total_hours: 1.0
-  total_miles: 
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2017-12-08
-  details: District judging pat's pen at post 8600
-  area: VOD/PP
-  remarks: ''
-  volunteers: 3
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2017-12-20
-  details: "Steve Alex Volunteer at Way of the Cross soup kitchen from Sep through
-    Dec 2017\r\n"
-  area: Cooperation
-  remarks: ''
-  volunteers: 6
-  hours_each: 4.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 24.0
-  total_miles: 72.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2017-12-23
-  details: Veteran Robert Holm and family stranded in Gadsden. Paid 3 nights lodging
-  area: Finacial Assistance to Vet
-  remarks: Veteran moving to Gadsden but can't get into to location until Tuesday.
-    Out of money. Paid three nights lodging at motel
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 5.0
-  expenses: 181.43
-  total_hours: 3.0
-  total_miles: 5.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2018-01-22
-  details: Alice Phillips Husband deployed. Car stuck in Aniston. No money.  Bought
-    and installed battery
-  area: Finacial Assistance to Vet
-  remarks: Johnny and Joyce went down and installed battery in her car.
-  volunteers: 4
-  hours_each: 4.0
-  miles_each: 80.0
-  expenses: 129.72
-  total_hours: 16.0
-  total_miles: 320.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-01-04
-  details: vet in need of ride to Dr. appointment
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2018-01-12
-  details: vet in need of ride to Dr. appointment
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 30.0
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2018-01-12
-  details: pick up groceries for vet
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 20.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2018-01-15
-  details: pick up med,s and groceries for vet
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 25.0
-  expenses: 0.0
-  total_hours: 2.0
-  total_miles: 25.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-08
-  details: Piedmont high school,present VOD award to first place winner
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 110.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 220.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-08
-  details: Piedmont high school,present teacher award1st place for H/S
-  area: Teacher
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 110.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 220.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-09
-  details: 'present firefighter award '
-  area: Gold Metal
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 30.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-11
-  details: Buddy Poppy drive Attalla Wal-mart0
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 8
-  hours_each: 3.0
-  miles_each: 10.0
-  expenses: 0.0
-  total_hours: 24.0
-  total_miles: 80.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-12
-  details: Buddy Poppy drive,all three Johnson stores
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 12
-  hours_each: 3.0
-  miles_each: 12.0
-  expenses: 0.0
-  total_hours: 36.0
-  total_miles: 144.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-15
-  details: Pat's pen awards Litchfield middle school. 1st and 2nd place winners
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 18.0
-  expenses: 265.0
-  total_hours: 4.0
-  total_miles: 36.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-16
-  details: Etowah County Sheriff's Department
-  area: Gold Metal
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 18.0
-  expenses: 160.0
-  total_hours: 4.0
-  total_miles: 36.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-19
-  details: Buddy Poppy drive,front of Gadsden Mall
-  area: Buddy Poppies
-  remarks: ''
-  volunteers: 16
-  hours_each: 5.0
-  miles_each: 25.0
-  expenses: 0.0
-  total_hours: 80.0
-  total_miles: 400.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-21
-  details: Southside High School,present 2nd and 3rd place VOD awards
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 22.0
-  expenses: 220.0
-  total_hours: 4.0
-  total_miles: 44.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-22
-  details: "Emma Sansom Middle School,present 3rd place pat's pen award.\r\nAlso presented
-    1st place District award,1st place Department award and mentioned his check from
-    National."
-  area: VOD/PP
-  remarks: ''
-  volunteers: 2
-  hours_each: 3.0
-  miles_each: 23.0
-  expenses: 95.0
-  total_hours: 6.0
-  total_miles: 46.0
-  updated_by: dlapoint
-- type_report: Programs
-  date: 2018-05-22
-  details: Present teacher award Emma Sansom Middle school
-  area: Teacher
-  remarks: ''
-  volunteers: 2
-  hours_each: 3.0
-  miles_each: 20.0
-  expenses: 170.0
-  total_hours: 6.0
-  total_miles: 40.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2018-05-23
-  details: Vet in need of help paying his electric bill
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 12.0
-  expenses: 260.29
-  total_hours: 2.0
-  total_miles: 12.0
-  updated_by: dlapoint
-- type_report: Community Service
-  date: 2018-05-23
-  details: Steve Alex Volunteer at Way of the Cross soup kitchen from through May
-    2018
-  area: Cooperation
-  remarks: ''
-  volunteers: 6
-  hours_each: 3.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 18.0
-  total_miles: 96.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2018-07-11
-  details: VIN Sandy Evan. Need motel room, food and gas. ($178.94
-  area: Finacial Assistance to Vet
-  remarks: ''
-  volunteers: 2
-  hours_each: 3.0
-  miles_each: 12.0
-  expenses: 178.94
-  total_hours: 6.0
-  total_miles: 24.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-09-28
-  details: Steve Alex Volunteer at Way of the Cross soup kitchen from from July 2018
-    through Sept 2018
-  area: Cooperation
-  remarks: ''
-  volunteers: 6
-  hours_each: 4.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 24.0
-  total_miles: 72.0
-  updated_by: salex
-- type_report: Programs
-  date: 2018-09-06
-  details: Met with personnel at Litchfield and Emma Sansom Middle schools about PP.
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 10.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-09-10
-  details: Met with personnel at Piedmont HS, Southside HS, and Rainbow MS about VOD/PP.
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 25.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 25.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-09-06
-  details: Met with personnel at Litchfield and Emma Sansom middle schools about Teacher
-    of the Year.
-  area: Teacher
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 10.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-09-10
-  details: Met with Piedmont HS, Southside HS, and Rainbow MS personnel about Teacher
-    of the Year.
-  area: Teacher
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 25.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 25.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-25
-  details: Met with personnel from ECSO to discuss law enforcement award program.
-  area: Safety
-  remarks: Delivered brochures to ECSO for law enforcement award program.
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-06-19
-  details: 1st meeting of Vietnam Veterans Appreciation Day Committee.
-  area: Americanism
-  remarks: 'Volunteers: Joyce Shelley, Tyler Shelley, Danny Thornton, Will Campbell,
-    Kevin Dehn, Maurice Sanders.'
-  volunteers: 6
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 120.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-07-16
-  details: Submitted request to become Commemorative Partner with United States of
-    America Vietnam War Commemoration.
-  area: Americanism
-  remarks: Worked from home.
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 0.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-07-22
-  details: VVAD Committee meeting.
-  area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Tyler Shelley, Will Campbell,
-    Kevin Dehn, Maurice Sanders.'
-  volunteers: 6
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 12.0
-  total_miles: 120.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-07-31
-  details: Submitted Commemorative Events Request to United States of America Vietnam
-    War Commemoration.
-  area: Americanism
-  remarks: Worked from home.
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 0.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-08-05
-  details: VVAD Committee Meeting.
-  area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Will Campbell, Kevin Dehn,
-    Maurice Sanders.'
-  volunteers: 5
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 10.0
-  total_miles: 100.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-08-19
-  details: VVAD Committee meeting.
-  area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelly, Will Campbell, Kevin Dehn, Maurice
-    Sanders, Jimmy Bozeman.'
-  volunteers: 6
-  hours_each: 2.0
-  miles_each: 
-  expenses: 
-  total_hours: 12.0
-  total_miles: 120.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-08-31
-  details: VVAD Committee meeting.
-  area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Jimmy Bozeman, Will Campbell,
-    Kevin Dehn.'
-  volunteers: 5
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 10.0
-  total_miles: 100.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-04
-  details: Attend Gadsden-Etowah Patriots Assn. meeting to brief their board of directors
-    on VVAD and request assistance.
-  area: Americanism
-  remarks: Danny and Joyce met with Patriots Assn. to request assistance/funding.  Received
-    board approval for $500 donation.
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 40.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-06
-  details: VVAD committee meeting.
-  area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Jimmy Bozeman, Will Campbell,
-    Kevin Dehn, Steve Alex.'
-  volunteers: 6
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 12.0
-  total_miles: 120.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-20
-  details: Meet with Messenger reporter for interview about VVAD.
-  area: Americanism
-  remarks: Danny and Joyce met with Messenger reporter for interview for article about
-    VVAD.
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 40.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-21
-  details: Smoking pork butts for VVAD.
-  area: Americanism
-  remarks: Danny, Jimmy, and Steven spent the night smoking pork butts for VVAD.
-  volunteers: 3
-  hours_each: 12.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 36.0
-  total_miles: 60.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-22
-  details: VVAD event.  Held at Post 8600.
-  area: Americanism
-  remarks: 'Volunteers: Danny, Joyce, Jimmy, Kevin, Will, Maurice, Mary, Dean.'
-  volunteers: 9
-  hours_each: 6.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 54.0
-  total_miles: 180.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-10-06
-  details: Buddy poppy roadblock in Rainbow City.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny, Joyce, Jimmy, Will, Lorena, Zack, and Ashley.'
-  volunteers: 7
-  hours_each: 4.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 28.0
-  total_miles: 105.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-10
-  details: Solicit donations for VVAD. Dollar Tree, Academy, Flowers Bakery Outlet.
-  area: Americanism
-  remarks: 'Volunteer: Kevin Dehn.'
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 30.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-21
-  details: Pick up donations from Academy, Dollar Tree, and Flowers Bakery Outlet.
-  area: Americanism
-  remarks: 'Volunteer: Kevin Dehn'
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 30.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-09-18
-  details: Submit request for May 2019 roadblock to Gadsden PD
-  area: Buddy Poppies
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 8.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 8.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-10-06
-  details: Buddy poppy roadblock Rainbow City.
-  area: Buddy Poppies
-  remarks: 'Volunteer: Johnny Holmes.'
-  volunteers: 1
-  hours_each: 3.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 3.0
-  total_miles: 10.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-09-26
-  details: Johnny Holmes visit members (Vets) in hospital last quarter
-  area: Aid to Others
-  remarks: ''
-  volunteers: 9
-  hours_each: 1.0
-  miles_each: 14.0
-  expenses: 
-  total_hours: 9.0
-  total_miles: 126.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-09-25
-  details: Johnny Holmes the Vet to VA Medical Center in Birmingham
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 6.0
-  miles_each: 136.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 136.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-09-04
-  details: Visiting vendors for solicitation of donations for Vietnam Veterans Appreciation
-    Day.
-  area: Americanism
-  remarks: ''
-  volunteers: 10
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 20.0
-  total_miles: 200.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2018-09-06
-  details: Passing out flyers for Vietnam Veterans Appreciation Day
-  area: Americanism
-  remarks: ''
-  volunteers: 18
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 18.0
-  total_miles: 360.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2018-09-21
-  details: Collected donations and purchased supplies for Vietnam Veterans Appreciation
-    Day
-  area: Americanism
-  remarks: ''
-  volunteers: 1
-  hours_each: 8.0
-  miles_each: 60.0
-  expenses: 400.0
-  total_hours: 8.0
-  total_miles: 60.0
-  updated_by: joyce
-- type_report: Programs
-  date: 2018-10-30
-  details: Pick up VOD and PP applications from Piedmont HS, Litchfield MS, Emma Sansom
-    MS, and Rainbow City MS.
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 4.0
-  miles_each: 55.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 55.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-10-31
-  details: Pick up VOD applications from Southside HS.
-  area: VOD/PP
-  remarks: ''
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-02
-  details: Deliver liability insurance to Johnson's Giant Foods office in Attalla.
-  area: Buddy Poppies
-  remarks: Danny Thornton
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 26.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 26.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-03
-  details: Conduct Buddy Poppy drive at 3 Johnson's Giant Foods stores.  Downtown
-    Gadsden, East Gadsden, and Attalla.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Jimmy Bozeman, Andrew Plam, Lorena Beam, Mary
-    Campbell, Dean Hicks, Johnny Holmes, Margaret Holmes, Joyce Shelley, Zack Shelley,
-    Russell Shelley, Ashley Shelley.'
-  volunteers: 12
-  hours_each: 2.0
-  miles_each: 26.0
-  expenses: 
-  total_hours: 24.0
-  total_miles: 312.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-07
-  details: Buddy Poppy drive at East Gadsden Walmart.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Steven Alex, Mary Campbell, Dean Hicks.'
-  volunteers: 3
-  hours_each: 2.0
-  miles_each: 21.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 63.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-08
-  details: Judge PP essays.
-  area: VOD/PP
-  remarks: 'Volunteers: Joe Harner, Johnny Holmes, Margaret Holmes, Jimmy Bozeman,
-    Joyce Shelley, Zack Shelley, and Danny Thornton.'
-  volunteers: 7
-  hours_each: 2.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 14.0
-  total_miles: 210.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-12
-  details: Judge VOD applications.
-  area: VOD/PP
-  remarks: 'Volunteers: Jimmy Bozeman, Joyce Shelley, Zack Shelley, Joe Harner, Johnny
-    Holmes, Danny Thornton.'
-  volunteers: 6
-  hours_each: 2.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 12.0
-  total_miles: 90.0
-  updated_by: danny
-- type_report: Programs
-  date: 2018-11-15
-  details: Judge Teacher applications.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton, Johnny Holmes.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2018-12-19
-  details: "Steve Alex Volunteer at Way of the Cross soup kitchen from from Oct 2018
-    through Dec 2018\r\n"
-  area: Cooperation
-  remarks: ''
-  volunteers: 7
-  hours_each: 4.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 28.0
-  total_miles: 84.0
-  updated_by: salex
-- type_report: Legislative
-  date: 2019-05-20
-  details: Sent email to Senators Jones and Shelby for support of Blue Water Navy
-    House Bill.
-  area: National Activities
   remarks: 'Volunteer: Danny Thornton '
   volunteers: 1
   hours_each: 1.0
-  miles_each: 
-  expenses: 
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Legislative
-  date: 2019-01-21
-  details: Contacted Senators and Representatives about support for Blue Water Navy
-    Bill to provide agent orange relief, contacted Senators and Representatives about
-    resuming pay for Coast Guard during government shut down.
-  area: National Activities
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 
-  expenses: 0.0
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: National Military Service
-  date: 2018-12-13
-  details: Donations to Veterans support agencies VSO, V&MS, Nat'l Home, Patriots
-    Paws
-  area: Donations
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 400.0
-  total_hours: 4.0
-  total_miles: 20.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-12-10
-  details: DHR Christmas for kids program. Christmas presents 2 children in DHR foster
-    home program.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 2
-  hours_each: 6.0
-  miles_each: 40.0
-  expenses: 344.56
-  total_hours: 12.0
-  total_miles: 80.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2018-12-21
-  details: Numerous visits to Hospital and home by Post members in support of PPC
-    Dave LaPoint and family
-  area: Aid to Others
-  remarks: ''
-  volunteers: 12
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 
-  total_hours: 24.0
-  total_miles: 120.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2019-01-10
-  details: Department VSO request for donations to cover Funeral expenses for Veteran
-    Passing on Oneota.  Lemney's Funeral Chapel
-  area: Finacial Assistance to Vet
-  remarks: "\r\n"
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 10.0
-  expenses: 200.0
-  total_hours: 4.0
-  total_miles: 20.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2019-01-13
-  details: Donation to Fran LaPoint to help cover funeral expenses for passing of
-    previous past Commander David LaPoint
-  area: Finacial Assistance to Vet
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 15.0
-  expenses: 500.0
-  total_hours: 2.0
-  total_miles: 15.0
-  updated_by: salex
-- type_report: National Military Service
-  date: 2018-10-27
-  details: Use of facilities and support staff for AF National Guard reunion (225th
-    CBCS)
-  area: Military Support Events
-  remarks: ''
-  volunteers: 4
-  hours_each: 4.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 16.0
-  total_miles: 60.0
-  updated_by: salex
-- type_report: Programs
-  date: 2019-02-14
-  details: Order awards for PP and VOD.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton, Johnny Holmes'
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 40.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-02-14
-  details: Order awards for teacher program.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton, Johnny Holmes.'
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 40.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-02-18
-  details: Order FF and EMT awards.
-  area: Law/Fire/EMT
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 0.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 
-  updated_by: danny
-- type_report: Programs
-  date: 2018-09-20
-  details: Met with Etowah County Fire Assn. to discuss award program for firefighters,
-    EMAs, etc.  Met at Ballplay FD.
-  area: Law/Fire/EMT
-  remarks: Handed out brochures to all represented FDs.
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 15.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 15.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-03-14
-  details: 'Visited Comrade Sonny Boyers at his home.  '
-  area: Aid to Others
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
   miles_each: 12.0
   expenses: 
   total_hours: 1.0
   total_miles: 12.0
   updated_by: danny
 - type_report: Programs
-  date: 2019-03-19
-  details: Met with Melanie Nelson of Johnson's Giant Foods to set up dates for 2019
-    Buddy Poppy drive at three Johnson's supermarkets.
-  area: Buddy Poppies
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 22.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 22.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-03-14
-  details: Visited Comrade Sonny Boyers at his home. He was in hospice care.  Visited
-    with and offered assistance to Sonny's wife and family.
-  area: Aid to Others
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-03-23
-  details: Participated in memorial service for Comrade Sonny Boyers.  Conducted presentation
-    of flag to the surviving spouse.
-  area: Aid to Others
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 16.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-03-28
-  details: Conducted Vietnam Veterans Award Ceremony. Presented awards to 15 Vietnam
-    Veterans of the Coosa Valley Chapter of the Military Officers Association of America.
-  area: Americanism
-  remarks: 'Volunteers: Joyce Shelley, Jimmy Bozeman, Danny Thornton. '
-  volunteers: 3
-  hours_each: 
-  miles_each: 
-  expenses: 
-  total_hours: 9.0
-  total_miles: 45.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-03-29
-  details: "Steve Alex Volunteer at Way of the Cross soup kitchen from from Jan 2019
-    through Mar 2019\r\n"
-  area: Cooperation
-  remarks: Repaired can opener with replacement kit
-  volunteers: 7
-  hours_each: 6.0
-  miles_each: 14.0
-  expenses: 52.0
-  total_hours: 42.0
-  total_miles: 98.0
-  updated_by: salex
-- type_report: Community Service
-  date: 2019-01-04
-  details: Sitting with invalid Mother and a 4 year old child for woman with new down
-    syndrome baby that was taken from Gadsden RMC to Childrens Hospital  immediately
-    after birth on Jan 4th, 2019. 6 days.Then sitting with baby for 3 days.
-  area: Aid to Others
-  remarks: ''
-  volunteers: 9
-  hours_each: 10.0
-  miles_each: 56.0
-  expenses: 350.0
-  total_hours: 90.0
-  total_miles: 504.0
-  updated_by: joyce
-- type_report: National Military Service
-  date: 2019-03-28
-  details: Vietnam Veterans recognition and presentation.
-  area: Military Support Events
-  remarks: ''
-  volunteers: 1
-  hours_each: 8.0
-  miles_each: 30.0
-  expenses: 12.0
-  total_hours: 8.0
-  total_miles: 30.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-01-02
-  details: Assisted Fran LaPointe , widow of former Commander Dave LaPointe, with
-    arrangements for his Memorial, taking her to the County VA office. Helping her
-    with various needs over a 2 months time.
-  area: Americanism
-  remarks: ''
-  volunteers: 8
-  hours_each: 4.0
-  miles_each: 30.0
-  expenses: 132.0
-  total_hours: 32.0
-  total_miles: 240.0
-  updated_by: joyce
-- type_report: Hospital
-  date: 2019-03-12
-  details: "Took a veteran, (a post member), to numerous VA appointments at VA Clinic
-    in Gadsden, then Birmingham VA, then Tuscaloosa VA.\r\nPicked him up from Tuscaloosa
-    VA and brought him home to attend a funeral, then took him back."
-  area: Hospital Report
-  remarks: ''
-  volunteers: 11
-  hours_each: 11.0
-  miles_each: 110.0
-  expenses: 665.5
-  total_hours: 121.0
-  total_miles: 1210.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-01-18
-  details: Gave Blood to American Red Cross
-  area: Involvment
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 11.0
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-03-19
-  details: Visit at home current member Sonny Boyers, terminally ill.
-  area: Americanism
-  remarks: ''
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 11.0
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-03-23
-  details: Attend Comrade Boyers Funeral. Assist his wife with various paperwork.
-    Purchased a flag shadow box.
-  area: Americanism
-  remarks: ''
-  volunteers: 1
-  hours_each: 8.0
-  miles_each: 30.0
-  expenses: 51.5
-  total_hours: 8.0
-  total_miles: 30.0
-  updated_by: joyce
-- type_report: Programs
-  date: 2019-05-09
-  details: Presented Department of Alabama Teacher Award to Casey Underwood at John
-    Jones Elementary School.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 16.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-09
-  details: Picked up signed roadblock application from Rainbow City P.D. for Nov 2019
-    roadblock.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 16.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-14
-  details: Presented post and district PP awards at Litchfield M.S.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton, Phillip Garland.'
-  volunteers: 2
-  hours_each: 1.0
-  miles_each: 6.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-16
-  details: Presented VOD award at Piedmont High School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 40.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 40.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-16
-  details: Presented firefighter and EMT awards at Coates Bend Volunteer Fire Department.
-  area: Law/Fire/EMT
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 24.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 24.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-17
-  details: Presented PP award and Teacher award at Emma Sansom Middle School.
-  area: VOD/PP
-  remarks: 'Volunteers: Joyce Shelley and Phillip Garland.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 24.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-20
-  details: Presented two VOD awards at Southside High School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton and Phillip Garland.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 24.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-20
-  details: Presented PP award at Piedmont Middle School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton and Phillip Garland.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 50.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 100.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-18
-  details: Conducted Buddy Poppy roadblock at Rainbow City.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Jimmy Bozeman, Kevin Dehn, Malcolm Thornton,
-    Joyce Shelley, Zack Shelley, Joe Harner, Carolyn Tanner, Sheila Elam, Andrew Plam,
-    Steven Alex, Will Campbell.'
-  volunteers: 12
-  hours_each: 5.0
-  miles_each: 30.0
-  expenses: 
-  total_hours: 60.0
-  total_miles: 360.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-05-25
-  details: Conducted Buddy Poppy roadblock at Rainbow Dr. Gadsden Mall.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Zack Shelley, Russell Shelley,
-    Joe Harner, Jimmy Bozeman, Maurice Sanders, Steven Alex, Kevin Dehn, Tyler Shelley,
-    Will Campbell.'
-  volunteers: 11
-  hours_each: 5.0
-  miles_each: 50.0
-  expenses: 
-  total_hours: 55.0
-  total_miles: 550.0
-  updated_by: danny
-- type_report: National Military Service
-  date: 2019-09-25
-  details: VIN ?. Veterans mother passed and didn't have the funds to attend funeral
-    in Atlanta. Payed hotel in Atlanta for 3 nights
-  area: Finacial Assistance to Vet
-  remarks: Actually paid for 4 nights when hotel didn't follow instructions
-  volunteers: 2
-  hours_each: 5.0
-  miles_each: 15.0
-  expenses: 260.0
-  total_hours: 10.0
-  total_miles: 30.0
-  updated_by: salex
-- type_report: Programs
-  date: 2019-07-13
-  details: Conducted Buddy Poppy drive at Attalla Walmart Store, Downtown Johnson's
-    Giant Foods and Attalla Johnson's Giant Foods.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Zack Shelley, Russell Shelley,
-    Joe Harner, Carolyn Mursch, Roselene Jenkins, Eva Noehl, Cheryl Crum, Mary Campbell,
-    Lorena Beam, Will Campbell, Steven Alex, Jimmy Bozeman.'
-  volunteers: 14
-  hours_each: 4.0
-  miles_each: 22.0
-  expenses: 
-  total_hours: 56.0
-  total_miles: 308.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-07-15
-  details: Coordinated with Maxwell AFB to support military funeral honors for deceased
-    veteran James C. Brown, Col, USAF (Ret). Working with his widow on memorial service
-    arrangements.
-  area: Aid to Others
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 4.0
-  miles_each: 0.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-07-18
-  details: Filled out request form and went to Gadsden Post Office to obtain VA Burial
-    Flag for Col James C. Brown's memorial service.  Service is scheduled for 27 July
-    2019 at Cherry St. Baptist Church in Attalla.
-  area: Aid to Others
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 
-  expenses: 
-  total_hours: 2.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-08-01
-  details: Prepared VOD/PP brochures for distribution to schools.  Printed names and
-    contact information for our program reps on the brochures.
-  area: VOD/PP
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 
-  expenses: 
-  total_hours: 2.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Legislative
-  date: 2019-07-15
-  details: Contacted Senators Jones and Shelby and Representative Aderholt about supporting
-    the NDAA for FY 2020.
-  area: National Activities
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 
-  expenses: 
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Legislative
-  date: 2019-08-08
-  details: Transmitted letter from Congressman Aderholt to the Department of AL for
-    inclusion in our legislative report.
-  area: National Activities
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 
-  expenses: 
-  total_hours: 1.0
-  total_miles: 0.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-08-28
-  details: Delivered PP and VOD brochures to Emma Sansom Middle School, Piedmont High
-    School, and Litchfield Middle School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 6.0
-  miles_each: 68.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 68.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-08-28
-  details: Delivered Teacher of the Year brochures to Emma Sansom Middle School, Piedmont
-    High School, and Litchfield Middle School.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 6.0
-  miles_each: 68.0
-  expenses: 
-  total_hours: 6.0
-  total_miles: 68.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-04
-  details: Delivered PP materials to Piedmont Middle School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton.'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 42.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 42.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-04
-  details: Delivered Teacher of the Year materials to Piedmont Middle and Piedmont
-    Elementary Schools.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton.'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 42.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 42.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-06
-  details: "Delivered PP material to Rainbow Middle School.\r\n\r\n\r\n"
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 26.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 26.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-06
-  details: Delivered Teacher of the Year material and presented Teacher of the Year
-    Certificate to Casey Underwood at John Jones Elementary School.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 26.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 26.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-09
-  details: Delivered VOD material to Ms.Fry at Southside High School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-09
-  details: Delivered Teacher of the Year material to Southside HS and Southside ES.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-13
-  details: Delivered VOD material to Glencoe HS.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 1.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 1.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-13
-  details: Delivered Teacher of the year material to Glencoe HS.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 1.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 1.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-13
-  details: Delivered VOD/PP material to Etowah High and Middle schools.
-  area: VOD/PP
-  remarks: 'Volunteer: Will Campbell.'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 3.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 3.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-13
-  details: Delivered Teacher of the Year material to Etowah High and Middle schools.
-  area: Teacher
-  remarks: 'Volunteer: Will Campbell.'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 3.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 3.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-20
-  details: Delivered PP/VOD material to Gaston HS/Middle School.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton, Margret Holmes.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 24.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 48.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-09-20
-  details: Delivered Teacher of the Year material to Gaston Schools.  HS/MS/ES.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton, Margret Holmes.'
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 24.0
-  expenses: 
-  total_hours: 4.0
-  total_miles: 48.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-02
-  details: Delivered PP/VOD material to GCHS and GMS.
-  area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-02
-  details: Delivered Teacher of the Year material to GCHS and GMS.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 12.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 12.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-09
-  details: Delivered liability insurance coverage to Johnson's office.
-  area: Buddy Poppies
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 24.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 24.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-10
-  details: Picked up teacher nomination package from Southside Elementary School.
-  area: Teacher
-  remarks: 'Volunteers: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 16.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-17
-  details: Delivered FF/EMT award nomination package to Etowah County Volunteer Firefighters
-    Association.
+  date: 2019-12-19
+  details: Picked up firefighter and EMT award packages from Etowah County Volunteer
+    Firefighters Association.
   area: Law/Fire/EMT
   remarks: 'Volunteer: Danny Thornton '
   volunteers: 1
   hours_each: 1.0
-  miles_each: 24.0
+  miles_each: 12.0
   expenses: 
   total_hours: 1.0
-  total_miles: 24.0
+  total_miles: 12.0
+  updated_by: danny
+- type_report: Programs
+  date: 2019-12-22
+  details: Forwarded FF and EMT award packages to Department.
+  area: Law/Fire/EMT
+  remarks: 'Volunteer: Danny Thornton '
+  volunteers: 1
+  hours_each: 1.0
+  miles_each: 0.0
+  expenses: 
+  total_hours: 1.0
+  total_miles: 0.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-01-15
+  details: "Ordered first responder awards for post winners.\r\n$14.90 spent."
+  area: Law/Fire/EMT
+  remarks: 'Volunteer: Danny Thornton '
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 
+  expenses: 
+  total_hours: 2.0
+  total_miles: 0.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-01-15
+  details: Ordered awards for Smart/Maher Teacher post winners. $135.90 spent.
+  area: Teacher
+  remarks: 'Volunteer: Danny Thornton '
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 
+  expenses: 
+  total_hours: 2.0
+  total_miles: 0.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-01-15
+  details: Ordered awards for VOD post winners. $71.95 spent.
+  area: VOD/PP
+  remarks: 'Volunteer: Danny Thornton '
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 
+  expenses: 
+  total_hours: 2.0
+  total_miles: 0.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-01-15
+  details: Ordered awards for PP post winners. $69.95 spent.
+  area: VOD/PP
+  remarks: 'Volunteer: Danny Thornton '
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 
+  expenses: 
+  total_hours: 2.0
+  total_miles: 0.0
   updated_by: danny
 - type_report: Community Service
-  date: 2019-09-27
-  details: "Steve Alex volunteer at Way of the Cross soup kitchen, April-June 2019\r\n"
+  date: 2019-12-18
+  details: "Steve Alex volunteer at Way of the Cross soup kitchen, Oct-Dev 2019\r\n"
   area: Cooperation
   remarks: ''
   volunteers: 5
   hours_each: 6.0
-  miles_each: 14.0
+  miles_each: 12.0
   expenses: 
   total_hours: 30.0
-  total_miles: 70.0
+  total_miles: 60.0
   updated_by: salex
-- type_report: Community Service
-  date: 2019-06-26
-  details: Steve Alex volunteer at Way of the Cross soup kitchen, July-September 2019
-  area: Cooperation
+- type_report: Hospital
+  date: 2019-12-07
+  details: Visited Veteran in Tuscaloosa VA Hosp
+  area: Hospital Report
   remarks: ''
-  volunteers: 6
+  volunteers: 2
   hours_each: 6.0
-  miles_each: 14.0
-  expenses: 
-  total_hours: 36.0
-  total_miles: 84.0
-  updated_by: salex
+  miles_each: 240.0
+  expenses: 40.0
+  total_hours: 12.0
+  total_miles: 480.0
+  updated_by: joyce
+- type_report: National Military Service
+  date: 2020-01-10
+  details: Paid for motel night , gas and meal for stranded veteran
+  area: Finacial Assistance to Vet
+  remarks: ''
+  volunteers: 2
+  hours_each: 2.0
+  miles_each: 6.0
+  expenses: 116.62
+  total_hours: 4.0
+  total_miles: 12.0
+  updated_by: joyce
 - type_report: Community Service
   date: 2019-10-26
-  details: Conducted Vietnam Veterans Commemorative Lapel Pin ceremony.
+  details: Prepared meal for approx 90 people from local Air Guard Unit Reunion,
+  area: Cooperation
+  remarks: ''
+  volunteers: 5
+  hours_each: 8.0
+  miles_each: 20.0
+  expenses: 300.0
+  total_hours: 40.0
+  total_miles: 100.0
+  updated_by: joyce
+- type_report: Community Service
+  date: 2019-10-25
+  details: Picked up supplies for Air National Guard Reunion  to be held at Post 8600
+  area: Cooperation
+  remarks: ''
+  volunteers: 2
+  hours_each: 6.0
+  miles_each: 50.0
+  expenses: 25.0
+  total_hours: 12.0
+  total_miles: 100.0
+  updated_by: joyce
+- type_report: Community Service
+  date: 2019-11-11
+  details: Provided a meal for veterans on veterans day.
   area: Americanism
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley'
+  remarks: ''
+  volunteers: 3
+  hours_each: 5.0
+  miles_each: 15.0
+  expenses: 120.0
+  total_hours: 15.0
+  total_miles: 45.0
+  updated_by: joyce
+- type_report: Service Officer
+  date: 2019-10-20
+  details: Preparing room for new computer assist for veterans. Clean out old office,installing
+    computers and setting up printers, etc.
+  area: Monthly Report
+  remarks: ''
+  volunteers: 4
+  hours_each: 5.0
+  miles_each: 15.0
+  expenses: 30.0
+  total_hours: 20.0
+  total_miles: 60.0
+  updated_by: joyce
+- type_report: Service Officer
+  date: 2019-12-02
+  details: Assisted veteran with computer access to his files and printed his pertinent
+    paperwork for his files.
+  area: Monthly Report
+  remarks: ''
+  volunteers: 1
+  hours_each: 3.0
+  miles_each: 20.0
+  expenses: 5.0
+  total_hours: 3.0
+  total_miles: 20.0
+  updated_by: joyce
+- type_report: Community Service
+  date: 2019-11-12
+  details: 'Participated in ceremony for MIA/POW with Auxiliary '
+  area: Americanism
+  remarks: ''
+  volunteers: 2
+  hours_each: 1.0
+  miles_each: 0.0
+  expenses: 0.0
+  total_hours: 2.0
+  total_miles: 
+  updated_by: joyce
+- type_report: Community Service
+  date: 2020-02-14
+  details: 'Assisted widow of VFW Life Member who passed away on Feb 10, 2020 with
+    report of death to VA, Social Security, and OPM. '
+  area: Aid to Others
+  remarks: 'Volunteer: Danny Thornton'
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 1.0
+  expenses: 
+  total_hours: 2.0
+  total_miles: 1.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-02-20
+  details: Presented firefighter and EMT awards at the Etowah County Volunteer Firefighters
+    Association meeting.
+  area: Law/Fire/EMT
+  remarks: 'Volunteers: Danny Thornton and Jimmy Bozeman.'
   volunteers: 2
   hours_each: 1.0
   miles_each: 16.0
@@ -2699,82 +232,10 @@
   total_hours: 2.0
   total_miles: 32.0
   updated_by: danny
-- type_report: Community Service
-  date: 2019-07-25
-  details: Took veteran to Birmingham VA for appointment
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 5.0
-  miles_each: 125.0
-  expenses: 63.0
-  total_hours: 5.0
-  total_miles: 125.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-08-09
-  details: Took veteran to Birmingham VA for appointment
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 
-  miles_each: 125.0
-  expenses: 63.0
-  total_hours: 5.0
-  total_miles: 125.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-07-12
-  details: Took veteran to Birmingham VA for appointment
-  area: Aid to Others
-  remarks: ''
-  volunteers: 1
-  hours_each: 5.0
-  miles_each: 125.0
-  expenses: 63.0
-  total_hours: 5.0
-  total_miles: 125.0
-  updated_by: joyce
-- type_report: Community Service
-  date: 2019-10-22
-  details: Arranged payment for veteran power bill
-  area: Aid to Others
-  remarks: ''
-  volunteers: 2
-  hours_each: 2.0
-  miles_each: 30.0
-  expenses: 385.0
-  total_hours: 4.0
-  total_miles: 60.0
-  updated_by: joyce
-- type_report: Programs
-  date: 2019-10-29
-  details: Picked up VOD entries from Southside H.S.
-  area: VOD/PP
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-30
-  details: Picked up PP entries from Piedmont M. S.
-  area: VOD/PP
-  remarks: 'Volunteer: Danny Thornton'
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 48.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 48.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-10-29
-  details: Submitted after action report for Vietnam War Commemoration Event.
-  area: Americanism
+- type_report: Legislative
+  date: 2020-02-25
+  details: Corresponded with Rep. Aderholt regarding military medical billet reprogramming.
+  area: National Activities
   remarks: 'Volunteer: Danny Thornton'
   volunteers: 1
   hours_each: 1.0
@@ -2784,115 +245,101 @@
   total_miles: 0.0
   updated_by: danny
 - type_report: Programs
-  date: 2019-10-31
-  details: Picked up VOD entries from Piedmont H.S.
-  area: VOD/PP
+  date: 2020-03-03
+  details: Submitted permit request to RBC PD for Buddy Poppy roadblock in November.
+  area: Buddy Poppies
+  remarks: 'Volunteer: Danny Thornton.'
+  volunteers: 1
+  hours_each: 2.0
+  miles_each: 24.0
+  expenses: 
+  total_hours: 2.0
+  total_miles: 24.0
+  updated_by: danny
+- type_report: Programs
+  date: 2020-03-04
+  details: Went to Johnson’s to schedule Buddy Poppy fundraiser for May 16, 2020.
+  area: Buddy Poppies
   remarks: 'Volunteer: Danny Thornton '
   volunteers: 1
   hours_each: 2.0
-  miles_each: 48.0
+  miles_each: 30.0
   expenses: 
   total_hours: 2.0
-  total_miles: 48.0
+  total_miles: 30.0
   updated_by: danny
-- type_report: Programs
-  date: 2019-10-31
-  details: Picked up PP entries from Emma Sansom M.S.
-  area: VOD/PP
-  remarks: 'Volunteer: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 20.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-10-31
-  details: Picked up PP entries from Litchfield M.S.
-  area: VOD/PP
-  remarks: 'Volunteer: Danny Thornton '
-  volunteers: 1
-  hours_each: 1.0
-  miles_each: 8.0
-  expenses: 
-  total_hours: 1.0
-  total_miles: 8.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-11-02
-  details: Conducted Buddy Poppy drive at Walmart of East Gadsden.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Rose Jenkins, Eva Noehl, Chris Curb, Jimmy
-    Bozeman, Steven Alex.'
-  volunteers: 6
-  hours_each: 
+- type_report: Community Service
+  date: 2020-03-11
+  details: "Steve Alex volunteer at Way of the Cross soup kitchen, jan-mar 2020\r\n"
+  area: Cooperation
+  remarks: ''
+  volunteers: 4
+  hours_each: 5.0
   miles_each: 12.0
   expenses: 
-  total_hours: 36.0
-  total_miles: 72.0
-  updated_by: danny
+  total_hours: 20.0
+  total_miles: 48.0
+  updated_by: salex
+- type_report: Community Service
+  date: 2020-03-13
+  details: Visited home bound widow of Vietnam veteran to assist with VA paperwork
+    for benefits. Joe Harner VSO, Joyce Shelley, Commander.
+  area: Aid to Others
+  remarks: ''
+  volunteers: 2
+  hours_each: 4.0
+  miles_each: 15.0
+  expenses: 10.0
+  total_hours: 8.0
+  total_miles: 30.0
+  updated_by: joyce
+- type_report: Community Service
+  date: 2020-03-27
+  details: Joe Harner assisted recently deceased Post 8600 member Jim Davis' wife
+    with VA benefit paperwork.
+  area: Aid to Others
+  remarks: ''
+  volunteers: 1
+  hours_each: 3.0
+  miles_each: 30.0
+  expenses: 15.0
+  total_hours: 3.0
+  total_miles: 30.0
+  updated_by: joyce
+- type_report: Legislative
+  date: 2020-02-25
+  details: Corresponded with Rep Robert Aderholt concerning military medical billet
+    reprogramming.
+  area: National Activities
+  remarks: ''
+  volunteers: 1
+  hours_each: 1.0
+  miles_each: 0.0
+  expenses: 0.0
+  total_hours: 1.0
+  total_miles: 
+  updated_by: joyce
+- type_report: Community Service
+  date: 2020-03-09
+  details: Attended funeral of local Vietnam Veteran
+  area: Americanism
+  remarks: ''
+  volunteers: 1
+  hours_each: 3.0
+  miles_each: 15.0
+  expenses: 7.5
+  total_hours: 3.0
+  total_miles: 15.0
+  updated_by: joyce
 - type_report: Programs
-  date: 2019-11-05
-  details: Judged PP and VOD essays.
+  date: 2020-05-18
+  details: Delivered VOD award and check to Piedmont High School for presentation.
   area: VOD/PP
-  remarks: 'Volunteers: Danny Thornton, Joyce Shelley, Jimmy Bozeman, Lorena Beam,
-    Will Campbell, Zack Shelley, Kevin Dehn, Joe Harner, Carol Tanner'
-  volunteers: 9
-  hours_each: 4.0
-  miles_each: 16.0
-  expenses: 
-  total_hours: 36.0
-  total_miles: 144.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-11-06
-  details: Attended Veterans Day Program at Gadsden City High School.
-  area: Americanism
-  remarks: 'Volunteer: Danny Thornton '
+  remarks: 'Volunteer: Danny Thornton'
   volunteers: 1
-  hours_each: 2.0
-  miles_each: 16.0
+  hours_each: 1.5
+  miles_each: 36.0
   expenses: 
-  total_hours: 2.0
-  total_miles: 16.0
-  updated_by: danny
-- type_report: Community Service
-  date: 2019-11-08
-  details: Presented keynote address at Glencoe High School Veterans Day program.
-  area: Americanism
-  remarks: 'Volunteer: Danny Thornton '
-  volunteers: 1
-  hours_each: 2.0
-  miles_each: 1.0
-  expenses: 
-  total_hours: 2.0
-  total_miles: 1.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-11-09
-  details: Conducted Buddy Poppy drive at Attalla Walmart, and two Johnson’s Giant
-    Food Stores.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Joyce Noojin, Jason Myrick, Joyce Shelley,
-    Zack Shelley, Will Campbell, Margaret Holmes, Mary Campbell, Bonnie Forman.'
-  volunteers: 9
-  hours_each: 4.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 36.0
-  total_miles: 180.0
-  updated_by: danny
-- type_report: Programs
-  date: 2019-11-16
-  details: Buddy Poppy roadblock at Rainbow City.
-  area: Buddy Poppies
-  remarks: 'Volunteers: Danny Thornton, Jimmy Bozeman, Joyce Shelley, Zack Shelley,
-    Kevin Dehn, Lorena Beam, Will Campbell.'
-  volunteers: 7
-  hours_each: 4.0
-  miles_each: 20.0
-  expenses: 
-  total_hours: 28.0
-  total_miles: 140.0
+  total_hours: 1.5
+  total_miles: 36.0
   updated_by: danny

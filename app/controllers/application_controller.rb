@@ -55,7 +55,6 @@ class ApplicationController < ActionController::Base
   def current_post
     @current_post ||= Post.find_by(numb:8600)  #if session[:post_id]
     Current.post =@current_post
-    puts "JOOOOOOOOOOOO"
     @current_post
   end
   helper_method :current_post

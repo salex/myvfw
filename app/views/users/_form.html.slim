@@ -6,9 +6,9 @@
         - @user.errors.full_messages.each do |message|
           li = message
   br
-  .form-inputs.s12.m5.w3-col.w3-card
+  .form-inputs.s12.m6.w3-col.w3-card
 
-    = f.input :user_type
+    / = f.input :user_type
     = f.input :email
     = f.input :username
     = f.input :full_name
@@ -16,9 +16,9 @@
     = f.input :password_confirmation
     / = f.input :roles
     / = f.input :reset_token
-    = f.input :post
-    = f.input :district
-    = f.input :department
+    / = f.input :post
+    / = f.input :district
+    / = f.input :department
     label Roles
     - checkboxes = role_checkboxes(@user.roles)
     - checkboxes.each do |b|

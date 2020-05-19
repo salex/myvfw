@@ -3,6 +3,7 @@
 
   .s12.m10.w3-col
     h3.strong.text-center.malt Post Membership Meetings
-    -@markups.each do |link|
-      = render partial:'markups/markup_links',locals:{article: link}
+    table.w3-table-all
+      -@markups.each do |link|
+        = render partial:'markups/markup_links',locals:{article: link}
 

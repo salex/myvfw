@@ -1,10 +1,10 @@
 class Post < ApplicationRecord
-  has_many :members
-  has_many :markups
-  has_many :reports
-  has_many :officers
-  has_many :trustee_audits
-  has_one :post_calendar
+  has_many :members, dependent: :destroy
+  has_many :markups, dependent: :destroy
+  has_many :reports, dependent: :destroy
+  has_many :officers, dependent: :destroy
+  has_many :trustee_audits, dependent: :destroy
+  has_one :post_calendar, dependent: :destroy
 
   def self.districts
     dist = User.where.not(district:nil).pluck(:district).uniq.sort
@@ -45,7 +45,6 @@ class Post < ApplicationRecord
     params.each do |k,v|
       jhash[v["name"]] = v.except!("name") unless v["name"].blank?
     end
-    puts "DDdDDD #{jhash}"
     pc.array_data= jhash.to_json
     pc.save
   end
