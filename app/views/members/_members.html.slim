@@ -19,7 +19,7 @@ table.w3-table-all
         - if Current.user
           = link_to member.full_name,member_path(member),class:'w3-text-blue w3-hover-text-green'
         - else
-        = member.full_name
+          = member.full_name
       - if Current.user
         td = member.vfw_id 
       td = member.age
