@@ -1,0 +1,112 @@
+.noprint
+  = link_to icon('fas fa-arrow-left', 'Back'), 'javascript:history.back()', class: 'w3-button '
+  = link_to icon('fas fa-print',"Print"), '#', title: 'Print it', class: 'w3-button', onclick: "window.print();"
+
+.print-plain.w3-container
+  .w3-row
+    h2.strong.small-caps VFW Post 8600 - Bartenders Daily Report
+    br
+
+  .w3-row-padding
+    .s3.w3-col
+      table
+        tr
+          td[colspan="2"]
+            h4.strong.small-caps (POS) Payment Summary
+        tr
+          th.w05p.text-right Cash
+          td.w3-border-bottom.w10p
+        tr
+          th.w05p.text-right Credit
+          td.w3-border-bottom.w10p
+        tr
+          th.w05p.text-right Total
+          td.w3-border-bottom.w10p
+      / table
+      /   tr
+      /     th.w05.text-right Clock in
+      /     td.w3-border-bottom.w10p
+      /   tr
+      /     th.text-right Clock out
+      /     td.w3-border-bottom.w10p
+
+    .s9.w3-col
+      h4.strong.small-caps.w3-center Cash Drawer Summary
+
+      table.w3-right
+ 
+        tr
+          td.text-right.strong Cash on hand to start (Bank)
+          td.text-center &nbsp;
+          td.w20p.w3-border-bottom.strong.text-right 300.00
+
+        tr
+          td.text-right.strong Cash Draw Summary (Cash Expected)
+          td.text-center =
+          td.w3-border-bottom &nbsp;
+
+        tr
+          td.text-right.strong Total Cash Counted/Turned in
+          td.text-center = '='
+          td.w3-border-bottom &nbsp;
+
+        tr
+          td.text-right.strong Cash difference (over/short)
+          td.text-center +/-
+          td.w3-border-bottom &nbsp;
+    br
+    br
+    .annotate Some splaining what comes from where
+    br
+    .s12.w3-col 
+      h5.strong.small-caps Prepared by: _______________________________  Date: ____________________
+
+  br
+  br
+  .w3-row-padding
+    h3.strong.small-caps Register #2 (Donations)
+
+    table.s12.w3-col.w3-right
+      tr
+        td.w50p
+        td.w05p
+        td.w15p
+        td
+      tr
+        td.text-right.strong Cash on hand to start (Reg)
+        td.w05.text-center &nbsp;
+        td.w3-border-bottom.strong.text-right 200.00
+        
+      tr
+        td.text-right.strong Sales (Registar Tape[CID])
+        td.text-center +
+        td.w3-border-bottom &nbsp;
+    
+      tr
+        td.text-right.strong Total cash to be accounted for (Sum)
+        td.text-center = '='
+        td.w3-border-bottom &nbsp;
+
+      tr
+        td.text-right.strong Cash difference (over/short)
+        td.text-center +/-
+        td.w3-border-bottom &nbsp;
+
+      tr
+        td.text-right.strong Total cash accounted for (Sum)
+        td.text-center = '='
+        td.w3-border-bottom &nbsp;
+      tr
+        td.text-right.strong Cash Counted in Bank ($600)
+        td.text-center = '='
+        td.w3-border-bottom &nbsp;
+
+    .small-12.w3-col
+      br
+      br
+      h5.strong.small-caps Prepared by: _______________________________  Date: ____________________
+
+
+
+
+

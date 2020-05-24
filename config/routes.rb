@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :forms do
+    collection do
+      get :bartender
+      get :cash_report
+    end
+  end
   get 'test/test'
   patch 'test/fire'
   patch 'test/clear'

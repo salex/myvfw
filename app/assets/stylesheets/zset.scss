@@ -56,6 +56,7 @@ body.plain {
 .my-text-right {text-align: right;}
 .min-height-80 , .min-height {min-height: 80vh;}
 .print-page {height: 11in;width: 8.5in;margin:24px;}
+.print-plain {height: 11in;width: 8.5in;}
 a {
   text-decoration: none;
 }
@@ -70,9 +71,30 @@ a {
 
 @media print {
   .page-break {page-break-after: always!important;}
+
   .top,.header {display:none;}
   fieldset {border:none;}
   body {font-size: 11pt!important;background-color: #fff;}
+  .print-medium{
+    page-break-inside: avoid;
+    font-size: 1.4rem;
+    table{
+      td,th{
+        font-size: 1.0rem;
+      }
+
+    }
+  }
+  .print-plain{
+    page-break-inside: avoid;
+    font-size: 1.6rem;
+    table{
+      td,th{
+        font-size: 1.0rem;
+      }
+
+    }
+  }
 
   a[href]:after {
     content: none !important;

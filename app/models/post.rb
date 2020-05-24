@@ -6,22 +6,22 @@ class Post < ApplicationRecord
   has_many :trustee_audits, dependent: :destroy
   has_one :post_calendar, dependent: :destroy
 
-  def self.districts
-    dist = User.where.not(district:nil).pluck(:district).uniq.sort
-  end
+  # def self.districts
+  #   dist = User.where.not(district:nil).pluck(:district).uniq.sort
+  # end
 
-  def self.posts
-    dist = User.where.not(numb:nil).pluck(:numb).uniq.sort
-  end
+  # def self.posts
+  #   dist = User.where.not(numb:nil).pluck(:numb).uniq.sort
+  # end
 
-  def self.district_posts
-    dist_posts = {}
-    Post.districts.each do |d|
+  # def self.district_posts
+  #   dist_posts = {}
+  #   Post.districts.each do |d|
 
-      dist_posts[d] = Post.where(district_id:d).order(:numb).pluck(:numb,:id).to_h
-    end
-    dist_posts
-  end
+  #     dist_posts[d] = Post.where(district_id:d).order(:numb).pluck(:numb,:id).to_h
+  #   end
+  #   dist_posts
+  # end
 
   def build_calendar
     key = "post-#{self.numb}-calendar"

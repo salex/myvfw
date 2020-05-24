@@ -1,0 +1,10 @@
+.w3-container.w3-white.min-height
+  .w3-cell-row
+    .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
+      h4.strong.text-center.malt Post and VFW Forms 
+      .w30p
+        p = link_to "Bartenders Daily Report",bartender_forms_path,class:'w3-button w3-blue-gray w100'
+        p = link_to "Cash Accountability Report",cash_report_forms_path,class:'w3-button w3-blue-gray w100'
+
+    = render partial:'home/sidebar'
+

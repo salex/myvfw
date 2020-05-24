@@ -13,5 +13,13 @@ module ApplicationHelper
     return Date.today if date.blank?
     date = Date.parse(date) rescue Date.today
   end
+
+  def icon(klass, text = nil)
+    icon_tag = tag.i(class: klass)
+    text_tag = tag.span text
+    text ? tag.span(icon_tag + text_tag) : icon_tag
+  end
+
+
   
 end
