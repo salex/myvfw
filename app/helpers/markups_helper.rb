@@ -18,7 +18,6 @@ module MarkupsHelper
     end
   end
 
-
   def callout_warning(content)
     tag.div class:'w3-container w3-pale-yellow w3-leftbar w3-border-yellow w3-display-container' do  
       concat(tag.span('&times;'.html_safe,class:'w3-button w3-large w3-display-topright',onclick:"this.parentElement.style.display='none'"))
