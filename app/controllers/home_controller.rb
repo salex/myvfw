@@ -36,7 +36,7 @@ class HomeController < ApplicationController
     path = params[:path]
     if path.include?('post')
       post = Post.find_by(numb:path.delete('post').to_i)
-      p "POST #{post.inspect}"
+      # p "POST #{post.inspect}"
       if post.present?
         session[:post_id] = post.id
         session[:visitor] = true

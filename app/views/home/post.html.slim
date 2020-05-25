@@ -8,28 +8,19 @@
           p =  "Post #{@post.numb} has not been initialized"
           p = session_inspect
           p = Current.post
+
       - if @alerts.present?
         - @alerts.each do |alert|
           - case alert.category
             - when 'alert'
-              .w3-container.w3-pale-red.w3-leftbar.w3-border-red.w3-display-container
-                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
-                = render partial:'home/markup_home',locals:{article: alert}
-
-            - when 'warning'
-              .w3-container.w3-pale-yellow.w3-leftbar.w3-border-yellow.w3-display-container
-                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
-                = render partial:'home/markup_home',locals:{article: alert}
+              = callout_alert render partial:'home/markup_home',locals:{article: alert}
+             - when 'warning'
+              = callout_warning render partial:'home/markup_home',locals:{article: alert}
             - when 'success'
-              .w3-container.w3-pale-green.w3-leftbar.w3-border-green.w3-display-container
-                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
-                = render partial:'home/markup_home',locals:{article: alert}
+              = callout_success render partial:'home/markup_home',locals:{article: alert}
             - when 'info'
-              .w3-container.w3-pale-blue.w3-leftbar.w3-border-blue.w3-display-container
-                span.w3-button.w3-large.w3-display-topright[onclick="this.parentElement.style.display='none'"] &times;
-                = render partial:'home/markup_home',locals:{article: alert}
+              = callout_info render partial:'home/markup_home',locals:{article: alert}
 
-          
         - if @home.present?
           - @home.each do |article|
             = render partial:'home/markup_home',locals:{article: article}
