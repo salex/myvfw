@@ -14,7 +14,7 @@
           - case alert.category
             - when 'alert'
               = callout_alert render partial:'home/markup_home',locals:{article: alert}
-             - when 'warning'
+            - when 'warning'
               = callout_warning render partial:'home/markup_home',locals:{article: alert}
             - when 'success'
               = callout_success render partial:'home/markup_home',locals:{article: alert}
