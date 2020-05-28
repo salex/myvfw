@@ -1,14 +1,14 @@
 .s12.m2.w3-cell.w3-mobile
   .w3-large.strong Post Info
   .w3-card-2.w3-bar-block
-    .w3-bar-item = link_to "About",post_about_path,class:'w3-btn lite-goldey w100'
+    / .w3-bar-item = link_to "About",post_about_path,class:'w3-btn lite-goldey w100'
     .w3-bar-item = link_to "Map",post_map_path,class:'w3-btn lite-goldey w100' 
     .w3-bar-item = link_to "Articles",post_articles_path,class:'w3-btn lite-goldey w100' 
     .w3-bar-item = link_to "Links",post_links_path,class:'w3-btn lite-goldey w100' 
     .w3-bar-item = link_to "News",post_news_path,class:'w3-btn lite-goldey w100' 
     .w3-bar-item = link_to "Minutes", post_minutes_path,class:'w3-btn lite-goldey w100'
     .w3-bar-item = link_to "Calendar", post_calendar_path,class:'w3-btn lite-goldey w100'
-    .w3-bar-item = link_to "Radar",post_radar_path,class:'w3-btn lite-goldey w100'
+    .w3-bar-item = link_to "Radar",'https://www.wunderground.com/wundermap',class:'w3-btn lite-goldey w100'
     .w3-bar-item = link_to "Forms",forms_path,class:'w3-btn lite-goldey w100'
     .w3-bar-item = link_to "Post",post_path(Current.post),class:'w3-btn lite-goldey w100' if Current.user
   - if Current.user.present? && Current.user.is_admin? && Current.post_user
