@@ -7,15 +7,14 @@ class ApplicationController < ActionController::Base
   before_action :current_user
   #below will hard wire to only use post 8600
   before_action :current_post
+  before_action :session_expiry
+
   def cant_do_that
-    puts "cant_do_that"
     redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that."
   end
   helper_method :cant_do_that
 
   def current_user
-    # reset_session
-    # p "begin what is in current post_user: #{Current.post_user} dist: #{Current.district} post: #{Current.post} dept: #{Current.department}"
 
     @current_user ||= User.find_by(id:session[:user_id]) if session[:user_id]
     Current.user = @current_user
@@ -54,14 +53,13 @@ class ApplicationController < ActionController::Base
 
   def current_post
     @current_post ||= Post.find_by(numb:8600)  #if session[:post_id]
-    Current.post =@current_post
+    Current.post = @current_post
     @current_post
   end
   helper_method :current_post
 
   def require_login
     if current_user.nil? 
-      # redirect_to root_url, alert: "I'm sorry. I can't do that."
       user_not_authorized
     end
   end
@@ -96,6 +94,34 @@ class ApplicationController < ActionController::Base
   helper_method :require_member
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+
+  def session_expiry
+    if current_user.present? && session[:expires_at].present?
+      get_session_time_left
+      unless @session_time_left > 0
+        if @current_user.present?
+          # sign_out and redirect for new login
+          sign_out
+          deny_access 'Your session has timed out. Please log back in.'
+        else
+          # just kill session and start a new one
+          sign_out
+        end
+      end
+    else
+      # expire all sessions, even if not user to midnight
+      session[:expires_at] = Time.now + 30.minutes
+    end
+
+  end
+  
+  def get_session_time_left
+    expire_time = Time.parse(session[:expires_at]) || Time.now
+    @session_time_left = (expire_time - Time.now).to_i
+    @expires_at = expire_time.strftime("%I:%M:%S%p")
+  end
+
+
 
   private
 
