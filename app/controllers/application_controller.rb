@@ -1,13 +1,12 @@
 class ApplicationController < ActionController::Base
   include Pundit
   protect_from_forgery
-  # after_action :verify_authorized, only: [:new,:create,:edit,:update,:destroy]
-
 
   before_action :current_user
   #below will hard wire to only use post 8600
   before_action :current_post
   before_action :session_expiry
+  include UsersHelper
 
   def cant_do_that
     redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that."

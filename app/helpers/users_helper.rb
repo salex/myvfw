@@ -29,6 +29,12 @@ module UsersHelper
   def sign_out
     session[:user_id] = nil
     reset_session
+    Current.user = nil
+    Current.post = nil
+    Current.district = nil
+    Current.department = nil
+    Current.post_user = nil
+
   end
 
 end
