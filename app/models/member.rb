@@ -1,6 +1,7 @@
 require "smarter_csv"
 
 class Member < ApplicationRecord
+  attribute :message, :text
   belongs_to :post
   attr_accessor :applicant
   validates :vfw_id, uniqueness: true, presence:true

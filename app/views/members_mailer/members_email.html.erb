@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from VFW Post 8600!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Name: <%= @member.name %></p>
+    <p>Email: <%= @member.email %></p>
+    <p>Address: <%= @member.address %></p>
+    <p>Phone: <%= @member.phone %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @member.message %></p>
+  </body>
+</html>

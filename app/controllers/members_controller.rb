@@ -110,6 +110,13 @@ class MembersController < ApplicationController
     @member = Current.post.members.new(status:'Applicant')
   end
 
+  def test_email
+    set_member
+    MembersMailer.with(member: @member).members_email.deliver_later
+    redirect_to members_url, notice: 'Member was sent an email.'
+    # render plain: @member.inspect
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

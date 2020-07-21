@@ -90,6 +90,9 @@ Rails.application.routes.draw do
   end
 
   resources :members do
+    member do
+      get :test_email
+    end
     collection do
       get :import_form
       post :import

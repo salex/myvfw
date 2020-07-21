@@ -1,0 +1,15 @@
+# app/views/order_mailer/new_order_email.text.erb
+
+You got a new order from VFW Post 8600!
+===============================================
+
+Order Details:
+--------------------------
+
+Name: <%= @member.name %>
+Email: <%= @member.email %>
+Address: <%= @member.address %>
+Phone: <%= @member.phone %>
+
+Message:
+<%= @member.message %>
