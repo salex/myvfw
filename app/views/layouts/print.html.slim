@@ -11,7 +11,7 @@ html lang="en"
     = csrf_meta_tag
     = csp_meta_tag
 
-  body
+  body.plain
     .w3-container.w3-white.print-page
       / .w3-white.min-height-80
       == yield
