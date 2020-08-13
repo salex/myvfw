@@ -22,11 +22,11 @@
             - when 'info'
               = callout_info render partial:'home/markup_home',locals:{article: alert}
 
-        - if @home.present?
-          - @home.each do |article|
-            = render partial:'home/markup_home',locals:{article: article}
-        / - if @slim.present?
-        /   = render inline: @slim.content, type: :slim
+      - if @home.present?
+        - @home.each do |article|
+          = render partial:'home/markup_home',locals:{article: article}
+      / - if @slim.present?
+      /   = render inline: @slim.content, type: :slim
         
     = render partial:'home/sidebar'
 
