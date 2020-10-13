@@ -49,20 +49,31 @@
             th cTran
             th Reins
             th Desc
-            th Missing
+            / th Missing
             th Appl
-            th ExPaid
+            th ExPd
             th Paid
+            th P30
+            th P60
+            th P90
             th Exp
           tr.markdown
             td.text-right = @memstats['Continuous Transfer'].zero? ? @memstats['Continuous Transfer'] : link_to(@memstats['Continuous Transfer'], members_path(limit:'Continuous Transfer'), remote:remote)
             td.text-right = @memstats['Reinstate'].zero? ? @memstats['Reinstate'] : link_to(@memstats['Reinstate'], members_path(limit:'Reinstate'), remote:remote)
             td.text-right = @memstats['Deceased'].zero? ? @memstats['Deceased'] : link_to(@memstats['Deceased'], members_path(limit:'Deceased'), remote:remote)
-            td.text-right = @memstats['Missing'].zero? ? @memstats['Missing'] : link_to(@memstats['Missing'], members_path(limit:'Missing'), remote:remote)
+            / td.text-right = @memstats['Missing'].zero? ? @memstats['Missing'] : link_to(@memstats['Missing'], members_path(limit:'Missing'), remote:remote)
             td.text-right = @memstats['Applicant'].zero? ? @memstats['Applicant'] : link_to(@memstats['Applicant'], members_path(limit:'Applicant'), remote:remote)
 
             td.text-right = @memstats['ExpiredPaid'].zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
+  
             td.text-right = @memstats['Paid'].zero? ? @memstats['Paid'] : link_to(@memstats['Paid'], members_path(limit:'Paid'), remote:remote)
+            td.text-right = @memstats['Paid30']
+            / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
+            td.text-right = @memstats['Paid60']
+            / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
+            td.text-right = @memstats['Paid90']
+            / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
+
             td.text-right = @memstats['Expired'].zero? ? @memstats['Expired'] : link_to(@memstats['Expired'], members_path(limit:'Expired'), remote:remote)
 
  

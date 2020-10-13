@@ -70,10 +70,19 @@ class Member < ApplicationRecord
     all = Current.post.members.all
     active = all.active
     paying = active.where(pay_status:'UnPaid').where.not(paid_thru:nil)
+    puts paying
     stats['Active'] = active.count
     stats['All'] = all.count
     stats['ExpiredPaid'] = paying.where('members.paid_thru > ?',Date.today.to_s).count
-    stats['Paid'] = stats['ExpiredPaid'] + stats['Life Member'] + stats['Installment Life']+ stats['Continuous'] + stats['New Member'] + stats['Non-Pay Transfer'] + stats['Continuous Transfer'] + stats['Reinstate']
+    stats["Expired30"] = paying.where('members.paid_thru > ?',(Date.today + 30.days).to_s).count
+    stats["Expired60"] = paying.where('members.paid_thru > ?',(Date.today + 60.days).to_s).count
+    stats["Expired90"] = paying.where('members.paid_thru > ?',(Date.today + 90.days).to_s).count
+
+    good = stats['Life Member'] + stats['Installment Life']+ stats['Continuous'] + stats['New Member'] + stats['Non-Pay Transfer'] + stats['Continuous Transfer'] + stats['Reinstate']
+    stats['Paid'] = stats['ExpiredPaid'] + good
+    stats['Paid30'] = stats['Expired30'] + good
+    stats['Paid60'] = stats['Expired60'] + good
+    stats['Paid90'] = stats['Expired90'] + good
     stats['Expired'] = stats['Active'] - stats['Paid']
     stats
   end
