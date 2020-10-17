@@ -177,3 +177,32 @@ h5 {margin-top:8px; margin-bottom: 8px;}
   }
 }
 
+.markdown, .print {
+  width:9.0in;
+  margin: 0 auto;
+
+  body {background-color:inherit;}
+
+  font-size: 1.0rem;
+  h1,h2,h3,h4,h5,h6,p {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding:0;
+
+  }
+  li {font-size:0.9rem;}
+  h1,h2,h3,h4,h5,h6,caption{
+    font-size:1.2rem;
+    font-weight: bold;
+  }
+  td, th {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    margin:0;
+    line-height: 1rem;
+    border:solid 1px #ccc;
+  }
+ 
+
+}
+
