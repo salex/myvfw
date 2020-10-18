@@ -184,15 +184,16 @@ h5 {margin-top:8px; margin-bottom: 8px;}
   body {background-color:inherit;}
 
   font-size: 1.0rem;
-  h1,h2,h3,h4,h5,h6,p {
-    margin-top: 4px;
+  p {line-height: 1.1rem; margin-top: 0.2rem;margin-bottom: 0.2rem;}
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
     margin-bottom: 0;
     padding:0;
 
   }
   li {font-size:0.9rem;}
   h1,h2,h3,h4,h5,h6,caption{
-    font-size:1.2rem;
+    font-size:1.1rem;
     font-weight: bold;
   }
   td, th {
