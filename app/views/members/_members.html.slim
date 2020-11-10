@@ -29,7 +29,7 @@ table.w3-table-all
           td = member.age
           td = member.undeliverable
           -  if Current.user
-            td.markdown = display_contact(member)
+            td = display_contact(member)
           / member.email.present? ? ((member.phone ||= '') + mail_to(member.email,'E')).html_safe : member.phone
           td = member.state != 'AL' ? "#{member.city}/#{member.state}" : member.city
           td = params[:limit].present? && params[:limit] == 'Missing' ? "Last-#{member.last_status}" : member.pay_status
