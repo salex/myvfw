@@ -1,4 +1,9 @@
-table.w3-table-all
+- if params[:print].present?
+  - daclass ='small-table tr-bb'
+- else
+  - daclass ='w3-table-all'
+
+table[class="#{daclass}"]
   thead[data-controller="sortable"]
     tr
       th.w15p Full Name
