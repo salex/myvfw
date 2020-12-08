@@ -1,0 +1,13 @@
+.w3-container.w3-white.min-height
+
+  h3 Local PDFs
+  p woa is me!
+  -pnames = Dir["#{@fpath}/*.pdf"]
+
+  ul
+    - pnames.each do |f|
+      - id = f.split('/').last.split('.').first
+      li 
+        a[href="pdfs/#{id}"] = id
+
+

@@ -34,7 +34,6 @@ class HomeController < ApplicationController
 
   def redirect
     path = params[:path]
-    puts "PPPPPPPPPPPPPPP #{path}"
     if path.include?('post')
       post = Post.find_by(numb:path.delete('post').to_i)
       # p "POST #{post.inspect}"

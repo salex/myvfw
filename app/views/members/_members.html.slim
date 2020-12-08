@@ -6,7 +6,9 @@
 table[class="#{daclass}"]
   thead[data-controller="sortable"]
     tr
-      th.w15p Full Name
+      th.w15p[data-action='click->sortable#clicked'] 
+        i.fas.fa-sort
+        |Full Name
       - if Current.user
         th Vfw ID
       th.w05p Age
