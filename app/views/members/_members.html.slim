@@ -17,7 +17,9 @@ table[class="#{daclass}"]
         th.w20p Contact
       th City
       th Pay Status
-      th Paid Thru
+      th[data-action='click->sortable#clicked'] 
+        i.fas.fa-sort 
+        |Paid Thru
       th[data-action='click->sortable#clicked'] 
         i.fas.fa-sort
         |Days

@@ -17,7 +17,7 @@
     .callout.warning
       | There are no members uploaded for this post 
   - else
-    .w3-row-padding.noprint
+    .w3-row-padding
       .strong.malt 
         span.strong = "Memstats: Post Members (#{@members.count} #{params[:limit]})&nbsp;".html_safe
 
@@ -33,7 +33,8 @@
             th Cont
             th UnPaid
             th New
-            th npTran
+            th Tran
+            th Miss
           tr.markdown
             td.text-right = @memstats['All'].zero? ? 0 : link_to(@memstats['All'], members_path(limit:'All'), remote:remote)
             td.text-right = @memstats['Active'].zero? ? @memstats['Active'] : link_to(@memstats['Active'], members_path(limit:'Active'), remote:remote)
@@ -43,6 +44,8 @@
             td.text-right = @memstats['UnPaid'].zero? ? @memstats['UnPaid'] : link_to(@memstats['UnPaid'], members_path(limit:'UnPaid'), remote:remote)
             td.text-right = @memstats['New Member'].zero? ? @memstats['New Member'] : link_to(@memstats['New Member'], members_path(limit:'New Member'), remote:remote)
             td.text-right = @memstats['Non-Pay Transfer'].zero? ? @memstats['Non-Pay Transfer'] : link_to(@memstats['Non-Pay Transfer'], members_path(limit:'Non-Pay Transfer'), remote:remote)
+            td.text-right = @memstats['Missing'].zero? ? @memstats['Missing'] : link_to(@memstats['Missing'], members_path(limit:'Missing'), remote:remote)
+
       .s12.l6.w3-col
         table.w3-table-all.table-cell-borders
           thead
