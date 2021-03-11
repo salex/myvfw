@@ -56,49 +56,49 @@
               - unless @audit.accounts[i].name.blank?
                 tr(id="acct-#{i}" data-targets="row")
                   td = f.text_field( "audit[accounts][#{i}][name]", value:@audit.accounts[i].name, class:" w80p",
-                    data:{target: 'trusteeAudit.name',action:'trusteeAudit#changed'})
+                    data:{trusteeAudit_target:'name',action:'trusteeAudit#changed'})
                   td = f.select( "audit[accounts][#{i}][type]",
                     options_for_select(%w(Ck Ca CD Sv),@audit.accounts[i].type), { include_blank: true },
-                    data:{target: 'trusteeAudit.type',action:'trusteeAudit#changed'})
+                    data:{trusteeAudit_target:'type',action:'trusteeAudit#changed'})
                   td = f.text_field( "audit[accounts][#{i}][beginning]", 
                     value:@audit.accounts[i].beginning, class:"w80p w3-right-align", 
-                    data:{target: 'trusteeAudit.beginning',action:'trusteeAudit#changed'})
+                    data:{trusteeAudit_target:'beginning',action:'trusteeAudit#changed'})
                   td = f.text_field( "audit[accounts][#{i}][debit]", value:@audit.accounts[i].debit, 
                     class:"w80p w3-right-align", 
-                    data:{target: 'trusteeAudit.debit',action:'trusteeAudit#changed'})
+                    data:{trusteeAudit_target:'debit',action:'trusteeAudit#changed'})
                   td = f.text_field( "audit[accounts][#{i}][credit]", value:@audit.accounts[i].credit, 
                     class:"w80p w3-right-align", 
-                    data:{target: 'trusteeAudit.credit',action:'trusteeAudit#changed'})
+                    data:{trusteeAudit_target:'credit',action:'trusteeAudit#changed'})
                   td = f.text_field( "audit[accounts][#{i}][ending]", value:@audit.accounts[i].ending, 
                     class:"w80p w3-right-align",readonly:true,
-                    data:{target: 'trusteeAudit.ending'})
+                    data:{trusteeAudit_target:'ending'})
             tr(id="acct-#{cnt}")
               td = f.text_field( "audit[accounts][#{cnt}][name]", class:" w80p",
-                data:{target: 'trusteeAudit.name',action:'trusteeAudit#changed'},)
+                data:{trusteeAudit_target:'name',action:'trusteeAudit#changed'},)
               td = f.select( "audit[accounts][#{cnt}][type]",
                 options_for_select(%w(Ck Ca CD Sv)), { include_blank: true },
-                data:{target: 'trusteeAudit.type',action:'trusteeAudit#changed'})
+                data:{trusteeAudit_target:'type',action:'trusteeAudit#changed'})
               td = f.text_field( "audit[accounts][#{cnt}][beginning]", class:" w80p w3-right-align", 
-                data:{target: 'trusteeAudit.beginning',action:'trusteeAudit#changed'})
+                data:{trusteeAudit_target:'beginning',action:'trusteeAudit#changed'})
               td = f.text_field( "audit[accounts][#{cnt}][debit]", class:" w80p w3-right-align", 
-                data:{target: 'trusteeAudit.debit',action:'trusteeAudit#changed'}) 
+                data:{trusteeAudit_target:'debit',action:'trusteeAudit#changed'}) 
               td = f.text_field( "audit[accounts][#{cnt}][credit]", class:" w80p w3-right-align", 
-                data:{target: 'trusteeAudit.credit',action:'trusteeAudit#changed'})
+                data:{trusteeAudit_target:'credit',action:'trusteeAudit#changed'})
               td = f.text_field( "audit[accounts][#{cnt}][ending]", readonly:true,class:" w80p w3-right-align",
-                data:{target: 'trusteeAudit.ending'})
+                data:{trusteeAudit_target:'ending'})
             / maybe move to diffent tbody
           tbody
             tr.w3-light-gray(id="acct-totals")
               td.strong.w3-right-align[colspan="2"] Totals
               
               td = f.text_field( "audit[totals][beginning]",readonly:true, class:"w3-right-align w80p", 
-                data:{target: 'trusteeAudit.beginningTotal'})
+                data:{trusteeAudit_target:'beginningTotal'})
               td = f.text_field( "audit[totals][debit]", readonly:true,class:"w3-right-align w80p", 
-                data:{target: 'trusteeAudit.debitTotal'}) 
+                data:{trusteeAudit_target:'debitTotal'}) 
               td = f.text_field( "audit[totals][credit]",readonly:true, class:"w3-right-align w80p", 
-                data:{target: 'trusteeAudit.creditTotal'})
+                data:{trusteeAudit_target:'creditTotal'})
               td = f.text_field( "audit[totals][ending]", readonly:true,class:"w3-right-align w80p", 
-                data:{target: 'trusteeAudit.totalTotal'})
+                data:{trusteeAudit_target:'totalTotal'})
 
     .w3-row-padding
       div &nbsp;
@@ -119,7 +119,7 @@
                 td = f.text_field "audit[operations][#{i}][question]", value:@audit.operations[i].question, class:"w100"
                 - if numeric
                   td[data-controller="setfixed"] = f.text_field( "audit[operations][#{i}][response]",
-                   value:@audit.operations[i].response, data:{target: 'setfixed.textfield',action:'setfixed#changed'},
+                   value:@audit.operations[i].response, data:{setfixed_target:'textfield',action:'setfixed#changed'},
                    class:"w3-right-align")
 
                 - else
@@ -133,11 +133,11 @@
         .form-row
           = f.label "Bank Balance","Bank Balance"
           = f.text_field('audit[checking][balance]', value:@audit.checking.balance,
-          data:{target: 'trusteeAudit.balance',action:'trusteeAudit#changed'},class:"w30p",)
+          data:{trusteeAudit_target:'balance',action:'trusteeAudit#changed'},class:"w30p",)
         .form-row
           = f.label "Outstanding"
           = f.text_field('audit[checking][outstanding]', value:@audit.checking.outstanding,
-          data:{target: 'trusteeAudit.outstanding',action:'trusteeAudit#changed'},class:"w30p")
+          data:{trusteeAudit_target:'outstanding',action:'trusteeAudit#changed'},class:"w30p")
         #balanceBox
           .form-row
             = f.label "Actual Balance","Actual Balance"
@@ -145,7 +145,7 @@
           .form-row
             = f.label "Other Savings","Other Savings"
             = f.text_field('audit[checking][other]', value:@audit.checking.other,
-            data:{target: 'trusteeAudit.other',action:'trusteeAudit#changed'},class:"w3-right-align")
+            data:{trusteeAudit_target:'other',action:'trusteeAudit#changed'},class:"w3-right-align")
           .form-row
             = f.label "Cash on Hand","Cash on Hand"
             = f.text_field('audit[checking][cash]', value:@audit.checking.cash, readonly:true,class:"w3-right-align")

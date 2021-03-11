@@ -10,7 +10,7 @@
       =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')  if Current.user
     - if Current.user
       .s4.w3-col.w3-padding[data-controller="membersSearch"]
-        = search_field_tag 'name',params[:name], data:{target:'membersSearch.lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
+        = search_field_tag 'name',params[:name], data:{membersSearch_target:'lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
 
 
   - if @members.blank?

@@ -20,13 +20,13 @@
 
       .s12.m3.w3-col.w3-card.w3-padding-bottom[data-controller="reports"]
         = f.input :volunteers, input_html:{class:'w3-input w3-border',
-          data:{target: 'reports.volunteers',action:'reports#changed'}}
+          data:{reports_target:'volunteers',action:'reports#changed'}}
         = f.input :hours_each, input_html:{class:'w3-input w3-border',
-          data:{target: 'reports.hours_each',action:'reports#changed'}}
+          data:{reports_target:'hours_each',action:'reports#changed'}}
         = f.input :total_hours, input_html:{class:'w3-input w3-border',
           data:{target:'reports.total_hours',action:'reports#changed'}}
         = f.input :miles_each, input_html:{class:'w3-input w3-border',
-          data:{target: 'reports.miles_each',action:'reports#changed'}}
+          data:{reports_target:'miles_each',action:'reports#changed'}}
         = f.input :total_miles, input_html:{class:'w3-input w3-border',
           data:{target:'reports.total_miles',action:'reports#changed'}}
         = f.input :expenses, input_html:{class:'w3-input w3-border'}

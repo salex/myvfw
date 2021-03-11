@@ -7,11 +7,11 @@
       #testone[data-controller="testOne"]
         = render partial:'test/sjr'
     .w3-col.s6
-      div[data-controller="testTwo" data-target="testTwo.refresh"]
+      div[data-controller="testTwo" data-testTwo-target="refresh"]
         = render partial:'test/fire'
   .w3-row
     .w3-col.s6
-      #testthree[data-controller="testThree" data-target="testThree.refresh" data-action="ajax:success->testThree#onSuccess"]
+      #testthree[data-controller="testThree" data-testThree-target="refresh" data-action="ajax:success->testThree#onSuccess"]
         = render partial:'test/link'
     .w3-col.s6
       p Test 4?
