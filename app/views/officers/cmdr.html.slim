@@ -82,14 +82,19 @@
 
 
   p VFW Post 8600 Commanders
+  p
+    i This is a combination of VFW records on Post commanders and pictures that were in the dance hall. Many who were not reported to national and show up as NO RECORD. If there is not picture, it will say 'No Picture'
+
   .w3-row
     - cmd_array.each do |a|
       .w3-col.s3
         - if a[1] == "Picture Missing"
-          h5.strong Picture Missing
           =image_tag("cmdr/vfw-logo3.png",width:200)
-          br
-          br
+          div[style="height:155px;"]
+            h5.strong Picture Missing
+
+          / =image_tag("cmdr/vfw-logo3.png",width:200)
+
         - else
           =image_tag("cmdr/#{a[1]}",width:200)
         div 
