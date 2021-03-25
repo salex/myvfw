@@ -87,18 +87,17 @@
 
   .w3-row
     - cmd_array.each do |a|
-      .w3-col.s6.m3
+      .w3-col.s6.m3[style="height:310px;"]
         - if a[1] == "Picture Missing"
           =image_tag("cmdr/vfw-logo3.png",width:200)
-          div[style="height:155px;"]
-            h5.strong Picture Missing
+          h5.strong Picture Missing
 
           / =image_tag("cmdr/vfw-logo3.png",width:200)
 
         - else
           =image_tag("cmdr/#{a[1]}",width:200)
         div 
-        i = a[0]
+          i = a[0]
 
     / .w3-col.s3
     /   =image_tag('cmdr/1954-55_William_H._Moulds.jpg',width:200)
