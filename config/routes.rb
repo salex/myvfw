@@ -105,7 +105,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :officers
+  resources :officers do
+    collection do
+      get :cmdr
+    end
+  end
 
   get 'vdap/', to: 'vdap#home'
   get '/page/:id', to: 'vdap#resources'
