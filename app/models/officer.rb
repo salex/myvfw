@@ -3,7 +3,8 @@ class Officer < ApplicationRecord
   belongs_to :post
   belongs_to :member
   OFFICERS = ["Commander", "Senior Vice-Commander", "Junior Vice-Commander", "Quartermaster", "Adjutant", "Chaplain", "Judge Advocate", 
-    "Surgeon", "Trustee - 1 Year", "Trustee - 2 Year", "Trustee - 3 Year", "Service Officer"]
+    "Surgeon", "Trustee - 1 Year", "Trustee - 2 Year", "Trustee - 3 Year", "Service Officer", 
+    "House Committee 1", "House Committee 2", "House Committee 3"]
 
   before_save :set_current
   before_validation  :set_seq
