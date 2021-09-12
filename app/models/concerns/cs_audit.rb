@@ -40,7 +40,7 @@ class CsAudit < Prawn::Document
     @inc = 0
     dr_size = report.size > 0 ? report.size : 1
     details.each do |d|
-      @inc += (d.size / 130.0).to_i
+      @inc += (d.size / 105.0).to_i
     end
     dr_raw = (2.5 + ((dr_size - @inc) * 0.95)+ (@inc * 1.2 + 0.5)) + 0.25
 
@@ -50,10 +50,10 @@ class CsAudit < Prawn::Document
       move_down 30
     end
 
-    font_size 7
+    font_size 8
     rows = [
-        [{content:header[:title],align: :center,colspan:5,size:10}],
-        [header[:desc], "HoursE/T", "Exp",'MilesE/T','Memb']
+        [{content:header[:title],align: :center,colspan:5,size:9}],
+        [header[:desc], "Hours(E-T)", "Exp",'Miles(E-T)','Memb']
       ]
 
     if report.size > 0
@@ -65,13 +65,15 @@ class CsAudit < Prawn::Document
       summary[key][:total_cost] = (summary[key][:total_hours] * 27.20)  + (summary[key][:total_miles] * 0.14) + summary[key][:expenses]
       report.each do |r|
         @inc += r.details.size / 120.0
-        rows <<  ["#{r.date} - #{r.details}", "#{r.hours_each}/#{r.total_hours}",r.expenses,"#{r.miles_each}/#{r.total_miles}",r.volunteers]
+        rows <<  ["#{r.date} - #{r.details}", "#{r.hours_each.to_i} - #{r.total_hours.to_i}",r.expenses,"#{r.miles_each.to_i} - #{r.total_miles.to_i}",r.volunteers]
       end
     else 
       rows << [{content:"<i>There are no reports for this area</i>",align: :center,colspan:5}]
     end
-    e = make_table rows,width:540,column_widths: {0 => 400},cell_style: { :inline_format => true,:padding => [3,3,3,3]}do
+    e = make_table rows,width:540,column_widths: {0 => 390},cell_style: { :inline_format => true,:padding => [3,3,3,3]}do
         row(1).font_style = :bold
+        column(1..5).size = 7
+
       end
     e.draw
     @inc = 0.0
