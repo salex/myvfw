@@ -31,5 +31,14 @@ module ReportsHelper
     money(fixed)
   end
 
+  def cs_reports
+    curr = Date.today.beginning_of_quarter
+    dates = [curr]
+    15.times do 
+      dates << dates.last - 3.months
+    end
+    return dates
+  end
+
 
 end

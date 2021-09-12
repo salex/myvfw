@@ -52,6 +52,8 @@ Rails.application.routes.draw do
       get :print
       get :community_service
       get :audit_summary
+      get :cs_report
+      get :quarter
       # get :trustee_audit
       # post :update_audit
       # get :trustee_audit_pdf

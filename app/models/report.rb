@@ -20,6 +20,17 @@ class Report < ApplicationRecord
     "Membership"=>["Membership Drive", "Contact Continuous/Reinstates"]
   }
 
+  def self.old_to_new
+
+    new_reports = {}
+    new_reports[:community] = ["Involvment", "Cooperation","Americanism","Monthly Report"]
+    new_reports[:americanism] = ["Legislative","Local Activities", "State Activities", "National Activities","POW/MIA Activities", "Buddy Poppies","Gold Metal","Adopt a Unit"]
+    new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report"]
+    new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
+    new_reports[:safety] = [ "Law/Fire/EMT", "Safety"]
+    return new_reports
+  end
+
   def self.report_summary(date=nil)
     range = Report.report_range(date)
     summary = {}
@@ -167,7 +178,7 @@ class Report < ApplicationRecord
 
   def hour_cost
     self.total_hours = default_volunteers * hours_each if hours_each.present?
-    tot = default_hours *  7.25
+    tot = default_hours *  27.20
     return tot.round(2)
   end
 

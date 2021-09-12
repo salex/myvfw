@@ -19,6 +19,15 @@ class ReportsController < ApplicationController
     render template:'reports/_list'
   end
 
+  def quarter
+    date = Report.set_date(params[:rdate])
+    boq = date.beginning_of_quarter
+    eoq = date.end_of_quarter
+    @reports = Current.post.reports.where(date:boq..eoq).order(:date)
+    render template:'reports/_list'
+  end
+
+
   # GET /reports/1
   # GET /reports/1.json
   def show
@@ -37,6 +46,18 @@ class ReportsController < ApplicationController
   def edit
     render template:'reports/edit'
 
+  end
+
+  def cs_report
+    date = Report.set_date(params[:rdate])
+    boq = date.beginning_of_quarter
+    eoq = date.end_of_quarter
+    @reports = Current.post.reports.where(date:boq..eoq).order(:date)
+
+    pdf = CsAudit.new(@reports,boq,eoq)
+    send_data pdf.render, filename: "comm_srv_audit",
+      type: "application/pdf",
+      disposition: "inline"
   end
 
   # POST /reports
