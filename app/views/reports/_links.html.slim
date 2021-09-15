@@ -39,7 +39,7 @@
     .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
       - report_dates = cs_reports
       - report_dates.each do |d|
-        = link_to "#{d}-#{d.end_of_quarter}", cs_report_reports_path(rdate:d),class:"w3-bar-item w3-button"
+        = link_to "#{d}-#{d.end_of_quarter}", cs_report_reports_path(rdate:d),target:'_blank',class:"w3-bar-item w3-button"
 
   .w3-dropdown-hover
       .w3-button.w3-hover-blue-gray
