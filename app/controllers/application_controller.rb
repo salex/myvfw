@@ -51,7 +51,11 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def current_post
-    @current_post ||= Post.find_by(numb:8600)  #if session[:post_id]
+    if Rails.env == 'staging'
+      @current_post ||= Post.find_by(id:session[:post_id]) if session[:post_id]
+    else
+      @current_post ||= Post.find_by(numb:8600)
+    end 
     Current.post = @current_post
     @current_post
   end
