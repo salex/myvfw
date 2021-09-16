@@ -7,7 +7,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def community_service
-    @summary,@totals,@range = Current.post.reports.report_summary(params[:rdate])
+    @summary,@totals,@range = Current.post.reports.new_report_summary(params[:rdate])
     render template:'reports/post_summary'
 
     # @reports = Report.all
@@ -16,6 +16,11 @@ class ReportsController < ApplicationController
 
   def list
     @reports = Current.post.reports.where(date:Report.report_range(params[:rdate])).order(:date).reverse
+    render template:'reports/_list'
+  end
+
+  def list_all
+    @reports = Current.post.reports.order(:date).reverse
     render template:'reports/_list'
   end
 
@@ -49,9 +54,16 @@ class ReportsController < ApplicationController
   end
 
   def cs_report
-    date = Report.set_date(params[:rdate])
-    boq = date.beginning_of_quarter
-    eoq = date.end_of_quarter
+    if params[:fydate].present?
+      range = Report.report_range(params[:fydate])
+      boq = range.first
+      eoq = range.last
+
+    else
+      date = Report.set_date(params[:rdate])
+      boq = date.beginning_of_quarter
+      eoq = date.end_of_quarter
+    end
     @reports = Current.post.reports.where(date:boq..eoq).order(:date)
 
     pdf = CsAudit.new(@reports,boq,eoq)

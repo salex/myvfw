@@ -7,7 +7,8 @@ class Report < ApplicationRecord
   validates :area, presence:true
   validates :total_hours, presence:true
 
-
+  HourRate = 27.20
+  MilageRate = 0.14
   ProgramTypes =['Community Service','Hospital','Legislative','National Military Service',
     'Service Officer','Programs','Membership']
   ProgramOptions = {
@@ -25,12 +26,50 @@ class Report < ApplicationRecord
     new_reports = {}
     new_reports[:community] = ["Involvment", "Cooperation"]
     new_reports[:americanism] = ["Legislative","Local Activities", "State Activities","Legislative","Local", "State", 
-      "National","POW/MIA Activities", "Buddy Poppies","Gold Metal","Adopt a Unit","Americanism"]
+      "National","POW/MIA Activities", "Buddy Poppies","Adopt a Unit","Americanism"]
     new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report","Monthly Report"]
     new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
-    new_reports[:safety] = [ "Law/Fire/EMT", "Safety"]
+    new_reports[:safety] = [ "Law/Fire/EMT", "Safety","Gold Metal"]
     return new_reports
   end
+
+  def self.new_report_summary(date=nil)
+    range = Report.report_range(date)
+    summary = {}
+    totals = {count:0,volunteers:0,total_hours:0.0,total_miles:0.0,expenses:0.0,total_cost:0.0}
+    categories = Report.old_to_new
+    header = {}
+    header[:community] = "Community Service"
+    header[:americanism] = "Citizenship/Education/Americanism" 
+    header[:aid] = "Aid to Others"
+    header[:youth] = "Youth Activities"    
+    header[:safety] = "Safety"
+
+    keys = categories.keys
+    keys.each do |t|
+      summary[t] = {}
+      prg = Report.where(area: categories[t],date:range)
+      summary[t][:count] = prg.count
+      totals[:count] += prg.count
+      if prg.present?
+        summary[t][:title] = header[t]
+        summary[t][:volunteers] = prg.sum(:volunteers)
+        summary[t][:total_hours] = prg.sum(:total_hours)
+        summary[t][:total_miles] = prg.sum(:total_miles)
+        summary[t][:expenses] = prg.sum(:expenses)
+        summary[t][:total_cost] = (summary[t][:total_hours] * HourRate) + (summary[t][:total_miles] * MilageRate) + summary[t][:expenses]
+        totals[:volunteers]  += summary[t][:volunteers] 
+        totals[:total_hours] += summary[t][:total_hours]
+        totals[:total_miles] += summary[t][:total_miles]
+        totals[:expenses]    += summary[t][:expenses]    
+        totals[:total_cost]  += summary[t][:total_cost]
+      else
+        summary[t][:title] = header[t]
+      end
+    end
+    return summary,totals,range
+  end
+
 
   def self.report_summary(date=nil)
     range = Report.report_range(date)
@@ -46,7 +85,7 @@ class Report < ApplicationRecord
         summary[t][:total_hours] = prg.sum(:total_hours)
         summary[t][:total_miles] = prg.sum(:total_miles)
         summary[t][:expenses] = prg.sum(:expenses)
-        summary[t][:total_cost] = (summary[t][:total_hours] * 7.25)+ (summary[t][:total_miles] * 0.14) + summary[t][:expenses]
+        summary[t][:total_cost] = (summary[t][:total_hours] * HourRate) + (summary[t][:total_miles] * MilageRate) + summary[t][:expenses]
         totals[:volunteers]  += summary[t][:volunteers] 
         totals[:total_hours] += summary[t][:total_hours]
         totals[:total_miles] += summary[t][:total_miles]
@@ -71,7 +110,7 @@ class Report < ApplicationRecord
         summary[t][:total_hours] = prg.sum(:total_hours)
         summary[t][:total_miles] = prg.sum(:total_miles)
         summary[t][:expenses] = prg.sum(:expenses)
-        summary[t][:total_cost] = (summary[t][:total_hours] * 7.25)+ (summary[t][:total_miles] * 0.14) + summary[t][:expenses]
+        summary[t][:total_cost] = (summary[t][:total_hours] * HourRate) + (summary[t][:total_miles] * MilageRate) + summary[t][:expenses]
         totals[:volunteers]  += summary[t][:volunteers] 
         totals[:total_hours] += summary[t][:total_hours]
         totals[:total_miles] += summary[t][:total_miles]
@@ -101,7 +140,7 @@ class Report < ApplicationRecord
           summary[t][:total_hours] = prg.sum(:total_hours)
           summary[t][:total_miles] = prg.sum(:total_miles)
           summary[t][:expenses] = prg.sum(:expenses)
-          summary[t][:total_cost] = (summary[t][:total_hours] * 7.25)+ (summary[t][:total_miles] * 0.14) + summary[t][:expenses]
+          summary[t][:total_cost] = (summary[t][:total_hours] * HourRate) + (summary[t][:total_miles] * MilageRate) + summary[t][:expenses]
           totals[:volunteers]  += summary[t][:volunteers] 
           totals[:total_hours] += summary[t][:total_hours]
           totals[:total_miles] += summary[t][:total_miles]
@@ -176,16 +215,16 @@ class Report < ApplicationRecord
   #   end
   #   totals
   # end
-
+ 
   def hour_cost
     self.total_hours = default_volunteers * hours_each if hours_each.present?
-    tot = default_hours *  27.20
+    tot = default_hours *  HourRate
     return tot.round(2)
   end
 
   def milage_cost
     self.total_miles =  default_volunteers * miles_each if miles_each.present?
-    tot = default_miles * 0.14
+    tot = default_miles * MilageRate
     return tot.round(2)
   end
   

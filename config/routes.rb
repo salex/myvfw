@@ -49,6 +49,8 @@ Rails.application.routes.draw do
       get :menu
       get :summary
       get :list
+      get :list_all
+
       get :print
       get :community_service
       get :audit_summary

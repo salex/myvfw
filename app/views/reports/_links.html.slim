@@ -1,53 +1,85 @@
 .w3-bar.goldey.noprint
   span.link-bar-header.w3-large.w3-left Reports Menu
   = link_to "New Report", menu_reports_path, class:' w3-bar-item w3-button w3-hover-blue-gray' if  authorized?
-  = link_to "List Reports", list_reports_path, class:' w3-bar-item w3-button w3-hover-blue-gray'
-
   .w3-dropdown-hover
-    .w3-button.w3-hover-blue-gray 
-      |Summary
-      i.fa.fa-caret-down
+      .w3-button.w3-hover-blue-gray
+        |Report Lists
+        i.fa.fa-caret-down
 
-    .w3-dropdown-content.w3-bar-block.w3-card-4
-      = link_to "Summary (Year)", audit_summary_reports_path,class:"w3-bar-item w3-button"
-      = link_to "Audit (1)", audit_summary_reports_path(audit:0),class:"w3-bar-item w3-button"
-      = link_to "Audit (2)", audit_summary_reports_path(audit:1),class:"w3-bar-item w3-button"
-      = link_to "Audit (3)", audit_summary_reports_path(audit:2),class:"w3-bar-item w3-button"
-      = link_to "Audit (4)", audit_summary_reports_path(audit:3),class:"w3-bar-item w3-button"
-  = link_to "Last Reports", list_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
-  = link_to "Last Summary", summary_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
-  = link_to "Last Print", print_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+      .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
+        - report_dates = cs_reports
+        = link_to "List All",list_all_reports_path, class:'w3-button w3-bar-item w3-blue'
 
+        - report_dates.each do |d|
+          = link_to "#{d}-#{d.end_of_quarter}", quarter_reports_path(rdate:d),class:"w3-bar-item w3-button"
   .w3-dropdown-hover
     .w3-button.w3-hover-blue-gray
-      |Print
-      i.fa.fa-caret-down
-
-    .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
-      = link_to "Summary (Year)", print_reports_path,class:"w3-bar-item w3-button"
-      = link_to "Audit (1)", print_reports_path(qtr:1),class:"w3-bar-item w3-button"
-      = link_to "Audit (2)", print_reports_path(qtr:2),class:"w3-bar-item w3-button"
-      = link_to "Audit (3)", print_reports_path(qtr:3),class:"w3-bar-item w3-button"
-      = link_to "Audit (4)", print_reports_path(qtr:4),class:"w3-bar-item w3-button"
-      = link_to "Last Qtr", print_reports_path(qtr:4,rdate: (Date.current - 1.year)),class:"w3-bar-item w3-button"
-
-  .w3-dropdown-hover
-    .w3-button.w3-hover-blue-gray
-      |CS Reports
+      |Department Reports
       i.fa.fa-caret-down
 
     .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
       - report_dates = cs_reports
       - report_dates.each do |d|
         = link_to "#{d}-#{d.end_of_quarter}", cs_report_reports_path(rdate:d),target:'_blank',class:"w3-bar-item w3-button"
-
   .w3-dropdown-hover
-      .w3-button.w3-hover-blue-gray
-        |CS List
-        i.fa.fa-caret-down
+    .w3-button.w3-hover-blue-gray
+      |FY Summaries
+      i.fa.fa-caret-down
+
+    .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
+      - report_dates = fy_reports
+      - report_dates.each do |d|
+        = link_to "FY - #{d}", cs_report_reports_path(fydate:d),target:'_blank',class:"w3-bar-item w3-button"
+
+  / = link_to "List Reports", list_reports_path, class:' w3-bar-item w3-button w3-hover-blue-gray'
+  
+  / .w3-dropdown-hover
+  /   .w3-button.w3-hover-blue-gray 
+  /     |Summary
+  /     i.fa.fa-caret-down
+
+  /   .w3-dropdown-content.w3-bar-block.w3-card-4
+  /     = link_to "Summary (Year)", audit_summary_reports_path,class:"w3-bar-item w3-button"
+  /     = link_to "Audit (1)", audit_summary_reports_path(audit:0),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (2)", audit_summary_reports_path(audit:1),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (3)", audit_summary_reports_path(audit:2),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (4)", audit_summary_reports_path(audit:3),class:"w3-bar-item w3-button"
+  / = link_to "Last Reports", list_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+  / = link_to "Last Summary", summary_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+  / = link_to "Last Print", print_reports_path(rdate: (Date.current - 1.year)), class:'w3-bar-item w3-button w3-hover-blue-gray'
+
+  / .w3-dropdown-hover
+  /   .w3-button.w3-hover-blue-gray
+  /     |Print
+  /     i.fa.fa-caret-down
+
+  /   .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
+  /     = link_to "Summary (Year)", print_reports_path,class:"w3-bar-item w3-button"
+  /     = link_to "Audit (1)", print_reports_path(qtr:1),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (2)", print_reports_path(qtr:2),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (3)", print_reports_path(qtr:3),class:"w3-bar-item w3-button"
+  /     = link_to "Audit (4)", print_reports_path(qtr:4),class:"w3-bar-item w3-button"
+  /     = link_to "Last Qtr", print_reports_path(qtr:4,rdate: (Date.current - 1.year)),class:"w3-bar-item w3-button"
+
+  / .w3-dropdown-hover
+  /   .w3-button.w3-hover-blue-gray
+  /     |CS Reports
+  /     i.fa.fa-caret-down
+
+  /   .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
+  /     - report_dates = cs_reports
+  /     - report_dates.each do |d|
+  /       = link_to "#{d}-#{d.end_of_quarter}", cs_report_reports_path(rdate:d),target:'_blank',class:"w3-bar-item w3-button"
+
+  / .w3-dropdown-hover
+  /     .w3-button.w3-hover-blue-gray
+  /       |CS List
+  /       i.fa.fa-caret-down
 
       .w3-dropdown-content.w3-bar-block.w3-card-4.w3-borders
         - report_dates = cs_reports
+        = link_to "List All",list_all_reports_path, class:'w3-button w3-bar-item w3-blue'
+
         - report_dates.each do |d|
           = link_to "#{d}-#{d.end_of_quarter}", quarter_reports_path(rdate:d),class:"w3-bar-item w3-button"
 

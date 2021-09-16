@@ -12,7 +12,7 @@
       td.strong.text-right Cost
     - summary.each do |prg,s|
       tr
-        td = prg
+        td = s[:title]
         td.text-right = s[:count]
         td.text-right = s[:volunteers]
         td.text-right = s[:total_hours]

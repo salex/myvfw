@@ -2,8 +2,11 @@
   h4.strong.goldey.w3-padding Reports currently consists of two reporting areas. The blue button links below will that you to that area
   .w3-row-padding
     .w3-half
-      h5.strong = link_to "Community Service",community_service_reports_path, class:'w3-button w3-blue'
-      p  
+      h5.strong 
+        = link_to "Community Service",community_service_reports_path, class:'w3-button w3-blue'
+        = link_to "List All",list_all_reports_path, class:'w3-button w3-blue'
+
+      p 
         | Community Service reports are due at the end of each VFW Fiscal Quarter and include a variety of reporting areas.
           Reports must be submitted by the end of the month following the end of the quarter.
           Over the years, many paper reporting forms have been used for what we'll call Volunteerizm. This accounts for seeing thing like MIA/POW, PP, VOD programs referenced on different forms. Regardless of where you report it, it all comes down to someone volunteers to help someone and they spent time/hours, milage and maybe money in the effort. This puts all the options on one report, but separated by areas.
@@ -32,7 +35,6 @@
         = link_to "Audit List",trustee_audits_path, class:'w3-button w3-blue' 
 
         = link_to "Trustee Audit",get_audit_trustee_audits_path, class:'w3-button w3-blue' if @current_user && @current_user.is_admin? && Current.post_user
-        = link_to "Trustee Audit PDF",pdf_trustee_audits_path, class:'w3-button w3-blue' 
 
       p  
         | Trustee Audit Reports are due at the end of each VFW Fiscal Quarter.

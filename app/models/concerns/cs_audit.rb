@@ -4,7 +4,7 @@ class CsAudit < Prawn::Document
 
   def initialize(report,boq,eoq)
     @reports = report
-    @categories = old_to_new
+    @categories = Report.old_to_new
     @headers = report_headers
     @summary = {}
     @categories.keys.each do |k|
@@ -62,7 +62,7 @@ class CsAudit < Prawn::Document
       summary[key][:total_hours] = report.sum(:total_hours)
       summary[key][:total_miles] = report.sum(:total_miles)
       summary[key][:expenses] = report.sum(:expenses)
-      summary[key][:total_cost] = (summary[key][:total_hours] * 27.20)  + (summary[key][:total_miles] * 0.14) + summary[key][:expenses]
+      summary[key][:total_cost] = (summary[key][:total_hours] * Report::HourRate)  + (summary[key][:total_miles] * Report::MilageRate) + summary[key][:expenses]
       report.each do |r|
         @inc += r.details.size / 120.0
         rows <<  ["#{r.date} - #{r.details}", "#{r.hours_each.to_i} - #{r.total_hours.to_i}",r.expenses,"#{r.miles_each.to_i} - #{r.total_miles.to_i}",r.volunteers]
@@ -89,7 +89,7 @@ class CsAudit < Prawn::Document
     totals = {count:0,volunteers:0,total_hours:0.0,total_miles:0.0,expenses:0.0,total_cost:0.0}
 
     rows = [
-        [{content:"<b>Community Service Report Summary</b>",align: :center,colspan:7,size:10}],
+        [{content:"<b>Community Service Report Summary #{@boq} - #{@eoq}</b>",align: :center,colspan:7,size:10}],
         ["Category", "Reports","Members","TotalHours","TotalMiles", "Expenses","TotalCost"]
       ]
     summary.each do |k,v|
@@ -111,20 +111,29 @@ class CsAudit < Prawn::Document
     e.draw
   end
 
-  def old_to_new
-    new_reports = {}
-    new_reports[:community] = ["Involvment", "Cooperation","Americanism","Monthly Report"]
-    new_reports[:americanism] = ["Legislative","Local Activities", "State Activities", "National Activities","POW/MIA Activities", "Buddy Poppies","Gold Metal","Adopt a Unit"]
-    new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report"]
-    new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
-    new_reports[:safety] = [ "Law/Fire/EMT", "Safety"]
-    return new_reports
-  end
+  # def old_to_new
+  #   new_reports = {}
+  #   new_reports[:community] = ["Involvment", "Cooperation","Americanism"]
+  #   new_reports[:americanism] = ["Legislative","Local Activities", "State Activities", "National Activities","POW/MIA Activities", "Buddy Poppies","Adopt a Unit"]
+  #   new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report","Monthly Report","Donations"]
+  #   new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
+  #   new_reports[:safety] = [ "Law/Fire/EMT", "Safety","Gold Metal"]
+  #   return new_reports
+  # end
+
+  # new_reports = {}
+  # new_reports[:community] = ["Involvment", "Cooperation"]
+  # new_reports[:americanism] = ["Legislative","Local Activities", "State Activities","Legislative","Local", "State", 
+  #   "National","POW/MIA Activities", "Buddy Poppies","Adopt a Unit","Americanism"]
+  # new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report","Monthly Report"]
+  # new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
+  # new_reports[:safety] = [ "Law/Fire/EMT", "Safety","Gold Metal"]
+
 
   def report_headers
     header = {}
     header[:community] = {title:"<b>COMMUNITY SERVICE</b>",desc:"<i><b>Please list any activities within your community provided by Post & Auxiliary which helps to benefit the community, church, school, parks, neighborhood cleanups, etc.</b></i>"}
-    header[:americanism] = {title:"<b>CITIZENSHIP EDUCATION / AMERICANISM</b>",desc:"<i><b>Please list any Parades, Public Ceremonies, Flag Presentations, Educational Materials, Loyalty Day, POW/MIA activity, Legislative. etc.</b></i>"}
+    header[:americanism] = {title:"<b>CITIZENSHIP/EDUCATION/AMERICANISM</b>",desc:"<i><b>Please list any Parades, Public Ceremonies, Flag Presentations, Educational Materials, Loyalty Day, POW/MIA activity, Legislative. etc.</b></i>"}
     header[:aid] = {title:"<b>AID TO OTHERS</b>",desc:"<i><b>Please list all Hospital, Nursing Homes, Senior Citizens, Blood Drives Cancer, Rehab, Memorials, March of Dimes, Operation Uplink, etc.</b></i>"}
     header[:youth] = {title:"<b>YOUTH ACTIVITIES</b>",desc:"<i><b>Please list: Post and Auxiliary are encouraged to provide Youth Programs within your community.  Sports, Scouting, Contests, Education, Recognition, including VOD/PP/YOUTH ESSAY’S</b></i>"}
     header[:safety] = {title:"<b>SAFETY</b>",desc:"<i><b>Please list: Pedestrian, Drug Awareness, Recreational, Highway, Fire, Home, Gun, etc.</b></i>"}

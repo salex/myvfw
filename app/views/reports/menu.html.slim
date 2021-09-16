@@ -31,9 +31,7 @@
           i = "Service Officer "
 
           = inline_reports_link(@post,'Service Officer.Monthly Report')
-
-
-        dd = new_reports_link(@post,'Hospital.Hospital Report')
+          = inline_reports_link(@post,'Hospital.Hospital Report')
         dd = new_reports_link(@post,'National Military Service.Finacial Assistance to Vet')
         dd = new_reports_link(@post,'National Military Service.Donations')
 
@@ -48,7 +46,6 @@
         dd = new_reports_link(@post,'National Military Service.Adopt a Unit')
         dd = new_reports_link(@post,'National Military Service.Military Support Events')
         dd = new_reports_link(@post,'Programs.Buddy Poppies')
-        dd = new_reports_link(@post,'Programs.Gold Metal')
         dd 
           i = "Legislative "
           = inline_reports_link(@post,'Legislative.Local')
@@ -88,6 +85,8 @@
         dd  
           = new_reports_link(@post,'Programs.Law/Fire/EMT')
           .indent1.annotate Law Enforcement, Fire Department, EMT, Life Savings, Recognition
+        dd = new_reports_link(@post,'Programs.Gold Metal')
+
         / dd.strong Legislative Activites
 
 // javascript:

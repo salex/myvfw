@@ -39,11 +39,22 @@ module ReportsHelper
   def cs_reports
     curr = Date.today.beginning_of_quarter
     dates = [curr]
-    15.times do 
+    12.times do 
       dates << dates.last - 3.months
     end
     return dates
   end
+
+  def fy_reports
+    range = Report.report_range(Date.today)
+
+    dates = [range.first]
+    6.times do 
+      dates << dates.last - 12.months
+    end
+    return dates
+  end
+
 
 
 end
