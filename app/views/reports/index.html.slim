@@ -34,8 +34,7 @@
       h5.strong 
         = link_to "Audit List",trustee_audits_path, class:'w3-button w3-blue' 
 
-        = link_to "Trustee Audit",get_audit_trustee_audits_path, class:'w3-button w3-blue' if @current_user && @current_user.is_admin? && Current.post_user
-
+   
       p  
         | Trustee Audit Reports are due at the end of each VFW Fiscal Quarter.
           Reports must be submitted by the end of the month following the end of the quarter. 

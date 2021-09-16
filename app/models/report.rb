@@ -47,7 +47,7 @@ class Report < ApplicationRecord
 
     keys = categories.keys
     keys.each do |t|
-      summary[t] = {}
+      summary[t] = {title:header[t]}
       prg = Report.where(area: categories[t],date:range)
       summary[t][:count] = prg.count
       totals[:count] += prg.count
@@ -63,8 +63,6 @@ class Report < ApplicationRecord
         totals[:total_miles] += summary[t][:total_miles]
         totals[:expenses]    += summary[t][:expenses]    
         totals[:total_cost]  += summary[t][:total_cost]
-      else
-        summary[t][:title] = header[t]
       end
     end
     return summary,totals,range

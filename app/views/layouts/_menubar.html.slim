@@ -20,7 +20,7 @@
         .w3-dropdown-content.w3-bar-block.w3-card-4
           = link_to "Reporting Requirements", reports_path, class:"w3-bar-item w3-button" 
 
-          = link_to "Community Service", audit_summary_reports_path, class:"w3-bar-item w3-button" 
+          = link_to "Community Service", community_service_reports_path, class:"w3-bar-item w3-button" 
           -if Current.post_user && Current.user.is_admin?
             = link_to "Trustee Audit List", trustee_audits_path, class:"w3-bar-item w3-button" 
 
