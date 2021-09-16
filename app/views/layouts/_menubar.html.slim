@@ -5,11 +5,11 @@
 
     = link_to "Home", root_path, class:"w3-bar-item w3-button"
     = link_to "About", about_about_path, class:"w3-bar-item w3-button" 
-    = link_to "Members", members_path, class:"w3-bar-item w3-button" 
-    = link_to "Officers", officers_path, class:"w3-bar-item w3-button" 
 
     -if Current.post_user || Current.post_visitor
       / = link_to "Reporting", reports_path, class:"w3-bar-item w3-button" if Current.post_user || Current.post_visitor
+      = link_to "Members", members_path, class:"w3-bar-item w3-button" 
+      = link_to "Officers", officers_path, class:"w3-bar-item w3-button" 
       = link_to "Markups", markups_path, class:"w3-bar-item w3-button" 
       = link_to "PDFs", pdfs_path, class:"w3-bar-item w3-button" 
 

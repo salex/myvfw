@@ -24,8 +24,8 @@ class Report < ApplicationRecord
 
     new_reports = {}
     new_reports[:community] = ["Involvment", "Cooperation"]
-    new_reports[:americanism] = ["Legislative","Local Activities", "State Activities", 
-      "National Activities","POW/MIA Activities", "Buddy Poppies","Gold Metal","Adopt a Unit","Americanism"]
+    new_reports[:americanism] = ["Legislative","Local Activities", "State Activities","Legislative","Local", "State", 
+      "National","POW/MIA Activities", "Buddy Poppies","Gold Metal","Adopt a Unit","Americanism"]
     new_reports[:aid] = ["Aid to Others","Finacial Assistance to Vet", "Military Support Events","Hospital Report","Monthly Report"]
     new_reports[:youth] = ["Education","VOD/PP", "Scout","Teacher"]
     new_reports[:safety] = [ "Law/Fire/EMT", "Safety"]
