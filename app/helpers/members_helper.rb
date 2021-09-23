@@ -28,7 +28,7 @@ module MembersHelper
     results = ""
     if @current_user.present?
       if member.email.present? 
-        results = mail_to(member.email,'eMail').html_safe 
+        results = mail_to(member.email,'eMail',subject:"an important message").html_safe 
        end
     else
       results = member.email.present? ? link_to("eMail","contact_member/#{member.id}") : ""

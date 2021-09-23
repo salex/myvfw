@@ -112,13 +112,44 @@ class MembersController < ApplicationController
 
   def test_email
     set_member
-    MembersMailer.with(member: @member).members_email.deliver_later
+    send_email(@member)
     redirect_to members_url, notice: 'Member was sent an email.'
     # render plain: @member.inspect
   end
 
+  def send_mailer
+    members = Member.has_email?
+    members.each do |m|
+      send_email(m)
+    end
+    redirect_to members_url, notice: "Members email was sent to #{members.size} members."
+
+  end
+
+  def test_mail
+
+    # member =  Member.is_deliverable? 
+    members = Member.active.where(id:[47,54,111,112,257,269,274,7])
+    err = true
+    pdf = Letter20210914.new(members,err)
+    send_data pdf.render, filename: "letter}",
+      type: "application/pdf",
+      disposition: "inline"
+  end
+
+  def get_mailable
+    members = Member.is_deliverable?
+    pdf = Letter20210914.new(members)
+    send_data pdf.render, filename: "letter}",
+      type: "application/pdf",
+      disposition: "inline"
+  end
 
   private
+
+    def send_email(member)
+      MembersMailer.with(member: member).members_email.deliver_later
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_member
       @member = Current.post.members.find(params[:id])

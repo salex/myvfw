@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" 
+    = stylesheet_link_tag 'application'
+
+  body
+    p The purpose of this eMail is twofold.
+    ul
+      li Distribute a letter from the Commander of VFW Post 8600 to all members that includes important information on our current status and plans
+      li Request that you validate your basic contact and status information and provide any changed or missing information
+    p
+      | Current Member Information
+      br/
+      | --------------------------
+    div 
+      | Status: 
+      = @member.status
+    table.small-table
+      tr
+        th.w3-right-align[style="text-align: right;"] = "Pay Status:"
+        td = @member.pay_status
+      tr
+        th.w3-right-align[style="text-align: right;"] = "Name:"
+        td = @member.name
+
+    div 
+      |Pay Status: 
+      = @member.pay_status
+      - days_remaining = nil
+      - if @member.status != 'Life' && @member.paid_thru.present?
+        - days_remaining = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i
+        div = "Pay Thru: #{@member.paid_thru}"
+        div = "Days Remaining: #{days_remaining}"
+    div = "Name: #{@member.name}"
+    div = "Address: #{@member.address}"
+    div = "City: #{@member.city}, State: #{@member.state}, Zip: #{@member.zip}"
+    div = "Phone: #{@member.phone.present? ? format_phone(@member.phone) : "Missing"}"
+    div = "Email: #{@member.email.present? ? @member.email : "Missing"}"
+    p
+    p
+      | You can reply to this eMail or send new eMail to the post at: 
+      b vfwpost8600@gmail.com 
+      | and identify changes or corrections.
+    p
+      | You can call the post at: 
+      b 256-546-2440 
+      | and identify changes/corrections or leave a voice mail. We have very limited open hours but we've added a 'Voice Attendant'. You can press '2' during the voice attendant message and leave a voice mail.
+      - if days_remaining.present? && days_remaining < 0
+        p Your VFW membership has expired. Please contact the Post and we may be able to help you with your membership dues.
+    br/
+    p
+      | Commander's Letter
+      br/
+      | ----------------------------
+

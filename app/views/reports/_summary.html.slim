@@ -1,7 +1,7 @@
 .s12.w3-col
   table.w3-table-all.table-cell-borders
-    / - if @range.present?
-    /   caption = "Summary Range:  #{@range}"
+    - if @range.present?
+      caption = "Summary Range:  #{@range}"
     tr
       td.strong Program
       td.strong.text-right Reports 

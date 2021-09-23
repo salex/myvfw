@@ -12,7 +12,9 @@ table[class="#{daclass}"]
       - if Current.user
         th Vfw ID
       th.w05p Age
-      th.w05p UD
+      th.w05p[data-action='click->sortable#clicked']
+        i.fas.fa-sort
+        | UD
       - if Current.user
         th.w20p Contact
       th City

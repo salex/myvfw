@@ -1,15 +1,36 @@
-# app/views/order_mailer/new_order_email.text.erb
 
-You got a new order from VFW Post 8600!
-===============================================
+The purpose of this eMail is twofold.
 
-Order Details:
+  Distribute a letter from the Commander of VFW Post 8600 to all members that includes important information on our current status and plans
+
+  Request that you validate your basic contact and status information and provide any changed or missing information
+
+Current Member Information
 --------------------------
 
+Status: <%= @member.status %>
+Pay Status: <%= @member.pay_status %>
+<% days_remaining = nil %>
+<% if @member.status != 'Life' && @member.paid_thru.present? %>
+  <% days_remaining = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i %>
+  Pay Thru: <%= @member.paid_thru %>
+  Days Remaining: <%= days_remaining %>
+<% end %>
 Name: <%= @member.name %>
-Email: <%= @member.email %>
 Address: <%= @member.address %>
-Phone: <%= @member.phone %>
+City: <%= @member.city %>, State: <%= @member.state %>, Zip: <%= @member.zip %> 
+Phone: <%= @member.phone.present? ? @member.phone : "Missing" %>
+Email: <%= @member.email.present? ? @member.email : "Missing" %>
 
-Message:
-<%= @member.message %>
+You can reply to this eMail or send new eMail to the post at vfwpost8600@gmail.com and identify changes or corrections.
+
+You can call the post at 256-546-2440 and identify changes/corrections or leave a voice mail. We have very limited open hours but we've added a 'Voice Attendant'. You can press '2' during the voice attendant message and leave a voice mail. 
+
+<% if days_remaining.present? && days_remaining < 0 %>
+    Your VFW membership has expired. Please contact the Post and we may be able to help you with your membership dues.
+<% end %>
+
+  Commander's Letter
+  ----------------------------
+
+

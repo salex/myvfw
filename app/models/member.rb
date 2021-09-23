@@ -62,6 +62,23 @@ class Member < ApplicationRecord
     Current.post.members.where.not(pay_status:['Missing','Deceased', 'Applicant'])
   end
 
+  def self.has_email?
+    Member.active.where.not(email:'')
+  end
+
+  def self.has_mail?
+    Member.active.where(email:['',nil])
+  end
+
+  def self.is_deliverable?
+    Member.has_mail?.where(undeliverable:nil)
+  end
+
+  def self.is_undeliverable?
+    Member.has_mail?.where.not(undeliverable:nil)
+  end
+
+
   def self.memstats
     stats = {}
     PayStatus.each do |s|
@@ -70,7 +87,6 @@ class Member < ApplicationRecord
     all = Current.post.members.all
     active = all.active
     paying = active.where(pay_status:'UnPaid').where.not(paid_thru:nil)
-    puts paying
     stats['Active'] = active.count
     stats['All'] = all.count
     stats['ExpiredPaid'] = paying.where('members.paid_thru > ?',Date.today.to_s).count
@@ -98,7 +114,7 @@ class Member < ApplicationRecord
       if m.email.present?
         email += "#{m.name_first_last} <#{m.email}>,"
       end
-      address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable}\n"
+      address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone}\n"
     end
     email = email[0..-2]
     return email, address
