@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_action :current_user
-  #below will hard wire to only use post 8600
+  #below will hard wire to only use post 8600 except staging. Use staging to demo original concept of dept
   before_action :current_post
   before_action :session_expiry
   include UsersHelper
