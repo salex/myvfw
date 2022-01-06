@@ -26,7 +26,7 @@
         = show_row("Pay year:",@member.pay_year)
         = show_row("Pay status:",@member.pay_status)
         = show_row("Pay date:",@member.pay_date)
-        = show_row("Country:",@member.country)
+        = show_row("Undeliverable:",@member.undeliverable)
         = show_row("Paid thru:",@member.paid_thru)
         - if  @member.paid_thru.present?
           - dr = (Chronic.parse(@member.paid_thru).to_date - Date.today).to_i

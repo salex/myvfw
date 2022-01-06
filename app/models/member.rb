@@ -71,7 +71,9 @@ class Member < ApplicationRecord
   end
 
   def self.is_deliverable?
-    Member.has_mail?.where(undeliverable:nil)
+    # Member.has_mail?.where(undeliverable:nil)
+    Member.active.where(undeliverable:nil)
+
   end
 
   def self.is_undeliverable?

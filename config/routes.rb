@@ -107,9 +107,9 @@ Rails.application.routes.draw do
       get :contacts
       get :new_applicant
       # below were original mass email/mail stuff
-      # get :test_mail
+      get :test_mail
       # get :send_mailer
-      # get :get_mailable
+      get :get_mailable
     end
   end
 

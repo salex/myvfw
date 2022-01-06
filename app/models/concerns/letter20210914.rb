@@ -84,7 +84,7 @@ class Letter20210914 < Prawn::Document
         text "We attempted to contact you by your eMail address: <b>#{member.email}</b> but the eMail address was not found", inline_format: true
       end
       move_down 11
-      text "If any of the information is wrong or you have missing information, please contact the Post to make corrections. You've received this letter because you do not have an eMail address. We seldom contact all members but providing an eMail would reduce the costs."
+      text "If any of the information is wrong or you have missing information, please contact the Post to make corrections. We seldom contact all members but providing an eMail would reduce the costs."
       move_down 11 
       text "You can eMail the post at <b>vfwpost8600@gmail.com</b> and identify changes or corrections.", inline_format: true
       move_down 11 
