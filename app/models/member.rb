@@ -66,13 +66,14 @@ class Member < ApplicationRecord
     Member.active.where.not(email:'')
   end
 
-  def self.has_mail?
+  def self.no_email?
     Member.active.where(email:['',nil])
   end
 
   def self.is_deliverable?
-    # Member.has_mail?.where(undeliverable:nil)
-    Member.active.where(undeliverable:nil)
+    Member.no_email?.where(undeliverable:nil)
+    #  use below to send to all
+    # Member.active.where(undeliverable:nil)
 
   end
 
