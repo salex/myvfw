@@ -129,7 +129,7 @@ class MembersController < ApplicationController
   def test_mail
 
     # member =  Member.is_deliverable? 
-    members = Member.active.where(id:[47,54,111,112,257,269,274,7])
+    members = Member.active.where(id:[2,7])
     err = true
     pdf = LetterMailer.new(members,err)
     send_data pdf.render, filename: "letter}",
