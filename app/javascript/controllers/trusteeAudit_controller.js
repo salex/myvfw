@@ -1,5 +1,5 @@
 
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   static targets = [ "name","beginning","debit","credit","ending","type","balance","outstanding","other"]
@@ -14,7 +14,7 @@ export default class extends Controller {
 
 
   sum_all(){
-
+    console.log("hi")
     var name = this.nameTargets
     var begin = this.beginningTargets
     var credit = this.creditTargets

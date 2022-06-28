@@ -8,7 +8,7 @@ class PdfAudit < Prawn::Document
     @layout = {top:bounds.height.to_i,right:bounds.width.to_i,left:0,bottom:0,cursor:cursor}
     @config = config
     puts "DDDDDD #{@config}"
-    boq = Date.parse(@config.date_submitted).beginning_of_quarter - 3.months
+    boq = Date.parse(@config.date).beginning_of_quarter - 3.months
     eoq = (boq + 2.months).end_of_month
     @range = boq..eoq
     # @config = TrusteeAudits.get_audit.config
@@ -211,7 +211,7 @@ class PdfAudit < Prawn::Document
       draw_text "TRUSTEEs' and COMMANDER's", at:[40,30], style: :bold, size:10
       draw_text "CERTIFICATE OF AUDIT", at:[55,20], style: :bold, size:10
       move_down 30
-      text "<strong>Date: <u> #{@config.date_submitted} </u></strong>", inline_format:true, indent_paragraphs:35
+      text "<strong>Date: <u> #{@config.date} </u></strong>", inline_format:true, indent_paragraphs:35
     end
     grid([21,0], [23,23]).bounding_box do
       move_down 6

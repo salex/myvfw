@@ -6,8 +6,10 @@
 
   ul
     - pnames.each do |f|
-      - id = f.split('/').last.split('.').first
+      - fn = f.split('/').last
+      - id = fn.split('.').first
       li 
-        a[href="pdfs/#{id}"] = id
+        / a[href="pdfs/#{id}" target:'_blank'] = id
+        = link_to id,"/pdfs/#{fn}", target:'_blank'
 
 

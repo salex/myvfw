@@ -1,4 +1,8 @@
 class TestController < ApplicationController
+  def index
+    @movies = Array.new(27) { |e| e = e + 1 }
+  end
+
   def test
     session[:test_list] = {"1"=>'c',"2"=>'c',"3"=>'c',"4"=>'c',"5"=>'c',"6"=>'n',"7"=>'n',"8"=>'n',"9"=>'n',"10"=>'n'}
   end

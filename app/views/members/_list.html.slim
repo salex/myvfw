@@ -1,36 +1,37 @@
-.w3-container(data-controller="dropdown")
-  - map_count_to_columns(@members.count,4).each do |column|
-    .s12.m3.w3-col
-      - column.each do |idx|
-        dl.index-list
-          - member = @members[idx]
-          dt{id="member_#{idx}"} 
-            span.w3-text-blue.w3-hover-green{id="#member_#{idx}" data-target="dropdown.name" data-action="click->dropdown#showme"}= member.full_name
-          dd{id="member_#{idx}_dd" class="hidden"}
-            .show-table
-              table
-                = show_table_row('Show',link_to(member.full_name,member,class:'w3-text-blue w3-hover-green'))
-                = show_table_row('VfwID',member.vfw_id)
-                / = show_table_row('First name',member.first_name)
-                / = show_table_row('Mi',member.mi)
-                / = show_table_row('Last name',member.last_name)
-                = show_table_row('Pay status',member.pay_status)
-                = show_table_row('Paid Thru',member.paid_thru)
-                - if member.paid_thru.present?
-                  - member.days_remaining = (Date.parse(member.paid_thru) - Date.today).to_i
-                = show_table_row('Days Remaining',member.days_remaining)
-                = show_table_row('Pay Year',member.pay_year)
-                = show_table_row('Address',member.address)
-                = show_table_row('City',member.city)
-                = show_table_row('State',member.state)
-                = show_table_row('Phone',display_phone(member))
-                = show_table_row('Alt Phone',member.alt_phone)
-                = show_table_row('eMail',display_email(member))
-                = show_table_row('Served',member.served)
-                / = show_table_row('Status',member.status)
-                / = show_table_row('Type Pay',member.type_pay)
-                / = show_table_row('Pay Date',member.pay_date)
-                / = show_table_row('Last Status',member.last_status)
-                / = show_table_row('Country',member.country)
+= turbo_frame_tag id="members"
+  .w3-container(class="mb-8" data-controller="dropdown")
+    - map_count_to_columns(@members.count,4).each do |column|
+      .s12.m3.w3-col
+        - column.each do |idx|
+          dl.index-list
+            - member = @members[idx]
+            dt{id="member_#{idx}"} 
+              span.w3-text-blue.w3-hover-green{id="#member_#{idx}" data-dropdown-target="name" data-action="click->dropdown#showme"}= member.full_name
+            dd{id="member_#{idx}_dd" class="hidden"}
+              .show-table
+                table
+                  = show_table_row('Show',link_to(member.full_name,member,class:'w3-text-blue w3-hover-green', data: { turbo_frame: "_top" }))
+                  = show_table_row('VfwID',member.vfw_id)
+                  / = show_table_row('First name',member.first_name)
+                  / = show_table_row('Mi',member.mi)
+                  / = show_table_row('Last name',member.last_name)
+                  = show_table_row('Pay status',member.pay_status)
+                  = show_table_row('Paid Thru',member.paid_thru)
+                  - if member.paid_thru.present?
+                    - member.days_remaining = (Date.parse(member.paid_thru) - Date.today).to_i
+                  = show_table_row('Days Remaining',member.days_remaining)
+                  = show_table_row('Pay Year',member.pay_year)
+                  = show_table_row('Address',member.address)
+                  = show_table_row('City',member.city)
+                  = show_table_row('State',member.state)
+                  = show_table_row('Phone',display_phone(member))
+                  = show_table_row('Alt Phone',member.alt_phone)
+                  = show_table_row('eMail',display_email(member))
+                  = show_table_row('Served',member.served)
+                  / = show_table_row('Status',member.status)
+                  / = show_table_row('Type Pay',member.type_pay)
+                  / = show_table_row('Pay Date',member.pay_date)
+                  / = show_table_row('Last Status',member.last_status)
+                  / = show_table_row('Country',member.country)
 
 

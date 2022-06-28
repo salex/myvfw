@@ -4,23 +4,10 @@ Rails.application.routes.draw do
     collection do
       get :bartender
       get :cash_report
+      get :audit
     end
   end
-  get 'test/test'
-  patch 'test/fire'
-  patch 'test/clear'
-  patch 'test/unclear'
-  get 'test/link'
-  post 'test/link'
 
-  # get 'trustee_audits/index'
-  # get 'trustee_audits/show'
-  # get 'trustee_audits/new'
-  # get 'trustee_audits/create'
-  # get 'trustee_audits/edit'
-  # get 'trustee_audits/update'
-  # get 'trustee_audits/destroy'
-  # get 'trustee_audits/pdf'
   resources :posts do
     resources :officers,only: [:new, :create]
     # resources :markups,only: [:new, :create]
@@ -35,6 +22,7 @@ Rails.application.routes.draw do
       post :update_calendar
     end
   end
+  resources :abouts, only: :index
 
   resources :markups do
     member do
@@ -56,18 +44,15 @@ Rails.application.routes.draw do
       get :audit_summary
       get :cs_report
       get :quarter
-      # get :trustee_audit
-      # post :update_audit
-      # get :trustee_audit_pdf
     end
   end
 
   resources :trustee_audits do
-    collection do
-      get :get_audit
-      get :pdf
-      post :update_audit
-    end
+    # collection do
+    #   # get :get_audit
+    #   get :pdf
+    #   post :update_audit
+    # end
     member do
       get :pdf
     end
@@ -102,8 +87,7 @@ Rails.application.routes.draw do
       get :import_form
       post :import
       get :search
-      post :search
-      patch :search
+      get :filter
       get :contacts
       get :new_applicant
       # below were original mass email/mail stuff
@@ -118,6 +102,8 @@ Rails.application.routes.draw do
       get :cmdr
     end
   end
+
+
 
   get 'vdap/', to: 'vdap#home'
   get '/page/:id', to: 'vdap#resources'
@@ -142,24 +128,13 @@ Rails.application.routes.draw do
   get 'post/calendar'
   get 'post/month_calendar'
 
-  get 'about/about'
-  get 'about/history'
-  get 'about/structure'
-  get 'about/access'
-  get 'about/markups'
-  get 'about/reports'
-  get 'about/members'
-  get 'about/officers'
-
-
-
 
   get 'login', to: 'users#login', as: 'login'
   get 'logout', to: 'users#logout', as: 'logout'
   get 'profile', to: 'users#profile'
   get 'article/:id' => 'markups#display'
 
-
+  get 'test', to: 'test#index'
   get 'home/index'
 
   get 'home/welcome'

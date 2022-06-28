@@ -1,5 +1,5 @@
 
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   static targets = [ "volunteers","hours_each","total_hours","miles_each","total_miles"]

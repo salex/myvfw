@@ -32,5 +32,8 @@ link_to( "History - Past Commanders", cmdr_officers_path,class:"w3-bar-item w3-b
           td.action-bar 
             = link_to 'Show', officer
             = link_to 'Edit', edit_officer_path(officer)
-            = link_to 'Destroy', officer, data: { confirm: 'Are you sure?' }, :method => :delete
+            / = link_to 'Destroy', officer, data: { turbo_confirm: 'Are you sure?',turbo_method:'delete' }, :method => :delete
+            div.inline-block = destroy_link(officer)
+            / = button_to "Destroy ", officer, method: :delete, class:'link', form:{data: { turbo_confirm: 'Are you sure?', turbo_method:'delete' }}
+
 

@@ -2,7 +2,9 @@
   .w3-cell-row
     .s12.m10.w3-cell.w3-mobile[style="width:85%;padding-right:16px;"]
       - if @greeting.present?
-         = render partial:'home/markup_home',locals:{article: @greeting}
+        / p = current_user.full_name
+        = render partial:'home/markup_home',locals:{article: @greeting}
+
       - else
         .w3-container.w3-pale-yellow.w3-leftbar.w3-border-yellow
           p =  "Post #{@post.numb} has not been initialized"

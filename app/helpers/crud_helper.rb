@@ -1,4 +1,7 @@
 module CrudHelper
+  def sort_icon
+    image_tag "sort-svgrepo-com.svg", class:"inline-block"
+  end
 
   def index_links(instance,opt={})
     header = opt[:header].present? ? opt[:header] : "&nbsp;Listing #{instance.model_name.plural.capitalize}".html_safe
@@ -68,9 +71,20 @@ module CrudHelper
   end
 
   def add_destroy_button(buttons,instance)
-    buttons << link_to('Destroy', "/#{instance.model_name.collection}/#{instance.id}", data: { confirm: 'Are you sure?' },
-      :method => :delete, class:'w3-bar-item w3-button w3-large w3-hover-red')
+    buttons << button_to('Destroy', "/#{instance.model_name.collection}/#{instance.id}", method: :delete, form: {data: { turbo_confirm: 'Are you sure?',turbo_method: :delete }},
+      class:'w3-bar-item w3-button w3-large w3-hover-red')
   end
+
+  def destroy_button(instance)
+    button_to('Destroy', "/#{instance.model_name.collection}/#{instance.id}", method: :delete, form: {data: { turbo_confirm: 'Are you sure?',turbo_method: :delete }},
+          class:'w3-bar-item w3-button w3-large w3-hover-red')
+  end
+
+  def destroy_link(instance)
+    button_to('Destroy', "/#{instance.model_name.collection}/#{instance.id}", method: :delete, form: {data: { turbo_confirm: 'Are you sure?',turbo_method: :delete }},
+          class:'link')
+  end
+  
 
   def new_bar(buttons,header)
     stuff = ""

@@ -59,8 +59,3 @@ table[class="#{daclass}"]
                 td = exp
             - else
               td &nbsp;
-          / - if authorized?
-
-        /   td.action-bar
-        /     = link_to 'Edit', edit_member_path(member), class:'edit-button' 
-        /     = link_to 'Destroy', member_path(member), data: { confirm: 'Are you sure?' }, :method => :delete, class:'destroy-button'

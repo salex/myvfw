@@ -55,5 +55,5 @@
             / i.fas.fa-edit a
             / <i class="fa fa-car" style="font-size:24px;color:blue;"></i>
             | &nbsp;
-            = link_to 'Destroy', markup, data: { confirm: 'Are you sure?' }, :method => :delete,class:'w3-btn w3-blue-gray w3-padding-small w3-hover-red'
+            div.inline-block= button_to 'Destroy', markup, method: :delete,form:{data:{ turbo_confirm: 'Are you sure?' , turbo_method:  :delete}},class:'w3-btn w3-blue-gray w3-padding-small w3-hover-red'
 

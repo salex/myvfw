@@ -1,0 +1,45 @@
+
+.s12.m2.w3-cell.w3-mobile
+  .w3-large.strong About Information
+  .w3-card-2.w3-bar-block
+    .w3-bar-item = link_to "About Home",abouts_path,class:'w3-btn lite-goldey w100'
+
+    .w3-bar-item = button_to("Why? A little history",
+      abouts_path,params:{topic:'history'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+
+    .w3-bar-item = button_to("Structure", 
+      abouts_path,params:{topic:'structure'},
+      method: :get,
+      class:'w3-btn inline-block lite-goldey block w100')
+    .w3-bar-item = button_to("Access", 
+      abouts_path,params:{topic:'access'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+    .w3-bar-item.w100 = button_to("Access", 
+      abouts_path,params:{topic:'access'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+    .w3-bar-item = button_to("Members", 
+      abouts_path,params:{topic:'members'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+    .w3-bar-item = button_to("Officers", 
+      abouts_path,params:{topic:'officers'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+    .w3-bar-item = button_to("Reports", 
+      abouts_path,params:{topic:'reports'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+    .w3-bar-item = button_to("Markup", 
+      abouts_path,params:{topic:'markups'},
+      method: :get,
+      class:'w3-btn lite-goldey w100')
+  div
+   .annotate=  "Rails Version #{Rails.version}"
+   - appdir = Rails.root.join("app")
+   .annotate = "Updated: #{File.mtime(appdir)}"
+
+

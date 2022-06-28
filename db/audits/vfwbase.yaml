@@ -19,7 +19,7 @@ accounts:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   name: Relief
   type: Ck
-  beginning: '.00'
+  beginning: '0.00'
   debit: '0.00'
   credit: '0.00'
   ending: '0.00'

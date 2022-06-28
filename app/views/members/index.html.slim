@@ -9,8 +9,12 @@
 
       =  link_to('Phone View',members_path(phone:true),class:'w3-bar-item w3-button')  if Current.user
     - if Current.user
-      .s4.w3-col.w3-padding[data-controller="membersSearch"]
-        = search_field_tag 'name',params[:name], data:{membersSearch_target:'lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
+      .s4.w3-col
+        / = search_field_tag 'name',params[:name], data:{membersSearch_target:'lookup',action:'membersSearch#changed'}, placeholder:'Search for name, city', class:'w100'
+        / div
+        = form_with url: search_members_path,data:{controller:"membersSearch"},method: :get do |form|
+          = form.text_field :name, data:{membersSearch_target:'lookup',action:'membersSearch#changed'},placeholder:'Search for name, city',class:'w100'
+
 
 
   - if @members.blank?
@@ -19,72 +23,96 @@
   - else
     .w3-row-padding
       .strong.malt 
-        span.strong = "Memstats: Post Members (#{@members.count} #{params[:limit]})&nbsp;".html_safe
+        / span.strong = "Memstats: Post Members (#{@members.count} #{params[:limit]})&nbsp;".html_safe
 
 
-      - remote = request.xhr? ? true :false
-      .s12.l6.w3-col
-        table.w3-table-all.table-cell-borders
-          tr
-            th All
-            th Active
-            th Life
-            th iLife
-            th Cont
-            th UnPaid
-            th New
-            th Tran
-            th Miss
-          tr.markdown
-            td.text-right = @memstats['All'].zero? ? 0 : link_to(@memstats['All'], members_path(limit:'All'), remote:remote)
-            td.text-right = @memstats['Active'].zero? ? @memstats['Active'] : link_to(@memstats['Active'], members_path(limit:'Active'), remote:remote)
-            td.text-right = @memstats['Life Member'].zero? ? @memstats['Life Member'] : link_to(@memstats['Life Member'], members_path(limit:'Life Member'), remote:remote)
-            td.text-right = @memstats['Installment Life'].zero? ? @memstats['Installment Life'] : link_to(@memstats['Installment Life'], members_path(limit:'Installment Life'), remote:remote)
-            td.text-right = @memstats['Continuous'].zero? ? @memstats['Continuous'] : link_to(@memstats['Continuous'], members_path(limit:'Continuous'), remote:remote, remote:remote)
-            td.text-right = @memstats['UnPaid'].zero? ? @memstats['UnPaid'] : link_to(@memstats['UnPaid'], members_path(limit:'UnPaid'), remote:remote)
-            td.text-right = @memstats['New Member'].zero? ? @memstats['New Member'] : link_to(@memstats['New Member'], members_path(limit:'New Member'), remote:remote)
-            td.text-right = @memstats['Non-Pay Transfer'].zero? ? @memstats['Non-Pay Transfer'] : link_to(@memstats['Non-Pay Transfer'], members_path(limit:'Non-Pay Transfer'), remote:remote)
-            td.text-right = @memstats['Missing'].zero? ? @memstats['Missing'] : link_to(@memstats['Missing'], members_path(limit:'Missing'), remote:remote)
+    div.font-bold.text-xl.text-center Memstats/Member Status/Search Filter
+    .flex.gap-2.m-1.font-bold.flex-wrap.w100
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Active',
+          explain:'Life and Continuous Members who have paid their dues during the current fiscal years',
+          mstats:'Active'}
 
-      .s12.l6.w3-col
-        table.w3-table-all.table-cell-borders
-          thead
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Life',
+          explain:'Active Life Members',
+          mstats:'Life Member'}
 
-            tr
-              th cTran
-              th Reins
-              th Desc
-              / th Missing
-              th Appl
-              th ExPd
-              th Paid
-              th P30
-              th P60
-              th P90
-              th Exp
-          tbody
-            tr.markdown
-              td.text-right = @memstats['Continuous Transfer'].zero? ? @memstats['Continuous Transfer'] : link_to(@memstats['Continuous Transfer'], members_path(limit:'Continuous Transfer'), remote:remote)
-              td.text-right = @memstats['Reinstate'].zero? ? @memstats['Reinstate'] : link_to(@memstats['Reinstate'], members_path(limit:'Reinstate'), remote:remote)
-              td.text-right = @memstats['Deceased'].zero? ? @memstats['Deceased'] : link_to(@memstats['Deceased'], members_path(limit:'Deceased'), remote:remote)
-              / td.text-right = @memstats['Missing'].zero? ? @memstats['Missing'] : link_to(@memstats['Missing'], members_path(limit:'Missing'), remote:remote)
-              td.text-right = @memstats['Applicant'].zero? ? @memstats['Applicant'] : link_to(@memstats['Applicant'], members_path(limit:'Applicant'), remote:remote)
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'iLife',
+          explain:'Members paying for life membership using an installment plan',
+          mstats:'Installment Life'}
 
-              td.text-right = @memstats['ExpiredPaid'].zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
-    
-              td.text-right = @memstats['Paid'].zero? ? @memstats['Paid'] : link_to(@memstats['Paid'], members_path(limit:'Paid'), remote:remote)
-              td.text-right = @memstats['Paid30']
-              / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
-              td.text-right = @memstats['Paid60']
-              / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
-              td.text-right = @memstats['Paid90']
-              / .zero? ? @memstats['ExpiredPaid'] : link_to(@memstats['ExpiredPaid'], members_path(limit:'ExpiredPaid'), remote:remote)
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Cont',
+          explain:'Members who pay annual (FY) dues',
+          mstats:'Continuous'}
 
-              td.text-right = @memstats['Expired'].zero? ? @memstats['Expired'] : link_to(@memstats['Expired'], members_path(limit:'Expired'), remote:remote)
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'UnPaid',
+          explain:'Members who who have not paid their annual (FY) dues',
+          mstats:'UnPaid'}
 
- 
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'ReInst',
+          explain:'Members who were UnPaid in prior (FY) dues and were reinstated',
+          mstats:'Reinstate'}
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Desc',
+          explain:'Members who were identified a Deceased during the current FY',
+          mstats:'Deceased'}
+
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Inactive',explain:'Members who have been inactive for three years, transfered, or deceased',
+          mstats:'Missing'}
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'All',
+          explain:'All current and past membership records on file',
+          mstats:'All'}
+
+      div |
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Paid',
+          explain:'Total of Life Members and Continuous member who are paid',
+          mstats:'Paid'}
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'ExPaid',
+          explain:'Members who have not paid current FY dues, but Paid Thru date in is the future',
+          mstats:'Deceased'}
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'P30',
+          explain:'Members who will be unpaided/expired within 30 days ',
+          mstats:nil}
+        div.text-center.px-2.bg-slate-100.border
+          = @memstats['Paid30']
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'P60',
+          explain:'Members who will be unpaided/expired within 60 days ',
+          mstats:nil}
+        div.text-center.px-2.bg-slate-100.border
+          = @memstats['Paid60']
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'P90',
+          explain:'Members who will be unpaided/expired within 90 days ',
+          mstats:nil}
+        div.text-center.px-2.bg-slate-100.border
+          = @memstats['Paid90']
+
+      div.bg-slate-300.bm-link
+        = render partial:'members/popover', locals:{txt:'Exp',
+          explain:'Members Paid Thru date is in the past',
+          mstats:'Expired'}
+
   - if params[:phone].present?
-    = render partial:'members/list'
+    = render 'list'
   - else
-    .s12.w3-col#search
-      == render partial:'members/members', locals:{members:@members}
+    = render 'filtered'
+  

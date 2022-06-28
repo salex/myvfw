@@ -1,0 +1,51 @@
+.bg-white.min-height(data-controller="test")
+  p = @audit
+  = form_with url: update_audit_trustee_audits_path(1) do |f|
+
+    table.small-table.w3-border
+      caption.strong Accounts
+      thead
+        tr
+          th.w20p Fund/Account
+          th.w05p Type
+          th.w10p  Beginning
+          th.w10p  Increase
+          th.w10p  Decrease
+          th.w10p  Ending
+
+      - cnt = 5
+      tbody
+        - @audit.accounts.each_with_index do |a,i|
+
+          tr(id="acct-#{i}" data-targets="row")
+            td = f.text_field( "audit[accounts][#{i}][name]", value:@audit.accounts[i].name, class:" w80p",
+              data:{test_target:'name',action:'test#changed'})
+            td = f.select( "audit[accounts][#{i}][type]",
+              options_for_select(%w(Ck Ca CD Sv),@audit.accounts[i].type), { include_blank: true },
+              data:{test_target:'type',action:'test#changed'})
+            td = f.text_field( "audit[accounts][#{i}][beginning]", 
+              value:@audit.accounts[i].beginning, class:"w80p w3-right-align", 
+              data:{test_target:'beginning',action:'change->test#changed'})
+            td = f.text_field( "audit[accounts][#{i}][debit]", value:@audit.accounts[i].debit, 
+              class:"w80p w3-right-align", 
+              data:{test_target:'debit',action:'change->test#changed'})
+            td = f.text_field( "audit[accounts][#{i}][credit]", value:@audit.accounts[i].credit, 
+              class:"w80p w3-right-align", 
+              data:{test_target:'credit',action:'change->test#changed'})
+            td = f.text_field( "audit[accounts][#{i}][ending]",value: @audit.accounts[i].ending, 
+              class:"w80p w3-right-align",readonly:true,
+              data:{test_target:'ending'})
+      tbody
+        tr.w3-light-gray(id="acct-totals")
+          td.strong.w3-right-align[colspan="2"] Totals
+          
+          td = f.text_field( "audit[totals][beginning]",readonly:true, class:"w3-right-align w80p", 
+            data:{test_target:'beginningTotal'})
+          td = f.text_field( "audit[totals][debit]", readonly:true,class:"w3-right-align w80p", 
+            data:{test_target:'debitTotal'}) 
+          td = f.text_field( "audit[totals][credit]",readonly:true, class:"w3-right-align w80p", 
+            data:{test_target:'creditTotal'})
+          td = f.text_field( "audit[totals][ending]", readonly:true,class:"w3-right-align w80p", 
+            data:{test_target:'endingTotal'})
+
+

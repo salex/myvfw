@@ -1,2 +1,209 @@
-h1 TrusteeAudits#edit
-p Find me in app/views/trustee_audits/edit.html.slim
+- if @audit.present?
+ - report = @audit.audit
+ / - puts report.inspect
+ - id = @audit.id
+ - key = @audit.key
+-else
+  - report = @audit.audit
+  - id = @audit.id
+  - key = @audit.key
+/ - report = @audit
+= other_links(report || @audit, header:"Trustee Audit Edit",
+  buttons:[link_to("Trustee Audit PDF",pdf_trustee_audit_path(id),class:"w3-bar-item w3-button w3-light-blue"),
+    link_to("Cancel",reports_path,class:"w3-bar-item w3-button w3-yellow"),
+    link_to("List",trustee_audits_path,class:"w3-bar-item w3-button w3-light-blue")])
+
+.w3-container.w3-white.min-height.w3-padding-bottom(data-controller="audit")
+  div
+    span.font-bold.ml-2.mr-1 Key:
+    span.mx-2 = @audit.key
+    span.font-bold.ml-2.mr-1 Id:
+    span.mx-2 = @audit.id 
+    span.font-bold.ml-2.mr-1 Date:
+    span.mx-2 = @audit.date
+  = form_with model: @audit do |f|
+    = f.hidden_field 'audit[keyname]',value:key
+    = f.hidden_field "audit[id]",value: id
+    .w3-row
+      .w3-col.m4
+        .strong Submitted
+        .form-row
+          = f.label 'Date Submitted'
+          = f.text_field 'audit[date]', value:report.date, data:{controller:'flatpickr'}
+
+        .strong Quarermaster
+        .form-row
+
+          = f.label 'Name'
+          = f.text_field 'audit[qm][name]', value:report.qm.name
+        .form-row
+
+          = f.label 'Address'
+          = f.text_field 'audit[qm][address]', value:report.qm.address
+        .form-row
+
+          = f.label 'City/St'
+          = f.text_field 'audit[qm][city]', value:report.qm.city
+        .strong Bonding
+        .form-row
+          =  f.label "Company"
+          = f.text_field 'audit[bond][name]', value:report.bond.name
+        .form-row
+          = f.label "Amount"
+          = f.text_field 'audit[bond][amount]', value:report.bond.amount
+        .form-row
+          = f.label "Expires"
+          = f.text_field 'audit[bond][to]', value:report.bond.to, data:{controller:'flatpickr'}
+
+      .w3-col.m8
+        / .strong Accounts
+        table.small-table.w3-border
+          caption.strong Accounts
+          thead
+            tr
+              th.w20p Fund/Account
+              th.w05p Type
+              th.w12p  Beginning
+              th.w12p  Increase
+              th.w12p  Decrease
+              th.w12p  Ending
+
+          - cnt = report.accounts.count
+          tbody
+            / - puts "ACCOUNTS #{report.accounts[1].inspect}"
+            - 0.upto cnt -1 do |i|
+
+              - unless report.accounts[i].name.blank?
+                tr(id="acct-#{i}" data-targets="row")
+                  td = f.text_field( "audit[accounts][#{i}][name]", value:report.accounts[i].name, class:" w80p",
+                    data:{audit_target:'name',action:'change->audit#changed click->audit#selectit'})
+                  td = f.select( "audit[accounts][#{i}][type]",
+                    options_for_select(%w(Ck Ca CD Sv),report.accounts[i].type), { include_blank: true },
+                    data:{audit_target:'type',action:'change->audit#changed click->audit#selectit'})
+                  td = f.text_field( "audit[accounts][#{i}][beginning]", 
+                    value:report.accounts[i].beginning, class:"w80p w3-right-align", 
+                    data:{audit_target:'beginning',action:'change->audit#changed click->audit#selectit'})
+                  td = f.text_field( "audit[accounts][#{i}][debit]", value:report.accounts[i].debit, 
+                    class:"w80p w3-right-align", 
+                    data:{audit_target:'debit',action:'change->audit#changed click->audit#selectit'})
+                  td = f.text_field( "audit[accounts][#{i}][credit]", value:report.accounts[i].credit, 
+                    class:"w80p w3-right-align", 
+                    data:{audit_target:'credit',action:'change->audit#changed click->audit#selectit'})
+                  td = f.text_field( "audit[accounts][#{i}][ending]", value:report.accounts[i].ending, 
+                    class:"w80p w3-right-align",readonly:true,
+                    data:{audit_target:'ending'})
+            tr(id="acct-#{cnt}")
+              td = f.text_field( "audit[accounts][#{cnt}][name]", class:" w80p",
+                data:{audit_target:'name',action:'change->audit#changed'},)
+              td = f.select( "audit[accounts][#{cnt}][type]",
+                options_for_select(%w(Ck Ca CD Sv)), { include_blank: true },
+                data:{audit_target:'type',action:'change->audit#changed'})
+              td = f.text_field( "audit[accounts][#{cnt}][beginning]", class:" w80p w3-right-align", 
+                data:{audit_target:'beginning',action:'change->audit#changed'})
+              td = f.text_field( "audit[accounts][#{cnt}][debit]", class:" w80p w3-right-align", 
+                data:{audit_target:'debit',action:'click->audit#selectit change->audit#changed'}) 
+              td = f.text_field( "audit[accounts][#{cnt}][credit]", class:" w80p w3-right-align", 
+                data:{audit_target:'credit',action:'change->audit#changed click->audit#selectit'})
+              td = f.text_field( "audit[accounts][#{cnt}][ending]", readonly:true,class:" w80p w3-right-align",data:{audit_target:'ending'})
+            / maybe move to diffent tbody
+          tbody
+            tr.w3-light-gray(id="acct-totals")
+              td.strong.w3-right-align[colspan="2"] Totals
+              
+              td = f.text_field( "audit[totals][beginning]",readonly:true, class:"w3-right-align w80p", 
+                data:{audit_target:'beginningTotal'})
+              td = f.text_field( "audit[totals][debit]", readonly:true,class:"w3-right-align w80p", 
+                data:{audit_target:'debitTotal'}) 
+              td = f.text_field( "audit[totals][credit]",readonly:true, class:"w3-right-align w80p", 
+                data:{audit_target:'creditTotal'})
+              td = f.text_field( "audit[totals][ending]", readonly:true,class:"w3-right-align w80p", 
+                data:{audit_target:'endingTotal'})
+
+    .w3-row-padding
+      div &nbsp;
+      .w3-col.m8  
+        span = f.hidden_field("audit[acct_types]",value:report.acct_types)
+        table.small-table
+          tr
+            th.w80p Operations Question
+            th.w20p Response
+
+          - cnt = report.operations.count
+          - 0.upto cnt -1 do |i|
+            -numeric = report.operations[i].response == sprintf('%.2f', report.operations[i].response.to_f) || report.operations[i].response == '0'
+            - unless report.operations[i].question.blank?
+              tr
+
+                td = f.text_field "audit[operations][#{i}][question]", value:report.operations[i].question, class:"w100"
+                - if numeric
+                  td = f.text_field( "audit[operations][#{i}][response]",
+                   value:report.operations[i].response, data:{audit_target:'textfield',action:'change->audit#setfixed'},
+                   class:"w3-right-align")
+
+                - else
+                  td = f.text_field "audit[operations][#{i}][response]", value:report.operations[i].response
+          tr
+            td = f.text_field "audit[operations][#{cnt}][question]", class:'w100'
+            td = f.text_field "audit[operations][#{cnt}][response]"
+
+      .w3-col.m4
+        .strong Bank and Computed Balances
+        .form-row
+          = f.label "Bank Balance","Bank Balance"
+          = f.text_field('audit[checking][balance]', value:report.checking.balance,
+          data:{audit_target:'balance',action:'change->audit#changed click->audit#selectit'},class:"w30p",)
+        .form-row
+          = f.label "Outstanding"
+          = f.text_field('audit[checking][outstanding]', value:report.checking.outstanding,
+          data:{audit_target:'outstanding',action:'change->audit#changed click->audit#selectit'},class:"w30p")
+        #balanceBox
+          .form-row
+            = f.label "Actual Balance","Actual Balance"
+            = f.text_field('audit[checking][actual]', value:report.checking.actual, readonly:true,class:"w3-right-align",data:{audit_target:'actual'})
+          .form-row
+            = f.label "Other Savings","Other Savings"
+            = f.text_field('audit[checking][other]', value:report.checking.other,
+            data:{audit_target:'other',action:'change->audit#changed click->audit#selectit'},class:"w3-right-align")
+          .form-row
+            = f.label "Cash on Hand","Cash on Hand"
+            = f.text_field('audit[checking][cash]', value:report.checking.cash, readonly:true,class:"w3-right-align",data:{audit_target:'cash'})
+          .form-row
+            = f.label "Sub Total", "Sub Total"
+            = f.text_field('audit[checking][subtotal]', value:report.checking.subtotal, readonly:true,class:"w3-right-align",data:{audit_target:'subtotal'})
+          .form-row
+            = f.label  "CD", "CD"
+            = f.text_field('audit[checking][cd]', value:report.checking.cd, readonly:true,class:"w3-right-align",data:{audit_target:'cd'})
+          .form-row
+            = f.label "Total"
+            = f.text_field('audit[checking][total]', value:report.checking.total, readonly:true,class:"w3-right-align",data:{audit_target:'total'})
+
+        .w3-container
+
+
+          .w3-cell
+            .w3-button.w3-green = f.submit "Save", class:'w3-text-white'
+          .w3-cell.w05p &nbsp;
+          #balanceError.w3-cell.w3-red.w80p.w3-padding Error will go here
+
+        .strong Post
+        .form-row
+          = f.label "Formal Name"
+          = f.text_field 'audit[post][name]', value:report.post.name
+        .form-row
+          = f.label "Name"
+          = f.text_field 'audit[post][post]', value:report.post.post
+        .form-row
+          = f.label "Number"
+          = f.text_field 'audit[post][numb]', value:report.post.numb
+        .form-row
+          = f.label "Address"
+          = f.text_field 'audit[post][address]', value:report.post.address
+        .form-row
+          = f.label "City/State"
+          = f.text_field 'audit[post][city]', value:report.post.city
+        .form-row
+          = f.label "Department"
+          = f.text_field 'audit[post][department]', value:report.post.department
+
+
+

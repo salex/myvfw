@@ -1,0 +1,16 @@
+.bg-white
+  div[data-controller="movies"]
+    - cnt = 0
+    - perPage = 5
+    - pages = @movies.size / perPage
+    - pages += 1 if @movies.size % perPage > 0
+    span.hidden[data-movies-target="perPage"] = perPage
+    span.m-1.italic[data-movies-target="status"] = "Page 1 of #{pages}"
+    button.btn[data-action="click->movies#last_set" data-movies-target="lastBtn"] Last Page
+    button.btn[data-action="click->movies#next_set" data-movies-target="nextBtn"] Next Page
+    - @movies.each do |m|
+      - if cnt < perPage
+        div[data-movies-target="movie" class='block'] = "This is movie #{m}"
+        - cnt += 1
+      - else
+        div[data-movies-target="movie" class='hidden'] = "This is movie #{m}"

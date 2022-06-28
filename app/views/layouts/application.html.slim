@@ -1,15 +1,17 @@
 doctype html
 html lang="en"
   head
-    meta charset="utf-8"
+    / meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
     title == content_for?(:title) ? yield(:title) : "MyVFW"
 
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    link rel="stylesheet" href="https://ga.jspm.io/npm:flatpickr@4.6.9/dist/flatpickr.min.css"
 
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_importmap_tags
+    / = favicon_link_tag 'favicon.ico'
 
     = csrf_meta_tag
     = csp_meta_tag
@@ -22,7 +24,7 @@ html lang="en"
     - flash.each do |name, msg|
       - if msg.is_a?(String)
         .w3-container.w3-display-container[data-controller="hide-parent" class="#{name.to_s == 'notice' ? 'w3-pale-green' : 'w3-pale-red'}"]
-          button.w3-button.w3-large.w3-display-topright[data-target="hidder" data-action="click->hide-parent#clicked"] X
+          button.w3-button.w3-large.w3-display-topright[data-hide-parent-target="hidder" data-action="click->hide-parent#clicked"] X
           = content_tag :h4, content_tag(:strong,msg)
 
     

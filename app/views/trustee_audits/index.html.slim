@@ -2,14 +2,16 @@
 
   / p = session_inspect
   / p = Current.post
-  table.w3-table
+  h3.inline-block Trustee Audit List 
+  = link_to("New Audit",new_trustee_audit_path,class:"ml-4 w3-bar-item w3-button w3-light-blue")
+  table.w3-table-all
     thead
       tr
-        th Report
-        th Date
-        th Submitted
-        th Post
-        th.w3-right-align Assets
+        th.w20p Report
+        th.w10p Date
+        th.w10p Submitted
+        th.w15p Post
+        th.w10p Assets
         th Action
         
 
@@ -18,9 +20,11 @@
         tr
           td = a.key
           td = a.date
-          td = a.report.date_submitted
-          td = a.report.post.name
-          td.w3-right-align = money a.report.totals.ending
+          / td = a.report[:date_submitted]
+          td
+          td = a.post.name
+          td
+          / td.w3-right-align = money a.report[:totals].ending
           td.actions.markdown
             span = link_to a do
               i class="fas fa-eye"
@@ -31,5 +35,5 @@
             span = link_to pdf_trustee_audit_path(a)  do
               i{style="font-size:9px;"} PDF
 
-            span.w3-right = link_to trustee_audit_path(a), data: { confirm: 'Are you sure?' }, method: :delete do
+            span.inline-block = link_to trustee_audit_path(a), method: :delete, data: { turbo_confirm: 'Are you sure?', turbo_method:'delete' }  do
               i.far.fa-trash-alt

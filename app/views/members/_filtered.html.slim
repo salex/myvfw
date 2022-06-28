@@ -1,0 +1,75 @@
+= turbo_frame_tag id="members"
+  -daclass ='w100'
+
+  div.strong.text-center.w3-border-bottom.m-2
+    - if params[:limit].present?
+      - disp = "#{@members.size} #{params[:limit]}"
+    - elsif  params[:name].present?
+      - disp = "#{@members.size}" + ' Matching ' + "#{params[:name]}"
+    - else
+      - disp = @members.size
+
+    span.strong = "Memstats: Post Members: (#{disp})".html_safe
+
+  table.w100.mb-8
+    thead.text-left[data-controller="sortTable"]
+      tr
+        th[data-action="click->sortTable#sortBy"] 
+          |Full Name
+          = sort_icon
+        - if Current.user
+          th Vfw ID
+        th.w05p.numeric[data-action="click->sortTable#sortBy"] 
+          |Age
+          = sort_icon
+
+        th.w05p[data-action="click->sortTable#sortBy"]
+          | UD
+          = sort_icon
+        - if Current.user
+          th.w20p Contact
+        th City
+        th[data-action="click->sortTable#sortBy"]
+          |Pay Status
+          = sort_icon
+        th[data-action="click->sortTable#sortBy"] 
+          |Paid Thru
+          = sort_icon
+
+        th[data-action="click->sortTable#sortBy"] 
+          |Days
+          = sort_icon
+
+    tbody
+      - @members.each do |member|
+        / = render member
+        tr[id=("#{dom_id member}") class="even:bg-white odd:bg-slate-100"]
+          td 
+            - if Current.user
+              = link_to member.full_name,member_path(member),class:'w3-text-blue w3-hover-text-green', data: { turbo_frame: "_top" }
+            - else
+              = member.full_name
+          - if Current.user
+            td = member.vfw_id 
+          td = member.age
+          td = member.undeliverable
+          -  if Current.user
+            td = display_contact(member)
+          / member.email.present? ? ((member.phone ||= '') + mail_to(member.email,'E')).html_safe : member.phone
+          td = member.state != 'AL' ? "#{member.city}/#{member.state}" : member.city
+          td = params[:limit].present? && params[:limit] == 'Missing' ? "Last-#{member.last_status}" : member.pay_status
+          - if member.pay_status == 'Life Member'
+            td &nbsp;
+            td &nbsp;
+          -else
+            td = member.paid_thru
+            - if member.paid_thru.present?
+              - exp = (member.paid_thru.to_date - Date.today).to_i
+              - if exp < 0
+                td.strong EXP
+              - elsif exp < 30 
+                td.strong = exp
+              - else
+                td = exp
+            - else
+             td &nbsp;

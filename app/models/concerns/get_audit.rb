@@ -51,7 +51,7 @@ class GetAudit
     # puts "DID WE FIND IT> #{prev_audit.inspect}"
     if prev_audit.present?
       # create new audit and clear reset new stuff
-      config = prev_audit.hash_data
+      config = prev_audit.report
 
       config.accounts.each do |a|
         a.beginning = a.ending
@@ -73,9 +73,10 @@ class GetAudit
       config.checking.subtotal = ''
       config.checking.cd = ''
       config.checking.total = ''
+      return config
       # puts "GOinG TO CREATE  #{keyname} FROM #{keynamelq} after reset"
-      @audit = post.trustee_audits.create(key:keyname,date:@eolq,hash_data:config)
-      return self
+      # @audit = post.trustee_audits.create(key:keyname,date:@eolq,hash_data:config)
+      # return self
     else
       @error = 'Something is not right'
       return self

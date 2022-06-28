@@ -1,0 +1,13 @@
+div{class="popover text-center px-2" data-controller="popover" data-popover-translate-x="10%" data-popover-translate-y="-100%" data-action="mouseover->popover#mouseOver mouseout->popover#mouseOut"}
+  div{class="content hidden absolute max-w-xs bg-blue-200 rounded p-2" data-popover-target="content"}
+    span = explain 
+  span = txt
+div.text-center.px-2.bg-slate-100.border
+  - unless @memstats[mstats].nil?
+    / - puts "PHONE #{params[:phone]}"
+    - filtered = {limit:mstats}
+    - filtered[:phone] = params[:phone] if params[:phone].present?
+    = @memstats[mstats].zero? ? 0 : button_to(@memstats[mstats], 
+      filter_members_path,params:filtered,method: :get)
+
+

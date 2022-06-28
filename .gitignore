@@ -23,7 +23,7 @@
 
 /public/assets
 .byebug_history
-
+/zjunk
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
@@ -33,3 +33,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

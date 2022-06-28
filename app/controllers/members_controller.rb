@@ -8,23 +8,44 @@ class MembersController < ApplicationController
   # GET /members
   # GET /members.json
   def index
-    if params[:limit].present?
-      @members = Member.limit(params[:limit])
-    else
-      @members = Member.active #policy_scope(Member)
-    end
+    @members = Member.active #policy_scope(Member)
     @memstats = Member.memstats
   end
 
-  def search
-    puts "DDDDD got to search #{params}"
-    @members = Member.search(params)
-    puts "DDDDD #{@members.count}"
-
-    respond_to do |format|
-      format.html {render text:"I'm sorry, I can't do that.", layout:true}
-      format.js 
+  def filter
+    if params[:limit].present?
+      @members = Member.limit(params[:limit])
+      if params[:phone]
+        render turbo_stream: turbo_stream.replace(
+          'members', partial: 'members/list')
+      else
+        render turbo_stream: turbo_stream.replace(
+          'members', partial: 'members/filtered')
+      end
+    else
+      redirect_to members_path
     end
+  end
+
+  def search
+    if params[:name].present?
+      @members = Member.search(params)
+      render turbo_stream: turbo_stream.replace(
+        'members', partial: 'members/filtered')
+    else
+      redirect_to members_path,alert:'Invalid search parameters'
+    end
+
+
+  # def search
+  #   puts "DDDDD got to search #{params}"
+  #   @members = Member.search(params)
+  #   puts "DDDDD #{@members.count}"
+
+  #   respond_to do |format|
+  #     format.html {render text:"I'm sorry, I can't do that.", layout:true}
+  #     format.js 
+  #   end
   end
 
   # GET /members/1
