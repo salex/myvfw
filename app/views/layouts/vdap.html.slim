@@ -4,13 +4,12 @@ html lang="en"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title
-      = content_for?(:title) ? yield(:title) : "vdat - #{controller_name}"
+    title == content_for?(:title) ? yield(:title) : "vdat - #{controller_name}"
 
-    == javascript_pack_tag "application"
-    == stylesheet_link_tag "application", :media => 'all'
+    = javascript_importmap_tags
+    = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = csrf_meta_tag
-    / script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" 
 
 
   body

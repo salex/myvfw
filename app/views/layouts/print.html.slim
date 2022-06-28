@@ -4,12 +4,12 @@ html lang="en"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title == content_for?(:title) ? yield(:title) : "MyVFW"
+     title == content_for?(:title) ? yield(:title) : "vdat - #{controller_name}"
 
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-    = csrf_meta_tag
-    = csp_meta_tag
+     = javascript_importmap_tags
+     = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
+     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+     = csrf_meta_tag
 
   body.plain
     .w3-container.w3-white.print-page

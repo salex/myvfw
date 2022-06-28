@@ -5,7 +5,8 @@ html lang="en"
 
     title == content_for?(:title) ? yield(:title) : "MyVFW"
 
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = csrf_meta_tag
     = csp_meta_tag
 
