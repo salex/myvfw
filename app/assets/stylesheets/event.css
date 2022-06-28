@@ -1,0 +1,51 @@
+#events .calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+#events .calendar td, #events .calendar th {
+  font-family: "Lucida Grande", arial, helvetica, sans-serif;
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+#events .calendar th {
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+#events .calendar td {
+  background: #FFF;
+  color: #777;
+  height: 80px;
+  max-height: 80px;
+  overflow: scroll;
+  vertical-align: top;
+  font-size: 12px;
+}
+#events .calendar td dd {
+  font-size: 0.7em;
+}
+#events .calendar td dt {
+  text-indent: -4px;
+  padding-left: 4px;
+  line-height: 1.15em;
+}
+#events .calendar .notmonth {
+  background-color: #EEE;
+  color: #AAA;
+}
+#events .calendar .today {
+  background-color: #D7F2FF;
+}
+#events #month {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+#events #month a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
+}

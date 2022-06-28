@@ -1,0 +1,65 @@
+.pl-row {
+  width: 44rem; }
+  .pl-row .pl-col-acct {
+    display: inline-block;
+    width: 10rem;
+    text-align: left; }
+    .pl-row .pl-col-acct.p0 {
+      padding-left: 0rem; }
+    .pl-row .pl-col-acct.p1 {
+      padding-left: 1rem; }
+    .pl-row .pl-col-acct.p2 {
+      padding-left: 2rem; }
+    .pl-row .pl-col-acct.p3 {
+      padding-left: 3rem; }
+    .pl-row .pl-col-acct.p4 {
+      padding-left: 4rem; }
+    .pl-row .pl-col-acct.p5 {
+      padding-left: 5rem; }
+  .pl-row .col-acct {
+    display: inline-block;
+    width: 15rem;
+    text-align: left; }
+    .pl-row .col-acct.p0 {
+      padding-left: 0rem; }
+    .pl-row .col-acct.p1 {
+      padding-left: 1rem; }
+    .pl-row .col-acct.p2 {
+      padding-left: 2rem; }
+    .pl-row .col-acct.p3 {
+      padding-left: 3rem; }
+    .pl-row .col-acct.p4 {
+      padding-left: 4rem; }
+    .pl-row .col-acct.p5 {
+      padding-left: 5rem; }
+  .pl-row .pl-col-11 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right; }
+  .pl-row .pl-col-12 {
+    display: inline-block;
+    width: 12rem;
+    text-align: right; }
+  .pl-row .pl-col-13 {
+    display: inline-block;
+    width: 18rem;
+    text-align: right; }
+  .pl-row .pl-col-22 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right; }
+  .pl-row .pl-col-23 {
+    display: inline-block;
+    width: 12rem;
+    text-align: right; }
+  .pl-row .pl-col-33 {
+    display: inline-block;
+    width: 6rem;
+    text-align: right; }
+  .pl-row .pl-col-tot {
+    display: inline-block;
+    width: 7rem;
+    text-align: right; }
+
+.tright {
+  text-align: right; }

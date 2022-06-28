@@ -1,0 +1,26 @@
+html {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+table td, table th, button, label, input, .pl-row, a.button {
+  font-size: 10px;
+}
+@media screen and (min-width: 320px) {
+  table td, table th, button, label, input, .pl-row, a.button {
+    font-size: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  table td, table th, button, label, input, .pl-row, a.button {
+    font-size: 15px;
+  }
+}
