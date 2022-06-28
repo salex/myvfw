@@ -21,7 +21,7 @@ class HomeController < ApplicationController
       render template: 'home/department'
 
     else
-      render template: 'about/about'
+      render template: 'abouts/index'
     end
   end
 
