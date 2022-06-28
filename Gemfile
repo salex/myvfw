@@ -77,7 +77,7 @@ gem 'slim-rails'
 gem 'simple_form'
 gem 'prawn'
 gem 'prawn-table'
-gem 'font-awesome-sass', '~> 5.12.0'
+# gem 'font-awesome-sass', '~> 5.12.0'
 gem 'pundit'
 gem 'chronic'
 gem 'smarter_csv', require: false

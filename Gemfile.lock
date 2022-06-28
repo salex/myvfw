@@ -95,9 +95,6 @@ GEM
     crass (1.0.6)
     digest (3.1.0)
     erubi (1.10.0)
-    ffi (1.15.5)
-    font-awesome-sass (5.12.0)
-      sassc (>= 1.11)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -193,8 +190,6 @@ GEM
     rake (13.0.6)
     redcarpet (3.5.1)
     redis (4.7.0)
-    sassc (2.4.0)
-      ffi (~> 1.9)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -260,7 +255,6 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano3-puma
   chronic
-  font-awesome-sass (~> 5.12.0)
   icalendar
   icalendar-recurrence
   importmap-rails
