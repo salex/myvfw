@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  # set_current_tenant_through_filter
+  set_current_tenant_through_filter  ### for acts_as-tenant
   include UsersHelper
   before_action :current_user 
   # before_action :current_book
@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
     Current.user = @current_user
     if Current.user
       Current.client = Current.user.client
+      set_current_tenant(Current.client)### for acts_as-tenant
       current_book
     end
   end

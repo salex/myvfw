@@ -1,6 +1,6 @@
 class Entry < ApplicationRecord
-  belongs_to :book
-  # acts_as_tenant(:book)
+  # belongs_to :book
+  acts_as_tenant(:book)
 
   attribute :amount, :integer
   attribute :reconciled

@@ -99,7 +99,7 @@ class AccountsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_account
-      @account = Current.book.accounts.find_by(id:params[:id])
+      @account = Account.find_by(id:params[:id])
       redirect_to( accounts_path, alert:'Account not found for Current Book') if @account.blank?
 
     end

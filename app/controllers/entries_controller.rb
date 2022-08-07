@@ -19,9 +19,11 @@ class EntriesController < ApplicationController
       account = Account.find(params[:account_id])
     else 
       account = Account.new
+      ououoiuo = redirect to somewhere
     end
     @entry = Current.book.entries.new(post_date:Date.today)
     puts "ENTRY #{@entry.inspect}"
+    puts "ACCOUNT #{account.id}"
 
     session[:current_acct] = account.id
     1.upto(3) do |i|
@@ -50,6 +52,7 @@ class EntriesController < ApplicationController
     respond_to do |format|
       puts @entry.inspect
       puts entry_params
+
       if @entry.valid_params?(entry_params) && @entry.save
         format.html { redirect_to redirect_path, notice: 'Entry was successfully created.' }
         format.json { render :show, status: :created, location: @entry }

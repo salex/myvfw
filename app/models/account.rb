@@ -1,8 +1,8 @@
 class Account < ApplicationRecord
-  belongs_to :book
-  belongs_to :client
-  # acts_as_tenant(:client)
-  # acts_as_tenant(:book)
+  # belongs_to :book
+  # belongs_to :client
+  acts_as_tenant(:client)
+  acts_as_tenant(:book)
 
   # belongs_to :book
   has_many :splits, dependent: :destroy

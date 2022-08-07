@@ -1,10 +1,11 @@
 class Book < ApplicationRecord
-  belongs_to :client
+  # belongs_to :client
+  acts_as_tenant(:client) ### for acts_as-tenant
+
   has_many :accounts, dependent: :destroy
   has_many :entries, dependent: :destroy
-  # acts_as_tenant(:client)
   serialize :settings, JSON
-  # attribute :tree_ids
+  
   attribute :acct_transfers
   attribute :acct_placeholders
   attribute :checking_ids

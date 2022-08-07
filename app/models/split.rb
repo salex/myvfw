@@ -1,8 +1,8 @@
 class Split < ApplicationRecord
-  belongs_to :account
-  belongs_to :entry
-  # acts_as_tenant(:account)
-  # acts_as_tenant(:entry)
+  # belongs_to :account
+  # belongs_to :entry
+  acts_as_tenant(:account)
+  acts_as_tenant(:entry)
 
   attribute :debit, :integer
   attribute :credit, :integer
