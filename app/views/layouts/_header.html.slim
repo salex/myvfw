@@ -1,0 +1,56 @@
+.grid.grid-cols-12.bg-malt.text-white.py-2.font-bold.print:hidden
+  .col-span-3
+    / span= image_tag("favicon.ico",size:24,class:'inline')
+    span.indent.small-caps.strong &nbsp;OurBooks
+  .col-span-5
+    .flex.justify-center
+      span.small-caps  Doing More For Semi-Accountants
+  .col-span-3
+    - if Current.user.present?
+      span.float-right = Current.client.name + ": " + session[:full_name]
+div
+  .grid.grid-cols-12.gap-8.bg-black.text-white.font-bold.text-lg
+    - if Current.user.blank?
+
+      div.col-span-5
+        = link_to "Home", root_path, class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+
+        = link_to "About","#", class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+
+      div.col-span-5.
+        - flash.each do |name, msg|
+          - if msg.is_a?(String)
+            .flash-box.w3-padding.w3-animate-right[
+              data-controller="flashit" 
+              data-flashit-target="flashBox" 
+              class="#{name.to_s == 'notice' ? 'text-green-400' : 'text-red-400'}"]
+              = content_tag :span, content_tag(:strong,msg)
+      div.col-span-2
+          span.float-right = link_to "Login", login_path,class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+          / span.w3-bar-item.w3-button.w3-right = link_to "Profile", profile_path
+    - else
+      div.col-span-5
+        = link_to "Home", root_path, class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+        / = link_to "Books",books_path, class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+
+        = link_to "Books",books_path, class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+
+        = link_to "Accounts",accounts_path, class:"hover:bg-gray-300 inline-block h-8 px-3 hover:text-black"
+      div.col-span-5.
+        - flash.each do |name, msg|
+          - if msg.is_a?(String)
+            .flash-box.w3-padding.w3-animate-right[
+              data-controller="flashit" 
+              data-flashit-target="flashBox" 
+              class="#{name.to_s == 'notice' ? 'text-green-400' : 'text-red-400'}"]
+              = content_tag :span, content_tag(:strong,msg)
+
+      span.w3-bar-item.w3-button.w3-right.hover:bg-gray-300.hover:text-black = link_to "Logout", logout_path
+      span.w3-bar-item.w3-button.w3-right.hover:bg-gray-300.hover:text-black = link_to "Profile", "#"
+- if session[:recent].present?
+  .div.bg-black.text-white.font-bold.text-lg
+    span &nbsp; Recent Ledgers: &nbsp
+    - session[:recent].each do |k,v|
+     = link_to v,account_path(k),class:'gold-link-button text-black' 
+
+
