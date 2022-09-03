@@ -1,6 +1,6 @@
 class Entries::FilterController < EntriesController
   def index
-    render template:'entries/actions/search_filter'
+    render template:'entries/actions/filter'
   end
 
  end

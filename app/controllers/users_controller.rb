@@ -3,7 +3,8 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    @users = User.all
+    role_array = helpers.user_roles
+    @users = Current.client.users.select{|u| role_array.include?(u.roles.first)}
   end
 
   # GET /users/1

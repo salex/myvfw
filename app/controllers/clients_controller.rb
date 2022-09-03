@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
+  before_action :require_super, except: %i[signin logout login]
   before_action :set_client, only: %i[ show edit update destroy ]
 
   # GET /clients
@@ -70,6 +71,22 @@ class ClientsController < ApplicationController
     reset_session
     redirect_to root_url, notice: "Logged out!"
   end
+
+  def visit
+    super_id = session[:user_id]
+    full_name = session[:full_name]
+    reset_session
+    session[:user_id] = super_id
+    session[:full_name] = full_name
+    session[:client_id] = params[:id]
+    redirect_to root_path
+  end
+
+  def leave
+    reset_session unless Current.user.is_super?
+    redirect_to root_path
+  end
+
 
 
   private

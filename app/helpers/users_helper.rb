@@ -1,18 +1,36 @@
 module UsersHelper
+
+  def user_roles
+     if Current.user && Current.user.is_super?
+         role_array = ["super","admin","trustee",'guest']
+       elsif Current.user && Current.user.is_admin?
+         role_array = ["admin","trustee",'guest']
+       elsif Current.user && Current.user.is_trustee?
+          role_array = ["trustee",'guest']
+     else
+       role_array = ["guest"]
+     end
+     role_array
+   end
+
   def role_checkboxes(roles)
     checkboxes = []
-    if @current_user && @current_user.is_super?
-      role_array = ["super","admin","trustee",'guest']
-      elsif @current_user && @current_user.is_admin?
-      role_array = ["admin","trustee",'guest']
-    else
-      role_array = ["guest"]
+    role_array = user_roles
+    # if @current_user && @current_user.is_super?
+    #     role_array = ["super","admin","trustee",'guest']
+    #   elsif @current_user && @current_user.is_admin?
+    #     role_array = ["admin","trustee",'guest']
+    #   elsif @current_user && @current_user.is_trustee?
+    #      role_array = ["trustee",'guest']
+    # else
+    #   role_array = ["guest"]
 
-    end
+    # end
 
     role_array.each do |i|
       checkboxes << [i,roles.include?(i)]
     end
+    puts "CHECKBOXES  #{checkboxes} ROLS #{roles}"
     checkboxes
   end
 

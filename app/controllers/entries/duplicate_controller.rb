@@ -9,7 +9,7 @@ class Entries::DuplicateController < ApplicationController
         if dup_entry.splits.length > 2
           redirect_to latest_ofxes_path, alert:'Sorry, you can\'t duplicate entries with more than 2 splits from Bank Transactions. Deplicate it in the ledger.'
         else
-          bank = Ofx.find_fit_id(params[:refid])
+          bank = Current.book.bank_transactions.find_by(fit_id:params[:refid])
           @entry = dup_entry.duplicate_with_bank(bank)
         end
       else

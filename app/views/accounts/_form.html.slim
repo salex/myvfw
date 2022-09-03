@@ -5,13 +5,14 @@
       ul
         - @account.errors.each do |error|
           li = error.full_message
+
   .flex.gap-8
     div
 
       div
         = form.label :book_id, style: "display: block"
         = form.hidden_field :book_id
-        div = @account.book_id
+        div = Current.book.id
 
       div
         = form.label :name, style: "display: block"

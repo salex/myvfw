@@ -27,6 +27,11 @@ module ButtonHelper
     btn_sm + "bg-green-200 hover:bg-green-300 "
   end
 
+  def btn_lg_green
+    btn_lg + "bg-green-500 hover:bg-green-300 "
+  end
+  
+
   def icon(klass, text = nil)
     icon_tag = tag.i(class: klass)
     text_tag = tag.span ' ' + text

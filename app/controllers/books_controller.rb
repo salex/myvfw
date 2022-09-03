@@ -43,7 +43,10 @@ class BooksController < ApplicationController
 
   # DELETE /books/1
   def destroy
-    @book.destroy
+    @book.settings = {skip:true}.with_indifferent_access
+    @book.destroy_book
+    session.delete(:book_id)
+    Current.book = nil
     redirect_to books_url, notice: "Book was successfully destroyed."
   end
 

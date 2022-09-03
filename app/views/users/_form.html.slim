@@ -9,7 +9,6 @@
   div
     = form.label "Client: " + "Current.client", style: "display: block", class:'py-2'
     = form.number_field :client_id
-    p hi steve
 
   div
     = form.label :email, style: "display: block"
@@ -36,7 +35,7 @@
     = form.password_field :password_confirmation
   .s4.w3-col
     label Roles
-    - checkboxes = role_checkboxes('super')
+    - checkboxes = role_checkboxes(@user.roles)
     - checkboxes.each do |b|
       .m3.columns
         = check_box_tag 'user[roles][]', b[0],b[1]

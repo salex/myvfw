@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_03_205713) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_18_031020) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -29,6 +29,39 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_03_205713) do
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_accounts_on_book_id"
     t.index ["client_id"], name: "index_accounts_on_client_id"
+  end
+
+  create_table "bank_statements", force: :cascade do |t|
+    t.bigint "client_id", null: false
+    t.bigint "book_id", null: false
+    t.date "statement_date"
+    t.integer "beginning_balance"
+    t.integer "ending_balance"
+    t.text "summary"
+    t.date "reconciled_date"
+    t.text "ofx_data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["book_id"], name: "index_bank_statements_on_book_id"
+    t.index ["client_id"], name: "index_bank_statements_on_client_id"
+  end
+
+  create_table "bank_transactions", force: :cascade do |t|
+    t.bigint "book_id", null: false
+    t.bigint "client_id", null: false
+    t.bigint "entry_id"
+    t.date "post_date"
+    t.integer "amount"
+    t.string "fit_id"
+    t.string "ck_numb"
+    t.string "name"
+    t.string "memo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["book_id"], name: "index_bank_transactions_on_book_id"
+    t.index ["client_id"], name: "index_bank_transactions_on_client_id"
+    t.index ["entry_id"], name: "index_bank_transactions_on_entry_id"
+    t.index ["fit_id"], name: "index_bank_transactions_on_fit_id"
   end
 
   create_table "books", force: :cascade do |t|
@@ -66,6 +99,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_03_205713) do
     t.integer "lock_version"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "client_id"
     t.index ["book_id"], name: "index_entries_on_book_id"
     t.index ["description"], name: "index_entries_on_description"
     t.index ["post_date"], name: "index_entries_on_post_date"
@@ -82,6 +116,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_03_205713) do
     t.integer "lock_version"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "client_id"
     t.index ["account_id"], name: "index_splits_on_account_id"
     t.index ["entry_id"], name: "index_splits_on_entry_id"
   end
@@ -101,6 +136,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_03_205713) do
 
   add_foreign_key "accounts", "books"
   add_foreign_key "accounts", "clients"
+  add_foreign_key "bank_statements", "books"
+  add_foreign_key "bank_statements", "clients"
+  add_foreign_key "bank_transactions", "books"
+  add_foreign_key "bank_transactions", "clients"
+  add_foreign_key "bank_transactions", "entries"
   add_foreign_key "books", "clients"
   add_foreign_key "entries", "books"
   add_foreign_key "splits", "accounts"

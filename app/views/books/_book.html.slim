@@ -11,6 +11,6 @@ div id="#{dom_id book}"
   p
     strong.w-40.inline-block.text-right Date to:
     =< book.date_to
-  p
+  div
     strong.w-40.inline-block.text-right Settings:
-    =< book.settings
+    =< text_area_tag nil,book.settings

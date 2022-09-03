@@ -1,8 +1,8 @@
 class Account < ApplicationRecord
-  # belongs_to :book
+  belongs_to :book
   # belongs_to :client
   acts_as_tenant(:client)
-  acts_as_tenant(:book)
+  # acts_as_tenant(:book)
 
   # belongs_to :book
   has_many :splits, dependent: :destroy
@@ -26,16 +26,16 @@ class Account < ApplicationRecord
   end
 
 
-  def parent
-    Account.find(self.parent_id) unless root_account?
-  end
+  # def parent
+  #   self.find(self.parent_id) unless root_account?
+  # end
 
   def root_account?
     self.account_type == 'ROOT'
   end
 
   def destroyable?
-    self.children.blank? #&& self.entries.blank?
+    self.children.blank? && self.entries.blank?
   end
 
   def children
@@ -49,7 +49,7 @@ class Account < ApplicationRecord
   end
 
   def family_tree_ids
-    # Only used in last_entry_date to get the lall entries for the family and me
+    # Only used in last_entry_date to get the all entries for the family and me
     # if self is a leaf (no childre) it will be an array [:id]
     # if self has children it will be array [:id,e0.id, e1.id, etc]
     self.family.pluck(:id) << self.id

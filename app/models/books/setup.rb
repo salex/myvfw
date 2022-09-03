@@ -2,70 +2,69 @@ module Books
   class Setup < Book
     require 'csv'
 
-    def self.clone_book_tree
-      next_book = Book.maximum(:id) + 1
-      next_acct = Account.maximum(:id)
-      accts = Account.find(Current.book.settings["tree_ids"])
-      accounts = []
-      accts.each do |a|
-        accounts << {
-          account_type:a.account_type,
-          name:a.name,
-          description:a.description,
-          placeholder:a.placeholder,
-          id:a.id+next_acct,
-          level:a.level,
-          parent_id: (a.parent_id.nil? ? nil : a.parent_id + next_acct)
-        }
-      end
-      accounts
-    end
+    # def self.clone_book_tree
+    #   next_book = Book.maximum(:id) + 1
+    #   next_acct = Account.maximum(:id)
+    #   accts = Account.find(Current.book.settings["tree_ids"])
+    #   accounts = []
+    #   accts.each do |a|
+    #     accounts << {
+    #       account_type:a.account_type,
+    #       name:a.name,
+    #       description:a.description,
+    #       placeholder:a.placeholder,
+    #       id:a.id+next_acct,
+    #       level:a.level,
+    #       parent_id: (a.parent_id.nil? ? nil : a.parent_id + next_acct)
+    #     }
+    #   end
+    #   accounts
+    # end
 
-    def create_cloned_tree
-      @accounts = Books::Setup.clone_book_tree
-      @accounts.each do |acct|
-        new_acct = self.accounts.new(acct)
-         new_acct.save
-      end
-      # fix_uuids
-      self.settings = nil
-      self.get_settings
-      ActiveRecord::Base.connection.reset_pk_sequence!('accounts')
-      return true
+    # def create_cloned_tree
+    #   @accounts = Books::Setup.clone_book_tree
+    #   @accounts.each do |acct|
+    #     new_acct = self.accounts.new(acct)
+    #      new_acct.save
+    #   end
+    #   # fix_uuids
+    #   self.settings = nil
+    #   self.get_settings
+    #   ActiveRecord::Base.connection.reset_pk_sequence!('accounts')
+    #   return true
 
-    end
+    # end
+
 
     def self.create_book_tree(accounts)
+      ActsAsTenant.without_tenant do
 
-      next_book = Book.maximum(:id) + 1
-      next_acct = Account.maximum(:id) + 1
+        @next_book = Book.maximum(:id) + 1
+        @next_acct = Account.maximum(:id) + 1
+
+      end
+      puts "WHY OUT #{@next_book} #{@next_acct}"
       new_book = Current.client.books.new(name:"new book #{Date.today}")
-      new_book.id = next_book
-      new_book.settings = {'skip':true,'tree':true}
-      #   file_name = self.root
-      #   self.id = next_book
-      #   self.client_id = Current.client.id
-      #   self.root = nil
-      # end
+      new_book.id = @next_book
+      new_book.settings = {'skip':true,'tree':true} #not sure if still valid - skipped load
       new_book.save  if new_book.valid?# got book with only id
-      # arr = Books::Setup.parse_csv(file_name+'.csv')
-      # test_accts = []
-      # @accounts = arr[0]
       accounts.each do |acct|
         new_acct = Account.new(acct)
-        new_acct.id = new_acct.id + next_acct 
-        new_acct.parent_id = new_acct.parent_id + next_acct unless new_acct.account_type == 'ROOT'
+        new_acct.id = new_acct.id + @next_acct 
+        new_acct.parent_id = new_acct.parent_id + @next_acct unless new_acct.account_type == 'ROOT'
         new_acct.book_id = new_book.id
         new_acct.client_id = Current.client.id
         puts "VALID #{new_acct.valid?}"
         puts "ERRORS #{new_acct.errors.full_messages}"
-        puts new_acct.inspect
         ok = new_acct.save if new_acct.valid?
         puts "OK #{ok}"
       end
       ActiveRecord::Base.connection.reset_pk_sequence!('books')
       ActiveRecord::Base.connection.reset_pk_sequence!('accounts')
-      new_book.setting = {}
+      ActiveRecord::Base.connection.reset_pk_sequence!('bank_statements')
+      ActiveRecord::Base.connection.reset_pk_sequence!('bank_transactions')
+
+      new_book.settings = {}
       new_book.save
       new_book.rebuild_settings
       # return true
@@ -107,20 +106,20 @@ module Books
     #   self.fix_placeholders
     # end
 
-    def fix_placeholders
-      self.accounts.each do |a|
-        if a.has_children? && !a.placeholder
-          a.placeholder = true
-          a.save 
-        end
-      end
-      # self.get_settings
-    end
+    # def fix_placeholders
+    #   self.accounts.each do |a|
+    #     if a.has_children? && !a.placeholder
+    #       a.placeholder = true
+    #       a.save 
+    #     end
+    #   end
+    #   # self.get_settings
+    # end
 
     def self.parse_csv(csv_file)
       acct_path = Rails.root.join("xml/csv/#{csv_file}")
-      next_book = Book.maximum(:id).nil? ? 1 : Book.maximum(:id) + 1
-      next_account = Account.maximum(:id).nil? ? 1 : Account.maximum(:id) + 1
+      next_book =  1 #Book.maximum(:id).nil? ? 1 : Book.maximum(:id) + 1
+      next_account = 1 #Account.maximum(:id).nil? ? 1 : Account.maximum(:id) + 1
       accts = CSV.parse(File.read(acct_path))
       keys = accts.delete_at(0)
       type = 0

@@ -74,9 +74,9 @@ module ReportsHelper
       right = report["Equity"][:total] + report["Income"][:total] - report["Expense"][:total]
       concat(tag.div(class:'grid grid-cols-1 mt-4'){
 
-        concat( content_tag(:div,"Assets - Liabilities = Equity + (Income - Expenses)",class:'strong justify-self-center'))
-        concat( content_tag(:div,"#{assets} - (#{liabilities}) = #{equity} + (#{income} - #{expenses})",class:'strong justify-self-center'))
-        concat( content_tag(:div,"#{to_money(left)} =  #{to_money(right)}",class:'strong justify-self-center'))
+        concat( content_tag(:div,"Assets - Liabilities = Equity + (Income - Expenses)",class:'font-bold justify-self-center'))
+        concat( content_tag(:div,"#{assets} - (#{liabilities}) = #{equity} + (#{income} - #{expenses})",class:'font-bold justify-self-center'))
+        concat( content_tag(:div,"#{to_money(left)} =  #{to_money(right)}",class:'font-bold justify-self-center'))
         }
       )
 
@@ -84,7 +84,7 @@ module ReportsHelper
   end
 
   def tot_row(name,amount, extra=nil)
-    content_tag(:div,class:' strong ') do
+    content_tag(:div,class:' font-bold ') do
       concat(content_tag(:span,name,class:"inline-block w2in  "))
       cnt = 1
       while cnt < @level

@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    puts "OPEN #{session[:book_id]}"
+    # puts "OPEN #{session[:book_id]}"
     
     if Current.user.blank?
       render "home/index"

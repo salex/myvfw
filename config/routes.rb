@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  resources :bank_statements do 
+    member do 
+      get :transactions
+      get :reconcile
+      get :update_reconcile
+      post :clear_splits
+      post :unclear_splits
+
+    end
+    collection do 
+      get :unlinked
+    end
+  end
+  resources :bank_transactions do 
+    collection do 
+      get :upload_ofx
+      patch :update_ofx
+      patch :import_ofx
+    end
+    member do 
+      get :unlinked
+    end
+  end
+
   namespace :entries do
     resources :duplicate, only: [:show]
     resources :void, only: [:show, :update]
@@ -15,7 +39,14 @@ Rails.application.routes.draw do
 
   end
 
-  resources :entries
+  resources :entries do 
+    member do 
+      get :link 
+      get :new_bt
+
+    end
+  end
+
   resources :accounts do
     member do 
       get :new_child
@@ -24,6 +55,11 @@ Rails.application.routes.draw do
       get :index_table
     end
   end
+  namespace :accounts do
+    resources :register_pdf, only: :show
+    resources :split_register_pdf, only: :show
+  end
+
 
   namespace :books do
     # resources :importyaml, only: [:new,:create]
@@ -52,7 +88,38 @@ Rails.application.routes.draw do
       post :signin
       get :home
     end
+    member do 
+      get :visit
+      get :leave
+    end
   end
+
+  resources :reports, only: :index do
+    collection do
+      get :profit_loss
+      get :trial_balance
+      get :checking_balance
+      get :register_pdf
+      get :split_register_pdf
+      get :test
+      get :summary
+      get :custom
+      patch :set_acct
+      get :set_acct
+
+    end
+    member do
+      post :split_clear
+      post :split_unclear
+    end
+  end
+  get 'about/about'
+  get 'about/accounts'
+  get 'about/entries'
+  get 'about/banking'
+  get 'about/reports'
+  get 'about/checking'
+  get 'about', to: 'about#about'
   get 'home/index'
   get 'home/client'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -60,6 +127,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   get 'login', to: 'clients#login', as: 'login'
   get 'logout', to: 'clients#logout', as: 'logout'
+  get 'profile', to: 'users#profile'
 
   root "home#index"
 end

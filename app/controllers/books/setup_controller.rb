@@ -1,6 +1,6 @@
 class Books::SetupController < BooksController
   # before_action :set_book, only: [:show, :new, :update, :destroy]
-  before_action :require_book
+  # before_action :require_book
 
   def index
     @books = Current.client.books.all
@@ -62,7 +62,7 @@ class Books::SetupController < BooksController
           acct[:code] = 'CURRENT'
         end
       end
-
+      puts @accounts.inspect
       book = Books::Setup.create_book_tree(@accounts)
       # this is going to call the create action in Book, not setup
       # @book = Book.new(root:params[:option])

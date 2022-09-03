@@ -30,7 +30,7 @@ class AccountsController < ApplicationController
 
   def new_child
     @parent = @account
-    @account = Account.new(parent_id:@account.id,account_type:@parent.account_type)
+    @account = Account.new(book_id:@parent.book_id,parent_id:@parent.id,account_type:@parent.account_type)
     render :new
   end
 

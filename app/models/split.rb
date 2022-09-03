@@ -1,8 +1,8 @@
 class Split < ApplicationRecord
-  # belongs_to :account
-  # belongs_to :entry
-  acts_as_tenant(:account)
-  acts_as_tenant(:entry)
+  belongs_to :account
+  belongs_to :entry
+  acts_as_tenant(:client)
+  # acts_as_tenant(:entry)
 
   attribute :debit, :integer
   attribute :credit, :integer
@@ -16,7 +16,7 @@ class Split < ApplicationRecord
   end
 
   def details
-    return {name:transfer,cr:self.credit,db:self.debit,
+    return {name:self.transfer,cr:self.credit,db:self.debit,
       amount:self.amount, action: self.action, memo:self.memo, 
       r:self.reconcile_state, acct_id:self.account_id}
    end
@@ -24,7 +24,7 @@ class Split < ApplicationRecord
   private
 
   def set_debit_credit(s)
-    self.transfer =  Current.book.acct_transfers[s.account_id]
+    self.transfer =  Current.book.acct_transfers[account_id.to_s]
     if s.amount.blank?
       s.amount = 0
     end

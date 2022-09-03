@@ -30,7 +30,7 @@
         i class="fas fa-edit" 
         span.indent Edit Book
       li
-        i class="fas fa-trash w3-text-red" 
+        i class="fas fa-trash text-red-500" 
         span.indent Delete/Destroy book. CAUTION This will destroy all associated Accounts, Entries and Splits
 
     p The "New Book" Button will create a new book with default accounts
@@ -59,7 +59,7 @@
                 i class="fas fa-eye"
               = link_to edit_book_path(book) do
                 i class="fas fa-edit"
-              .inline-block = button_to icon('fas fa-trash',""), book, method: :delete, form:{data: { turbo_confirm: 'Are you sure?', turbo_method:'delete' }}, class:""
+              .inline-block = button_to icon('fas fa-trash text-red-500',""), book, method: :delete, form:{data: { turbo_confirm: 'Are you sure?', turbo_method:'delete' }}, class:""
 
     - if Current.book.present?
       p.font-bold = "Current Book: #{Current.book.name}"

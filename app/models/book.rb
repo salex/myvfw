@@ -4,6 +4,9 @@ class Book < ApplicationRecord
 
   has_many :accounts, dependent: :destroy
   has_many :entries, dependent: :destroy
+  has_many :bank_statements, dependent: :destroy
+  has_many :bank_transactions, dependent: :destroy
+
   serialize :settings, JSON
   
   attribute :acct_transfers
@@ -19,11 +22,19 @@ class Book < ApplicationRecord
     end
   end
 
+  # def acct_transfer(id)
+  #   unless self.settings.blank?
+  #     self.acct_transfers(id.to_s)
+  #   end
+  # end
+
   def acct_sel_opt
     unless self.settings.blank?
       self.acct_transfers.map{|k,v| [v,k]}.prepend(['',0])
     end
   end
+
+
 
   def acct_sel_opt_rev
     unless self.settings.blank?
@@ -56,7 +67,8 @@ class Book < ApplicationRecord
 
   def destroy_book
     self.entries.destroy_all
-    # self.bank_statements.destroy_all
+    self.bank_statements.destroy_all
+    self.bank_transactions.destroy_all
     self.accounts.destroy_all
     self.destroy
   end
@@ -109,12 +121,19 @@ class Book < ApplicationRecord
   end
 
   def rebuild_settings
-    checking = checking_acct
+    checking = self.checking_acct
     new_settings = {}
+    puts "CHECK ACCOUT IS #{checking}"
     accts = build_tree
     id_trans = accts.pluck(:id,:transfer)
     if checking.present?
-      new_settings['checking_ids'] = checking.leafs
+      leafs = checking.leaf.sort
+      # puts "ARE THE LEAFS SET #{leafs}"
+      if leafs.blank?
+        new_settings['checking_ids'] = [checking.id]
+      else
+        new_settings['checking_ids'] = leafs
+      end
     end
     new_settings['transfers'] = id_trans.to_h
     new_settings['acct_placeholders'] = accts.select{|a| a.placeholder}.pluck(:id)
@@ -123,16 +142,7 @@ class Book < ApplicationRecord
     self.save!
   end
 
-  # def new_rebuild_sessions
-  #   accts = build_tree
-  #   transfers =  accts.pluck(:id,:transfer).to_h
-  #   placeholders = accts.select{|a| a.placeholder}.pluck(:id)
-  #   tree_ids = transfer.keys
-  #   acct_sel_opt = transfers.map{|k,v| [v,k]}.prepend(['',0])
-  #   acct_sel_opt_rev = acct_sel_opt.select{|i| i  unless placeholders.include?(i[1])}.
-  #     map{|i|[ i[0].split(':').reverse.join(':'),i[1]]}.
-  #     sort_by { |word| word[0].downcase }
-  # end
+  
 
   def last_numbers(ago=6)
     from = Date.today.beginning_of_month - ago.months
@@ -238,7 +248,7 @@ class Book < ApplicationRecord
   end
 
   def contains_amount_query(match,all=nil)
-    bacct_ids = self.acct_tree_id - self.settings['dis_opt']
+    bacct_ids = self.acct_tree_ids #- self.acct_placeholders
     eids = Split.where(account_id:bacct_ids).where(amount:match.to_i).pluck(:entry_id).uniq
     # query = self.entries.where('entries.numb like ?',"#{match}%").order(:post_date).reverse_order
     query = self.entries.where(id:eids).order(:post_date).reverse_order

@@ -8,15 +8,7 @@ export default class extends Controller {
     console.log("got a toggleMenu")
   }
 
-  toggleMenu() {
+  toggle() {
     this.menuTarget.classList.toggle('hidden');
-    // if( elem.classList.contains('fa-toggle-off')){
-    //   elem.classList.add('fa-toggle-on')
-    //   elem.classList.remove('fa-toggle-off')
-    // }else{
-    //   elem.classList.add('fa-toggle-off')
-    //   elem.classList.remove('fa-toggle-on')
-    // }
-
   }
 }
