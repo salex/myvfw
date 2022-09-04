@@ -1,6 +1,35 @@
 module Books
   class Setup < Book
-    require 'csv'
+    # require 'csv'
+    # csv no longer used, moved to json. Accounts will be pure json
+    def self.create_book_tree(accounts,kind="unknown")
+      ActsAsTenant.without_tenant do
+        @next_book = Book.maximum(:id) + 1
+        @next_acct = Account.maximum(:id) + 1
+      end
+      new_book = Current.client.books.new(name:"#{kind} #{Date.today}")
+      new_book.id = @next_book
+      new_book.settings = {'skip':true,'tree':true} #not sure if still valid - skipped load
+      new_book.save  if new_book.valid?# got book with only id and name
+      accounts.each do |acct|
+        new_acct = Account.new(acct)
+        new_acct.id = new_acct.id + @next_acct 
+        new_acct.parent_id = new_acct.parent_id + @next_acct unless new_acct.account_type == 'ROOT'
+        new_acct.book_id = new_book.id
+        new_acct.client_id = Current.client.id
+        ok = new_acct.save if new_acct.valid?
+      end
+      # reset all id to last of for model dependant on book
+      ActiveRecord::Base.connection.reset_pk_sequence!('books')
+      ActiveRecord::Base.connection.reset_pk_sequence!('accounts')
+      ActiveRecord::Base.connection.reset_pk_sequence!('bank_statements')
+      ActiveRecord::Base.connection.reset_pk_sequence!('bank_transactions')
+      new_book.settings = {}
+      new_book.save
+      new_book.rebuild_settings
+    end
+  end
+end
 
     # def self.clone_book_tree
     #   next_book = Book.maximum(:id) + 1
@@ -36,39 +65,7 @@ module Books
     # end
 
 
-    def self.create_book_tree(accounts)
-      ActsAsTenant.without_tenant do
-
-        @next_book = Book.maximum(:id) + 1
-        @next_acct = Account.maximum(:id) + 1
-
-      end
-      puts "WHY OUT #{@next_book} #{@next_acct}"
-      new_book = Current.client.books.new(name:"new book #{Date.today}")
-      new_book.id = @next_book
-      new_book.settings = {'skip':true,'tree':true} #not sure if still valid - skipped load
-      new_book.save  if new_book.valid?# got book with only id
-      accounts.each do |acct|
-        new_acct = Account.new(acct)
-        new_acct.id = new_acct.id + @next_acct 
-        new_acct.parent_id = new_acct.parent_id + @next_acct unless new_acct.account_type == 'ROOT'
-        new_acct.book_id = new_book.id
-        new_acct.client_id = Current.client.id
-        puts "VALID #{new_acct.valid?}"
-        puts "ERRORS #{new_acct.errors.full_messages}"
-        ok = new_acct.save if new_acct.valid?
-        puts "OK #{ok}"
-      end
-      ActiveRecord::Base.connection.reset_pk_sequence!('books')
-      ActiveRecord::Base.connection.reset_pk_sequence!('accounts')
-      ActiveRecord::Base.connection.reset_pk_sequence!('bank_statements')
-      ActiveRecord::Base.connection.reset_pk_sequence!('bank_transactions')
-
-      new_book.settings = {}
-      new_book.save
-      new_book.rebuild_settings
-      # return true
-    end
+ 
 
     # def fix_uuids
     #   book = self
@@ -116,69 +113,67 @@ module Books
     #   # self.get_settings
     # end
 
-    def self.parse_csv(csv_file)
-      acct_path = Rails.root.join("xml/csv/#{csv_file}")
-      next_book =  1 #Book.maximum(:id).nil? ? 1 : Book.maximum(:id) + 1
-      next_account = 1 #Account.maximum(:id).nil? ? 1 : Account.maximum(:id) + 1
-      accts = CSV.parse(File.read(acct_path))
-      keys = accts.delete_at(0)
-      type = 0
-      full_name = 1
-      name_desc = 2
-      placeholder = 11
-      id = next_account
-      book_id = next_book
-      last_level = 0
-      this_type = ''
-      parent_id = next_account
-      parent_ids = [nil,next_account]
-      accounts = [{account_type:'ROOT',name:'Root Account',description:'Root Account',level:0, parent_id:nil,id:id,placeholder:true}]
-      accts.each_with_index do |a,idx|
-        this_level = a[full_name].split(':').count
-        this_id = idx + 1 + id
-        if this_level == 1
-          # we have a root child
-          this_type = a[type]
-          this_parent_id = next_account
-          parent_ids[this_level] = this_id
-          accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:1, parent_id:this_parent_id,id:this_id,placeholder:true}
+    # def self.parse_csv(csv_file)
+    #   acct_path = Rails.root.join("xml/csv/#{csv_file}")
+    #   next_book =  1 #Book.maximum(:id).nil? ? 1 : Book.maximum(:id) + 1
+    #   next_account = 1 #Account.maximum(:id).nil? ? 1 : Account.maximum(:id) + 1
+    #   accts = CSV.parse(File.read(acct_path))
+    #   keys = accts.delete_at(0)
+    #   type = 0
+    #   full_name = 1
+    #   name_desc = 2
+    #   placeholder = 11
+    #   id = next_account
+    #   book_id = next_book
+    #   last_level = 0
+    #   this_type = ''
+    #   parent_id = next_account
+    #   parent_ids = [nil,next_account]
+    #   accounts = [{account_type:'ROOT',name:'Root Account',description:'Root Account',level:0, parent_id:nil,id:id,placeholder:true}]
+    #   accts.each_with_index do |a,idx|
+    #     this_level = a[full_name].split(':').count
+    #     this_id = idx + 1 + id
+    #     if this_level == 1
+    #       # we have a root child
+    #       this_type = a[type]
+    #       this_parent_id = next_account
+    #       parent_ids[this_level] = this_id
+    #       accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:1, parent_id:this_parent_id,id:this_id,placeholder:true}
 
-        elsif this_level == last_level
-          # we have a sibling of the last acct that could be a parent
-          this_type = a[type]
-          this_parent_id = parent_ids[this_level -1]
-          parent_ids[this_level] = this_id
-          accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
+    #     elsif this_level == last_level
+    #       # we have a sibling of the last acct that could be a parent
+    #       this_type = a[type]
+    #       this_parent_id = parent_ids[this_level -1]
+    #       parent_ids[this_level] = this_id
+    #       accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
 
-        elsif this_level > last_level
-          # we have a new branch with level > 1
-          this_type = a[type]
-          this_parent_id = parent_ids[last_level]
-          parent_ids[this_level] = this_id
-          accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
+    #     elsif this_level > last_level
+    #       # we have a new branch with level > 1
+    #       this_type = a[type]
+    #       this_parent_id = parent_ids[last_level]
+    #       parent_ids[this_level] = this_id
+    #       accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
 
-        elsif this_level < last_level
-          # we have a new branch with level > 1
-          this_type = a[type]
-          this_parent_id = parent_ids[this_level -1]
-          parent_ids[this_level] = this_id
-          accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
+    #     elsif this_level < last_level
+    #       # we have a new branch with level > 1
+    #       this_type = a[type]
+    #       this_parent_id = parent_ids[this_level -1]
+    #       parent_ids[this_level] = this_id
+    #       accounts << {account_type:this_type,name:a[name_desc],description:a[full_name],level:this_level, parent_id:this_parent_id,id:this_id,placeholder:false}
 
-        end
-        last_level = this_level
-      end
-      # accounts
-      trees = {next_account => []}
-      accounts.each do |a|
-        if trees.has_key?(a[:parent_id])
-          trees[a[:parent_id]] << a[:id]
-        else
-          trees[a[:parent_id]] = [a[:id]]
-        end
-      end
-      trees.delete(nil)
-      return [accounts,trees]
-    end
-  end
-end
+    #     end
+    #     last_level = this_level
+    #   end
+    #   # accounts
+    #   trees = {next_account => []}
+    #   accounts.each do |a|
+    #     if trees.has_key?(a[:parent_id])
+    #       trees[a[:parent_id]] << a[:id]
+    #     else
+    #       trees[a[:parent_id]] = [a[:id]]
+    #     end
+    #   end
+    #   trees.delete(nil)
+    #   return [accounts,trees]
+    
 

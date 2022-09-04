@@ -39,6 +39,16 @@ File.write(Rails.root+"yaml/entries.json",
   Entry.all.as_json(except:[:amount,:reconciled, :created_at,:updated_at,:book_id,:lock_version],
     include:{splits: {except:[:created_at,:updated_at,:debit,:credit,:transfer,:lock_version]}}).to_json)
 
+irb(main):1051:0> File.write(Rails.root+"xml/json/vfw.json",jaccts.to_json)
+=> 17122
+irb(main):1052:0> 
+irb(main):1053:0> 
+irb(main):1054:0> jaccts = @accounts.as_json(except:[:book_id, :contra,:client_id,:created_at,:updated_at,:code,:transfer,:leafs])
+=> [{"id"=>1, "name"=>"Root Account", "account_type"=>"ROOT", "description"=>"", "placeholder"=>true, "parent_id"=>nil, "level"=...
+irb(main):1055:0> File.write(Rails.root+"xml/json/vfw.json",jaccts.to_json)
+=> 15808
+
+
 =end
 
 

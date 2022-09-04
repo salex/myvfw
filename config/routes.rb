@@ -73,7 +73,7 @@ Rails.application.routes.draw do
   end
   resources :books do 
     member do 
-      get :open 
+      get :open
     end
   end
   resources :users do 

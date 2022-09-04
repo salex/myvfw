@@ -66,6 +66,8 @@ class Book < ApplicationRecord
   end
 
   def destroy_book
+    # for some reason dependent destroy would fail, out of order of
+    # somthing, this does it in order that works
     self.entries.destroy_all
     self.bank_statements.destroy_all
     self.bank_transactions.destroy_all
@@ -73,33 +75,37 @@ class Book < ApplicationRecord
     self.destroy
   end
 
-
+  # the follow xxxx_acct metheds expects a unique all uppercase name stored in :code
+  # to identify the root accounts children. it also requires the parent to be
+  # the to root account.
+  # its up to the user to identify checking, saving and current
   def root_acct
-    self.accounts.find_by(code:'ROOT')
+    self.accounts.find_by(code:'ROOT',level:0)
   end
 
   def checking_acct
+    # can be a single account or a placeholder
     self.accounts.find_by(code:'CHECKING')
   end
 
   def assets_acct
-    self.accounts.find_by(code:'ASSET')
+    self.accounts.find_by(code:'ASSET',parent_id:self.root_acct)
   end
 
   def liabilities_acct
-    self.accounts.find_by(code:'LIABILITY')
+    self.accounts.find_by(code:'LIABILITY',parent_id:self.root_acct)
   end
 
   def equity_acct
-    self.accounts.find_by(code:'EQUITY')
+    self.accounts.find_by(code:'EQUITY',parent_id:self.root_acct)
   end
 
   def income_acct
-    self.accounts.find_by(code:'INCOME')
+    self.accounts.find_by(code:'INCOME',parent_id:self.root_acct)
   end
 
   def expenses_acct
-    self.accounts.find_by(code:'EXPENSE')
+    self.accounts.find_by(code:'EXPENSE',parent_id:self.root_acct)
   end
 
   def savings_acct
@@ -123,7 +129,7 @@ class Book < ApplicationRecord
   def rebuild_settings
     checking = self.checking_acct
     new_settings = {}
-    puts "CHECK ACCOUT IS #{checking}"
+    # puts "CHECK ACCOUT IS #{checking}"
     accts = build_tree
     id_trans = accts.pluck(:id,:transfer)
     if checking.present?
@@ -194,21 +200,6 @@ class Book < ApplicationRecord
     filter = entry_ids.uniq{|itm| itm.first}.to_h
   end
 
-  # TODO  this is no longer used, must be old version before auto search
-  # def description_lookup(ago=6)
-  #   from = Date.today.beginning_of_month - ago.months
-  #   entry_ids = self.entries.where(Entry.arel_table[:post_date].gteq(from)).order(:id).reverse_order
-  #     .pluck(:description,:id)
-  #   lookup = {}
-  #   entry_ids.each do |e|
-  #     lookup[e[0].downcase] = [e[0],e[1]] unless lookup.has_key?(e[0].downcase)
-  #   end
-  #   arr = []
-  #   lookup.each{|k,v| arr << [k,v[1],v[0]]}
-  #   arr.sort.map{|i| [i[2],i[1]]}
-  #   # arr.pluck(2,1)
-  # end
-
   def contains_any_word_query(words,all=nil)
     words = words.split unless words.class == Array
     words.map!{|v| "%#{v}%"}
@@ -257,6 +248,22 @@ class Book < ApplicationRecord
     p = query.pluck(:description,:id)
     uids = p.uniq{ |s| s.first }.to_h.values
     query.where(id:uids).order(:post_date).reverse_order
+  end
+
+  def clone_accts_to_json
+    # create a json clone of this book accounts
+    accts = self.accounts.find(self.acct_tree_ids)
+    tree_ids = accts.pluck(:id)
+    new_tree_ids = {}
+    #  create a hash with old id pointing to new id (starting a 1)
+    tree_ids.each_with_index{|id,i| new_tree_ids[id]=i+1}
+    # do as_json to filter accounts
+    jaccts = accts.as_json(except:[:book_id, :contra,:client_id,:created_at,:updated_at,:code,:transfer,:leafs])
+    jaccts.each do |ja|
+      ja['id'] = new_tree_ids[ja['id']]
+      ja['parent_id'] = new_tree_ids[ja['parent_id']] unless ja['parent_id'].nil?
+    end
+    jaccts.to_json
   end
 
 

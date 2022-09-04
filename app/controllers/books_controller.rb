@@ -68,6 +68,7 @@ class BooksController < ApplicationController
     redirect_to home_index_path, notice: "Current Book set"
   end
 
+ 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_book

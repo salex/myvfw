@@ -4,13 +4,16 @@ div.w-full
   / = link_to link_to icon('fas fa-plus-square', "New Account"), new_account_path,class:"#{btn_sm_blue}"
   / = link_to 'Root Accounts View', accounts_path, class: ["#{btn_sm_green}"]
   / span.italic Groups Accounts by Roots accounts
-  h6 so do you wan to create this book of accountd
+  h6 Do you want to create this book of accounts?
+  = link_to icon('fas fa-list',"Cancel"), books_setup_index_path, class:"#{btnWarn} mr-4"
+  = link_to icon('fas fa-plus-square',"Create Book/Accounts"), books_setup_create_path, class:"#{btnSuccess}"
+
 
   hr.border-1.border-blue-500.my-1
 
 
   div
-    h3.h4 Accounts
+    h3.h4 = "Accounts Preview(#{params[:setup_id]})"
  
     table.classic.w-full
       thead

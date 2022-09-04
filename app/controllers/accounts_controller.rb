@@ -62,7 +62,7 @@ class AccountsController < ApplicationController
   # DELETE /accounts/1
   def destroy
     @account.destroy
-    redirect_to accounts_url, notice: "Account was successfully destroyed."
+    redirect_to index_table_accounts_path, notice: "Account was successfully destroyed."
   end
 
   private
