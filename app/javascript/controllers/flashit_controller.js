@@ -26,6 +26,6 @@ export default class extends Controller {
             op -= op * 0.1;
         }, 300);
 
-    }, 5000);
+    }, 8000);
   }
 }

@@ -5,10 +5,6 @@ class ReportsController < ApplicationController
     @acct_options  = @book.acct_sel_opt
   end
 
-  def destroy
-    render plain: "This is a test and only a test. Delete link worked"
-  end
-
   def profit_loss
     @report = Report.new.profit_loss({from:params[:from],to:params[:to],level:params[:level]})
     # render  layout: 'print'
@@ -61,16 +57,12 @@ class ReportsController < ApplicationController
     @checking_balance = Bank.new(params[:closing_date],params[:closing_balance]).checkbook_balance
   end
 
-  def set_acct
-    puts params.inspect
-    session[:acct_id] = params[:id]
-    head :ok
-  end
+  # def set_acct
+  #   puts params.inspect
+  #   session[:acct_id] = params[:id]
+  #   head :ok
+  # end
 
-  def test
-
-    @banking = Bank.new
-  end
 
   def split_unclear
     entry = current_book.entries.find(params[:id])

@@ -13,6 +13,7 @@ div.w-full
     = form.hidden_field :client_id
   div[class="#{btn_submit}"]
     = form.submit
+  = link_to icon('fas fa-list',"Cancel"), root_path, class:"#{btn_sm_green} bg-yellow-300"
 
   div
     = form.label :email, style: "display: block"
@@ -28,7 +29,8 @@ div.w-full
 
   div
     = form.label :default_book, style: "display: block"
-    = form.number_field :default_book
+    = form.select( :default_book,options_for_select(@user.client.books.pluck(:name,:id),@user.default_book),
+      { include_blank: '-none-' })
   div.italic You may change your password below. Leave blank if just updating eMail or Username.
 
   div

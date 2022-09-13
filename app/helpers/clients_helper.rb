@@ -1,11 +1,37 @@
 module ClientsHelper
-  def inspect_session
-    inspect = {}
-    session.keys.each do |k|
-      inspect[k] = session[k]
+  def to_struct(ahash)
+    struct = ahash.to_struct
+    struct.members.each do |m|
+      struct[m] = to_struct(struct[m]) if struct[m].is_a? Hash
     end
-    inspect
+    struct 
   end
-  alias session_inspect inspect_session
+
+  def get_assets(summary)
+    pcash = checking = savings = total = nil
+    summary.each do |k,v|
+      pcash = v if v[:name] == 'Cash'
+      checking =  v if v[:name] == 'Checking'
+      savings =  v if v[:name] == 'Savings'
+      total = v if v[:name] == 'Current'
+    end
+    bsave = savings[:ending]
+    bcash = pcash[:ending]
+    btotal = total[:ending]
+    bcheck = checking[:ending]
+
+    funds = checking[:children].count
+
+    ojb = to_struct({pcash:pcash,
+      checking:checking,
+      savings:savings,
+      total:total,
+      bsave:bsave,
+      bcash:bcash,
+      btotal:btotal,
+      bcheck:bcheck,
+      funds:funds})
+  end
+
 
 end

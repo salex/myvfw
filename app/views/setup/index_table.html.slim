@@ -44,7 +44,7 @@ div.w-full
             td = account.code
             td = account.description
             td= account.placeholder
-            - if true
+            - if Current.user.is_admin?
               / @current_user.is_admin?
 
               td.actions

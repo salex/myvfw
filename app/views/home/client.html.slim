@@ -1,154 +1,73 @@
-h1 Home#client
-/ .grid.grid-cols-12
-/   .col-span-10
+div[data-controller="blueBackground"]
+/ .w3-container.min-height
+div.flex.flex-wrap.gap-12.bg-yellow-50.p-2.pb-48
+  / [style="background-color:#ffffdd"]
+  .div
+    h2.text-lg.font-bold Welcome to OurBooks {aka MyBooks rBooks, rCash, iCash}
+    .show-fields
+      .field
+        label Current Client: 
+        span = Current.client.name
 
-/     div.flex.flex-wrap
-/       .w-5/12.p-2
-/         = hidden_field_tag(:curr_page,'#page1')
-/         h4.strong About Accounts
-/         = image_tag('assets.png',class:'image-fit')
-/       .w-7/12.p-2
-/         h4.strong Features
-/         p.my-1.5 Opening Accounts from the menu bar will open an abbreviated Accounts Index page. The page will have two columns with Accounts divided by Account types (Assets Equity Expenses Income Liabilities Orphan Imbalance). The image to the left only shows the Assets list.
-/         P.my-1.5 Once Accounts (or <strong>Chart of Accounts</strong> in accounting terms) are created, they are rarely modified. The abbreviated view is a shorter view of accounts that allow for quicker access the the Account Ledger. 
-/         p.my-1.5 
-/           |At the top of the index list will be a button link: 
-/           = link_to 'Account Table View', '#page1', class: :button
-/           |&nbsp; that provides a more detailed list of accounts and allows for CRUD actions.
-/         p.my-1.5 Clicking on the account name link will open an Account Ledger for that account defaulting to recent or latest entries/transactions. This is really the <strong>Show</strong> view of the account.
+      .field
+        label Current Book: 
+        span = Current.book ? Current.book.name : 'None'
+      .field
+        label Current User: 
+        span = Current.user.full_name if Current.user
+      
+      .field
+        label URL: 
+        span = request.original_url
+      .field
+        label Last Account Update: 
+        span = Time.parse(Rails.application.config.x.acct_updated).localtime
+      .field
+        label Application Updated: 
+        - appdir = Rails.root.join("app")
+        span = File.mtime(appdir)
+      .field
+        label Rails Version: 
+        span = Rails.version
 
-/       div.w-4/12 one
-/       div.w-4/12 two
-/       div.w-4/12 three
-/     div.w-10/12.flex.flex-wrap
-/       div.w-3/12 one
-/       div.w-3/12 two
-/       div.w-3/12 three
-/       div.w-3/12 four
-/     div.w-10/12.flex.flex-wrap
-/       div.w-6/12 one
-/       div.w-6/12 two
+    / <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+    / <small><i>
+    /   <a href="https://www.brainyquote.com/quotes_of_the_day.html" target="_blank" rel="nofollow">more Quotes</a>
+    / </i>
+    / </small>
+ 
 
+  div.w-1/4
+    div[class="bg-yellow-200 w3-card-4"]
+      strong.p-1 Client Links
+      = link_to "Books", books_path, class:"block gbtn " 
+      = link_to "Accounts", accounts_path, class:"block gbtn " 
+      = link_to "Accounts List", index_table_accounts_path, class:"block gbtn " 
 
+      = link_to "Bank Statements", bank_statements_path, class:"block gbtn " 
+      / = link_to "Bank(OFX) Trans", '#', class:"block gbtn" 
+      = link_to "Checking Balance",checking_balance_reports_path , class:"block gbtn"
+      = link_to "Reports", reports_path, class:"block gbtn" 
+      = link_to "Entry Search",entries_filter_index_path, class:"block gbtn" 
+      = link_to "About", about_path, class:"block gbtn" 
+      - if Current.user.is_super? || Current.user.is_admin?
+        = link_to "Users", users_path, class:"block gbtn" 
+      - if Current.user.is_super? 
+        = link_to "Clients", clients_path, class:"block gbtn" 
 
-/   div.col-span-2
-/     .w3-card-2.w-full.bg-yellow-200
-/       .goldey.mb-1.px-8.py-2[data-action="click->rangepicker#selectSummary" data-url="#{summary_reports_path}"] Account Summary
-/       .goldey.mb-1.px-8.py-2[data-action="click->rangepicker#selectCombo" data-url="#{summary_reports_path}"] Summary & P&L Combo
-/       .goldey.mb-1.px-8.py-2[data-action="click->rangepicker#selectPL " data-url="#{profit_loss_reports_path}"] Profit/Loss
-/       .goldey.mb-1.px-8.py-2[data-action="click->rangepicker#selectPL " data-url="#{trial_balance_reports_path}"] Trial Balance
-
-    / .w3-card-2.p-2.bg-white[data-controller="buttonLink"]
-    /   div
-    /     button.lite-goldey.w-full.p-2.my-2.mx-1[data-action="click->buttonLink#linkTo" data-url="/about/about"] About Rcash
-
-    /   div
-    /     button.lite-goldey.w-full.p-2.my-2.mx-1[data-action="click->buttonLink#linkTo" data-url="/about/accounts"] Accounts
-
-    /   div
-    /     button.lite-goldey.w-full.p-2.my-2.mx-1[data-action="click->buttonLink#linkTo" data-url="/about/entries"] Entries
-
-    /   div
-    /     button.lite-goldey.w-full.p-2.my-2.mx-1[data-action="click->buttonLink#linkTo" data-url="/about/banking"] Banking
-
-    /   div
-    /     button.lite-goldey.w-full.p-2.my-2.mx-1[data-action="click->buttonLink#linkTo" data-url="/about/reports"] Reports
-
-
-/ <div class="relative">
-/     <button class="peer px-5 py-2 bg-green-600 hover:bg-green-700 text-white">Dropdown</button>
-    
-/     <!-- the menu here -->
-/     <div class="hidden absolute z-10 peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
-/         <a class="px-5 inline-block py-3 hover:bg-gray-200" href="#">About Us</a>
-/         <a class="px-5 inline-block py-3 hover:bg-gray-200" href="#">Contact Us</a>
-/         <a class="px-5 inline-block py-3 hover:bg-gray-200" href="#">Privacy Policy</a>
-/     </div>
-/ </div>
-/ br
-
-  
-/ .relative
-/   button[class="peer px-5 py-2 bg-green-600 hover:bg-green-700 text-white"] Dropdown
-/   div[class="hidden absolute z-10 peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg"]
-/     a.px-5.inline-block.py-3.hover:bg-gray-200[href="#"] About Us
-/     a.px-5.inline-block.py-3.hover:bg-gray-200[href="#"] Contact Us
-/     a.px-5.inline-block.py-3.hover:bg-gray-200[href="#"] Privacy Policy
+      / - links = [["Bank Statements", bank_statements_path],\
+    /             ["Bank(OFX) Trans", latest_ofxes_path ],\
+    /             ["Checking Balance", checking_balance_reports_path],\
+    /             ["Reports", reports_path ],\
+    /             ["Entry Search",entries_filter_index_path ]]
+    / - if current_user.is_super?
+    /   - links << ["Users", users_path ]
+    / = render(GoldMenu::Component.new(title:"Home Sidebar Links",links:links))
+    / - links = [["Deposits", weekly_vfw_deposits_path],\
+    /             ["Sales Items/Inventory", vfw_sales_items_path ],\
+    /             ["Menu", vfw_path]]
+    / = render(GoldMenu::Component.new(title:"VFW",links:links))
 
 
 
-div = inspect_session
-/ <div class="mx-auto my-20 w-[600px] drop-shadow rounded-md">
-/     <h1 class="text-2xl font-italic font-light text-center text-gray-500 mb-10">KindaCode.com - FAQ</h1>
 
-/     <!-- The First FAQ -->
-/     <details class="bg-gray-300 open:bg-amber-200 duration-300">
-/         <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">The first requently asked question</summary>
-/         <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
-/             <p>Praesent posuere nisi vel diam congue varius. Praesent lacus nulla, congue nec rhoncus nec,
-/                 suscipit et enim. Donec ultrices nec arcu et pharetra.</p>
-/         </div>
-/     </details>
-
-/     <!-- The Second FAQ -->
-/     <details class="bg-gray-300 open:bg-amber-200 duration-300">
-/         <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">Just another question</summary>
-/         <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
-/             <p>Just some dummy content. Just some dummy content. Just some dummy content. Just some dummy content
-/                 Just some dummy content. Just some dummy content</p>
-/         </div>
-/     </details>
-
-/     <!-- The Third FAQ -->
-/     <details class="bg-gray-300 open:bg-amber-200 duration-300">
-/         <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">How is the weather today?</summary>
-/         <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
-/             <ul>
-/                 <li>List Item 1</li>
-/                 <li>List Item 2</li>
-/             </ul>
-/         </div>
-/     </details>
-
-/ </div>
-
-/ .w3-dropdown-hover
-/   button.bg-green-400.px-3.font-bold
-/    | Links&nbsp;&nbsp;&nbsp;
-/    | > 
-/    /i.fa.fa-caret-down
-/   .w3-dropdown-content
-/     = link_to "Bank Statements", '#', class:"block bg-green-200 hover:bg-green-400 mb-1" 
-/     = link_to "Bank(OFX) Trans", '#', class:"block bg-green-200 hover:bg-green-400 mb-1" 
-/     = link_to "Checking Balance",'#' , class:"block bg-green-200 hover:bg-green-400 mb-1"
-/     = link_to "Reports", '#', class:"block bg-green-200 hover:bg-green-400 mb-1" 
-/     = link_to "Entry Search",'#', class:"block bg-green-200 hover:bg-green-400 mb-1" 
-/     = link_to "About", '#', class:"block bg-green-200 hover:bg-green-400 mb-1" 
-/     - if true #Current.user.is_super?
-/       = link_to "Users", '#', class:"block bg-green-200 hover:bg-green-400" 
-
-
-/ <div class="w3-dropdown-hover ml-8">
-/   <button class="w3-button">Hover Over Me!</button>
-/   <div class="w3-dropdown-content">
-/     <a href="#" class="block w3-button">Link 1</a>
-/     <a href="#" class="block w3-button">Link 2</a>
-/     <a href="#" class="block w3-button">Link 3</a>
-/   </div>
-/ </div>
-
-
-  / <div class="w3-dropdown-click">
-  /   <button onclick="myFunction()" class="w3-button w3-black">Click Me!</button>
-  /   <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-  /     <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  /     <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  /     <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  /   </div>
-  / </div>
-
-
-/ p = Current.user
-/ p = Current.client
-/ / p = Current.book.inspect
-/ p = session_inspect

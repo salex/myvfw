@@ -54,11 +54,12 @@ class ClientsController < ApplicationController
       session[:client_id] = user.client_id
       session[:full_name] = user.full_name
 
-      session[:expires_at] = Time.now.midnight + 1.day
+      session[:expires_at] = Time.now + 60.minutes
       if user.default_book.present?
         book = user.client.books.find_by(id:user.default_book)
         if book.present?
-          session[:book_id] = book.id
+          helpers.set_book_session(book) 
+          puts helpers.inspect_session
         end
       end
       redirect_to home_index_path, notice: "Logged in!"

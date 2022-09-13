@@ -87,18 +87,44 @@ class Bank
     self.cleared_splits = splits
   end
 
-  def self.get_unlinked_checking_entries_by_amount(amt,from=nil)
+  def self.get_bt_unlinked_entries(bt)
     amt_opt = []
+    btw = (bt.post_date - 25.days)..bt.post_date
+    entries = Entry.where(fit_id:[nil,''],post_date:btw)
+    entries.each do |e|
+      # get checking_acct splits and sum the amount and stuff in entry
+      # amount attribute. should not be called unless the entry
+      # has checking_ids splits
+      ca_splits = e.splits.where(account_id:Current.book.checking_ids)
+      if ca_splits.present?
+        chk_amt = ca_splits.sum(:amount)
+        puts "ENT #{chk_amt} #{e.id} BT #{bt.amount}  #{bt.id}  #{chk_amt == bt.amount}"
+        if chk_amt == bt.amount
+          e.amount = chk_amt 
+          amt_opt << e
+        end
+      end
+    end
+    amt_opt
+
+  end
+
+  def self.get_unlinked_checking_entries_by_amount(bt)
+    return(Bank.get_bt_unlinked_entries(bt)) if bt.post_date < "2018-07-01".to_date
+    amt_opt = []
+    btw = (bt.post_date - 25.days)..bt.post_date
+
     splits = Split.where(account_id:Current.book.checking_ids, reconcile_state:'n')
     # get all splits in current book that match account, and amount
     # pluck uniq entry ids 
     entry_ids = splits.pluck(:entry_id).uniq
     # get unlinked entries that are unliked and have amount
-    if from.present?
-      entries = Entry.where(id:entry_ids,fit_id:[nil,'']).where(Entry.arel_table[:post_date].gt(from.to_date))
-    else
-      entries = Entry.where(id:entry_ids,fit_id:[nil,''])
-    end
+    # if from.present?
+    #   entries = Entry.where(id:entry_ids,fit_id:[nil,'']).where(Entry.arel_table[:post_date].gt(from.to_date))
+    # else
+    #   entries = Entry.where(id:entry_ids,fit_id:[nil,''])
+    # end
+    entries = Entry.where(id:entry_ids,fit_id:[nil,''],post_date:btw)
 
     entries.each do |e|
       # get checking_acct splits and sum the amount and stuff in entry
@@ -107,13 +133,40 @@ class Bank
       ca_splits = e.splits.where(account_id:Current.book.checking_ids)
       if ca_splits.present?
         chk_amt = ca_splits.sum(:amount)
-        if chk_amt == amt
+        if chk_amt == bt.amount
           e.amount = chk_amt 
           amt_opt << e
         end
       end
     end
     amt_opt
+  end
+
+  def self.fix_old_check_number_links
+    bt = Current.book.bank_transactions.where.not(ck_numb: '' ).
+      where(BankTransaction.arel_table[:entry_id].eq(nil))
+    bt.each do |t| 
+      e = Current.book.entries.where(numb:t.ck_numb)
+      if e.size == 1
+        e[0].update(fit_id:t.fit_id)
+        t.update(entry_id:e[0].id)
+      else
+        puts "MULTILE"
+      end
+    end
+  end
+
+  def self.fix_old_amount_links
+    bt = Current.book.bank_transactions.where(BankTransaction.arel_table[:entry_id].eq(nil))
+    bt.each do |t| 
+      e = Bank.get_bt_unlinked_entries(t)
+      # puts "HOW MANy MATCHES #{amt_opt.size}"
+      if e.size == 1
+        e[0].update(fit_id:t.fit_id)
+        t.update(entry_id:e[0].id)
+        # puts "WOULD LINK #{amt_opt[0].amount} with #{t.amount}"
+      end
+    end
   end
 
   private

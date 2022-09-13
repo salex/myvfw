@@ -10,12 +10,12 @@ class AboutController < ApplicationController
 
   def checking
   end
+  # TODO  add about page
+  # def banking
+  # end
 
-  def banking
-  end
-
-  def reports
-  end
+  # def reports
+  # end
 end
 # get 'about/about'
 # get 'about/accounts'

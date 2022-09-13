@@ -1,5 +1,5 @@
 div[data-controller="blueBackground"]
-.noprint.text-sm.md:text-base
+.noprint.print:hidden.text-sm.md:text-base
   div.bg-gray-300.grid.grid-cols-4.p-1
 
     div
@@ -40,7 +40,7 @@ div[data-controller="blueBackground"]
       strong Placeholder: 
       = @account.placeholder
 
-  #toggleMe[class="bg-white pb-1 px-2 "]
+  #summary.toggleMe.bg-white.pb-1.px-2
     .grid.grid-cols-12.gap-2
       .col-span-4.p-2[style="max-height:20vh;overflow:scroll;"]
         .strong =  "Account Summary (#{@today})"
@@ -71,6 +71,6 @@ div[data-controller="blueBackground"]
             = content_tag(:button,'Print', class:"#{btnInfo} mr-2",
               onclick: "window.print();")
 
-#Ledger.bg-white.mt-1.px-2
+#Ledger.bg-white.mt-1.px-2.print:text-xs
   = render partial: 'accounts/ledger/ledger', locals:{from:@from,to:@to,account:@account}
 

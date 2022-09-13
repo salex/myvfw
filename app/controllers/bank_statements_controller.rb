@@ -10,7 +10,11 @@ class BankStatementsController < ApplicationController
   # GET /bank_statements/1
   def show
     session[:latest_ofx_path] = @bank_statement.id
-    range = Ledger.statement_range(@bank_statement.statement_date)
+    if @bank_statement.statement_date < "2018-07-31".to_date
+      range = ("2018-01-01".to_date)..("2018-06-30".to_date)
+    else
+      range = Ledger.statement_range(@bank_statement.statement_date)
+    end
     @transactions = Current.book.bank_transactions.where(post_date:range).order(:post_date).reverse
   end
 
@@ -75,6 +79,7 @@ class BankStatementsController < ApplicationController
   def unlinked
     # @transactions = Current.book.bank_transactions.where(entry_id:nil).where.not(ck_numb:[nil,''])
     @transactions = Current.book.bank_transactions.where(entry_id:nil)
+    @unlinked = true
     render template: 'bank_statements/transactions'
   end
 

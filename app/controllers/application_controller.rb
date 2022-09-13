@@ -1,8 +1,17 @@
 class ApplicationController < ActionController::Base
   set_current_tenant_through_filter  ### for acts_as-tenant
   include UsersHelper
-  before_action :current_user 
-  # before_action :current_book
+  before_action :current_user
+  before_action :session_expiry
+
+
+  def require_user
+    if Current.user.blank?
+      deny_access
+    end
+  end
+  helper_method :require_user
+
 
   def require_book
     if Current.user.blank?
@@ -21,14 +30,15 @@ class ApplicationController < ActionController::Base
   helper_method :require_super
 
   def require_admin
-    if current_user.blank? || !current_user.is_admin?
+    if Current.user.blank? || !Current.user.is_admin?
       redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that."
     end
   end
   helper_method :require_admin
   
+  # TODO Not called, cancancan like call
   def require_trustee
-    if current_user.blank? || !current_user.is_trustee?
+    if Current.user.blank? || !Current.user.is_trustee?
       redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that."
     end
   end
@@ -63,6 +73,41 @@ class ApplicationController < ActionController::Base
       bank_statement_path(bs.id)
     end
   end
+
+  def cant_do_that(msg=nil)
+    redirect_to root_url, alert: "I'm sorry. I can't - or You can't do that. #{msg}"
+  end
+  helper_method :cant_do_that
+
+  def session_expiry
+    if current_user.present? && session[:expires_at].present?
+      get_session_time_left
+      unless @session_time_left > 0
+        if @current_user.present?
+          # sign_out and redirect for new login
+          sign_out
+          deny_access 'Your session has timed out. Please log back in.'
+        else
+          # just kill session and start a new one
+          sign_out
+        end
+      else
+        session[:expires_at] = Time.now + 60.minutes
+      end
+    else
+      # expire all sessions, even if not user to midnight
+      session[:expires_at] = Time.now + 5.minutes
+    end
+
+  end
+  
+  def get_session_time_left
+    expire_time = Time.parse(session[:expires_at]) || Time.now
+    @session_time_left = (expire_time - Time.now).to_i
+    # @expires_at = expire_time.strftime("%I:%M:%S%p")
+  end
+
+
 
 
 end

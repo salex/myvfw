@@ -3,10 +3,9 @@ class BankTransactionsController < ApplicationController
   before_action :set_bank_transaction, only: %i[ show edit update destroy ]
 
   # GET /bank_transactions
-  def index
-
-    @bank_transactions = BankTransaction.all
-  end
+  # def index
+  #   @bank_transactions = BankTransaction.all
+  # end
 
   # GET /bank_transactions/1
   def show
@@ -48,12 +47,10 @@ class BankTransactionsController < ApplicationController
   end
 
   def upload_ofx
-    session[:latest_ofx_path] = params[:bs_id]
-    puts "UPLOAD #{params.inspect}"
+    session[:latest_ofx_path] = params[:bs_id] # only set if called from deposit
   end
 
   def update_ofx
-    @ofx  = BankTransaction.new
     @uploaded_io = params['ofx']
     @ofx_data = @uploaded_io.read
     @acct = OFX(@ofx_data).account
@@ -62,14 +59,9 @@ class BankTransactionsController < ApplicationController
 
   def import_ofx
     @bank_statement = Current.book.bank_statements.find_by(id:session[:latest_ofx_path])
-    puts "BANK #{@bank_statement.inspect}"
     ofx_data = params["ofx"]
     BankTransaction.import_transactions(ofx_data,@bank_statement)
     redirect_to root_path, notice: "Bank Transctions imported"
-  end
-
-  def unlinked
-    set_bank_transaction
   end
 
   private

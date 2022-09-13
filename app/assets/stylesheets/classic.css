@@ -7,6 +7,18 @@ dl dd{
 dl dt{
   font-weight: bold
 }
+
+.show-fields label, .form-fields label, .field label {
+   width: 25%;
+   display: inline-block !important;
+   font-weight: bold;
+   text-align: right;
+   margin-right: 8px;
+}
+ .show-fields label.half, .form-fields label.half, .field label.half {
+   width: 40%;
+}
+
 /*  dt{
     display:inline-block;
   }
@@ -20,7 +32,9 @@ dl dt{
   }
 }
 */
-
+.nav {
+  color: #a00;
+}
 .blue-background {
    background-color: #0f3e61;
 }
@@ -64,9 +78,13 @@ dl dt{
    color: #000;
    background-color: #bbb;
 }
- .fs8 {
+.fs8 {
    font-size: 80%;
 }
+.fs6 {
+   font-size: 60%;
+}
+
 
 p{
   font-size: 16px;
@@ -160,6 +178,35 @@ table.classic td.p4, .p4{
 table.classic td.p5, .p5 {
   padding-left: 5rem;
 }
+
+/*table.pl tr:nth-of-type(even) {
+  background-color: #f0ece2;
+}
+table.pl td, table.pl th {
+  border: solid 1px #aaa;
+}
+table.pl td.actions a {
+  padding-right: 2rem !important;
+}
+table.pl td.p0 {
+  padding-left: 0rem;
+}
+table.pl td.p1 {
+  padding-left: 1rem;
+}
+table.pl td.p2 {
+  padding-left: 2rem;
+}
+table.pl td.p3 {
+  padding-left: 3rem;
+}*/
+table.pl td.p4 {
+  padding-left: 4rem;
+}
+table.pl td.p5 {
+  padding-left: 5rem;
+}
+
 
 table.gl-table {
    border-collapse: collapse;

@@ -35,10 +35,12 @@ class BankTransaction < ApplicationRecord
       options[:ck_numb]= self.book.entries.where(numb: self.ck_numb)
     end
     if options[:ck_numb].blank?
-      dt = (self.post_date - 90.days)
-      options[:amt] = Bank.get_unlinked_checking_entries_by_amount(self.amount,dt)
+      dt = (self.post_date - 30.days)
+      options[:amt] = Bank.get_unlinked_checking_entries_by_amount(self)
+      # options[:amt] = Bank.get_bt_unlinked_entries(self)
+
     end
-    puts options.inspect
+    # puts options.inspect
     options 
   end 
 end

@@ -7,6 +7,8 @@
 / the transaction attribuites
 
 turbo-frame-tag id="transaction-#{bt.id}"
+  / - puts "IS IT ALL UNLINKED #{@unlinked}"
+  / maybel call a differnt unlink that looks for amt
   - opt = bt.set_unlinked_options
   .relatively 
     button[class="peer px-5 py-1 bg-green-600 hover:bg-green-700 text-white w-full"] Check Entry Link Options

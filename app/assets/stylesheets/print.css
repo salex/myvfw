@@ -22,12 +22,18 @@
    line-height: 1rem;
    border: solid 1px #ccc;
 }
-*/
  .fs8 {
    font-size: 80%;
 }
-
+*/
 @media print {
+
+  .fs8 {
+     font-size: 80%;
+  }
+  .fs6 {
+     font-size: 60%;
+  }
 
   .page-break {
      page-break-after: always !important;
@@ -52,7 +58,7 @@
      display: none !important;
   }
 }
- @media print {
+/* @media print {
    .page-break {
      page-break-after: always;
   }
@@ -132,4 +138,4 @@
    border: solid 1px #ccc;
    padding: 1px;
 }
- 
+ */

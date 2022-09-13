@@ -59,6 +59,8 @@ div.print:hidden
             - if Current.user.is_super? 
               = link_to "Clients", clients_path, class:"block gbtn" 
 
+        - if Current.client.name.include?('VFW')
+          = link_to "VFW",vfw_post_index_path, class:"hover:bg-gray-300 inline-block h-8 px-3 mr-2 hover:text-black"
 
         / .relative.inline-block
         /   button[class="peer px-5 hover:bg-gray-600 text-white"] 

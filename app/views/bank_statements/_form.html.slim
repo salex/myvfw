@@ -18,7 +18,9 @@
 
   div
     = form.label :statement_date, style: "display: block"
-    = form.date_field :statement_date
+    / = form.date_field :statement_date
+    = form.date_field(:statement_date,data:{controller:'flatpickr'})
+
 
   div
     = form.label :beginning_balance, style: "display: block"
@@ -34,7 +36,7 @@
 
   div
     = form.label :reconciled_date, style: "display: block"
-    = form.date_field :reconciled_date
+    = form.date_field(:reconciled_date,data:{controller:'flatpickr'})
 
   div
     = form.label :ofx_data, style: "display: block"

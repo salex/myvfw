@@ -34,8 +34,9 @@
       strong Fit:
       = @entry.fit_id
     div
-      strong Lock version:
-      = @entry.lock_version
+      strong Amount:
+      - @entry.set_attributes
+      = money @entry.amount
 
 table.gl-table
   caption = "FIT_ID #{@entry.fit_id}"

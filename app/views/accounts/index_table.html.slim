@@ -37,12 +37,11 @@ div.w-full
             td = account.code
             td = account.description
             td = account.placeholder
-            - if true
-              / @current_user.is_admin?
 
-              td.actions
-                = link_to account do
-                  i class="fas fa-eye"
+            td.actions
+              = link_to account do
+                i class="fas fa-eye"
+              - if Current.user.is_admin?
 
                 = link_to edit_account_path(account) do
                   i class="fas fa-edit"

@@ -1,4 +1,5 @@
 class Books::SetupController < BooksController
+  before_action :require_admin
 
   def index
     render 'setup/index'

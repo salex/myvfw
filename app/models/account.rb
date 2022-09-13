@@ -362,7 +362,7 @@ class Account < ApplicationRecord
     end
     @kid_ids = leaf
     acct_trans =Ledger.ledger_entries(@kid_ids,@bom..@eom)
-    @balance = family_balance_on(@bom)
+    @balance = family_balance_on(@bom - 1.day)
     lines = build_ledger(acct_trans)
   end
 

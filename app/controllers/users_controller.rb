@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[ show edit update destroy ]
+  before_action :require_admin, except: %i[ profile update_profile ]
+  before_action :set_user, only: %i[ show edit update destroy update_profile]
 
   # GET /users
   def index

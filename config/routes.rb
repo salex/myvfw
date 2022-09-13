@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+
+  namespace :vfw do
+    resources :post, only: [:index] do
+      member do 
+        get :voucher
+      end
+        
+    end
+
+    resources :audit do
+      collection do
+        get :home
+        get :pdf
+        get :print
+        get :edit
+        patch :update_config
+      end
+    end 
+  end
+
   resources :bank_statements do 
     member do 
       get :transactions
@@ -12,14 +32,11 @@ Rails.application.routes.draw do
       get :unlinked
     end
   end
-  resources :bank_transactions do 
+  resources :bank_transactions, except:[:index] do 
     collection do 
       get :upload_ofx
       patch :update_ofx
       patch :import_ofx
-    end
-    member do 
-      get :unlinked
     end
   end
 
@@ -101,9 +118,7 @@ Rails.application.routes.draw do
       get :checking_balance
       get :register_pdf
       get :split_register_pdf
-      get :test
       get :summary
-      get :custom
       patch :set_acct
       get :set_acct
 
@@ -128,6 +143,8 @@ Rails.application.routes.draw do
   get 'login', to: 'clients#login', as: 'login'
   get 'logout', to: 'clients#logout', as: 'logout'
   get 'profile', to: 'users#profile'
-
+  get 'vfw', to: 'vfw/post#index', as: 'vfw'
   root "home#index"
+  get '*path', to: 'home#redirect'
+
 end

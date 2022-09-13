@@ -77,3 +77,6 @@ gem 'prawn'
 gem 'prawn-table'
 gem 'ofx', '~> 0.3.2' , github: 'annacruz/ofx', branch: 'main'
 gem 'acts_as_tenant'
+
+
+gem 'leftovers', require: false

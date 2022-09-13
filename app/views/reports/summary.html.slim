@@ -14,13 +14,14 @@ div.w3-container
     - tree = tree_summary(@summary)
     - tree.each do |id|
       - acct = @summary[id]
-      tr
-        td.font-bold[class="p#{acct[:level]}"]=  acct[:name]
-        td.tright = to_money acct[:beginning]
-        td.tright = to_money acct[:debits]
-        td.tright = to_money acct[:credits]
-        td.tright = to_money acct[:diff]
-        td.tright = to_money acct[:ending]
+      - unless acct[:ending].zero?
+        tr
+          td.font-bold[class="p#{acct[:level]}"]=  acct[:name]
+          td.tright = to_money acct[:beginning]
+          td.tright = to_money acct[:debits]
+          td.tright = to_money acct[:credits]
+          td.tright = to_money acct[:diff]
+          td.tright = to_money acct[:ending]
 
 javascript:
   function goBack() {

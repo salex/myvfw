@@ -3,7 +3,7 @@
 - summary = lines.pop
 div.pt-1.text-sm.md:text-base
   table.classic.w-full
-    tr
+    tr{class="print:text-[9px]"}
       th Range Summary
       td.text-right Total Debits(+):
       td.tleft.under =to_money summary[:checking][:db]
@@ -12,7 +12,7 @@ div.pt-1.text-sm.md:text-base
       td.text-right Difference:
       td.tleft.under =to_money summary[:balance]
 div.md:hidden
-  .grid.grid-cols-3.gap-2.text-sm
+  div{class="grid grid-cols-3 gap-2 text-[9px]"}
     - lines.reverse.each_with_index do |row,i|
       div.border-b.border-black.col-span-2 
         div 
@@ -51,7 +51,7 @@ div.md:hidden
           span.inline-block.font-bold.text-right.mr-2.w-16 Bal:
           span  = to_money row[:balance]
 div.hidden.md:block
-  table.classic.w-full[data-controller="sortTable toggleSplits"]
+  table{class="classic w-full print:text-[9px]" data-controller="sortTable toggleSplits"}
     caption
       .box = caption
     thead#sort_header
@@ -109,7 +109,6 @@ div.hidden.md:block
           td.text-right = row[:balance].zero? ? nil : to_money(row[:balance])
       - if row[:memo] == "- Split Transaction -" || params[:split_reg].present?
         tbody.split-rows[data-toggleSplits-target="tbody"]
-          - puts "ROWWWW #{row}"
           - row[:details].each do |d|
             tr.snowSelectedBackground
               td

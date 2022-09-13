@@ -1,54 +1,8 @@
 .w3-white
-  .grid.grid-cols-12.gap-2
-    .col-span-7
-      .font-bold.fs8
-        = "Profit & Loss For Period Covering #{@from || params[:from] ||= Date.today.beginning_of_year} to #{@to || params[:to] ||= Date.today}"
-        - unless @deposits.present?
-          button.lime-link-button.w3-right.noprint[onclick="goBack()"] Back Page
-      / .profit-loss
-      /   = profit_loss_report(@report)
-      - pl_array = pl_array(@report)
+  .flex.gap-4.fs8
+    div.print:fs8
+      = render partial: 'reports/pl'
 
-      table.pl.fs8
-       - pl_array.each do |row|
-         tr[class="#{row[1].nil? ? 'font-bold' : ''}"]
-           -level = row[1].to_i - 1
-
-           - row.each_with_index do |col,idx|
-             - if idx == 0
-               td[class="p#{level}"] = col
-             - elsif idx > 1
-               td.text-right.pl-8 = col
-             -else
-               td.hidden = col
-
-
-    .col-span-5
-      table.classic
-        caption = "Account Summary - From: #{@from || params[:from] || Date.today.beginning_of_year}  To: #{@to || params[:to] || Date.today}"
-        tr
-          td.font-bold Account
-          th BBegin
-          th Debits
-          th Credits
-          th P/L
-          th EBalance
-        - tree = tree_summary(@summary)
-        - tree.each do |id|
-          - acct = @summary[id]
-          tr
-            td.font-bold[class="p#{acct[:level]}"]=  acct[:name]
-            td.text-right = to_money acct[:beginning]
-            td.text-right = to_money acct[:debits]
-            td.text-right = to_money acct[:credits]
-            td.text-right = to_money acct[:diff]
-            td.text-right = to_money acct[:ending]
-
-
-- unless @deposits.present?
-  javascript:
-    function goBack() {
-      window.history.back();
-    }
-
+    div.print:fs8
+      = render partial: "reports/summary"
 

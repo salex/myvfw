@@ -12,7 +12,7 @@ div
     - @transactions.each do |bt|
       tr
         td
-          = bt.post_date
+          = link_to bt.post_date, bank_transaction_path(bt.id),class:'blue-link'
         td.text-right
           = to_money(bt.amount)
         td

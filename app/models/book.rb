@@ -6,6 +6,8 @@ class Book < ApplicationRecord
   has_many :entries, dependent: :destroy
   has_many :bank_statements, dependent: :destroy
   has_many :bank_transactions, dependent: :destroy
+  has_many :stashes, dependent: :destroy
+
 
   serialize :settings, JSON
   

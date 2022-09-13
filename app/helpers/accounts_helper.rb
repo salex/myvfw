@@ -25,7 +25,7 @@ module AccountsHelper
     html = content_tag(:div, class: 'pl-row') {
       ul_contents = ""
       # ul_contents << content_tag(:div, link_to(root.name,account_checkbooks_path(guid:root.guid)), class:"col-acct p#{p}")
-      ul_contents << content_tag(:div, link_to(root.name,account_path(root)), class:"summary-acct p#{p}")
+      ul_contents << content_tag(:div, link_to(root.name,account_path(root)), class:"blue-link summary-acct p#{p}")
 
       ul_contents << content_tag(:div,node_balance(root),class:'pl-summary')
       p +=1

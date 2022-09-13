@@ -43,27 +43,31 @@ module ButtonHelper
   end
 
   def btnInfo
-   btn + "bg-blue-400 text-blue-link hover:text-blue-100"
+   btn + "bg-blue-400 text-blue-link hover:text-blue-100 "
   end
 
   def btnWarn
-   btn + "bg-orange hover:text-yellow-200"
+   btn + "bg-orange hover:text-yellow-200 "
   end
 
   def btnGreen
-   btn + "bg-green-500 hover:text-green-100"
+   btn + "bg-green-500 hover:text-green-100 "
   end
 
   def btnDanger
-   btn + "bg-red-500 hover:text-red-200"
+   btn + "bg-red-500 hover:text-red-200 "
   end
 
   def btnSuccess
-   btn + "bg-success hover:bg-green-700"
+   btn + "bg-success hover:bg-green-700 "
   end
 
   def btnSecondary
-   btn + "bg-secondary"
+   btn + "bg-secondary "
+  end
+
+  def btnSubmit
+    btnGreen + "m-1 border-2"
   end
 
   def blueBox
