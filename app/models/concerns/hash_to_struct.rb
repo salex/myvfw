@@ -18,6 +18,15 @@ class HashToStruct
     struct 
   end
 
+  def new_struct(ahash)
+    struct = ahash.to_struct
+    puts struct
+    struct.members.each do |m|
+      struct[m] = struct[m].to_struct if struct[m].is_a? Hash
+    end
+    struct 
+  end
+
 
   def add_hash(struct,member)
     struct[member] = new_struct(struct[member])
