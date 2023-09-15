@@ -120,6 +120,7 @@ class Member < ApplicationRecord
     active.each do |m|
       if m.email.present? 
         email += "#{m.name_first_last} <#{m.email}>,\n"
+        address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
       else
         address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
       end
