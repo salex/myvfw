@@ -115,7 +115,7 @@ class MembersController < ApplicationController
   end
 
   def contacts
-    @email,@address,@all_addresses = Current.post.members.contact_addresses(params[:status])
+    @email,@address,@all_address = Current.post.members.contact_addresses(params[:status])
   end
   
   def import
