@@ -109,15 +109,20 @@ class Member < ApplicationRecord
   def self.contact_addresses(status=nil)
     active = Current.post.members.where.not(pay_status:['Missing','Deceased', 'Applicant']).order(:full_name)
     if status.present?
-      active = active.where(pay_status:status)
+      if status == 'deliverable'
+        active = active.where(undeliverable:nil) # everyone except underliverable
+      else
+        active = active.where(pay_status:status) # everone
+      end
     end
     email = ""
-    address =  "first_name,mi,last_name,address,city,state,zip,status,paid_thru,age,undeliverable\n"
+    address =  "first_name,mi,last_name,address,city,state,zip,status,paid_thru,age,undeliverable,phone,email\n"
     active.each do |m|
-      if m.email.present?
+      if m.email.present? 
         email += "#{m.name_first_last} <#{m.email}>,\n"
+      else
+        address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
       end
-      address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone}\n"
     end
     email = email[0..-2]
     return email, address
