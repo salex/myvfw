@@ -117,16 +117,17 @@ class Member < ApplicationRecord
     end
     email = ""
     address =  "first_name,mi,last_name,address,city,state,zip,status,paid_thru,age,undeliverable,phone,email\n"
+    all_address = address
     active.each do |m|
       if m.email.present? 
         email += "#{m.name_first_last} <#{m.email}>,\n"
-        address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
+        all_address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
       else
         address += "#{m.first_name},#{m.mi},#{m.last_name},#{m.address},#{m.city},#{m.state},#{m.zip},#{m.pay_status},#{m.paid_thru},#{m.age},#{m.undeliverable},#{m.phone},#{m.email}\n"
       end
     end
     email = email[0..-2]
-    return email, address
+    return email, address, all_address
   end
 
   def self.limit(status,thru_date=nil)
