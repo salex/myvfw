@@ -40,7 +40,7 @@ require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
-install_plugin Capistrano::Puma::Nginx  # if you want to upload a nginx site template
+# install_plugin Capistrano::Puma::Nginx  # if you want to upload a nginx site template
 install_plugin Capistrano::Puma::Systemd
 
 
